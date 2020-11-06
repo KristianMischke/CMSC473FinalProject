@@ -4,7 +4,7 @@
 import json
 
 
-f = open('AllPrintings.json',)
+f = open('AllPrintings.json', encoding='utf-8')
 data = json.load(f)
 nameList = []
 ruleList = []
