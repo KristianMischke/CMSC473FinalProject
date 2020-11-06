@@ -10,8 +10,6 @@ nameList = []
 ruleList = []
 star = "★"
 
-# TODO: use nested loop - go throug keyList and run for loop for each key in setIds
-# TODO: remove cards with * at the end of the number. Those are duplicates
 # print(data['data'].keys())
 for key in data['data'].keys():
     for i in data['data'][key]['cards']:
