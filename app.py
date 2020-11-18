@@ -51,7 +51,7 @@ tupleList = list(zip(nameList, ruleList))
 #     print(i)
 
 # split list into 60-20-20
-train, validate, test = np.split(
+train, dev, test = np.split(
     tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
 
 writeToFile(train, "train.txt")
