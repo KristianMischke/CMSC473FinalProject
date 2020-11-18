@@ -37,11 +37,12 @@ def compute_calssification_report_mock():
 
 def compute_k_fold_cross_validation(K=10):
     print('compute_k_fold_cross_validation')
-    data = array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6])
+    X = array([[0.1, 0.2], [0.3, 0.4], [0.5, 0.6], [0.1, 0.2], [0.3, 0.4], [0.5, 0.6], [0.7, 0.8], [0.1, 0.2], [0.3, 0.4], [0.5, 0.6], [0.1, 0.2], [0.3, 0.4], [0.5, 0.6], [0.7, 0.8]])
+    y = array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8])
     kfold = KFold(n_splits=10, shuffle=True, random_state=None)
-    kf = kfold.get_n_splits(data)
-    for train, test in kfold.split(data):
-        print('train: %s, test: %s' % (data[train], data[test]))
+    for train_indx, test_indx in kfold.split(X):
+        print("TRAIN:", X[train_indx], "TEST:", X[test_indx])
+        # y_train, y_test = y[train_indx], y[test_indx]
 
 
 compute_k_fold_cross_validation()
