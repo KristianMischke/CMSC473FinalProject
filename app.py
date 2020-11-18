@@ -55,5 +55,5 @@ train, validate, test = np.split(
     tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
 
 writeToFile(train, "train.txt")
-writeToFile(validate, "validate.txt")
+writeToFile(validate, "dev.txt")
 writeToFile(test, "test.txt")
