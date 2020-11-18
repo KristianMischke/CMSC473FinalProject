@@ -1,5 +1,7 @@
 from sklearn.metrics import classification_report
 import pandas as pd
+from numpy import array
+from sklearn.model_selection import KFold
 '''
 Install packages from requirements.txt
 pip3 install -r requirements.txt
@@ -30,4 +32,16 @@ def compute_calssification_report_mock():
     print(res)
     print(report)
 
-compute_calssification_report_mock()
+# compute_calssification_report_mock()
+
+
+def compute_k_fold_cross_validation(K=10):
+    print('compute_k_fold_cross_validation')
+    data = array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6])
+    kfold = KFold(n_splits=10, shuffle=True, random_state=None)
+    kf = kfold.get_n_splits(data)
+    for train, test in kfold.split(data):
+        print('train: %s, test: %s' % (data[train], data[test]))
+
+
+compute_k_fold_cross_validation()
