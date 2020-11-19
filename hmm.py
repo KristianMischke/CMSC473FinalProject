@@ -1,3 +1,6 @@
+from baum_welch import BaumWeltch
+import numpy as np
+
 # Hidden Markov Model base class
 #
 # member variables:
@@ -181,6 +184,14 @@ class HMM():
     # TODO: @Min find the most likely sequence of hidden states given an observed sequence
     def viterbi(self, observed_sequence):
         pass
+
+    # Baum-Welch forward algorithm
+    def baum_welch_forward(self, observed_sequence):
+        return BaumWeltch(np.array(self.transitions), np.array(self.emissions), 1.0, observed_sequence).forward()
+
+    # Baum-Welch backward algorithm
+    def baum_welch_forward(self, observed_sequence):
+        return BaumWeltch(np.array(self.transitions), np.array(self.emissions), 1.0, observed_sequence).backward()
 
 
 # child class that redefines the probability to be an exact representation without the independence assumption
