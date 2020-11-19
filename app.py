@@ -2,6 +2,8 @@
 # also can get card name using "asciiName". type=String
 #                           ^card name no special unicode characters
 import json
+import numpy as np
+import glob
 
 
 f = open('AllPrintings.json', encoding='utf-8')
@@ -9,6 +11,13 @@ data = json.load(f)
 nameList = []
 ruleList = []
 star = "★"
+
+
+def writeToFile(list, fileName):
+    with open(fileName, 'w', encoding='utf-8') as f:
+        for item in list:
+            f.write("%s\n" % item)
+
 
 # print(data['data'].keys())
 for key in data['data'].keys():
@@ -38,5 +47,13 @@ for key in data['data'].keys():
 # create list of tuples in the format of <cardname, rules>
 tupleList = list(zip(nameList, ruleList))
 
-for i in tupleList:
-    print(i)
+# for i in tupleList:
+#     print(i)
+
+# split list into 60-20-20
+train, dev, test = np.split(
+    tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
+
+writeToFile(train, "train.txt")
+writeToFile(dev, "dev.txt")
+writeToFile(test, "test.txt")
