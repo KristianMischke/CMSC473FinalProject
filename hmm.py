@@ -190,7 +190,7 @@ class HMM():
         return BaumWeltch(np.array(self.transitions), np.array(self.emissions), 1.0, observed_sequence).forward()
 
     # Baum-Welch backward algorithm
-    def baum_welch_forward(self, observed_sequence):
+    def baum_welch_backward(self, observed_sequence):
         return BaumWeltch(np.array(self.transitions), np.array(self.emissions), 1.0, observed_sequence).backward()
 
 
