@@ -157,7 +157,7 @@ class HMM():
 
         return alpha[N][self.end_state]
 
-    # P(y_n -> x_n y_n+1) Probability that the current state y_n emmits observed state x_n
+    # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
     def P_joint(self, from_hidden, observed, next_hidden):
         return self.P_emission_independent(observed, from_hidden) * self.P_transition(next_hidden, from_hidden)

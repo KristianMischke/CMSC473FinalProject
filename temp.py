@@ -59,6 +59,10 @@ novel_sentence = "the cat .".split()
 print(f"hmm.P({novel_sentence}) = {hmm_model.P(novel_sentence)}")
 print(f"prlg.P({novel_sentence}) = {prlg_model.P(novel_sentence)}")
 
+novel_sentence = "the mouse .".split()
+print(f"hmm.P({novel_sentence}) = {hmm_model.P(novel_sentence)}")
+print(f"prlg.P({novel_sentence}) = {prlg_model.P(novel_sentence)}")
+
 novel_sentence = "the mouse ate the speedy cat .".split()
 print(f"hmm.P({novel_sentence}) = {hmm_model.P(novel_sentence)}")
 print(f"prlg.P({novel_sentence}) = {prlg_model.P(novel_sentence)}")
