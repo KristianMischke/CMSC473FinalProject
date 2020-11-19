@@ -26,25 +26,36 @@ class BaumWeltch():
         print('here')
 
     def forward(self):
-        print('Forward Alg')
+        print('Computing Forward Algorithm...')
 
         # matrix -> num_state x num_obs
-        a = zeros((self.num_obs+2, self.num_state))
-
+        a = zeros((self.num_obs, self.num_state))
         # Initializes a[*][START] to self.start_value
         a[:, 0] = self.start_value
 
         print(a)
         for i in range(1, self.num_obs):
             for k in range(self.num_state):
-                # probability_objs = self.O[k, self.obs_seq[i]]
-                a[i,k] += np.dot(a[i-1, :], (self.S[:,k])) # * p_objs
+                obs_probability = self.O[k, self.obs_seq[i]]
+                a[i,k] += np.dot(a[i-1, :], (self.S[:, k])) * obs_probability
 
         print(a)
         return a
 
     def backward(self):
-        print('Backward Alg')
+        print('Computing Backward Algorithm...')
+
+        # matrix -> num_state x num_obs
+        a = zeros((self.num_obs, self.num_state))
+        # Initializes a[*][START] to self.start_value
+        a[:, -1] = self.start_value
+
+        for i in reversed(range(self.num_obs-1)):
+            for k in range(self.num_state):
+                obs_probability = self.O[:, self.obs_seq[i+1]]
+                a[i, k] = np.sum(a[i+1, :] * self.S[k, :]) * obs_probability
+
+        return a
 
 
 transition = [[.7,.2,.1], [.15,.8,.05], [.6,.35,.05]]
