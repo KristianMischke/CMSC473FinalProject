@@ -14,7 +14,7 @@ star = "★"
 
 
 def writeToFile(list, fileName):
-    with open(fileName, 'w') as f:
+    with open(fileName, 'w', encoding='utf-8') as f:
         for item in list:
             f.write("%s\n" % item)
 
@@ -55,5 +55,5 @@ train, dev, test = np.split(
     tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
 
 writeToFile(train, "train.txt")
-writeToFile(validate, "dev.txt")
+writeToFile(dev, "dev.txt")
 writeToFile(test, "test.txt")
