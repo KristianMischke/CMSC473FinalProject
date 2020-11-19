@@ -42,7 +42,6 @@ def compute_k_fold_cross_validation(K=10):
     kfold = KFold(n_splits=10, shuffle=True, random_state=None)
     for train_indx, test_indx in kfold.split(X):
         print("TRAIN:", X[train_indx], "TEST:", X[test_indx])
-        # y_train, y_test = y[train_indx], y[test_indx]
-
+        y_train, y_test = y[train_indx], y[test_indx]
 
 compute_k_fold_cross_validation()

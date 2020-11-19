@@ -38,6 +38,7 @@
 # temp files
 .DS_Store
 /.idea
+__pycache__
 
 # Environments
 .env
