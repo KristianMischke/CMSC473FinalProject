@@ -152,11 +152,8 @@ class HMM():
 
         for i in range(1, N + 1):
             for state in self.hidden:
-                p_obs = self.P_emission_independent(observed_sequence[i - 1], state)    # note: this caching is better than using the joint probability
-                                                                                        # in the 3rd nested loop, but it unfortunately unavoidable in PRLG
                 for old in self.hidden:
-                    p_move = self.P_transition(state, old)
-                    alpha[i][state] += alpha[i - 1][old] * p_obs * p_move
+                    alpha[i][state] += alpha[i - 1][old] * self.P_joint(old, observed_sequence[i - 1], state)
 
         return alpha[N][self.end_state]
 
@@ -187,27 +184,8 @@ class HMM():
 
 
 # child class that redefines the probability to be an exact representation without the independence assumption
-# refered to as PRLG (Probabalistic Right Linear Grammar) in the paper
+# referred to as PRLG (Probabilistic Right Linear Grammar) in the paper
 class PRLG(HMM):
-
-    # PRLG forward algorithm
-    def P(self, observed_sequence):
-        N = len(observed_sequence)
-        alpha = []
-        for i in range(N + 2):
-            alpha.append({})
-            for state in self.hidden:
-                alpha[i][state] = 0
-
-        alpha[0][self.start_state] = 1
-
-        for i in range(1, N + 1):
-            for state in self.hidden:
-                for old in self.hidden:
-                    alpha[i][state] += alpha[i - 1][old] * self.P_joint(old, observed_sequence[i - 1], state)  # PRLG uses exact definition of joint probability
-
-        return alpha[N][self.end_state]
-
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emmits observed state x_n
     # AND produced the next hidden state y_n+1
     def P_joint(self, hidden, observed, next_hidden):
