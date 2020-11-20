@@ -1,9 +1,9 @@
 import numpy as np
 from numpy import array, zeros
+
 '''
 The Baum–Welch Algorithm
 '''
-
 class BaumWeltch():
     """
     S: State transition probability matrix
@@ -23,7 +23,7 @@ class BaumWeltch():
         self.num_state = self.S.shape[0]
         self.num_obs = len(self.O)
 
-
+    # Forward algorithm
     def forward(self):
         print('Computing Forward Algorithm...')
 
@@ -40,6 +40,7 @@ class BaumWeltch():
         print(a)
         return a
 
+    # Backward algorithm
     def backward(self):
         print('Computing Backward Algorithm...')
 
@@ -52,7 +53,6 @@ class BaumWeltch():
             for k in range(self.num_state):
                 obs_probability = self.O[:, self.obs_seq[i+1]]
                 a[i, k] = np.sum(a[i+1, :] * self.S[k, :]) * obs_probability
-
         return a
 
 
