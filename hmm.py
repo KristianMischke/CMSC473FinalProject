@@ -153,8 +153,120 @@ class HMM:
         return self.transitions[hidden][next_hidden]
 
     # TODO: @Min find the most likely sequence of hidden states given an observed sequence
-    def viterbi(self, observed_sequence):
-        pass
+    # https://en.wikipedia.org/wiki/Viterbi_algorithm#Pseudocode
+    # Test in viterbi_test.py:
+    #   If I pass in each sequence from our observed_sequences in temp, I should be getting the hidden_sequence
+    #   as the most probable sequence of hidden states.
+    def viterbi(self, observed_sequence, custom_inits=None):
+        # The spaces are just indices because we converted each unique token to its own unique index using our
+        # tokenizer. 
+
+        ##### Viterbi Algorithm Inputs
+        # Observation Space (from 0 to num_observed)
+        # State Space (from 0 to num_hidden)
+        # Initial Probabilities (B is 1, because B marks beginning of sequence)
+        # State of Observations (observed_sequence)
+        # Transition Matrix (self.transitions) [num_hidden x num_hidden]
+        #   Probability (self.transitions[i][j]) of transiting from state i to state j.
+        # Emission Matrix (self.emissions) [num_hidden x num_observed]
+        #   Probability (self.emissions[i][j]) of observing outcome j from state i.
+        #####
+
+        obs_space = [x for x in range(self.num_observed)]
+        state_space = [x for x in range(self.num_hidden)]
+
+        # Assume 0 is "B" since we assume "B" is always first.
+        # TODO: Find some way to generalize this without needing to hard-code it.
+        # The probability of a state at first observation
+        init_probability = {0: 1, 1: 0, 2: 0, 3: 0}
+        if custom_inits:
+            init_probability = custom_inits
+
+        # v_table contains every state at every observation, and the probability is calculated
+        #   at each state given the path prior (from obs=o to obs=i-1 where i is the current observation) and
+        #   the probability of this state following its previous.
+        # v_table sized: T x K:
+        #   T is the total number of observations in the given sequence
+        #   K is the total number of states
+        # v_table[i][j]
+        #   i: index of observation
+        #   j: index of state in state space
+        v_table = [{}]
+        
+        # Initialize every state at the first observation in the sequence
+        #   "prob": The probability of a state occurring at first step 
+        #           and the probability of that observation occurring given that state
+        #   "prev": None, there is no previous state at first observation
+        for state in state_space:
+            v_table[0][state] = {
+                "prob": init_probability[state] * self.emissions[state][observed_sequence[0]],
+                "prev": None
+            }
+
+        # In the wiki, t was used instead of "obs" here to indicate "t"ime of occurrence
+        # Instead, refer to "obs" for observations in the order that they occur in the sequence
+        for obs in range(1, len(observed_sequence)):
+            v_table.append({})
+            for state in state_space:
+                # Begin finding the maximum probability path of a state given all possible previous states
+
+                # Initialize "max" probability by beginning at the probability of the 
+                #   previous path and first state.
+                # Calculate the probability of the current state given the previous path and its last state
+                max_prev_state = state_space[0]
+                max_path_prob = v_table[obs - 1][max_prev_state]["prob"] * self.transitions[max_prev_state][state]
+
+                # Start from second state since we initialized max from first
+                for prev_state in state_space[1:]:
+                    # Calculate the probability of the current state given the previous path and its last state
+                    path_prob = v_table[obs - 1][prev_state]["prob"] * self.transitions[prev_state][state]
+                    if path_prob > max_path_prob:
+                        max_path_prob = path_prob
+                        max_prev_state = prev_state
+
+                # Finally, our max probability is the maximum probability path 
+                #   and the probability of the observation given our current path.
+                max_prob = max_path_prob * self.emissions[state][observed_sequence[obs]]
+                v_table[obs][state] = {
+                    "prob": max_prob,
+                    "prev": max_prev_state
+                }
+
+        for line in self.dptable(v_table):
+            print(line)
+        
+        best_path = []
+        max_prob = 0.0
+        prev = None
+        
+        # Grab the best (max probability) path by finding it in the last index of v_table
+        # This is the probability that this result is reached by the end of the Viterbi Algorithm
+        for state, data in v_table[-1].items():
+            print("state: {}".format(state))
+            print("data: {}".format(data))
+            if data["prob"] > max_prob:
+                max_prob = data["prob"]
+                best_state = state
+        
+        # Back-track from our best path starting at the end
+        best_path.append(str(best_state))
+        prev = best_state
+
+        # Start from second-to-last index since we found the end of our best path (len() - 1 is last index)
+        # End at -1 (exclusive)
+        # Re-build our path from the left (inserting at 0)
+        for t in range(len(v_table) - 2, -1, -1):
+            best_path.insert(0, str(v_table[t + 1][prev]["prev"]))
+            prev = v_table[t + 1][prev]["prev"]
+
+        print('The steps of states are ' + ' '.join(best_path) + ' with highest probability of {}'.format(str(max_prob)))
+
+    # Taken from the Python example in the wiki, adjusted for better output spacing
+    def dptable(self, v_table):
+        # Print a table of steps from dictionary
+        yield "".ljust(4) + " ".join((str(i).ljust(7)) for i in range(len(v_table)))
+        for state in v_table[0]:
+            yield ("{}: ".format(state)).ljust(4) + " ".join("%.7s" % ("%f" % v[state]["prob"]) for v in v_table)
 
     # Baum-Welch forward algorithm
     def baum_welch_forward(self, observed_sequence):
