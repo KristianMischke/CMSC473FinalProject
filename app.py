@@ -54,6 +54,6 @@ tupleList = list(zip(nameList, ruleList))
 train, dev, test = np.split(
     tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
 
-writeToFile(train, "dataset/mtg/train.txt")
-writeToFile(dev, "dataset/mtg/dev.txt")
-writeToFile(test, "dataset/mtg/test.txt")
+writeToFile(train, "datasets/mtg/train.txt")
+writeToFile(dev, "datasets/mtg/dev.txt")
+writeToFile(test, "datasets/mtg/test.txt")
