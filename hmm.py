@@ -157,7 +157,7 @@ class HMM:
     # Test in viterbi_test.py:
     #   If I pass in each sequence from our observed_sequences in temp, I should be getting the hidden_sequence
     #   as the most probable sequence of hidden states.
-    def viterbi(self, observed_sequence, init_probability={0: 1, 1: 0, 2: 0, 3: 0}):
+    def viterbi(self, observed_sequence, custom_inits=None):
         # The spaces are just indices because we converted each unique token to its own unique index using our
         # tokenizer. 
 
@@ -178,7 +178,9 @@ class HMM:
         # Assume 0 is "B" since we assume "B" is always first.
         # TODO: Find some way to generalize this without needing to hard-code it.
         # The probability of a state at first observation
-        #init_probability = {0: 1, 1: 0, 2: 0, 3: 0}
+        init_probability = {0: 1, 1: 0, 2: 0, 3: 0}
+        if custom_inits:
+            init_probability = custom_inits
 
         # v_table contains every state at every observation, and the probability is calculated
         #   at each state given the path prior (from obs=o to obs=i-1 where i is the current observation) and
