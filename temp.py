@@ -53,6 +53,9 @@ print()
 for i in range(len(observed_sequences)):
    print(f"hmm.P({observed[i]}) = {hmm_model.p(observed_sequences[i])}")
    print(f"prlg.P({observed[i]}) = {prlg_model.p(observed_sequences[i])}")
+
+   print(f"baum-welch.forward({observed[i]}) =\n {hmm_model.baum_welch_forward(observed_sequences[i])}")
+   print(f"baum-welch.backward({observed[i]}) =\n {hmm_model.baum_welch_backward(observed_sequences[i])}")
    print()
 
 novel_sentence = "the cat .".split()
