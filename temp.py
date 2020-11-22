@@ -72,3 +72,4 @@ print(f"prlg.P({novel_sentence}) = {prlg_model.p(novel_sentence_ids)}")
 
 
 print(f"baum-welch.forward({novel_sentence}) =\n {hmm_model.baum_welch_forward(novel_sentence_ids)}")
+print(f"baum-welch.backward({novel_sentence}) =\n {hmm_model.baum_welch_backward(novel_sentence_ids)}")
