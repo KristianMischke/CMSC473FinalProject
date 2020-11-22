@@ -1,4 +1,4 @@
-#from baum_welch import BaumWeltch
+from baum_welch import BaumWeltch
 import numpy as np
 
 
