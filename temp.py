@@ -69,3 +69,6 @@ novel_sentence = "the mouse ate the speedy cat .".split()
 novel_sentence_ids = tokenizer.convert_token_sequence_to_ids(novel_sentence, observed_translations)
 print(f"hmm.P({novel_sentence}) = {hmm_model.p(novel_sentence_ids)}")
 print(f"prlg.P({novel_sentence}) = {prlg_model.p(novel_sentence_ids)}")
+
+
+print(f"baum-welch.forward({novel_sentence}) =\n {hmm_model.baum_welch_forward(novel_sentence_ids)}")

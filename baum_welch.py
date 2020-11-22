@@ -55,10 +55,10 @@ class BaumWeltch():
                 a[i, k] = np.sum(a[i+1, :] * self.S[k, :]) * obs_probability
         return a
 
-
-transition = [[.7,.2,.1], [.15,.8,.05], [.6,.35,.05]]
-emission = [[.7,.2,.05,.05], [.2,.6,.1,.1]]
-observations = []
-
-BaumWeltch(array(transition), array(emission)).forward()
+#
+# transition = [[.7,.2,.1], [.15,.8,.05], [.6,.35,.05]]
+# emission = [[.7,.2,.05,.05], [.2,.6,.1,.1]]
+# obs_sequence = [0,1]
+#
+# BaumWeltch(array(transition), array(emission), obs_seq=obs_sequence).forward()
 # BaumWeltch(np.ndarray(transition), np.ndarray(emission)).forward()
