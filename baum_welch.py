@@ -37,8 +37,8 @@ class BaumWeltch():
                 obs_probability = self.O[k, self.obs_seq[i]]
                 a[i,k] += np.dot(a[i-1, :], (self.S[:, k])) * obs_probability
 
-        print(a)
         return a
+
 
     # Backward algorithm
     def backward(self):
