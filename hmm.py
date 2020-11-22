@@ -161,17 +161,6 @@ class HMM:
         # The spaces are just indices because we converted each unique token to its own unique index using our
         # tokenizer. 
 
-        ##### Viterbi Algorithm Inputs
-        # Observation Space (from 0 to num_observed)
-        # State Space (from 0 to num_hidden)
-        # Initial Probabilities (B is 1, because B marks beginning of sequence)
-        # State of Observations (observed_sequence)
-        # Transition Matrix (self.transitions) [num_hidden x num_hidden]
-        #   Probability (self.transitions[i][j]) of transiting from state i to state j.
-        # Emission Matrix (self.emissions) [num_hidden x num_observed]
-        #   Probability (self.emissions[i][j]) of observing outcome j from state i.
-        #####
-
         obs_space = [x for x in range(self.num_observed)]
         state_space = [x for x in range(self.num_hidden)]
 
