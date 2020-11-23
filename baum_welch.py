@@ -34,7 +34,7 @@ class BaumWeltch():
         # Initializes a[0][START] to self.start_value
         a[0][0] = self.start_value
 
-        for i in range(1, self.num_obs+1):
+        for i in range(1, self.num_obs+2):
             for k in range(self.num_state):
                 obs_probability = self.O[k, self.obs_seq[i]]
                 for old in range(self.num_state):
@@ -43,7 +43,7 @@ class BaumWeltch():
 
         'Utilizes the power of numpy -> same result'
         'Σ 𝛼(𝑖-1,𝑠′) ∗ 𝑝(𝑠|𝑠′) ∗ 𝑝(obs[𝑖]|𝑠′)'
-        # for i in range(1, self.num_obs+1):
+        # for i in range(1, self.num_obs+2):
         #     for k in range(self.num_state):
         #         obs_probability = self.O[k, self.obs_seq[i]]
         #         a[i,k] += np.dot(a[i-1, :], (self.S[:, k])) * obs_probability
@@ -79,15 +79,17 @@ class BaumWeltch():
     def expectation_maximization(self):
         a = self.forward()
         b = self.backward()
-        c = zeros((self.num_obs, self.num_state))
+        c = zeros((self.num_obs+2, self.num_state))
         l = a[-1][-1]
 
         for i in reversed(range(self.num_obs - 1)):
             for next in range(self.num_state):
                 c[next, self.obs_seq[i+1]] += a[i+1][next] * b[i+1][next]/l
                 for k in range(self.num_state):
-                    u = 'obs_prob(obsi+1 | next)' * self.S[k, next]
+                    u = self.O[next, obs_sequence[i+1]] * self.S[k, next]
                     c[k, next] += a[i, k] * u * b[i+1][next]/l
+
+        return c
 
 
 
@@ -96,7 +98,7 @@ if __name__ == "__main__":
 #      emission = [[.7,.2,.05,.05], [.2,.6,.1,.1]]
 #      obs_sequence = []
 
-    emission = [[.0, .0, .0, .0], [.0, .7, .2, .1], [.0, .1, .2, .7], [.1, .0, .0, .0]]
+    emission = [[.0, .0, .0, .0], [.0, .7, .2, .1], [.0, .1, .2, .7], [1.0, .0, .0, .0]]
     transition = [[.0, .5, .5, .0], [.0, .8, .1, .1], [.0, .1, .8, .1], [.0, .0, .0, .0]]
     obs_sequence = [0, 2, 3, 3, 2, 0]
     num_obs = len(obs_sequence)
@@ -109,3 +111,8 @@ if __name__ == "__main__":
     print()
     b = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).backward()
     print(b)
+
+    print()
+    c = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).expectation_maximization()
+    print(c)
+
