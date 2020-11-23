@@ -86,7 +86,7 @@ class BaumWeltch():
             for next in range(self.num_state):
                 c[next, self.obs_seq[i+1]] += a[i+1][next] * b[i+1][next]/l
                 for k in range(self.num_state):
-                    u = self.O[next, obs_sequence[i+1]] * self.S[k, next]
+                    u = self.O[next, self.obs_seq[i+1]] * self.S[k, next]
                     c[k, next] += a[i, k] * u * b[i+1][next]/l
 
         return c

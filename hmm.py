@@ -259,14 +259,14 @@ class HMM:
 
     # Baum-Welch forward algorithm
     def baum_welch_forward(self, observed_sequence):
-        return BaumWeltch(np.array(self.transitions), np.array(self.emissions), 1.0, observed_sequence).forward()
+        return BaumWeltch(self.transitions, self.emissions, 1.0, observed_sequence).forward()
 
     # Baum-Welch backward algorithm
     def baum_welch_backward(self, observed_sequence):
-        return BaumWeltch(np.array(self.transitions), np.array(self.emissions), 1.0, observed_sequence).backward()
+        return BaumWeltch(self.transitions, self.emissions, 1.0, observed_sequence).backward()
 
     def compute_expectation_matrix(self, observed_sequence):
-        return BaumWeltch(np.array(self.transitions), np.array(self.emissions), 1.0, observed_sequence).expectation_maximization()
+        return BaumWeltch(self.transitions, self.emissions, 1.0, observed_sequence).expectation_maximization()
 
 class PRLG(HMM):
     """
