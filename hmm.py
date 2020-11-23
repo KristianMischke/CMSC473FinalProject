@@ -151,7 +151,7 @@ class HMM:
                 for old in range(self.num_hidden):
                     a[i, k] += a[i - 1, old] * self.p_joint(old, obs_seq[i - 1], k)
 
-        return a[-1][-1]
+        return a
 
     def backward(self, obs_seq):
         print('Computing Backward Algorithm...')
@@ -166,7 +166,7 @@ class HMM:
                     move_probability = self.p_transition[k, next]
                     b[i, k] += b[i + 1, next] * obs_probability * move_probability
 
-        return b[0][0]
+        return b
 
     def expectation_maximization(self, obs_seq):
         a = self.forward(obs_seq)
