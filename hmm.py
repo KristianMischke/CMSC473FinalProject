@@ -61,16 +61,19 @@ class HMM:
                     f"[HMM] load_sequences: sequence[{i}] lengths must match ({len(hidden_seq)} != {len(observed_seq)})")
 
             # loop over the tokens/states in the sequence
-            for j in range(len(hidden_seq)):
+            for j in range(len(hidden_seq) - 1):
                 state = hidden_seq[j]
-                next_state = self.end_state if j + 1 >= len(hidden_seq) else hidden_seq[j + 1]
+                next_state = hidden_seq[j + 1]
                 observed = observed_seq[j]
+                next_observed = observed_seq[j + 1]
 
                 # update counts
                 hidden_counts[state] += 1
                 transition_counts[state][next_state] += 1
-                emission_joint_counts[state][next_state][observed] += 1
+                emission_joint_counts[state][next_state][next_observed] += 1
                 emission_counts[state][observed] += 1
+            hidden_counts[hidden_seq[-1]] += 1
+            emission_counts[hidden_seq[-1]][observed_seq[-1]] += 1
 
         # update transition probabilities
         for from_state in range(self.num_hidden):
@@ -97,7 +100,8 @@ class HMM:
                     if transition_counts[from_state][to_state] == 0:
                         prob = 0
                     else:
-                        prob = emission_joint_counts[from_state][to_state][observed] / transition_counts[from_state][to_state]
+                        prob = emission_joint_counts[from_state][to_state][observed] / \
+                               transition_counts[from_state][to_state]
                     self.set_emission_joint(from_state, to_state, observed, prob)
 
     # runs tests to ensure all the probability distributions are proper
@@ -110,7 +114,7 @@ class HMM:
             total = 0
             for to_state in range(self.num_hidden):
                 total += self.transitions[from_state][to_state]
-            if abs(total - 1) > 0.00001:
+            if abs(total - 1) > 0.00001 and from_state is not self.end_state:
                 valid = False
                 print(f"[HMM] Validation failed: transitions in {from_state} sum to {total} which is !~ 1")
 
@@ -119,77 +123,71 @@ class HMM:
             total = 0
             for to_state in range(self.num_observed):
                 total += self.emissions[from_state][to_state]
-            if abs(total - 1) > 0.00001:
+            if abs(total - 1) > 0.00001 and from_state is not self.end_state:
                 valid = False
                 print(f"[HMM] Validation failed: emissions in {from_state} sum to {total} which is !~ 1")
 
         if valid:
             print("[HMM] Validation Successful!")
 
-    # HMM forward algorithm
+    # forward probability
     def p(self, observed_sequence):
-        n = len(observed_sequence)
-        alpha = np.zeros((n+2, self.num_hidden))
-        alpha[0][self.start_state] = 1
-
-        for i in range(1, n + 1):
-            for state in range(self.num_hidden):
-                for old in range(self.num_hidden):
-                    alpha[i][state] += alpha[i - 1][old] * self.p_joint(old, observed_sequence[i - 1], state)
-
-        return alpha[n][self.end_state]
+        t = len(observed_sequence)
+        return self.forward(observed_sequence)[t - 1, self.end_state]
 
     # Baum-Welch Forward Algorithm
+    # assumes obs_seq has already been tokenized (and thus contains the start and end tokens)
     def forward(self, obs_seq):
-        print('Computing forward Algorithm...')
-        # matrix -> num_observed+2 x num_hidden
-        a = np.zeros((self.num_observed + 2, self.num_hidden))
-        # Initializes a[0][START] to self.start_value
-        a[0][0] = 1.0
+        t = len(obs_seq)
 
-        for i in range(1, self.num_observed + 2):
+        # matrix -> num_state x num_obs
+        a = np.zeros((t, self.num_hidden))
+        # Initializes a[0][START] to 1
+        a[0][self.start_state] = 1.0
+
+        for i in range(1, t):
             for k in range(self.num_hidden):
                 for old in range(self.num_hidden):
-                    a[i, k] += a[i - 1, old] * self.p_joint(old, obs_seq[i - 1], k)
-
+                    a[i, k] += a[i - 1, old] * self.p_joint(old, obs_seq[i], k)
         return a
 
     # Baum-Welch Backward Algorithm
+    # assumes obs_seq has already been tokenized (and thus contains the start and end tokens)
     def backward(self, obs_seq):
-        print('Computing Backward Algorithm...')
-        # matrix -> num_observed+2 x num_hidden
-        b = np.zeros((self.num_observed + 2, self.num_hidden))
-        b[-1][-1] = 1.0
+        t = len(obs_seq)
 
-        for i in range(self.num_observed, -1, -1):
+        # matrix -> num_state x num_obs
+        b = np.zeros((t, self.num_hidden))
+        b[-1][self.end_state] = 1
+
+        for i in range(t - 2, -1, -1):
             for next in range(self.num_hidden):
-                obs_probability = self.p_emission_independent[next, obs_seq[i + 1]]
                 for k in range(self.num_hidden):
-                    move_probability = self.p_transition[k, next]
-                    b[i, k] += b[i + 1, next] * obs_probability * move_probability
-
+                    b[i, k] += b[i + 1, next] * self.p_joint(k, obs_seq[i+1], next)
         return b
 
     # Baum-Welch Expectation Maximization Algorithm
     def expectation_maximization(self, obs_seq):
+        t = len(obs_seq)
         a = self.forward(obs_seq)
         b = self.backward(obs_seq)
-        c = np.zeros((self.num_observed+2, self.num_hidden))
-        l = a[-1][-1]
+        c_obs = np.zeros((self.num_observed, self.num_hidden))
+        c_trans = np.zeros((self.num_hidden, self.num_hidden))
+        l = a[-1][self.end_state]
 
-        for i in reversed(range(self.num_observed - 1)):
+        for i in range(t - 2, -1, -1):
             for next in range(self.num_hidden):
-                c[next, obs_seq[i+1]] += a[i+1][next] * b[i+1][next]/l
+                c_obs[obs_seq[i + 1], next] += a[i + 1][next] * b[i + 1][next] / l
                 for k in range(self.num_hidden):
-                    u = self.p_emission_independent[next, obs_seq[i+1]] * self.p_transition[k, next]
-                    c[k, next] += a[i, k] * u * b[i+1][next]/l
+                    u = self.p_joint(k, obs_seq[i + 1], next)
+                    c_trans[k, next] += a[i, k] * u * b[i + 1][next] / l
 
-        return c
+        return c_obs, c_trans
 
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
     def p_joint(self, from_hidden, observed, next_hidden):
-        return self.p_emission_independent(observed, from_hidden) * self.p_transition(next_hidden, from_hidden)
+        return self.p_emission_independent(observed, next_hidden) * self.p_transition(next_hidden, from_hidden)
 
     # P(x_n|y_n) Probability that the hidden state emits the observed state
     def p_emission_independent(self, observed, hidden):
