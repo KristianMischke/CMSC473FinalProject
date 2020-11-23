@@ -139,6 +139,50 @@ class HMM:
 
         return alpha[n][self.end_state]
 
+    def forward(self, obs_seq):
+        print('Computing forward Algorithm...')
+        # matrix -> num_observed+2 x num_hidden
+        a = np.zeros((self.num_observed + 2, self.num_hidden))
+        # Initializes a[0][START] to self.start_value
+        a[0][0] = 1.0
+
+        for i in range(1, self.num_observed + 2):
+            for k in range(self.num_hidden):
+                for old in range(self.num_hidden):
+                    a[i, k] += a[i - 1, old] * self.p_joint(old, obs_seq[i - 1], k)
+
+        return a[-1][-1]
+
+    def backward(self, obs_seq):
+        print('Computing Backward Algorithm...')
+        # matrix -> num_observed+2 x num_hidden
+        b = np.zeros((self.num_observed + 2, self.num_hidden))
+        b[-1][-1] = 1.0
+
+        for i in range(self.num_observed, -1, -1):
+            for next in range(self.num_hidden):
+                obs_probability = self.p_emission_independent[next, obs_seq[i + 1]]
+                for k in range(self.num_hidden):
+                    move_probability = self.p_transition[k, next]
+                    b[i, k] += b[i + 1, next] * obs_probability * move_probability
+
+        return b[0][0]
+
+    def expectation_maximization(self, obs_seq):
+        a = self.forward(obs_seq)
+        b = self.backward(obs_seq)
+        c = np.zeros((self.num_observed+2, self.num_hidden))
+        l = a[-1][-1]
+
+        for i in reversed(range(self.num_observed - 1)):
+            for next in range(self.num_hidden):
+                c[next, obs_seq[i+1]] += a[i+1][next] * b[i+1][next]/l
+                for k in range(self.num_hidden):
+                    u = self.p_emission_independent[next, obs_seq[i+1]] * self.p_transition[k, next]
+                    c[k, next] += a[i, k] * u * b[i+1][next]/l
+
+        return c
+
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
     def p_joint(self, from_hidden, observed, next_hidden):
@@ -257,16 +301,6 @@ class HMM:
         for state in v_table[0]:
             yield ("{}: ".format(state)).ljust(4) + " ".join("%.7s" % ("%f" % v[state]["prob"]) for v in v_table)
 
-    # Baum-Welch forward algorithm
-    def baum_welch_forward(self, observed_sequence):
-        return BaumWeltch(self.transitions, self.emissions, 1.0, observed_sequence).forward()
-
-    # Baum-Welch backward algorithm
-    def baum_welch_backward(self, observed_sequence):
-        return BaumWeltch(self.transitions, self.emissions, 1.0, observed_sequence).backward()
-
-    def compute_expectation_matrix(self, observed_sequence):
-        return BaumWeltch(self.transitions, self.emissions, 1.0, observed_sequence).expectation_maximization()
 
 class PRLG(HMM):
     """

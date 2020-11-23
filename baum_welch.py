@@ -1,6 +1,5 @@
 import numpy as np
 from numpy import array, zeros
-from tokenizer import convert_token_sequences_to_ids
 
 '''
 The Baum–Welch Algorithm
