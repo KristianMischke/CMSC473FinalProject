@@ -16,11 +16,11 @@ hidden = [
    "B I I I O B I I STOP".split()
 ]
 
-observed_sequences, observed_translations, observed_token_lookup = tokenizer.convert_token_sequences_to_ids(observed)
-hidden_sequences, hidden_translations, hidden_token_lookup = tokenizer.convert_token_sequences_to_ids(hidden)
+observed_sequences, observed_translations, observed_token_lookup = tokenizer.convert_token_sequences_to_ids(observed, "BOS", "EOS")
+hidden_sequences, hidden_translations, hidden_token_lookup = tokenizer.convert_token_sequences_to_ids(hidden, "BOS", "EOS")
 
-hmm_model = HMM(len(hidden_token_lookup), len(observed_token_lookup), hidden_translations["B"], hidden_translations["STOP"])
-prlg_model = PRLG(len(hidden_token_lookup), len(observed_token_lookup), hidden_translations["B"], hidden_translations["STOP"])
+hmm_model = HMM(len(hidden_token_lookup), len(observed_token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
+prlg_model = PRLG(len(hidden_token_lookup), len(observed_token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
 
 hmm_model.load_sequences(hidden_sequences, observed_sequences)
 prlg_model.load_sequences(hidden_sequences, observed_sequences)
