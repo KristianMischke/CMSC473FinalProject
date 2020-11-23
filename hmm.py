@@ -265,6 +265,8 @@ class HMM:
     def baum_welch_backward(self, observed_sequence):
         return BaumWeltch(np.array(self.transitions), np.array(self.emissions), 1.0, observed_sequence).backward()
 
+    def compute_expectation_matrix(self, observed_sequence):
+        return BaumWeltch(np.array(self.transitions), np.array(self.emissions), 1.0, observed_sequence).expectation_maximization()
 
 class PRLG(HMM):
     """

@@ -27,15 +27,24 @@ class BaumWeltch():
     def forward(self):
         print('Computing Forward Algorithm...')
 
-        # matrix -> num_state x num_obs
-        a = zeros((self.num_obs, self.num_state))
+        # matrix -> num_state+2 x num_obs
+        a = zeros((self.num_obs+2, self.num_state))
         # Initializes a[*][START] to self.start_value
-        a[:, 0] = self.start_value
+        a[0][0] = self.start_value
 
-        for i in range(1, self.num_obs):
+        for i in range(1, self.num_obs+1):
             for k in range(self.num_state):
                 obs_probability = self.O[k, self.obs_seq[i]]
-                a[i,k] += np.dot(a[i-1, :], (self.S[:, k])) * obs_probability
+                for old in range(self.num_state):
+                    move_probability = self.S[old, k]
+                    a[i, k] += a[i-1, old] * move_probability * obs_probability
+
+        'Utilizes the power of numpy -> same result'
+        'Σ 𝛼(𝑖-1,𝑠′) ∗ 𝑝(𝑠|𝑠′) ∗ 𝑝(obs[𝑖]|𝑠′)'
+        # for i in range(1, self.num_obs+1):
+        #     for k in range(self.num_state):
+        #         obs_probability = self.O[k, self.obs_seq[i]]
+        #         a[i,k] += np.dot(a[i-1, :], (self.S[:, k])) * obs_probability
 
         return a
 
@@ -44,17 +53,39 @@ class BaumWeltch():
     def backward(self):
         print('Computing Backward Algorithm...')
 
-        # matrix -> num_state x num_obs
-        a = zeros((self.num_obs, self.num_state))
-        # Initializes a[*][END] to self.start_value
-        a[:, -1] = self.start_value
+        # matrix -> num_state+2 x num_obs
+        b = zeros((self.num_obs+2, self.num_state))
+        b[self.num_obs+1][-1] = self.start_value
 
-        for i in reversed(range(self.num_obs-1)):
-            for k in range(self.num_state):
-                obs_probability = self.O[:, self.obs_seq[i+1]]
-                a[i, k] = np.sum(a[i+1, :] * self.S[k, :] * obs_probability)
+        for i in range(self.num_obs, -1, -1):
+            for next in range(self.num_state):
+                obs_probability = self.O[next, self.obs_seq[i+1]]
+                for k in range(self.num_state):
+                    move_probability = self.S[k, next]
+                    b[i, k] += b[i+1, next] * obs_probability * move_probability
 
-        return a
+        'Utilizes the power of numpy -> Working on this...'
+        'Σ 𝛽(𝑖+1,𝑠′) ∗ 𝑝(𝑠′|𝑠) ∗ 𝑝(obs[𝑖+1]|𝑠′)'
+        # for i in range(self.num_obs, -1, -1):
+        #     for k in range(self.num_state):
+        #         obs_probability = self.O[:, self.obs_seq[i + 1]]
+        #         b[i, k] = np.sum(b[i + 1, :] * self.S[k, :] * obs_probability)
+
+        return b
+
+    # computes expectation maximization
+    def expectation_maximization(self):
+        a = self.forward()
+        b = self.backward()
+        c = zeros((self.num_obs, self.num_state))
+        l = a[-1][-1]
+
+        for i in reversed(range(self.num_obs - 1)):
+            for next in range(self.num_state):
+                c[next, self.obs_seq[i+1]] += a[i+1][next] * b[i+1][next]/l
+                for k in range(self.num_state):
+                    u = 'obs_prob(obsi+1 | next)' * self.S[k, next]
+                    c[k, next] += a[i, k] * u * b[i+1][next]/l
 
 
 if __name__ == "__main__":

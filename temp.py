@@ -73,6 +73,8 @@ novel_sentence_ids = tokenizer.convert_token_sequence_to_ids(novel_sentence, obs
 print(f"hmm.P({novel_sentence}) = {hmm_model.p(novel_sentence_ids)}")
 print(f"prlg.P({novel_sentence}) = {prlg_model.p(novel_sentence_ids)}")
 
-
 print(f"baum-welch.forward({novel_sentence}) =\n {hmm_model.baum_welch_forward(novel_sentence_ids)}")
 print(f"baum-welch.backward({novel_sentence}) =\n {hmm_model.baum_welch_backward(novel_sentence_ids)}")
+
+'Exepectation Matrix'
+# print(f"baum-welch.ME({novel_sentence}) =\n {hmm_model.compute_expectation_matrix(novel_sentence_ids)}")
