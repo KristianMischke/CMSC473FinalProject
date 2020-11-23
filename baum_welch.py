@@ -23,19 +23,29 @@ class BaumWeltch():
         self.num_state = self.S.shape[0]
         self.num_obs = len(self.O)
 
+
     # Forward algorithm
     def forward(self):
         print('Computing Forward Algorithm...')
 
-        # matrix -> num_state x num_obs
-        a = zeros((self.num_obs, self.num_state))
-        # Initializes a[*][START] to self.start_value
-        a[:, 0] = self.start_value
+        # matrix -> num_state+2 x num_obs
+        a = zeros((self.num_obs+2, self.num_state))
+        # Initializes a[0][START] to self.start_value
+        a[0][0] = self.start_value
 
-        for i in range(1, self.num_obs):
+        for i in range(1, self.num_obs+2):
             for k in range(self.num_state):
                 obs_probability = self.O[k, self.obs_seq[i]]
-                a[i,k] += np.dot(a[i-1, :], (self.S[:, k])) * obs_probability
+                for old in range(self.num_state):
+                    move_probability = self.S[old, k]
+                    a[i, k] += a[i-1, old] * move_probability * obs_probability
+
+        'Utilizes the power of numpy -> same result'
+        'Σ 𝛼(𝑖-1,𝑠′) ∗ 𝑝(𝑠|𝑠′) ∗ 𝑝(obs[𝑖]|𝑠′)'
+        # for i in range(1, self.num_obs+2):
+        #     for k in range(self.num_state):
+        #         obs_probability = self.O[k, self.obs_seq[i]]
+        #         a[i,k] += np.dot(a[i-1, :], (self.S[:, k])) * obs_probability
 
         return a
 
@@ -44,24 +54,64 @@ class BaumWeltch():
     def backward(self):
         print('Computing Backward Algorithm...')
 
-        # matrix -> num_state x num_obs
-        a = zeros((self.num_obs, self.num_state))
-        # Initializes a[*][END] to self.start_value
-        a[:, -1] = self.start_value
+        # matrix -> num_state+2 x num_obs
+        b = zeros((self.num_obs+2, self.num_state))
+        b[self.num_obs+1][-1] = self.start_value
 
-        for i in reversed(range(self.num_obs-1)):
-            for k in range(self.num_state):
-                obs_probability = self.O[:, self.obs_seq[i+1]]
-                a[i, k] = np.sum(a[i+1, :] * self.S[k, :] * obs_probability)
+        for i in range(self.num_obs, -1, -1):
+            for next in range(self.num_state):
+                obs_probability = self.O[next, self.obs_seq[i+1]]
+                for k in range(self.num_state):
+                    move_probability = self.S[k, next]
+                    b[i, k] += b[i+1, next] * obs_probability * move_probability
 
-        return a
+        'Utilizes the power of numpy -> Same result'
+        'Σ 𝛽(𝑖+1,𝑠′) ∗ 𝑝(𝑠′|𝑠) ∗ 𝑝(obs[𝑖+1]|𝑠′)'
+        # for i in range(self.num_obs, -1, -1):
+        #     for k in range(self.num_state):
+        #         obs_probability = self.O[:, self.obs_seq[i + 1]]
+        #         b[i, k] = np.sum(b[i + 1, :] * self.S[k, :] * obs_probability)
+
+        return b
+
+    # computes expectation maximization
+    def expectation_maximization(self):
+        a = self.forward()
+        b = self.backward()
+        c = zeros((self.num_obs+2, self.num_state))
+        l = a[-1][-1]
+
+        for i in reversed(range(self.num_obs - 1)):
+            for next in range(self.num_state):
+                c[next, self.obs_seq[i+1]] += a[i+1][next] * b[i+1][next]/l
+                for k in range(self.num_state):
+                    u = self.O[next, self.obs_seq[i+1]] * self.S[k, next]
+                    c[k, next] += a[i, k] * u * b[i+1][next]/l
+
+        return c
+
 
 
 if __name__ == "__main__":
-    pass
-    # transition = [[.7,.2,.1], [.15,.8,.05], [.6,.35,.05]]
-    # emission = [[.7,.2,.05,.05], [.2,.6,.1,.1]]
-    # obs_sequence = [0,1]
-    #
-    # BaumWeltch(array(transition), array(emission), obs_seq=obs_sequence).forward()
-    # BaumWeltch(np.ndarray(transition), np.ndarray(emission)).forward()
+#      transition = [[.0,.7,.2,.1], [.0,.15,.8,.05], [.0,.6,.35,.05]]
+#      emission = [[.7,.2,.05,.05], [.2,.6,.1,.1]]
+#      obs_sequence = []
+
+    emission = [[.0, .0, .0, .0], [.0, .7, .2, .1], [.0, .1, .2, .7], [1.0, .0, .0, .0]]
+    transition = [[.0, .5, .5, .0], [.0, .8, .1, .1], [.0, .1, .8, .1], [.0, .0, .0, .0]]
+    obs_sequence = [0, 2, 3, 3, 2, 0]
+    num_obs = len(obs_sequence)
+
+    a = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).forward()
+    res = a[num_obs-1][3]
+    print(a)
+    print(res)
+
+    print()
+    b = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).backward()
+    print(b)
+
+    print()
+    c = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).expectation_maximization()
+    print(c)
+
