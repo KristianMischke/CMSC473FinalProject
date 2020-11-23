@@ -139,6 +139,7 @@ class HMM:
 
         return alpha[n][self.end_state]
 
+    # Baum-Welch Forward Algorithm
     def forward(self, obs_seq):
         print('Computing forward Algorithm...')
         # matrix -> num_observed+2 x num_hidden
@@ -153,6 +154,7 @@ class HMM:
 
         return a
 
+    # Baum-Welch Backward Algorithm
     def backward(self, obs_seq):
         print('Computing Backward Algorithm...')
         # matrix -> num_observed+2 x num_hidden
@@ -168,6 +170,7 @@ class HMM:
 
         return b
 
+    # Baum-Welch Expectation Maximization Algorithm
     def expectation_maximization(self, obs_seq):
         a = self.forward(obs_seq)
         b = self.backward(obs_seq)
