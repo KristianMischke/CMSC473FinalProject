@@ -54,8 +54,8 @@ for i in range(len(observed_sequences)):
    print(f"hmm.P({observed[i]}) = {hmm_model.p(observed_sequences[i])}")
    print(f"prlg.P({observed[i]}) = {prlg_model.p(observed_sequences[i])}")
 
-   print(f"baum-welch.forward({observed[i]}) =\n {hmm_model.baum_welch_forward(observed_sequences[i])}")
-   print(f"baum-welch.backward({observed[i]}) =\n {hmm_model.baum_welch_backward(observed_sequences[i])}")
+   print(f"baum-welch.forward({observed[i]}) =\n {hmm_model.forward(observed_sequences[i])}")
+   print(f"baum-welch.backward({observed[i]}) =\n {hmm_model.backward(observed_sequences[i])}")
    print()
 
 novel_sentence = "the cat .".split()
@@ -73,8 +73,6 @@ novel_sentence_ids = tokenizer.convert_token_sequence_to_ids(novel_sentence, obs
 print(f"hmm.P({novel_sentence}) = {hmm_model.p(novel_sentence_ids)}")
 print(f"prlg.P({novel_sentence}) = {prlg_model.p(novel_sentence_ids)}")
 
-print(f"baum-welch.forward({novel_sentence}) =\n {hmm_model.baum_welch_forward(novel_sentence_ids)}")
-print(f"baum-welch.backward({novel_sentence}) =\n {hmm_model.baum_welch_backward(novel_sentence_ids)}")
-
-'Exepectation Matrix'
-print(f"baum-welch.ME({novel_sentence}) =\n {hmm_model.compute_expectation_matrix(novel_sentence_ids)}")
+print(f"baum-welch.forward({novel_sentence}) =\n {hmm_model.forward(novel_sentence_ids)}")
+print(f"baum-welch.backward({novel_sentence}) =\n {hmm_model.backward(novel_sentence_ids)}")
+print(f"baum-welch.ME({novel_sentence}) =\n {hmm_model.expectation_maximization(novel_sentence_ids)}")
