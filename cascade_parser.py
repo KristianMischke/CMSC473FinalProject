@@ -2,21 +2,26 @@ from typing import Union
 from hmm import HMM, PRLG
 import tokenizer
 
+
 class CascadeParse:
     class CollapsedToken:
         def __init__(self, token: int, children: Union[list, type(None)]):
             self.token = token
             self.children = children
 
-        def print(self, show_pseudo: bool):
+        def print(self, show_pseudo: bool, token_lookup: Union[dict, type(None)] = None):
+            str_token = str(self.token)
+            if token_lookup is not None:
+                str_token = token_lookup[self.token]
+
             if self.children is None or len(self.children) == 0:
-                print(self.token, end="")
+                print(str_token, end="")
             else:
                 print("(", end="")
                 if show_pseudo:
-                    print(f"{self.token}: ", end="")
+                    print(f"{str_token}: ", end="")
                 for x in self.children:
-                    x.print(show_pseudo)
+                    x.print(show_pseudo, token_lookup)
                     print(" ", end="")
                 print(")", end="")
 
@@ -83,4 +88,4 @@ class CascadeParse:
             else:
                 done = True
 
-        return result
+        return self.CollapsedToken(result_ids[0], result)
