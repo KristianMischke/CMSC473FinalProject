@@ -1,4 +1,5 @@
 
+
 # convert the tokens in a sequences to indices based on given translation table
 def convert_token_sequence_to_ids(sequence, translation_table, bos=None, eos=None, oov=None):
     new_sequence = []
@@ -12,6 +13,7 @@ def convert_token_sequence_to_ids(sequence, translation_table, bos=None, eos=Non
     if eos is not None:
         new_sequence.append(translation_table[eos])
     return new_sequence
+
 
 # convert the tokens in an array of sequences to indices
 # returns tuple with translated sequences, translation table (token -> id), and lookup table (id -> token)
@@ -39,8 +41,22 @@ def convert_token_sequences_to_ids(sequences, bos=None, eos=None):
         out_sequences.append(new_sequence)
     return out_sequences, translation_table, token_lookup
 
+
 def convert_id_sequence_to_tokens(sequence, token_lookup):
     new_sequence = []
     for index in sequence:
         new_sequence.append(token_lookup[index])
     return new_sequence
+
+
+def get_frequencies_from_sequences(sequences):
+    frequency_dict = {}
+
+    for sequence in sequences:
+        for token in sequence:
+            if token not in frequency_dict:
+                frequency_dict[token] = 1
+            else:
+                frequency_dict[token] += 1
+
+    return frequency_dict

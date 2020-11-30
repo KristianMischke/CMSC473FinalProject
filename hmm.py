@@ -275,18 +275,20 @@ class HMM:
 
         if best_state is not None:
             # Back-track from our best path starting at the end
-            best_path.append(str(best_state))
+            best_path.append(best_state)
             prev = best_state
 
             # Start from second-to-last index since we found the end of our best path (len() - 1 is last index)
             # End at -1 (exclusive)
             # Re-build our path from the left (inserting at 0)
             for t in range(len(v_table) - 2, -1, -1):
-                best_path.insert(0, str(v_table[t + 1][prev]["prev"]))
+                best_path.insert(0, v_table[t + 1][prev]["prev"])
                 prev = v_table[t + 1][prev]["prev"]
 
-            # TODO: probably just want to return result in array instead of print it out
-            print('The steps of states are ' + ' '.join(best_path) + ' with highest probability of {}'.format(str(max_prob)))
+            # TODO: move print to calling function
+            print('The steps of states are ' + ' '.join([str(x) for x in best_path]) + ' with highest probability of {}'.format(str(max_prob)))
+            return best_path
+        return None
 
     # Taken from the Python example in the wiki, adjusted for better output spacing
     def dptable(self, v_table):

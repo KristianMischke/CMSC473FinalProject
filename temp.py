@@ -1,4 +1,5 @@
 from hmm import HMM, PRLG
+from cascade_parser import CascadeParse
 import tokenizer
 import numpy as np
 
@@ -72,6 +73,14 @@ novel_sentence = "the mouse ate the speedy cat .".split()
 novel_sentence_ids = tokenizer.convert_token_sequence_to_ids(novel_sentence, observed_translations, "BOS", "EOS")
 print(f"hmm.P({novel_sentence}) = {hmm_model.p(novel_sentence_ids)}")
 print(f"prlg.P({novel_sentence}) = {prlg_model.p(novel_sentence_ids)}")
+
+cascade_parser = CascadeParse(hmm_model, tokenizer.get_frequencies_from_sequences(observed_sequences), hidden_translations["B"], hidden_translations["I"])
+for token in cascade_parser.parse(novel_sentence_ids):
+   print(" ", end="")
+   token.print(True)
+input()
+
+print("\n\n\n")
 
 print(f"baum-welch.forward({novel_sentence}) =\n {hmm_model.forward(novel_sentence_ids)}")
 print(f"baum-welch.backward({novel_sentence}) =\n {hmm_model.backward(novel_sentence_ids)}")
