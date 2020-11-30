@@ -48,9 +48,25 @@ if __name__ == "__main__":
     print("\n\n\n")
 
     # Test our examples
-    test_model = HMM(len(hidden_token_lookup), len(observed_token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
-    test_model.load_sequences(hidden_sequences, observed_sequences)
+    hmm_model = HMM(len(hidden_token_lookup), len(observed_token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
+    hmm_model.load_sequences(hidden_sequences, observed_sequences)
     for i in range(len(observed_sequences)):
-        test_model.viterbi(observed_sequences[i])
+        hmm_model.viterbi(observed_sequences[i])
         print(hidden_sequences[i])
         input() # Pause to observe the viterbi results with our hidden_sequences
+
+    print("\n\n\n")
+    print("PRLG TEST")
+    # Test our examples
+    prlg_model = PRLG(len(hidden_token_lookup), len(observed_token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
+    prlg_model.load_sequences(hidden_sequences, observed_sequences)
+    for i in range(len(observed_sequences)):
+        prlg_model.viterbi(observed_sequences[i])
+        print(hidden_sequences[i])
+        input() # Pause to observe the viterbi results with our hidden_sequences
+
+    # test novel sentences on both models
+    novel_sentence = "the mouse ate the speedy cat .".split()
+    novel_sentence_ids = tokenizer.convert_token_sequence_to_ids(novel_sentence, observed_translations, "BOS", "EOS")
+    hmm_model.viterbi(novel_sentence_ids)
+    prlg_model.viterbi(novel_sentence_ids)

@@ -197,7 +197,6 @@ class HMM:
     def p_transition(self, next_hidden, hidden):
         return self.transitions[hidden][next_hidden]
 
-    # TODO: @Min find the most likely sequence of hidden states given an observed sequence
     # https://en.wikipedia.org/wiki/Viterbi_algorithm#Pseudocode
     # Test in viterbi_test.py:
     #   If I pass in each sequence from our observed_sequences in temp, I should be getting the hidden_sequence
@@ -239,23 +238,21 @@ class HMM:
 
                 # Initialize "max" probability by beginning at the probability of the 
                 #   previous path and first state.
-                # Calculate the probability of the current state given the previous path and its last state
+                # Calculate the joint probability
                 max_prev_state = state_space[0]
-                max_path_prob = v_table[obs - 1][max_prev_state]["prob"] * self.transitions[max_prev_state][state]
+                max_path_prob = v_table[obs - 1][max_prev_state]["prob"] * self.p_joint(max_prev_state, observed_sequence[obs], state)
 
                 # Start from second state since we initialized max from first
                 for prev_state in state_space[1:]:
                     # Calculate the probability of the current state given the previous path and its last state
-                    path_prob = v_table[obs - 1][prev_state]["prob"] * self.transitions[prev_state][state]
+                    path_prob = v_table[obs - 1][prev_state]["prob"] * self.p_joint(prev_state, observed_sequence[obs], state)
                     if path_prob > max_path_prob:
                         max_path_prob = path_prob
                         max_prev_state = prev_state
 
-                # Finally, our max probability is the maximum probability path 
-                #   and the probability of the observation given our current path.
-                max_prob = max_path_prob * self.emissions[state][observed_sequence[obs]]
+                # Finally, store our max probability at this observation
                 v_table[obs][state] = {
-                    "prob": max_prob,
+                    "prob": max_path_prob,
                     "prev": max_prev_state
                 }
 
@@ -265,6 +262,7 @@ class HMM:
         best_path = []
         max_prob = 0.0
         prev = None
+        best_state = None
         
         # Grab the best (max probability) path by finding it in the last index of v_table
         # This is the probability that this result is reached by the end of the Viterbi Algorithm
@@ -274,19 +272,21 @@ class HMM:
             if data["prob"] > max_prob:
                 max_prob = data["prob"]
                 best_state = state
-        
-        # Back-track from our best path starting at the end
-        best_path.append(str(best_state))
-        prev = best_state
 
-        # Start from second-to-last index since we found the end of our best path (len() - 1 is last index)
-        # End at -1 (exclusive)
-        # Re-build our path from the left (inserting at 0)
-        for t in range(len(v_table) - 2, -1, -1):
-            best_path.insert(0, str(v_table[t + 1][prev]["prev"]))
-            prev = v_table[t + 1][prev]["prev"]
+        if best_state is not None:
+            # Back-track from our best path starting at the end
+            best_path.append(str(best_state))
+            prev = best_state
 
-        print('The steps of states are ' + ' '.join(best_path) + ' with highest probability of {}'.format(str(max_prob)))
+            # Start from second-to-last index since we found the end of our best path (len() - 1 is last index)
+            # End at -1 (exclusive)
+            # Re-build our path from the left (inserting at 0)
+            for t in range(len(v_table) - 2, -1, -1):
+                best_path.insert(0, str(v_table[t + 1][prev]["prev"]))
+                prev = v_table[t + 1][prev]["prev"]
+
+            # TODO: probably just want to return result in array instead of print it out
+            print('The steps of states are ' + ' '.join(best_path) + ' with highest probability of {}'.format(str(max_prob)))
 
     # Taken from the Python example in the wiki, adjusted for better output spacing
     def dptable(self, v_table):
