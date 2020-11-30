@@ -75,6 +75,7 @@ print(f"hmm.P({novel_sentence}) = {hmm_model.p(novel_sentence_ids)}")
 print(f"prlg.P({novel_sentence}) = {prlg_model.p(novel_sentence_ids)}")
 
 cascade_parser = CascadeParse(hmm_model, tokenizer.get_frequencies_from_sequences(observed_sequences), hidden_translations["B"], hidden_translations["I"])
+print("Cascaded Parse Parenthesization:")
 for token in cascade_parser.parse(novel_sentence_ids):
    print(" ", end="")
    token.print(True)

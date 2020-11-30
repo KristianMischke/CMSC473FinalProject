@@ -43,7 +43,7 @@ if __name__ == "__main__":
             doc_model.transitions[i][j] = DOC_TRANSITIONS[i][j]
         for j in range(len_obs):
             doc_model.emissions[i][j] = DOC_EMISSIONS[i][j]
-    doc_model.viterbi([0,1,2,3])
+    doc_model.viterbi([0,1,2,3], True)
 
     print("\n\n\n")
 
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     hmm_model = HMM(len(hidden_token_lookup), len(observed_token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
     hmm_model.load_sequences(hidden_sequences, observed_sequences)
     for i in range(len(observed_sequences)):
-        hmm_model.viterbi(observed_sequences[i])
+        hmm_model.viterbi(observed_sequences[i], True)
         print(hidden_sequences[i])
         input() # Pause to observe the viterbi results with our hidden_sequences
 
@@ -61,12 +61,12 @@ if __name__ == "__main__":
     prlg_model = PRLG(len(hidden_token_lookup), len(observed_token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
     prlg_model.load_sequences(hidden_sequences, observed_sequences)
     for i in range(len(observed_sequences)):
-        prlg_model.viterbi(observed_sequences[i])
+        prlg_model.viterbi(observed_sequences[i], True)
         print(hidden_sequences[i])
         input() # Pause to observe the viterbi results with our hidden_sequences
 
     # test novel sentences on both models
     novel_sentence = "the mouse ate the speedy cat .".split()
     novel_sentence_ids = tokenizer.convert_token_sequence_to_ids(novel_sentence, observed_translations, "BOS", "EOS")
-    hmm_model.viterbi(novel_sentence_ids)
-    prlg_model.viterbi(novel_sentence_ids)
+    hmm_model.viterbi(novel_sentence_ids, True)
+    prlg_model.viterbi(novel_sentence_ids, True)

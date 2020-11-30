@@ -201,7 +201,7 @@ class HMM:
     # Test in viterbi_test.py:
     #   If I pass in each sequence from our observed_sequences in temp, I should be getting the hidden_sequence
     #   as the most probable sequence of hidden states.
-    def viterbi(self, observed_sequence, custom_inits=None):
+    def viterbi(self, observed_sequence, debug=False):
         # The spaces are just indices because we converted each unique token to its own unique index using our
         # tokenizer. 
 
@@ -256,8 +256,9 @@ class HMM:
                     "prev": max_prev_state
                 }
 
-        for line in self.dptable(v_table):
-            print(line)
+        if debug:
+            for line in self.dptable(v_table):
+                print(line)
         
         best_path = []
         max_prob = 0.0
@@ -267,8 +268,9 @@ class HMM:
         # Grab the best (max probability) path by finding it in the last index of v_table
         # This is the probability that this result is reached by the end of the Viterbi Algorithm
         for state, data in v_table[-1].items():
-            print("state: {}".format(state))
-            print("data: {}".format(data))
+            if debug:
+                print("state: {}".format(state))
+                print("data: {}".format(data))
             if data["prob"] > max_prob:
                 max_prob = data["prob"]
                 best_state = state
@@ -285,8 +287,9 @@ class HMM:
                 best_path.insert(0, v_table[t + 1][prev]["prev"])
                 prev = v_table[t + 1][prev]["prev"]
 
-            # TODO: move print to calling function
-            print('The steps of states are ' + ' '.join([str(x) for x in best_path]) + ' with highest probability of {}'.format(str(max_prob)))
+            # TODO: move print to calling function??
+            if debug:
+                print('The steps of states are ' + ' '.join([str(x) for x in best_path]) + ' with highest probability of {}'.format(str(max_prob)))
             return best_path
         return None
 
