@@ -1,3 +1,51 @@
+['Vampire Nocturnus Avatar'
+ 'Play with the top card of your library revealed.\nAs long as the top card of your library is black, black creatures you control get +2/+1.']
+['Viridian Zealot Avatar'
+ '{2}, Sacrifice a creature: Destroy target artifact or enchantment. Search your library for a card with the same name as the sacrificed creature, reveal that card, and put it into your hand. Then shuffle your library.']
+['Alabaster Dragon'
+ "Flying\nWhen Alabaster Dragon dies, shuffle it into its owner's library."]
+['Arrogant Vampire' 'Flying']
+["Assassin's Blade"
+ "Cast this spell only during the declare attackers step and only if you've been attacked this step.\nDestroy target nonblack attacking creature."]
+['Border Guard' '']
+['Burning Cloak'
+ 'Target creature gets +2/+0 until end of turn. Burning Cloak deals 2 damage to that creature.']
+['Capricious Sorcerer'
+ '{T}: Capricious Sorcerer deals 1 damage to any target. Activate this ability only during your turn, before attackers are declared.']
+['Charging Bandits'
+ 'Whenever Charging Bandits attacks, it gets +2/+0 until end of turn.']
+['Cloak of Feathers'
+ 'Target creature gains flying until end of turn.\nDraw a card.']
+['Cloud Pirates'
+ 'Flying\nCloud Pirates can block only creatures with flying.']
+['Command of Unsummoning'
+ "Cast this spell only during the declare attackers step and only if you've been attacked this step.\nReturn one or two target attacking creatures to their owner's hand."]
+['Craven Giant' "Craven Giant can't block."]
+['Craven Knight' "Craven Knight can't block."]
+['Cruel Bargain' 'Draw four cards. You lose half your life, rounded up.']
+['Cruel Fate'
+ "Look at the top five cards of target opponent's library. Put one of those cards into that player's graveyard and the rest on top of their library in any order."]
+['Deep-Sea Serpent'
+ "Deep-Sea Serpent can't attack unless defending player controls an Island."]
+['Defiant Stand'
+ "Cast this spell only during the declare attackers step and only if you've been attacked this step.\nTarget creature gets +1/+3 until end of turn. Untap that creature."]
+['Desert Drake' 'Flying']
+['Devoted Hero' '']
+['Djinn of the Lamp' 'Flying']
+['Dread Charge'
+ "Black creatures you control can't be blocked this turn except by black creatures."]
+['False Peace' 'Target player skips all combat phases of their next turn.']
+['Final Strike'
+ "As an additional cost to cast this spell, sacrifice a creature.\nFinal Strike deals damage to target opponent or planeswalker equal to the sacrificed creature's power."]
+['Fire Snake' 'When Fire Snake dies, destroy target land.']
+['Fleet-Footed Monk'
+ "Fleet-Footed Monk can't be blocked by creatures with power 2 or greater."]
+['Flux'
+ 'Each player discards any number of cards, then draws that many cards.\nDraw a card.']
+['Fruition' 'You gain 1 life for each Forest on the battlefield.']
+['Highland Giant' '']
+['Howling Fury' 'Target creature gets +4/+0 until end of turn.']
+['Hulking Goblin' "Hulking Goblin can't block."]
 ['Ingenious Thief'
  "Flying\nWhen Ingenious Thief enters the battlefield, look at target player's hand."]
 ['Keen-Eyed Archers'
@@ -60,22 +108,14 @@
 ["Winter's Grasp" 'Destroy target land.']
 ['Garruk the Slayer'
  "[0]: Put a 2/2 green Wolf creature token onto the battlefield.\n[+4]: Target Wolf creature gets +1/+0 and gains deathtouch until end of turn.\n[−10]: Destroy target creature. Put loyalty counters on Garruk the Slayer equal to that creature's toughness.\n[−25]: Destroy all creatures Garruk the Slayer doesn't control."]
-['Kiyomaro, First to Stand'
- "Kiyomaro, First to Stand's power and toughness are each equal to the number of cards in your hand.\nAs long as you have four or more cards in hand, Kiyomaro has vigilance.\nWhenever Kiyomaro deals damage, if you have seven or more cards in hand, you gain 7 life."]
-['Lightning Dragon'
- 'Flying\nEcho {2}{R}{R} (At the beginning of your upkeep, if this came under your control since the beginning of your last upkeep, sacrifice it unless you pay its echo cost.)\n{R}: Lightning Dragon gets +1/+0 until end of turn.']
-['Soul Collector'
- 'Flying\nWhenever a creature dealt damage by Soul Collector this turn dies, return that card to the battlefield under your control.\nMorph {B}{B}{B} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)']
+["Elspeth, Sun's Nemesis"
+ '[−1]: Up to two target creatures you control each get +2/+1 until end of turn.\n[−2]: Create two 1/1 white Human Soldier creature tokens.\n[−3]: You gain 5 life.\nEscape—{4}{W}{W}, Exile four other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)']
 ['Liliana, Dreadhorde General'
  'Whenever a creature you control dies, draw a card.\n[+1]: Create a 2/2 black Zombie creature token.\n[−4]: Each player sacrifices two creatures.\n[−9]: Each opponent chooses a permanent they control of each permanent type and sacrifices the rest.']
 ['Narset, Parter of Veils'
  "Each opponent can't draw more than one card each turn.\n[−2]: Look at the top four cards of your library. You may reveal a noncreature, nonland card from among them and put it into your hand. Put the rest on the bottom of your library in a random order."]
 ['Nissa, Who Shakes the World'
  'Whenever you tap a Forest for mana, add an additional {G}.\n[+1]: Put three +1/+1 counters on up to one target noncreature land you control. Untap it. It becomes a 0/0 Elemental creature with vigilance and haste that\'s still a land.\n[−8]: You get an emblem with "Lands you control have indestructible." Search your library for any number of Forest cards, put them onto the battlefield tapped, then shuffle your library.']
-["Ass Whuppin'"
- 'Destroy target silver-bordered permanent in any game you can see from your seat.']
-['Ghost-Lit Raider'
- '{2}{R}, {T}: Ghost-Lit Raider deals 2 damage to target creature.\nChannel — {3}{R}, Discard Ghost-Lit Raider: It deals 4 damage to target creature.']
 ["Admiral's Order"
  "Raid — If you attacked this turn, you may pay {U} rather than pay this spell's mana cost.\nCounter target spell."]
 ['Angrath, the Flame-Chained'
@@ -126,8 +166,6 @@
  "Tap another untapped Merfolk you control: Kumena, Tyrant of Orazca can't be blocked this turn.\nTap three untapped Merfolk you control: Draw a card.\nTap five untapped Merfolk you control: Put a +1/+1 counter on each Merfolk you control."]
 ["Mastermind's Acquisition"
  'Choose one —\n• Search your library for a card, put it into your hand, then shuffle your library.\n• Put a card you own from outside the game into your hand.']
-['Nezahal, Primal Tide'
- "This spell can't be countered.\nYou have no maximum hand size.\nWhenever an opponent casts a noncreature spell, draw a card.\nDiscard three cards: Exile Nezahal, Primal Tide. Return it to the battlefield tapped under its owner's control at the beginning of the next end step."]
 ['Paladin of Atonement'
  'At the beginning of each upkeep, if you lost life last turn, put a +1/+1 counter on Paladin of Atonement.\nWhen Paladin of Atonement dies, you gain life equal to its toughness.']
 ['Path of Discovery'
@@ -154,8 +192,6 @@
  "Cards in graveyards can't be the targets of spells or abilities.\n{4}, {T}: Exile Silent Gravestone and all cards from all graveyards. Draw a card."]
 ['Silverclad Ferocidons'
  'Enrage — Whenever Silverclad Ferocidons is dealt damage, each opponent sacrifices a permanent.']
-['Slaughter the Strong'
- 'Each player chooses any number of creatures they control with total power 4 or less, then sacrifices all other creatures they control.']
 ["Sphinx's Decree"
  "Each opponent can't cast instant or sorcery spells during that player's next turn."]
 ['Storm the Vault // Vault of Catlacan'
@@ -231,6 +267,8 @@
  "Flying\nWhenever a source an opponent controls deals damage to you or a permanent you control, you may have Flameblade Angel deal 1 damage to that source's controller."]
 ['Gate Colossus'
  "This spell costs {1} less to cast for each Gate you control.\nGate Colossus can't be blocked by creatures with power 2 or less.\nWhenever a Gate enters the battlefield under your control, you may put Gate Colossus from your graveyard on top of your library."]
+['Ghost-Lit Raider'
+ '{2}{R}, {T}: Ghost-Lit Raider deals 2 damage to target creature.\nChannel — {3}{R}, Discard Ghost-Lit Raider: It deals 4 damage to target creature.']
 ['Gleemox' '{T}: Add one mana of any color.\nThis card is banned.']
 ["Golem's Heart"
  'Whenever a player casts an artifact spell, you may gain 1 life.']
@@ -264,9 +302,13 @@
  "Your opponents and permanents your opponents control with hexproof can be the targets of spells and abilities you control as though they didn't have hexproof.\n[−3]: Exile target creature."]
 ['Kiora, Behemoth Beckoner'
  'Whenever a creature with power 4 or greater enters the battlefield under your control, draw a card.\n[−1]: Untap target permanent.']
+['Kiyomaro, First to Stand'
+ "Kiyomaro, First to Stand's power and toughness are each equal to the number of cards in your hand.\nAs long as you have four or more cards in hand, Kiyomaro has vigilance.\nWhenever Kiyomaro deals damage, if you have seven or more cards in hand, you gain 7 life."]
 ['Lavinia, Azorius Renegade'
  "Each opponent can't cast noncreature spells with converted mana cost greater than the number of lands that player controls.\nWhenever an opponent casts a spell, if no mana was spent to cast it, counter that spell."]
 ['Leatherback Baloth' '']
+['Lightning Dragon'
+ 'Flying\nEcho {2}{R}{R} (At the beginning of your upkeep, if this came under your control since the beginning of your last upkeep, sacrifice it unless you pay its echo cost.)\n{R}: Lightning Dragon gets +1/+0 until end of turn.']
 ["Liliana's Triumph"
  'Each opponent sacrifices a creature. If you control a Liliana planeswalker, each opponent also discards a card.']
 ['Lord of Shatterskull Pass'
@@ -300,12 +342,12 @@
 ['Sarkhan the Masterless'
  'Whenever a creature attacks you or a planeswalker you control, each Dragon you control deals 1 damage to that creature.\n[+1]: Until end of turn, each planeswalker you control becomes a 4/4 red Dragon creature and gains flying.\n[−3]: Create a 4/4 red Dragon creature token with flying.']
 ['Shepherd of the Lost' 'Flying, first strike, vigilance']
-['Shipbreaker Kraken'
- "{6}{U}{U}: Monstrosity 4. (If this creature isn't monstrous, put four +1/+1 counters on it and it becomes monstrous.)\nWhen Shipbreaker Kraken becomes monstrous, tap up to four target creatures. Those creatures don't untap during their controllers' untap steps for as long as you control Shipbreaker Kraken."]
 ['Simic Ascendancy'
  '{1}{G}{U}: Put a +1/+1 counter on target creature you control.\nWhenever one or more +1/+1 counters are put on a creature you control, put that many growth counters on Simic Ascendancy.\nAt the beginning of your upkeep, if Simic Ascendancy has twenty or more growth counters on it, you win the game.']
 ['Sorin, Vengeful Bloodlord'
  "As long as it's your turn, creatures and planeswalkers you control have lifelink.\n[+2]: Sorin, Vengeful Bloodlord deals 1 damage to target player or planeswalker.\n[−X]: Return target creature card with converted mana cost X from your graveyard to the battlefield. That creature is a Vampire in addition to its other types."]
+['Soul Collector'
+ 'Flying\nWhenever a creature dealt damage by Soul Collector this turn dies, return that card to the battlefield under your control.\nMorph {B}{B}{B} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)']
 ['Soul Swallower'
  'Trample\nDelirium — At the beginning of your upkeep, if there are four or more card types among cards in your graveyard, put three +1/+1 counters on Soul Swallower.']
 ['Sylvan Caryatid' 'Defender, hexproof\n{T}: Add one mana of any color.']
@@ -440,8 +482,6 @@
  'At the beginning of your upkeep, exile the top card of your library.\nDuring your turn, if an opponent lost life this turn, you may play lands and cast spells from among cards exiled with Theater of Horrors.\n{3}{R}: Theater of Horrors deals 1 damage to target opponent or planeswalker.']
 ['Tithe Taker'
  "During your turn, spells your opponents cast cost {1} more to cast and abilities your opponents activate cost {1} more to activate unless they're mana abilities.\nAfterlife 1 (When this creature dies, create a 1/1 white and black Spirit creature token with flying.)"]
-['Unbreakable Formation'
- 'Creatures you control gain indestructible until end of turn.\nAddendum — If you cast this spell during your main phase, put a +1/+1 counter on each of those creatures and they gain vigilance until end of turn.']
 ['Isleback Spawn'
  "Shroud (This creature can't be the target of spells or abilities.)\nIsleback Spawn gets +4/+8 as long as a library has twenty or fewer cards in it."]
 ['Sky Ruin Drake' 'Flying']
@@ -648,8 +688,6 @@
  'First strike\nLoyalty abilities of planeswalkers your opponents control cost {1} more to activate.']
 ['Elspeth Conquers Death'
  '(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — Exile target permanent an opponent controls with converted mana cost 3 or greater.\nII — Noncreature spells your opponents cast cost {2} more to cast until your next turn.\nIII — Return target creature or planeswalker card from your graveyard to the battlefield. Put a +1/+1 counter or a loyalty counter on it.']
-["Elspeth, Sun's Nemesis"
- '[−1]: Up to two target creatures you control each get +2/+1 until end of turn.\n[−2]: Create two 1/1 white Human Soldier creature tokens.\n[−3]: You gain 5 life.\nEscape—{4}{W}{W}, Exile four other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)']
 ['Enigmatic Incarnation'
  "At the beginning of your end step, you may sacrifice another enchantment. If you do, search your library for a creature card with converted mana cost equal to 1 plus the sacrificed enchantment's converted mana cost, put that card onto the battlefield, then shuffle your library."]
 ["Erebos's Intervention"
@@ -887,6 +925,8 @@
  "Your life total can't change. (You can't gain or lose life. You can't pay any amount of life except 0.)"]
 ['Raging Ravine'
  'Raging Ravine enters the battlefield tapped.\n{T}: Add {R} or {G}.\n{2}{R}{G}: Until end of turn, Raging Ravine becomes a 3/3 red and green Elemental creature with "Whenever this creature attacks, put a +1/+1 counter on it." It\'s still a land.']
+["Ass Whuppin'"
+ 'Destroy target silver-bordered permanent in any game you can see from your seat.']
 ['Earl of Squirrel'
  'Squirrellink (Damage dealt by this creature also causes you to create that many 1/1 green Squirrel creature tokens.)\nCreature tokens you control are Squirrels in addition to their other creature types.\nOther Squirrels you control get +1/+1.']
 ['Ashnod' 'Whenever a creature deals damage to you, destroy it.']
@@ -1030,8 +1070,6 @@
  "Amass 2, then the Army you amassed deals damage equal to its power to each non-Army creature. (To amass 2, put two +1/+1 counters on an Army you control. If you don't control one, create a 0/0 black Zombie Army creature token first.)"]
 ['Skinrender'
  'When Skinrender enters the battlefield, put three -1/-1 counters on target creature.']
-['Ruthless Cullblade'
- 'Ruthless Cullblade gets +2/+1 as long as an opponent has 10 or less life.']
 ['Admiral Beckett Brass'
  'Other Pirates you control get +1/+1.\nAt the beginning of your end step, gain control of target nonland permanent controlled by a player who was dealt combat damage by three or more Pirates this turn.']
 ["Angrath's Marauders"
@@ -1051,8 +1089,6 @@
 ['Carnage Tyrant' "This spell can't be countered.\nTrample, hexproof"]
 ["Conqueror's Galleon // Conqueror's Foothold"
  "(Transforms from Conqueror's Galleon.)\n{T}: Add {C}.\n{2}, {T}: Draw a card, then discard a card.\n{4}, {T}: Draw a card.\n{6}, {T}: Return target card from your graveyard to your hand."]
-['Daring Saboteur'
- "{2}{U}: Daring Saboteur can't be blocked this turn.\nWhenever Daring Saboteur deals combat damage to a player, you may draw a card. If you do, discard a card."]
 ['Deadeye Tracker'
  "{1}{B}, {T}: Exile two target cards from an opponent's graveyard. Deadeye Tracker explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)"]
 ['Deathgorge Scavenger'
@@ -1139,8 +1175,6 @@
  "(Transforms from Vance's Blasting Cannons.)\n{T}: Add {R}.\n{2}{R}, {T}: Spitfire Bastion deals 3 damage to any target."]
 ["Vanquisher's Banner"
  "As Vanquisher's Banner enters the battlefield, choose a creature type.\nCreatures you control of the chosen type get +1/+1.\nWhenever you cast a creature spell of the chosen type, draw a card."]
-["Verdant Sun's Avatar"
- "Whenever Verdant Sun's Avatar or another creature enters the battlefield under your control, you gain life equal to that creature's toughness."]
 ['Vona, Butcher of Magan'
  'Vigilance, lifelink\n{T}, Pay 7 life: Destroy target nonland permanent. Activate this ability only during your turn.']
 ["Vraska's Contempt"
@@ -1617,7 +1651,6 @@
  'When Forerunner of the Legion enters the battlefield, you may search your library for a Vampire card, reveal it, then shuffle your library and put that card on top of it.\nWhenever another Vampire enters the battlefield under your control, target creature gets +1/+1 until end of turn.']
 ['Giltgrove Stalker'
  "Giltgrove Stalker can't be blocked by creatures with power 2 or less."]
-['Goblin Trailblazer' 'Menace']
 ['Golden Demise'
  "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nAll creatures get -2/-2 until end of turn. If you have the city's blessing, instead only creatures your opponents control get -2/-2 until end of turn."]
 ['Hornswoggle'
@@ -1693,8 +1726,6 @@
 ['Storm Fleet Sprinter' "Haste\nStorm Fleet Sprinter can't be blocked."]
 ['Storm Fleet Swashbuckler'
  "Ascend (If you control ten or more permanents, you get the city's blessing for the rest of the game.)\nStorm Fleet Swashbuckler has double strike as long as you have the city's blessing."]
-['Strength of the Pack'
- 'Put two +1/+1 counters on each creature you control.']
 ['Sun-Collared Raptor'
  'Trample\n{2}{R}: Sun-Collared Raptor gets +3/+0 until end of turn.']
 ['Sun-Crested Pterodon'
@@ -1936,8 +1967,6 @@
  '{W}, {T}: You gain 2 life.\n{U}, {T}: Draw a card, then discard a card.']
 ["Sentinel's Mark"
  "Flash\nEnchant creature\nEnchanted creature gets +1/+2 and has vigilance.\nAddendum — When Sentinel's Mark enters the battlefield, if you cast it during your main phase, enchanted creature gains lifelink until end of turn."]
-['Sharktocrab'
- "{2}{G}{U}: Adapt 1. (If this creature has no +1/+1 counters on it, put a +1/+1 counter on it.)\nWhenever one or more +1/+1 counters are put on Sharktocrab, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step."]
 ['Shimmer of Possibility'
  'Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in a random order.']
 ['Skatewing Spy'
@@ -2112,8 +2141,6 @@
 ['Null Champion'
  'Level up {3} ({3}: Put a level counter on this. Level up only as a sorcery.)\nLEVEL 1-3\n4/2\nLEVEL 4+\n7/3\n{B}: Regenerate Null Champion.']
 ["Ogre's Cleaver" 'Equipped creature gets +5/+0.\nEquip {5}']
-['Pennon Blade'
- 'Equipped creature gets +1/+1 for each creature you control.\nEquip {4}']
 ['Perish the Thought'
  'Target opponent reveals their hand. You choose a card from it. That player shuffles that card into their library.']
 ['Phantasmal Abomination'
@@ -2914,6 +2941,8 @@
  'As Rick enters the battlefield, choose two abilities from among first strike, vigilance, and lifelink.\nHumans you control have each of the chosen abilities.\nAs long as you control four or more Humans, Humans you control get +2/+2.']
 ['Roil Elemental'
  'Flying\nLandfall — Whenever a land enters the battlefield under your control, you may gain control of target creature for as long as you control Roil Elemental.']
+['Swarmyard'
+ '{T}: Add {C}.\n{T}: Regenerate target Insect, Rat, Spider, or Squirrel.']
 ['Thassa, God of the Sea'
  "Indestructible\nAs long as your devotion to blue is less than five, Thassa isn't a creature. (Each {U} in the mana costs of permanents you control counts toward your devotion to blue.)\nAt the beginning of your upkeep, scry 1.\n{1}{U}: Target creature you control can't be blocked this turn."]
 ['Aberrant Researcher // Perfected Form' 'Flying']
@@ -2993,8 +3022,6 @@
  "Enchant creature\nEnchanted creature gets +1/+0 and has flying.\n{3}{W}: Return Gryff's Boon from your graveyard to the battlefield attached to target creature. Activate this ability only any time you could cast a sorcery."]
 ['Harvest Hand // Scrounged Scythe'
  "Equipped creature gets +1/+1.\nAs long as equipped creature is a Human, it has menace. (It can't be blocked except by two or more creatures.)\nEquip {2}"]
-['Haunted Cloak'
- 'Equipped creature has vigilance, trample, and haste.\nEquip {1}']
 ['Heir of Falkenrath // Heir to the Night' 'Flying']
 ['Hermit of the Natterknolls // Lone Wolf of the Natterknolls'
  'Whenever an opponent casts a spell during your turn, draw two cards.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Lone Wolf of the Natterknolls.']
@@ -3063,8 +3090,6 @@
  "Flying\nOlivia's Bloodsworn can't block.\n{R}: Target Vampire gains haste until end of turn."]
 ['Ongoing Investigation'
  'Whenever one or more creatures you control deal combat damage to a player, investigate. (Create a colorless Clue artifact token with "{2}, Sacrifice this artifact: Draw a card.")\n{1}{G}, Exile a creature card from your graveyard: Investigate. You gain 2 life.']
-['Open the Armory'
- 'Search your library for an Aura or Equipment card, reveal it, and put it into your hand. Then shuffle your library.']
 ['Pack Guardian'
  'Flash (You may cast this spell any time you could cast an instant.)\nWhen Pack Guardian enters the battlefield, you may discard a land card. If you do, create a 2/2 green Wolf creature token.']
 ['Pale Rider of Trostad'
@@ -3515,8 +3540,6 @@
  "Flying\nMetalcraft — When Lumengrid Drake enters the battlefield, if you control three or more artifacts, return target creature to its owner's hand."]
 ['Melt Terrain'
  "Destroy target land. Melt Terrain deals 2 damage to that land's controller."]
-['Molder Beast'
- 'Trample\nWhenever an artifact is put into a graveyard from the battlefield, Molder Beast gets +2/+0 until end of turn.']
 ['Molten Psyche'
  'Each player shuffles the cards from their hand into their library, then draws that many cards.\nMetalcraft — If you control three or more artifacts, Molten Psyche deals damage to each opponent equal to the number of cards that player has drawn this turn.']
 ['Molten-Tail Masticore'
@@ -3564,8 +3587,6 @@
 ['Salvage Scout'
  '{W}, Sacrifice Salvage Scout: Return target artifact card from your graveyard to your hand.']
 ['Scoria Elemental' '']
-['Scrapdiver Serpent'
- "Scrapdiver Serpent can't be blocked as long as defending player controls an artifact."]
 ['Screeching Silcaw'
  'Flying\nMetalcraft — Whenever Screeching Silcaw deals combat damage to a player, if you control three or more artifacts, that player mills four cards.']
 ['Seachrome Coast'
@@ -4002,8 +4023,6 @@
  "When Pheres-Band Brawler enters the battlefield, it fights up to one target creature you don't control. (Each deals damage equal to its power to the other.)"]
 ['Pious Wayfarer'
  'Constellation — Whenever an enchantment enters the battlefield under your control, target creature gets +1/+1 until end of turn.']
-['Portent of Betrayal'
- 'Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. Scry 1. (Look at the top card of your library. You may put that card on the bottom of your library.)']
 ['Rage-Scarred Berserker'
  'When Rage-Scarred Berserker enters the battlefield, target creature you control gets +1/+0 and gains indestructible until end of turn. (Damage and effects that say "destroy" don\'t destroy it.)']
 ['Relentless Pursuit'
@@ -4167,8 +4186,6 @@
  'Deathtouch\nHeroic — Whenever you cast a spell that targets Agent of the Fates, each opponent sacrifices a creature.']
 ['Akroan Crusader'
  'Heroic — Whenever you cast a spell that targets Akroan Crusader, create a 1/1 red Soldier creature token with haste.']
-['Aqueous Form'
- "Enchant creature\nEnchanted creature can't be blocked.\nWhenever enchanted creature attacks, scry 1. (Look at the top card of your library. You may put that card on the bottom of your library.)"]
 ['Arena Athlete'
  "Heroic — Whenever you cast a spell that targets Arena Athlete, target creature an opponent controls can't block this turn."]
 ['Artisan of Forms'
@@ -4291,8 +4308,6 @@
  "Bestow {4}{W} (If you cast this card for its bestow cost, it's an Aura spell with enchant creature. It becomes a creature again if it's not attached to a creature.)\nVigilance\nEnchanted creature gets +2/+2 and has vigilance."]
 ['Ordeal of Erebos'
  'Enchant creature\nWhenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Erebos.\nWhen you sacrifice Ordeal of Erebos, target player discards two cards.']
-['Ordeal of Nylea'
- 'Enchant creature\nWhenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Nylea.\nWhen you sacrifice Ordeal of Nylea, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.']
 ['Ordeal of Thassa'
  'Enchant creature\nWhenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Thassa.\nWhen you sacrifice Ordeal of Thassa, draw two cards.']
 ['Peak Eruption'
@@ -5150,8 +5165,6 @@
  'Echo {3}{R} (At the beginning of your upkeep, if this came under your control since the beginning of your last upkeep, sacrifice it unless you pay its echo cost.)\nWhen Subterranean Shambler enters the battlefield or leaves the battlefield, it deals 1 damage to each creature without flying.']
 ['Sudden Death'
  "Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)\nTarget creature gets -4/-4 until end of turn."]
-['Swarmyard'
- '{T}: Add {C}.\n{T}: Regenerate target Insect, Rat, Spider, or Squirrel.']
 ['Tectonic Fiend'
  'Echo {4}{R}{R} (At the beginning of your upkeep, if this came under your control since the beginning of your last upkeep, sacrifice it unless you pay its echo cost.)\nTectonic Fiend attacks each combat if able.']
 ['Telekinetic Sliver' 'All Slivers have "{T}: Tap target permanent."']
@@ -5864,7 +5877,7 @@
 ['Keeper of the Sacred Word'
  'As Keeper of the Sacred Word enters the battlefield, choose a word.\nWhenever an opponent says the chosen word, Keeper of the Sacred Word gets +3/+3 until end of turn.']
 ['Kill! Destroy!'
- 'Destroy target nonblack creature.\nGotcha — If an opponent says "kill" or "destroy," you may say "Gotcha!" When you do, return Kill Destroy! from your graveyard to your hand.']
+ 'Destroy target nonblack creature.\nGotcha — If an opponent says "kill" or "destroy," you may say "Gotcha!" When you do, return Kill! Destroy! from your graveyard to your hand.']
 ["Ladies' Knight"
  "Flying\nSpells cast by players wearing at least one item of women's clothing cost {1} less to cast. (You can define women's clothing as you see fit. Be reasonable.)"]
 ["Land Aid '04"
@@ -7027,8 +7040,6 @@
 ['Shriekdiver' 'Flying\n{1}: Shriekdiver gains haste until end of turn.']
 ['Sky Theater Strix'
  'Flying\nWhenever you cast a noncreature spell, Sky Theater Strix gets +1/+0 until end of turn.']
-['Spark Harvest'
- 'As an additional cost to cast this spell, sacrifice a creature or pay {3}{B}.\nDestroy target creature or planeswalker.']
 ['Spark Reaper'
  '{3}, Sacrifice a creature or planeswalker: You gain 1 life and draw a card.']
 ['Spellkeeper Weird'
@@ -7336,6 +7347,8 @@
  '{W}, {T}: Exile target land you control, then return it to the battlefield under your control.']
 ['Rumbling Aftershocks'
  'Whenever you cast a kicked spell, you may have Rumbling Aftershocks deal damage to any target equal to the number of times that spell was kicked.']
+['Ruthless Cullblade'
+ 'Ruthless Cullblade gets +2/+1 as long as an opponent has 10 or less life.']
 ['Scrib Nibblers'
  "{T}: Exile the top card of target player's library. If it's a land card, you gain 1 life.\nLandfall — Whenever a land enters the battlefield under your control, you may untap Scrib Nibblers."]
 ['Sejiri Merfolk'
@@ -7380,6 +7393,7 @@
 ['Goblin Bruiser' '']
 ['Ogre Painbringer'
  'When Ogre Painbringer enters the battlefield, it deals 3 damage to each player.']
+['Shorecomber Crab' '']
 ['Titanic Pelagosaur' '']
 ['Anointed Deacon'
  'At the beginning of combat on your turn, you may have target Vampire get +2/+0 until end of turn.']
@@ -7435,8 +7449,6 @@
  "First strike\nWhen Emissary of Sunrise enters the battlefield, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)"]
 ['Fathom Fleet Firebrand'
  '{1}{R}: Fathom Fleet Firebrand gets +1/+0 until end of turn.']
-['Fiery Cannonade'
- 'Fiery Cannonade deals 2 damage to each non-Pirate creature.']
 ['Fire Shrine Keeper'
  'Menace\n{7}{R}, {T}, Sacrifice Fire Shrine Keeper: It deals 3 damage to each of up to two target creatures.']
 ['Firecannon Blast'
@@ -7480,8 +7492,6 @@
 ["Kinjalli's Caller" 'Dinosaur spells you cast cost {1} less to cast.']
 ["Kumena's Speaker"
  "Kumena's Speaker gets +1/+1 as long as you control another Merfolk or an Island."]
-['Lightning-Rig Crew'
- '{T}: Lightning-Rig Crew deals 1 damage to each opponent.\nWhenever you cast a Pirate spell, untap Lightning-Rig Crew.']
 ["Lookout's Dispersal"
  'This spell costs {1} less to cast if you control a Pirate.\nCounter target spell unless its controller pays {4}.']
 ['Lurking Chupacabra'

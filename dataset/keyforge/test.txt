@@ -1,0 +1,128 @@
+['Vespilon Theorist'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: Choose a house. Reveal the top card of your deck. If it is of that house, archive it and gain 1<A>. Otherwise, discard it.']
+['A Fair Game'
+ 'Play: Discard the top card of your opponent’s deck and reveal their hand. You gain 1<A> for each card of the discarded card’s house revealed this way. Your opponent repeats the preceding effect on you.']
+['Pile of Skulls'
+ 'Each time an enemy creature is destroyed during your turn, a friendly creature captures 1<A>.']
+['Niffle Queen'
+ 'Each other friendly Beast creature gets +1 power.\x0bEach other friendly Niffle creature gets +1 power.']
+['Swap Widget'
+ 'Action: Return a ready friendly Mars creature to your hand. If you do, put a Mars creature with a different name from your hand into play, then ready it.']
+['Oath of Poverty'
+ 'Play: Destroy each of your artifacts. Gain 2<A> for each artifact destroyed this way.']
+['Invasion Portal'
+ 'Action: Discard cards from the top of your deck until you discard a Mars creature or run out of cards. If you discard a Mars creature this way, put it into your hand.']
+['Banner of Battle' 'Each friendly creature gets +1 power.']
+['Kelifi Dragon'
+ 'Kelifi Dragon cannot be played unless you have 7<A> or more.\x0bFight/Reap: Gain 1<A>. Deal 5<D> to a creature.']
+['Rock-Hurling Giant'
+ 'During your turn, each time you discard a Brobnar card from your hand, you may deal 4<D> to a creature.']
+['Harland Mindlock'
+ 'Play: Take control of an enemy flank creature until Harland Mindlock leaves play.']
+['Bulleteye'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: Destroy a flank creature.']
+['Stampede' 'Play: If you used 3 or more creatures this turn, steal 2<A>.']
+['Brain Stem Antenna'
+ 'This creature gains, “After you play a Mars creature, ready this creature and for the remainder of the turn it belongs to house Mars.”']
+['Veemos Lightbringer' 'Play: Destroy each elusive creature.']
+['Master of 1' 'Reap: You may destroy a creature with 1 power.']
+['Champion Tabris' 'Fight: Capture 1<A>.']
+['Potion of Invulnerability'
+ 'Omni: Sacrifice Potion of Invulnerability. For the remainder of the turn, each friendly creature cannot be dealt damage.']
+['Neutron Shark'
+ 'Play/Fight/Reap: Destroy an enemy creature or artifact and a friendly creature or artifact. Discard the top card of your deck. If that card is not a Logos card, trigger this effect again.']
+['Deep Probe'
+ "Play: Choose a house. Reveal your opponent's hand. Discard each creature of that house revealed this way."]
+['Numquid the Fair'
+ 'Play: Destroy an enemy creature. Repeat this card’s effect if your opponent still controls more creatures than you.']
+['Truebaru'
+ 'You must lose 3<A> in order to play Truebaru.  \x0bTaunt. (This creature’s neighbors cannot be attacked unless they have taunt.)\x0bDestroyed: Gain 5<A>. ']
+['Dysania'
+ 'Play: Your opponent discards each of their archived cards. You gain 1<A> for each card discarded this way.']
+['Bear Flute'
+ 'Action: Fully heal an Ancient Bear. If there are no Ancient Bears in play, search your deck and discard pile and put each Ancient Bear from them into your hand. If you do, shuffle your discard pile into your deck.']
+['Piranha Monkeys' 'Play/Reap: Deal 2<D> to each other creature.']
+['The Harder They Come' 'Play: Purge a creature with power 5 or higher.']
+['Incubation Chamber'
+ 'Omni: Reveal a Mars creature from your hand. If you do, archive it.']
+['Tolas'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bEach time a creature is destroyed, its opponent gains 1<A>.']
+['Positron Bolt'
+ 'Play: Deal 3<D> to a flank creature. Deal 2<D> to its neighbor. Deal 1<D> to the second creature’s other neighbor.']
+['Crazy Killing Machine'
+ 'Action: Discard the top card of each player’s deck. For each of those cards, destroy a creature or artifact of that card’s house, if able. If 2 cards are not destroyed as a result of this, destroy Crazy Killing Machine.']
+['Chuff Ape'
+ 'Taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)\x0bChuff Ape enters play stunned.\x0bFight/Reap: You may sacrifice another friendly creature. If you do, fully heal Chuff Ape.']
+['Selwyn the Fence'
+ 'Fight/Reap: Move 1<A> from one of your cards to your pool.']
+['Masterplan'
+ 'Play: Put a card from your hand facedown beneath Masterplan.\x0bOmni: Play the card beneath Masterplan. Sacrifice Masterplan.']
+['Yo Mama Mastery'
+ 'This creature gains taunt.\x0bPlay: Fully heal this creature.']
+['Mass Abduction'
+ 'Play: Put up to 3 damaged enemy creatures into your archives. If any of these creatures leave your archives, they are put into their owner’s hand instead.']
+['Ember Imp' 'Your opponent cannot play more than 2 cards each turn.']
+['Mushroom Man'
+ 'Mushroom Man gets +3 power for each unforged key you have.']
+['Random Access Archives' 'Play: Archive the top card of your deck.']
+['Lava Ball' 'Play: Deal 4<D> to a creature with 2<D> splash.']
+['The Sting'
+ 'Skip your “forge a key” step.\x0bYou get all <A> spent by your opponent when forging keys.\x0bAction: Sacrifice The Sting.']
+['Ring of Invisibility' 'This creature gains elusive and skirmish.']
+['Mighty Tiger' 'Play: Deal 4<D> to an enemy creature.']
+['Shaffles' 'At the end of your turn, your opponent loses 1<A>.']
+['Phylyx the Disintegrator'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bAction: Your opponent loses 1<A> for each other friendly Mars creature.']
+['Pingle Who Annoys'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bDeal 1<D> to each enemy creature after it enters play.']
+['Reverse Time'
+ 'Play: Swap your deck and your discard pile. Then, shuffle your deck.']
+['Sneklifter'
+ 'Play: Take control of an enemy artifact. While under your control, if it does not belong to one of your three houses, it is considered to be of house Shadows.']
+['Eater of the Dead'
+ 'Fight/Reap: Purge a creature from a discard pile. If you do, put a +1 power counter on Eater of the Dead.']
+['Deipno Spymaster'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bOmni: Choose a friendly creature. You may use that creature this turn.']
+['Martian Hounds'
+ 'Play: Choose a creature. For each damaged creature, give the chosen creature two +1 power counters.']
+['Timetraveller'
+ 'Play: Draw 2 cards. \x0bAction: Shuffle Timetraveller into your deck.']
+['The Common Cold'
+ 'Play: Deal 1<D> to each creature. You may destroy all Mars creatures.']
+['World Tree'
+ 'Action: Return a creature from your discard pile to the top of your deck.']
+['Radiant Truth' 'Play: Stun each enemy creature not on a flank.']
+['Faygin'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: Return an Urchin from play or from your discard pile to your hand.']
+['Take that, Smartypants'
+ 'Play: Steal 2<A> if your opponent has 3 or more Logos cards in play.']
+['Safe Place'
+ 'You may spend <A> on Safe Place when forging keys.\x0bAction: Move 1<A> from your pool to Safe Place.']
+['Inspiration' 'Play: Ready and use a friendly creature.']
+['Finishing Blow'
+ 'Play: Destroy a damaged creature. If you do, steal 1<A>.']
+['Doorstep to Heaven'
+ 'Play: Each player with 6<A> or more is reduced to 5<A>.']
+['Qyxxlyx Plague Master'
+ 'Fight/Reap: Deal 3<D> to each Human creature. This damage cannot be prevented by armor.']
+['Help from Future Self'
+ 'Play: Search your deck and discard pile for a Timetraveller, reveal it, and put it into your hand. Shuffle your discard pile into your deck.']
+['Customs Office'
+ 'Your opponent must pay you 1<A> in order to play an artifact.']
+['Champion’s Challenge'
+ 'Play: Destroy each enemy creature except the most powerful enemy creature. Destroy each friendly creature except the most powerful friendly creature. Ready and fight with your remaining creature.']
+['Autocannon' 'Deal 1<D> to each creature after it enters play.']
+['Arise!'
+ 'Play: Choose a house. Return each creature of that house from your discard pile to your hand. Gain 1 chain.']
+['Jehu the Bureaucrat'
+ 'After you choose Sanctum as your active house, gain 2<A>.']
+['Looter Goblin'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: For the remainder of the turn, gain 1<A> each time an enemy creature is destroyed.']
+['Routine Job'
+ 'Play: Steal 1<A>. Then, steal 1<A> for each copy of Routine Job in your discard pile.']
+['Evasion Sigil'
+ "Before a creature fights, discard the top card of its controller's deck. If the discarded card is of the active house, exhaust that creature with no effect."]
+['Overlord Greking'
+ 'After an enemy creature is destroyed fighting Overlord Greking, put that creature into play under your control.']
+['Knowledge is Power'
+ 'Play: Choose one: Archive a card, or, for each archived card you have, gain 1<A>.']

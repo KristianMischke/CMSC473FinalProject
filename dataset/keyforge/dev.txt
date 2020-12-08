@@ -1,0 +1,121 @@
+['Sound the Horns'
+ 'Play: Discard cards from the top of your deck until you either discard a Brobnar creature or run out of cards. If you discarded a Brobnar creature this way, put it into your hand.']
+['Regrowth' 'Play: Return a creature from your discard pile to your hand.']
+['Silent Dagger'
+ 'This creature gains, “Reap: Deal 4<D> to a flank creature.”']
+['Shield of Justice'
+ 'Play: For the remainder of the turn, each friendly creature cannot be dealt damage.']
+['Follow the Leader'
+ 'Play: For the remainder of the turn, each friendly creature may fight.']
+['Unguarded Camp'
+ 'Play: For each creature you have in excess of your opponent, a friendly creature captures 1<A>. Each creature cannot capture more than 1<A> this way.']
+['Hidden Stash' 'Play: Archive a card.']
+['Hunting Witch' 'Each time you play another creature, gain 1<A>.']
+['Gauntlet of Command' 'Action: Ready and fight with a friendly creature.']
+['Macis Asp'
+ 'Skirmish. (When you use this creature to fight, it is dealt no damage in return.)\x0bPoison. (Any damage dealt by this creature’s power during a fight destroys the damaged creature.)']
+['Dr. Escotera' 'Play: Gain 1<A> for each forged key your opponent has.']
+['Wardrummer'
+ 'Play: Return each other friendly Brobnar creature to your hand.']
+['Fogbank'
+ 'Play: Your opponent cannot use creatures to fight on their next turn.']
+['Experimental Therapy'
+ 'This creature belongs to all houses.\x0bPlay: Stun and exhaust this creature.']
+['Three Fates' 'Play: Destroy the 3 most powerful creatures. ']
+['Charge!'
+ 'Play: For the remainder of the turn, each creature you play gains, “Play: Deal 2<D> to an enemy creature.”']
+['Lash of Broken Dreams'
+ 'Action: Keys cost +3<A> during your opponent’s next turn.']
+['Stealer of Souls'
+ 'After an enemy creature is destroyed fighting Stealer of Souls, purge that creature and gain 1<A>.']
+['Ammonia Clouds' 'Play: Deal 3<D> to each creature.']
+['Bumpsy' 'Play: Your opponent loses 1<A>.']
+['Shadow Self'
+ 'Shadow Self deals no damage when fighting.  \x0bDamage dealt to non-Specter neighbors is dealt to Shadow Self instead.']
+['Bouncing Deathquark'
+ 'Play: Destroy an enemy creature and a friendly creature. You may repeat this effect as many times as you like, as long as it is possible to repeat the entire effect.']
+['Lord Golgotha'
+ 'Before Fight: Deal 3<D> to each neighbor of the creature Lord Golgotha fights.']
+['Niffle Ape' 'While Niffle Ape is attacking, ignore taunt and elusive.']
+['Mooncurser' 'Skirmish. Poison.\x0bFight: Steal 1<A>.']
+['Imperial Traitor'
+ 'Play: Look at your opponent’s hand. You may choose and purge a Sanctum card in it.']
+['The Warchest'
+ 'Action: Gain 1<A> for each enemy creature that was destroyed in a fight this turn.']
+['Urchin'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bPlay: Steal 1<A>.']
+['Protectrix'
+ 'Reap: You may fully heal a creature. If you do, that creature cannot be dealt damage for the remainder of the turn.']
+['Headhunter' 'Fight: Gain 1<A>.']
+['Rogue Ogre'
+ 'At the end of your turn, if you played exactly one card this turn, Rogue Ogre heals 2 damage and captures 1<A>.']
+['Ammonia Clouds' 'Play: Deal 3<D> to each creature.']
+['Honorable Claim' 'Play: Each friendly Knight creature captures 1<A>.']
+['Inka the Spider'
+ 'Poison. (Any damage dealt by this creature’s power during a fight destroys the damaged creature.)\x0bPlay/Reap: Stun a creature.']
+['Ulyq Megamouth' 'Fight/Reap: Use a friendly non-Mars creature.']
+['Pocket Universe'
+ 'You may spend <A> on Pocket Universe when forging keys.\x0bAction: Move 1<A> from your pool to Pocket Universe.']
+['Zyzzix the Many'
+ 'Fight/Reap: You may reveal a creature from your hand. If you do, archive it and Zyzzix the Many gets three +1 power counters.']
+['Interdimensional Graft'
+ 'Play: If an opponent forges a key on their next turn, they must give you their remaining <A>.']
+['Firespitter' 'Before Fight: Deal 1<D> to each enemy creature.']
+['Annihilation Ritual '
+ 'When a creature would enter a discard pile from play, it is purged instead.']
+['Raiding Knight' 'Play: Capture 1<A>.']
+['Miasma'
+ 'Play: Your opponent skips the “forge a key” step on their next turn.']
+['Ancient Bear'
+ 'Assault 2.(Before this creature attacks, deal 2<D> to the attacked enemy.)']
+['Nexus'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: Use an opponent’s artifact as if it were yours.']
+['Vezyma Thinkdrone'
+ 'Reap: You may archive a friendly creature or artifact from play.']
+['Dust Imp' 'Destroyed: Gain 2<A>.']
+['Ghostly Hand' 'Play: If your opponent has exactly 1<A>, steal it.']
+['Francus'
+ 'After an enemy creature is destroyed fighting Francus, Francus captures 1<A>.']
+['Hayyel the Merchant' 'Each time you play an artifact, gain 1<A>.']
+['Arise!'
+ 'Play: Choose a house. Return each creature of that house from your discard pile to your hand. Gain 1 chain.']
+['Sanctum Guardian'
+ 'Taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)\x0bFight/Reap: Swap Sanctum Guardian with another friendly creature in your battleline.']
+['Bait and Switch'
+ "Play: If your opponent has more <A> than you, steal 1<A>. Repeat this card's effect if your opponent still has more <A> than you."]
+['Carlo Phantom'
+ 'Elusive. Skirmish.\x0bEach time you play an artifact, steal 1<A>.']
+['Tremor' 'Play: Stun a creature and each of its neighbors.']
+['Dominator Bauble' 'Action: Use a friendly creature.']
+['The Howling Pit'
+ 'During their “draw cards” step, each player refills their hand to 1 additional card.']
+['Ritual of the Hunt'
+ 'Omni: Sacrifice Ritual of the Hunt. For the remainder of the turn, you may use friendly Untamed creatures.']
+['Perilous Wild' 'Play: Destroy each elusive creature.']
+['Iron Obelisk'
+ 'Your opponent’s keys cost +1<A> for each friendly damaged Brobnar creature.']
+['Scout'
+ 'Play: For the remainder of the turn, up to 2 friendly creatures gain skirmish. Then, fight with those creatures one at a time.']
+['Sacrificial Altar'
+ 'Action: Purge a friendly Human creature from play. If you do, play a creature from your discard pile.']
+['Lupo the Scarred'
+ 'Skirmish. (When you use this creature to fight, it is dealt no damage in return.) \x0bPlay: Deal 2<D> to an enemy creature.']
+['Way of the Bear'
+ 'This creature gains assault 2. (Before this creature attacks, deal 2<D> to the attacked enemy.)']
+['Chota Hazri'
+ 'Play: Lose 1<A>. If you do, you may forge a key at current cost.']
+['Mighty Javelin'
+ 'Omni: Sacrifice Mighty Javelin. Deal 4<D> to a creature.']
+['Kindrith Longshot'
+ 'Elusive. Skirmish.\x0bReap: Deal 2<D> to a creature.']
+['Duma the Martyr'
+ 'Destroyed: Fully heal each other friendly creature and draw 2 cards.']
+['Grommid'
+ 'You cannot play creatures.  \x0bAfter an enemy creature is destroyed fighting Grommid, your opponent loses 1<A>.']
+['Fertility Chant' 'Play: Your opponent gains 2<A>.']
+['Mighty Lance'
+ 'Play: Deal 3<D> to a creature and 3<D> to a neighbor of that creature.']
+['Restringuntus'
+ 'Play: Choose a house. Your opponent cannot choose that house as their active house until Restringuntus leaves play.']
+['Flaxia'
+ 'Play: Gain 2<A> if you control more creatures than your opponent.']
