@@ -68,13 +68,36 @@ def tokenizer(card_name: str, card_text: str) -> str:
     if name_in_text:
         name_token_len = len(card_name.split(" "))
         # Check up to the last index possible where card name is split as well
-        # Add 1 to outer bound because it is exclusive 
-        # (Ex. strlen 2 can fit in strlen 3 at position 1, so we need outer bound of 2.)
-        for i in range(len(split_text) - name_token_len + 1):
+        i = 0
+        while i <= len(split_text) - name_token_len:
+            # Since we only split by spaces initially, we can accurately find
+            # potential name locations by simply joining `name_token_len` tokens from split_text
             potential_name = " ".join(split_text[i:i+name_token_len])
-            if potential_name == card_name:
+            if card_name in potential_name:
+                # Remove the associated tokens. We can rebuild the tokens using potential_name
                 del split_text[i:i+name_token_len]
-                split_text.insert(i, card_name)
+
+                # Find the indexes of the beginning and end.
+                # Before loc and after end_loc are our "extra" strings.
+                loc = potential_name.index(card_name)
+                end_loc = loc + len(card_name)
+
+                # To keep the same order, insert ending extras first
+                if len(card_name) < len(potential_name) - loc:
+                    re_insert = potential_name[end_loc:]
+                    re_insert = re_insert.split(" ")
+                    split_text[i:i] = re_insert
+                
+                # Insert the card name
+                split_text.insert(i, potential_name[loc:end_loc])
+
+                # Complete the new split by adding the beginning extras
+                if loc > 0:
+                    re_insert = potential_name[:loc]
+                    re_insert = re_insert.split(" ")
+                    split_text[i:i] = re_insert
+
+            i += 1
 
     # Process the initial token list backwards so that any new tokens
     #   do not affect our ending target index of 0.
@@ -89,7 +112,6 @@ def tokenizer(card_name: str, card_text: str) -> str:
             # Escape sequences
             # Start here, to convert the token into a regular word before continuing if necessary.
             if "\\" in split_text[i]:
-                print(split_text[i])
                 token = split_text[i]
                 # Only look for backslashes before the last char (escape characters are 2 long)
                 loc = token.index("\\", 0, len(token)-1)
