@@ -1,12 +1,6 @@
 
 import copy
 
-WRAPPERS = [
-    "{", "}",
-    "[", "]",
-    "(", ")",
-    "\"", "\""
-]
 
 def token_replacer(card_name: str, tokenized_card_text: list, replace_this: bool, replace_number: bool) -> str:
     """
