@@ -4,12 +4,46 @@
 import json
 import numpy as np
 import glob
+import random
 
 
 def writeToFile(list, fileName):
     with open(fileName, 'w', encoding='utf-8') as f:
         for item in list:
             f.write("%s\n" % item)
+
+
+def tupleAndWriteToFiles(nameList, ruleList, fileName):
+    tupleList = list(zip(nameList, ruleList))
+
+    # randomize the order of the tupleList
+    random.shuffle(tupleList)
+
+    # split list into 60-20-20
+    train, dev, test = np.split(
+        tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
+
+    writeToFile(train, "datasets/" + fileName + "/train.txt")
+    writeToFile(dev, "datasets/" + fileName + "/dev.txt")
+    writeToFile(test, "datasets/" + fileName + "/test.txt")
+
+
+def getDataFromJson(jsonFile, name, rules, fileName):
+    #f = open('HearthstoneCards.json', encoding='utf-8')
+    with open(jsonFile) as data_file:
+        jsonObject = json.load(data_file)
+
+    nameList = []
+    ruleList = []
+
+    for key in jsonObject:
+        nameList.append(key[name])
+        try:
+            ruleList.append(key[rules])
+        except KeyError:
+            ruleList.append("")
+
+    tupleAndWriteToFiles(nameList, ruleList, fileName)
 
 
 def magicData():
@@ -42,60 +76,19 @@ def magicData():
     train, dev, test = np.split(
         tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
 
-    writeToFile(train, "dataset/mtg/train.txt")
-    writeToFile(dev, "dataset/mtg/dev.txt")
-    writeToFile(test, "dataset/mtg/test.txt")
+    writeToFile(train, "datasets/mtg/train.txt")
+    writeToFile(dev, "datasets/mtg/dev.txt")
+    writeToFile(test, "datasets/mtg/test.txt")
 
 
 def hearthstone():
-    #f = open('HearthstoneCards.json', encoding='utf-8')
-    with open('HearthstoneCards.json') as data_file:
-        jsonObject = json.load(data_file)
 
-    nameList = []
-    ruleList = []
-
-    for key in jsonObject:
-        nameList.append(key["name"])
-        try:
-            ruleList.append(key["text"])
-        except KeyError:
-            ruleList.append("")
-
-    tupleList = list(zip(nameList, ruleList))
-
-    # split list into 60-20-20
-    train, dev, test = np.split(
-        tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
-
-    writeToFile(train, "dataset/hearthstone/train.txt")
-    writeToFile(dev, "dataset/hearthstone/dev.txt")
-    writeToFile(test, "dataset/hearthstone/test.txt")
+    getDataFromJson("HearthstoneCards.json", "name", "text", "hearthstone")
 
 
 def keyforge():
-    with open('KeyforgeCards.json') as data_file:
-        jsonObject = json.load(data_file)
-
-    nameList = []
-    ruleList = []
-
-    for key in jsonObject:
-        nameList.append(key["card_title"])
-        try:
-            ruleList.append(key["card_text"])
-        except KeyError:
-            ruleList.append("")
-
-    tupleList = list(zip(nameList, ruleList))
-
-    # split list into 60-20-20
-    train, dev, test = np.split(
-        tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
-
-    writeToFile(train, "dataset/keyforge/train.txt")
-    writeToFile(dev, "dataset/keyforge/dev.txt")
-    writeToFile(test, "dataset/keyforge/test.txt")
+    getDataFromJson("KeyforgeCards.json", "card_title",
+                    "card_text", "keyforge")
 
 
 def yugioh():
@@ -112,15 +105,7 @@ def yugioh():
         except KeyError:
             ruleList.append("")
 
-    tupleList = list(zip(nameList, ruleList))
-
-    # split list into 60-20-20
-    train, dev, test = np.split(
-        tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
-
-    writeToFile(train, "dataset/yugioh/train.txt")
-    writeToFile(dev, "dataset/yugioh/dev.txt")
-    writeToFile(test, "dataset/yugioh/test.txt")
+    tupleAndWriteToFiles(nameList, ruleList, "yugioh")
 
 
 def main():

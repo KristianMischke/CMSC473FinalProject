@@ -1,348 +1,355 @@
-['Grasping Vines' 'Play: Return up to 3 artifacts to their owners’ hands.']
-['Yxilo Bolter'
- 'Fight/Reap: Deal 2<D> to a creature. If this damage destroys that creature, purge it.']
-['Tocsin' 'Reap: Your opponent discards a random card from their hand.']
-['Titan Mechanic'
- 'While Titan Mechanic is on a flank, each key costs –1<A>.']
-['Foggify'
- 'Play: Your opponent cannot use creatures to fight on their next turn.']
-['Troop Call'
- 'Play: Return each friendly Niffle creature from your discard pile and from play to your hand.']
-['Uxlyx the Zookeeper'
- 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: Put an enemy creature into your archives. If that creature leaves your archives, it is put into its owner’s hand instead.']
-['Dance of Doom'
- 'Play: Choose a number. Destroy each creature with power equal to that number.']
-['Blood Money'
- 'Play: Place 2<A> from the common supply on an enemy creature.']
-['Grenade Snib' 'Destroyed: Your opponent loses 2<A>.']
-['Lifeward'
- 'Omni: Sacrifice Lifeward. Your opponent cannot play creatures on their next turn.']
-['Lady Maxena'
- 'Play: Stun a creature. \x0bAction: Return Lady Maxena to its owner’s hand.']
-['Vigor'
- 'Play: Heal up to 3 damage from a creature. If you healed 3 damage, gain 1<A>.']
-['Round Table'
- 'Each friendly Knight creature gets +1 power and gains taunt.']
-['Novu Archaeologist' 'Action: Archive a card from your discard pile.']
-['Shoulder Armor'
- 'While this creature is on a flank, it gets +2 armor and +2 power.']
-['Protect the Weak'
- 'This creature gets +1 armor and gains taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)']
-['Hysteria' 'Play: Return each creature to its owner’s hand.']
-['Inspiration' 'Play: Ready and use a friendly creature.']
-['Lost in the Woods'
- 'Play: Choose 2 friendly creatures and 2 enemy creatures. Shuffle each chosen creature into its owner’s deck.']
-['Dew Faerie'
- 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: Gain 1<A>.']
-['Effervescent Principle'
- 'Play: Each player loses half their <A> (rounding down the loss). Gain 1 chain.']
-['Soft Landing'
- 'Play: The next creature or artifact you play this turn enters play ready.']
-['Brothers in Battle'
- 'Play: Choose a house. For the remainder of the turn, each friendly creature of that house may fight.']
-['Tireless Crocag'
- 'Tireless Crocag cannot reap.\x0bYou may use Tireless Crocag as if it belonged to the active house.\x0bIf your opponent has no creatures in play, destroy Tireless Crocag.']
-['Hand of Dis' 'Play: Destroy a creature that is not on a flank.']
-['Soul Snatcher'
- 'Each time a creature is destroyed, its owner gains 1<A>.']
-['Red Planet Ray Gun'
- 'This creature gains, “Reap: Choose a creature. Deal 1<D> to that creature for each Mars creature in play.”']
-['Skeleton Key' 'Action: A friendly creature captures 1<A>.']
-['Mother'
- 'During your “draw cards” step, refill your hand to 1 additional card.']
-['Library of Babble' 'Action: Draw a card.']
-['Curiosity' 'Play: Destroy each Scientist creature.']
-['Witch of the Eye'
- 'Reap: Return a card from your discard pile to your hand.']
-['Psychic Network'
- 'Play: Steal 1<A> for each friendly ready Mars creature.']
-['Mating Season'
- 'Play: Shuffle each Mars creature into its owner’s deck. Each player gains 1<A> for each creature shuffled into their deck this way.']
 ['Sniffer'
  'Action: For the remainder of the turn, each creature loses elusive.']
-['Nepenthe Seed'
- 'Omni: Sacrifice Nepenthe Seed. Return a card from your discard pile to your hand.']
-['Mothergun'
- 'Action: Reveal any number of Mars cards from your hand. Deal damage to a creature equal to the number of Mars cards revealed this way.']
-['Pitlord'
- 'Taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)\x0bWhile Pitlord is in play you must choose Dis as your active house.']
-['Dimension Door'
- 'Play: For the remainder of the turn, any <A> you would gain from reaping is stolen from your opponent instead.']
-['Mothership Support'
- 'Play: For each friendly ready Mars creature, deal 2<D> to a creature. (You may choose a different creature each time.)']
-['Sequis' 'Reap: Capture 1<A>.']
-['Champion Anaphiel'
- 'Taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)']
-['Punch' 'Play: Deal 3<D> to a creature.']
-['Nocturnal Maneuver' 'Play: Exhaust up to 3 creatures.']
-['Teliga' 'Each time your opponent plays a creature, gain 1<A>.']
-['Magda the Rat'
- 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bPlay: Steal 2<A>.\x0bLeaves Play: Your opponent steals 2<A>.']
-['Relentless Assault'
- 'Play: Ready and fight with up to 3 different friendly creatures, one at a time.']
-['Cleansing Wave'
- 'Play: Heal 1 damage from each creature. Gain 1<A> for each creature healed this way.']
-['Save the Pack' 'Play: Destroy each damaged creature. Gain 1 chain.']
-['Ganymede Archivist' 'Reap: Archive a card.']
-['Anger' 'Play: Ready and fight with a friendly creature.']
-['Glorious Few'
- 'Play: For each creature your opponent controls in excess of you, gain 1<A>.']
-['Tendrils of Pain'
- 'Play: Deal 1<D> to each creature. Deal an additional 3<D> to each creature if your opponent forged a key on their previous turn.']
-['Phase Shift' 'Play: You may play one non-Logos card this turn.']
-['Spangler Box'
- 'Action: Purge a creature in play. If you do, your opponent gains control of Spangler Box. If Spangler Box leaves play, return to play all cards purged by Spangler Box.']
-['Longfused Mines'
- 'Omni: Sacrifice Longfused Mines. Deal 3<D> to each enemy creature not on a flank.']
-['Library Access'
- 'Play: For the remainder of the turn, each time you play another card, draw a card.']
-['Labwork' 'Play: Archive a card.']
-['Jammer Pack' "This creature gains, “Your opponent's keys cost +2<A>.“"]
-['Remote Access' "Play: Use an opponent's artifact as if it were yours."]
-['Red-Hot Armor'
- 'Play: Each enemy creature with armor loses all of its armor until the end of the turn and is dealt 1<D> for each point of armor it lost this way.']
-['Krump'
- 'After an enemy creature is destroyed fighting Krump, its controller loses 1<A>.']
-['Nerve Blast' 'Play: Steal 1<A>. If you do, deal 2<D> to a creature.']
-['Gongoozle'
- 'Play: Deal 3<D> to a creature. If it is not destroyed, its owner discards a random card from their hand.']
-['Anomaly Exploiter' 'Action: Destroy a damaged creature.']
-['Too Much to Protect' 'Play: Steal all but 6 of your opponent’s <A>.']
-['Poltergeist'
- 'Play: Use an artifact controlled by any player as if it were yours. Destroy that artifact.']
-['Ether Spider'
- 'Ether Spider deals no damage when fighting.\x0bEach <A> that would be added to your opponent’s pool is captured by Ether Spider instead.']
-['Charette' 'Play: Capture 3<A>.']
-['Research Smoko' 'Destroyed: Archive the top card of your deck.']
-['Ember Imp' 'Your opponent cannot play more than 2 cards each turn.']
-['Commander Remiel' 'Reap: Use a friendly non-Sanctum creature.']
-['Lifeweb'
- 'Play: If your opponent played 3 or more creatures on their previous turn, steal 2<A>.']
-['Pawn Sacrifice'
- 'Play: Sacrifice a friendly creature. If you do, deal 3<D> each to 2 creatures.']
-['Custom Virus'
- 'Omni: Sacrifice Custom Virus. Purge a creature from your hand. Destroy each creature that shares a trait with the purged creature.']
-['Begone!' 'Play: Choose one: destroy each Dis creature, or gain 1<A>.']
-['Screechbomb' 'Omni: Sacrifice Screechbomb. Your opponent loses 2<A>.']
-['Old Bruno'
- 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bPlay: Capture 3<A>.']
-['Barehanded' 'Play: Put each artifact on top of its owner’s deck.']
-['Control the Weak'
- 'Play: Choose a house on your opponent’s identity card. Your opponent must choose that house as their active house on their next turn.']
-['Sloppy Labwork' 'Play: Archive a card. Discard a card.']
-['Epic Quest'
- 'Play: Archive each friendly Knight creature in play.\x0bOmni: If you have played 7 or more Sanctum cards this turn, sacrifice Epic Quest and forge a key at no cost.']
-['Gatekeeper'
- 'Play: If your opponent has 7 or more <A>, capture all but 5 of it.']
-['Fuzzy Gruen' 'Play: Your opponent gains 1<A>.']
-['Hypnotic Command'
- 'Play: For each friendly Mars creature, choose an enemy creature to capture 1<A> from their own side.']
-['Key Charge'
- 'Play: Lose 1<A>. If you do, you may forge a key at current cost.']
-['Chaos Portal'
- 'Action: Choose a house. Reveal the top card of your deck. If it is of that house, play it.']
-['Mind Barb' 'Play: Your opponent discards a random card from their hand.']
-['Zorg'
- 'Zorg enters play stunned. \x0bBefore Fight: Stun the creature Zorg fights and each of that creature’s neighbors.']
-['Hallowed Blaster' 'Action: Heal 3 damage from a creature.']
-['Blypyp'
- 'Reap: The next Mars creature you play this turn enters play ready.']
-['Screaming Cave'
- 'Action: Shuffle your hand and discard pile into your deck.']
-['Clear Mind' 'Play: Unstun each friendly creature.']
-['Ozmo, Martianologist'
- 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bFight/Reap: Heal 3 damage from a Mars creature or stun a Mars creature. ']
-['Dust Pixie' '(Vanilla)']
-['Combat Pheromones'
- 'Omni: Sacrifice Combat Pheromones. You may use up to 2 other Mars cards this turn.']
-['“John Smyth”'
- 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bFight/Reap: Ready a non-Agent Mars creature.']
-['Brain Eater'
- 'After a creature is destroyed fighting Brain Eater, draw a card.']
-['Gabos Longarms'
- 'Before Fight: Choose a creature. Gabos Longarms deals damage to that creature rather than the one it is fighting.']
-['Cannon' 'Action: Deal 2<D> to a creature.']
-['Tunk' 'After you play another Mars creature, fully heal Tunk.']
-['Snufflegator'
- 'Skirmish. (When you use this creature to fight, it is dealt no damage in return.)']
-['Valdr'
- 'Valdr deals +2<D> while attacking an enemy creature on the flank.']
-['Troll' 'Reap: Troll heals 3 damage.']
-['The Terror' 'Play: If your opponent has no <A>, gain 2<A>.']
-['Squawker' 'Play: Ready a Mars creature or stun a non-Mars creature.']
-['Yxili Marauder'
- 'Yxili Marauder gets +1 power for each <A> on it.\x0bPlay: Capture 1<A> for each friendly ready Mars creature.']
-['Smith'
- 'Play: Gain 2<A> if you control more creatures than your opponent.']
-['The Vaultkeeper' 'Your <A> cannot be stolen.']
-['King of the Crag' 'Each enemy Brobnar creature gets –2 power.']
-['Treasure Map'
- 'Play: If you have not played any other cards this turn, gain 3<A>. For the remainder of the turn, you cannot play cards.']
-['Guilty Hearts' 'Play: Destroy each creature with any <A> on it.']
+['A Fair Game'
+ 'Play: Discard the top card of your opponent’s deck and reveal their hand. You gain 1<A> for each card of the discarded card’s house revealed this way. Your opponent repeats the preceding effect on you.']
+['World Tree'
+ 'Action: Return a creature from your discard pile to the top of your deck.']
+['Yxilo Bolter'
+ 'Fight/Reap: Deal 2<D> to a creature. If this damage destroys that creature, purge it.']
+['Oubliette' 'Play: Purge a creature with power 3 or lower.']
 ['Sergeant Zakiel'
  'Play: You may ready and fight with a neighboring creature.']
-['Gorm of Omm' 'Omni: Sacrifice Gorm of Omm. Destroy an artifact.']
-['Umbra'
- 'Skirmish. (When you use this creature to fight, it is dealt no damage in return.)\x0bFight: Steal 1<A>.']
-['Halacor'
- 'Each friendly flank creature gains skirmish. (When you use a creature with skirmish to fight, it is dealt no damage in return.)']
-['Take Hostages'
- 'Play: For the remainder of the turn, each time a friendly creature fights, it captures 1<A>.']
-['Dextre'
- 'Play: Capture 1<A>.\x0bDestroyed: Put Dextre on top of your deck.']
-['Warsong'
- 'Play: For the remainder of the turn, gain 1<A> each time a friendly creature fights.']
-['One Last Job'
- 'Play: Purge each friendly Shadows creature. Steal 1<A> for each creature purged this way.']
-['Gateway to Dis' 'Play: Destroy each creature. Gain 3 chains.']
-['Guardian Demon'
- 'Play/Fight/Reap: Heal up to 2 damage from a creature. Deal that amount of damage to another creature.']
-['Tentacus' 'Your opponent must pay you 1<A> in order to use an artifact.']
-['Burn the Stockpile'
- 'Play: If your opponent has 7<A> or more, they lose 4<A>.']
-['Rocket Boots'
- 'This creature gains, “Fight/Reap: If this is the first time this creature was used this turn, ready it.”']
-['Terms of Redress' 'Play: Choose a friendly creature to capture 2<A>.']
-['Veylan Analyst' 'Each time you use an artifact, gain 1<A>.']
-['Speed Sigil' 'The first creature played each turn enters play ready.']
-['Succubus'
- 'During their “draw cards” step, your opponent refills their hand to 1 less card.']
-['Psychic Bug' 'Play/Reap: Look at your opponent’s hand.']
-['Earthshaker' 'Play: Destroy each creature with power 3 or lower.']
-['The Spirit’s Way' 'Play: Destroy each creature with power 3 or higher.']
-['Neuro Syphon'
- 'Play: If your opponent has more <A> than you, steal 1<A> and draw a card.']
-['Shadow Self'
- 'Shadow Self deals no damage when fighting.  \x0bDamage dealt to non-Specter neighbors is dealt to Shadow Self instead.']
-['Witch of the Wilds'
- 'During each turn in which Untamed is not your active house, you may play one Untamed card.']
-['Booby Trap'
- 'Play: Deal 4<D> to a creature that is not on a flank with 2<D> splash.']
-['Poison Wave' 'Play: Deal 2<D> to each creature.']
-['Briar Grubbling'
- 'Hazardous 5. (Before this creature is attacked, deal 5<D> to the attacking enemy.)']
-['Twin Bolt Emission'
- 'Play: Deal 2<D> to a creature and deal 2<D> to a different creature.']
-['Mack the Knife'
- 'Elusive.\x0bYou may use Mack the Knife as if it belonged to the active house.\x0bAction: Deal 1<D> to a creature. If this damage destroys that creature, gain 1<A>.']
-['Nature’s Call' 'Play: Return up to 3 creatures to their owners’ hands.']
-['Dodger' 'Fight: Steal 1<A>.']
-['Total Recall'
- 'Play: For each friendly ready creature, gain 1<A>. Return each friendly creature to your hand.']
-['Bigtwig'
- 'Bigtwig can only fight stunned creatures. \x0bReap: Stun and exhaust a creature.']
-['Replicator'
- 'Reap: Trigger the reap effect of another creature in play as if you controlled that creature. (That creature does not exhaust.)']
-['Fear' 'Play: Return an enemy creature to its owner’s hand.']
-['Library of the Damned' 'Action: Archive a card.']
-['Key Hammer'
- 'Play: If your opponent forged a key on their previous turn, unforge it. Your opponent gains 6<A>. ']
-['Pit Demon' 'Action: Steal 1<A>.']
-['Sample Collection'
- 'Play: Put an enemy creature into your archives for each key your opponent has forged. If any of these creatures leave your archives, they are put into their owner’s hand instead.']
-['Giant Sloth'
- 'You cannot use this card unless you have discarded an Untamed card from your hand this turn.\x0bAction: Gain 3<A>.']
-['Wild Wormhole' 'Play: Play the top card of your deck.']
-['One Stood Against Many'
- 'Play: Ready and fight with a friendly creature 3 times, each time against a different enemy creature. Resolve these fights one at a time.']
-['Skippy Timehog'
- 'Play: Your opponent cannot use any cards next turn. (Cards can still be played and discarded.)']
-['Drumble'
- 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bPlay: If your opponent has 7<A> or more, capture all of it.']
-['Battle Fleet'
- 'Play: Reveal any number of Mars cards from your hand. For each card revealed this way, draw 1 card.']
-['Virtuous Works' '(Vanilla)']
-['Irradiated Æmber'
- 'Play: If your opponent has 6<A> or more, deal 3<D> to each enemy creature.']
-['Scrambler Storm'
- 'Play: Your opponent cannot play action cards on their next turn.']
-['Snudge'
- 'Fight/Reap: Return an artifact or flank creature to its owner’s hand.']
-['Special Delivery'
- 'Omni: Sacrifice Special Delivery. Deal 3<D> to a flank creature. If this damage destroys that creature, purge it.']
-['Sigil of Brotherhood'
- 'Omni: Sacrifice Sigil of Brotherhood. For the remainder of the turn, you may use friendly Sanctum creatures.']
-['Bulwark' 'Each of Bulwark’s neighbors gets +2 armor.']
-['Hebe the Huge' 'Play: Deal 2<D> to each other undamaged creature.']
-['Loot the Bodies'
- 'Play: For the remainder of the turn, gain 1<A> each time an enemy creature is destroyed.']
-['Doc Bookton' 'Reap: Draw a card.']
-['Spectral Tunneler'
- 'Action: Choose a creature. For the remainder of the turn, that creature is considered a flank creature and gains, “Reap: Draw a card.”']
-['Phosphorus Stars' 'Play: Stun each non-Mars creature. Gain 2 chains.']
-['Relentless Whispers'
- 'Play: Deal 2<D> to a creature. If this damage destroys that creature, steal 1<A>.']
+['Clear Mind' 'Play: Unstun each friendly creature.']
+['Piranha Monkeys' 'Play/Reap: Deal 2<D> to each other creature.']
+['Flame-Wreathed'
+ 'This creature gets +2 power and gains hazardous 2. (Before this creature is attacked, deal 2<D> to the attacking enemy.)']
 ['EMP Blast'
  'Play: Each Mars creature and each Robot creature is stunned. Each artifact is destroyed.']
-['Crystal Hive'
- 'Action: For the remainder of the turn, gain 1<A> each time a creature reaps.']
-['Oubliette' 'Play: Purge a creature with power 3 or lower.']
-['Grey Monk'
- 'Each friendly creature gets +1 armor. \x0bReap: Heal 2 damage from a creature.']
-['Subtle Maul'
- 'Action: Your opponent discards a random card from their hand.']
-['Hecatomb'
- 'Play: Destroy each Dis creature. Each player gains 1<A> for each creature they controlled that was destroyed this way.']
-['Armageddon Cloak'
- 'This creature gains hazardous 2 and, “Destroyed: Fully heal this creature and destroy Armageddon Cloak instead.”']
-['Seeker Needle'
- 'Action: Deal 1<D> to a creature. If this damage destroys that creature, gain 1<A>.']
-['Key of Darkness'
- 'Play: Forge a key at +6<A> current cost. If your opponent has no <A>, forge a key at +2<A> current cost instead.']
-['Batdrone'
- 'Skirmish. (When you use this creature to fight, it is dealt no damage in return.)\x0bFight: Steal 1<A>.']
-['Staunch Knight' 'Staunch Knight gets +2 power while it is on a flank.']
-['Coward’s End' 'Play: Destroy each undamaged creature. Gain 3 chains.']
-['Murmook' 'Your opponent’s keys cost +1<A>.']
-['Key Abduction'
- "Play: Return each Mars creature to its owner's hand. Then, you may forge a key at +9<A> current cost, reduced by 1<A> for each card in your hand."]
-['Mindwarper'
- 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bAction: Choose an enemy creature. It captures 1<A> from its own side.']
-['Creeping Oblivion' 'Play: Purge up to 2 cards from a discard pile.']
-['Full Moon'
- 'Play: For the remainder of the turn, gain 1<A> each time you play a creature.']
-['Ritual of Balance'
- 'Action: If your opponent has 6<A> or more, steal 1<A>.']
-['Mimicry'
- 'When you play this card, treat it as a copy of an action card in your opponent’s discard pile.']
-['Lomir Flamefist'
- 'Play: If your opponent has 7<A> or more, they lose 2<A>.']
+['The Warchest'
+ 'Action: Gain 1<A> for each enemy creature that was destroyed in a fight this turn.']
+['Champion Anaphiel'
+ 'Taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)']
+['Harland Mindlock'
+ 'Play: Take control of an enemy flank creature until Harland Mindlock leaves play.']
+['Epic Quest'
+ 'Play: Archive each friendly Knight creature in play.\x0bOmni: If you have played 7 or more Sanctum cards this turn, sacrifice Epic Quest and forge a key at no cost.']
+['Pingle Who Annoys'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bDeal 1<D> to each enemy creature after it enters play.']
+['Way of the Bear'
+ 'This creature gains assault 2. (Before this creature attacks, deal 2<D> to the attacked enemy.)']
 ['Way of the Wolf'
  'This creature gains skirmish.  (When you use this creature to fight, it is dealt no damage in return.)']
 ['Biomatrix Backup'
  "This creature gains, “Destroyed: You may put this creature into its owner's archives.” "]
-['Commpod'
- 'Action: Reveal any number of Mars cards from your hand. For each card revealed this way, you may ready one Mars creature.']
-['Blinding Light'
- 'Play: Choose a house. Stun each creature of that house.']
-['Bad Penny' 'Destroyed: Return Bad Penny to your hand.']
-['Silvertooth' 'Silvertooth enters play ready.']
-['Grabber Jammer'
- 'Your opponent’s keys cost +1<A>.\x0bFight/Reap: Capture 1<A>.']
-['Bilgum Avalanche'
- 'After you forge a key, deal 2<D> to each enemy creature.']
-['Pandemonium'
- 'Play: Each undamaged creature captures 1<A> from its opponent. ']
-['Ganger Chieftain'
- 'Play: You may ready and fight with a neighboring creature.']
-['Yxilx Dominator'
- 'Taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)\x0bYxilx Dominator enters play stunned. ']
-['Lights Out' 'Play: Return 2 enemy creatures to their owner’s hand.']
-['Quixo the “Adventurer”'
- 'Skirmish. (When you use this creature to fight, it is dealt no damage in return.)\x0bFight: Draw a card.']
-['Shooler' 'Play: If your opponent has 4<A> or more, steal 1<A>.']
+['Take Hostages'
+ 'Play: For the remainder of the turn, each time a friendly creature fights, it captures 1<A>.']
+['Hebe the Huge' 'Play: Deal 2<D> to each other undamaged creature.']
+['Pit Demon' 'Action: Steal 1<A>.']
+['Coward’s End' 'Play: Destroy each undamaged creature. Gain 3 chains.']
 ['Blood of Titans' 'This creature gets +5 power.']
+['Dodger' 'Fight: Steal 1<A>.']
+['Shoulder Armor'
+ 'While this creature is on a flank, it gets +2 armor and +2 power.']
+['Imperial Traitor'
+ 'Play: Look at your opponent’s hand. You may choose and purge a Sanctum card in it.']
+['Bait and Switch'
+ "Play: If your opponent has more <A> than you, steal 1<A>. Repeat this card's effect if your opponent still has more <A> than you."]
+['Shaffles' 'At the end of your turn, your opponent loses 1<A>.']
+['Faygin'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: Return an Urchin from play or from your discard pile to your hand.']
+['Begone!' 'Play: Choose one: destroy each Dis creature, or gain 1<A>.']
+['Dimension Door'
+ 'Play: For the remainder of the turn, any <A> you would gain from reaping is stolen from your opponent instead.']
+['Martian Hounds'
+ 'Play: Choose a creature. For each damaged creature, give the chosen creature two +1 power counters.']
+['Radiant Truth' 'Play: Stun each enemy creature not on a flank.']
+['Sloppy Labwork' 'Play: Archive a card. Discard a card.']
+['Veylan Analyst' 'Each time you use an artifact, gain 1<A>.']
+['Squawker' 'Play: Ready a Mars creature or stun a non-Mars creature.']
+['Sound the Horns'
+ 'Play: Discard cards from the top of your deck until you either discard a Brobnar creature or run out of cards. If you discarded a Brobnar creature this way, put it into your hand.']
+['Kindrith Longshot'
+ 'Elusive. Skirmish.\x0bReap: Deal 2<D> to a creature.']
+['Nepenthe Seed'
+ 'Omni: Sacrifice Nepenthe Seed. Return a card from your discard pile to your hand.']
+['Bumpsy' 'Play: Your opponent loses 1<A>.']
+['Remote Access' "Play: Use an opponent's artifact as if it were yours."]
+['Mack the Knife'
+ 'Elusive.\x0bYou may use Mack the Knife as if it belonged to the active house.\x0bAction: Deal 1<D> to a creature. If this damage destroys that creature, gain 1<A>.']
+['Three Fates' 'Play: Destroy the 3 most powerful creatures. ']
+['Doc Bookton' 'Reap: Draw a card.']
+['Key Charge'
+ 'Play: Lose 1<A>. If you do, you may forge a key at current cost.']
+['Headhunter' 'Fight: Gain 1<A>.']
+['Curiosity' 'Play: Destroy each Scientist creature.']
+['The Common Cold'
+ 'Play: Deal 1<D> to each creature. You may destroy all Mars creatures.']
+['Mighty Javelin'
+ 'Omni: Sacrifice Mighty Javelin. Deal 4<D> to a creature.']
+['Positron Bolt'
+ 'Play: Deal 3<D> to a flank creature. Deal 2<D> to its neighbor. Deal 1<D> to the second creature’s other neighbor.']
+['Ember Imp' 'Your opponent cannot play more than 2 cards each turn.']
+['Shadow Self'
+ 'Shadow Self deals no damage when fighting.  \x0bDamage dealt to non-Specter neighbors is dealt to Shadow Self instead.']
+['Valdr'
+ 'Valdr deals +2<D> while attacking an enemy creature on the flank.']
+['Annihilation Ritual '
+ 'When a creature would enter a discard pile from play, it is purged instead.']
+['Relentless Whispers'
+ 'Play: Deal 2<D> to a creature. If this damage destroys that creature, steal 1<A>.']
+['Ganymede Archivist' 'Reap: Archive a card.']
+['Inka the Spider'
+ 'Poison. (Any damage dealt by this creature’s power during a fight destroys the damaged creature.)\x0bPlay/Reap: Stun a creature.']
+['Nerve Blast' 'Play: Steal 1<A>. If you do, deal 2<D> to a creature.']
+['Jammer Pack' "This creature gains, “Your opponent's keys cost +2<A>.“"]
+['Grommid'
+ 'You cannot play creatures.  \x0bAfter an enemy creature is destroyed fighting Grommid, your opponent loses 1<A>.']
+['Armageddon Cloak'
+ 'This creature gains hazardous 2 and, “Destroyed: Fully heal this creature and destroy Armageddon Cloak instead.”']
+['Interdimensional Graft'
+ 'Play: If an opponent forges a key on their next turn, they must give you their remaining <A>.']
+['Ghostly Hand' 'Play: If your opponent has exactly 1<A>, steal it.']
+['Hayyel the Merchant' 'Each time you play an artifact, gain 1<A>.']
+['Sigil of Brotherhood'
+ 'Omni: Sacrifice Sigil of Brotherhood. For the remainder of the turn, you may use friendly Sanctum creatures.']
+['Kelifi Dragon'
+ 'Kelifi Dragon cannot be played unless you have 7<A> or more.\x0bFight/Reap: Gain 1<A>. Deal 5<D> to a creature.']
+['Random Access Archives' 'Play: Archive the top card of your deck.']
+['Nature’s Call' 'Play: Return up to 3 creatures to their owners’ hands.']
+['Brain Stem Antenna'
+ 'This creature gains, “After you play a Mars creature, ready this creature and for the remainder of the turn it belongs to house Mars.”']
+['Ritual of Balance'
+ 'Action: If your opponent has 6<A> or more, steal 1<A>.']
+['Bad Penny' 'Destroyed: Return Bad Penny to your hand.']
+['Mother'
+ 'During your “draw cards” step, refill your hand to 1 additional card.']
+['Psychic Network'
+ 'Play: Steal 1<A> for each friendly ready Mars creature.']
+['Blypyp'
+ 'Reap: The next Mars creature you play this turn enters play ready.']
+['Raiding Knight' 'Play: Capture 1<A>.']
 ['Whispering Reliquary' "Action: Return an artifact to its owner's hand."]
-['Duskrunner' 'This creature gains, “Reap: Steal 1<A>.” ']
-['Cooperative Hunting'
- 'Play: Deal 1<D> for each friendly creature in play. You may divide this damage among any number of creatures.']
-['Smaaash' 'Play: Stun a creature.']
-['Flame-Wreathed'
- 'This creature gets +2 power and gains hazardous 2. (Before this creature is attacked, deal 2<D> to the attacking enemy.)']
+['Phylyx the Disintegrator'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bAction: Your opponent loses 1<A> for each other friendly Mars creature.']
+['Swap Widget'
+ 'Action: Return a ready friendly Mars creature to your hand. If you do, put a Mars creature with a different name from your hand into play, then ready it.']
+['Tentacus' 'Your opponent must pay you 1<A> in order to use an artifact.']
+['Truebaru'
+ 'You must lose 3<A> in order to play Truebaru.  \x0bTaunt. (This creature’s neighbors cannot be attacked unless they have taunt.)\x0bDestroyed: Gain 5<A>. ']
+['Phosphorus Stars' 'Play: Stun each non-Mars creature. Gain 2 chains.']
+['Punch' 'Play: Deal 3<D> to a creature.']
+['Tireless Crocag'
+ 'Tireless Crocag cannot reap.\x0bYou may use Tireless Crocag as if it belonged to the active house.\x0bIf your opponent has no creatures in play, destroy Tireless Crocag.']
+['Customs Office'
+ 'Your opponent must pay you 1<A> in order to play an artifact.']
+['Lash of Broken Dreams'
+ 'Action: Keys cost +3<A> during your opponent’s next turn.']
 ['Orbital Bombardment'
  'Play: Reveal any number of Mars cards from your hand. For each card revealed this way, deal 2<D> to a creature. (You may choose a different creature each time.)']
-['Key to Dis' 'Omni: Sacrifice Key to Dis. Destroy each creature.']
+['Bigtwig'
+ 'Bigtwig can only fight stunned creatures. \x0bReap: Stun and exhaust a creature.']
+['Inspiration' 'Play: Ready and use a friendly creature.']
+['Mind Barb' 'Play: Your opponent discards a random card from their hand.']
+['Batdrone'
+ 'Skirmish. (When you use this creature to fight, it is dealt no damage in return.)\x0bFight: Steal 1<A>.']
+['Commander Remiel' 'Reap: Use a friendly non-Sanctum creature.']
+['Gorm of Omm' 'Omni: Sacrifice Gorm of Omm. Destroy an artifact.']
+['Unguarded Camp'
+ 'Play: For each creature you have in excess of your opponent, a friendly creature captures 1<A>. Each creature cannot capture more than 1<A> this way.']
+['Gatekeeper'
+ 'Play: If your opponent has 7 or more <A>, capture all but 5 of it.']
+['Stampede' 'Play: If you used 3 or more creatures this turn, steal 2<A>.']
+['Arise!'
+ 'Play: Choose a house. Return each creature of that house from your discard pile to your hand. Gain 1 chain.']
+['Chaos Portal'
+ 'Action: Choose a house. Reveal the top card of your deck. If it is of that house, play it.']
+['Commpod'
+ 'Action: Reveal any number of Mars cards from your hand. For each card revealed this way, you may ready one Mars creature.']
+['Arise!'
+ 'Play: Choose a house. Return each creature of that house from your discard pile to your hand. Gain 1 chain.']
+['Ulyq Megamouth' 'Fight/Reap: Use a friendly non-Mars creature.']
+['Special Delivery'
+ 'Omni: Sacrifice Special Delivery. Deal 3<D> to a flank creature. If this damage destroys that creature, purge it.']
+['Lifeweb'
+ 'Play: If your opponent played 3 or more creatures on their previous turn, steal 2<A>.']
+['One Last Job'
+ 'Play: Purge each friendly Shadows creature. Steal 1<A> for each creature purged this way.']
+['Effervescent Principle'
+ 'Play: Each player loses half their <A> (rounding down the loss). Gain 1 chain.']
+['Help from Future Self'
+ 'Play: Search your deck and discard pile for a Timetraveller, reveal it, and put it into your hand. Shuffle your discard pile into your deck.']
+['Iron Obelisk'
+ 'Your opponent’s keys cost +1<A> for each friendly damaged Brobnar creature.']
+['Mimicry'
+ 'When you play this card, treat it as a copy of an action card in your opponent’s discard pile.']
 ['Smiling Ruth'
  'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: If you forged a key this turn, take control of an enemy flank creature.']
+['Protect the Weak'
+ 'This creature gets +1 armor and gains taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)']
+['Speed Sigil' 'The first creature played each turn enters play ready.']
+['Ganger Chieftain'
+ 'Play: You may ready and fight with a neighboring creature.']
+['Rock-Hurling Giant'
+ 'During your turn, each time you discard a Brobnar card from your hand, you may deal 4<D> to a creature.']
+['Booby Trap'
+ 'Play: Deal 4<D> to a creature that is not on a flank with 2<D> splash.']
+['Champion Tabris' 'Fight: Capture 1<A>.']
+['Inspiration' 'Play: Ready and use a friendly creature.']
+['Old Bruno'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bPlay: Capture 3<A>.']
+['Sneklifter'
+ 'Play: Take control of an enemy artifact. While under your control, if it does not belong to one of your three houses, it is considered to be of house Shadows.']
+['Ammonia Clouds' 'Play: Deal 3<D> to each creature.']
+['Mothergun'
+ 'Action: Reveal any number of Mars cards from your hand. Deal damage to a creature equal to the number of Mars cards revealed this way.']
+['Blinding Light'
+ 'Play: Choose a house. Stun each creature of that house.']
+['Veemos Lightbringer' 'Play: Destroy each elusive creature.']
+['Take that, Smartypants'
+ 'Play: Steal 2<A> if your opponent has 3 or more Logos cards in play.']
+['Lord Golgotha'
+ 'Before Fight: Deal 3<D> to each neighbor of the creature Lord Golgotha fights.']
+['Key to Dis' 'Omni: Sacrifice Key to Dis. Destroy each creature.']
+['Witch of the Eye'
+ 'Reap: Return a card from your discard pile to your hand.']
+['Novu Archaeologist' 'Action: Archive a card from your discard pile.']
+['Battle Fleet'
+ 'Play: Reveal any number of Mars cards from your hand. For each card revealed this way, draw 1 card.']
+['Hidden Stash' 'Play: Archive a card.']
+['Key Abduction'
+ "Play: Return each Mars creature to its owner's hand. Then, you may forge a key at +9<A> current cost, reduced by 1<A> for each card in your hand."]
+['Bulwark' 'Each of Bulwark’s neighbors gets +2 armor.']
+['Sample Collection'
+ 'Play: Put an enemy creature into your archives for each key your opponent has forged. If any of these creatures leave your archives, they are put into their owner’s hand instead.']
+['Stealer of Souls'
+ 'After an enemy creature is destroyed fighting Stealer of Souls, purge that creature and gain 1<A>.']
+['Save the Pack' 'Play: Destroy each damaged creature. Gain 1 chain.']
+['Miasma'
+ 'Play: Your opponent skips the “forge a key” step on their next turn.']
+['Dust Imp' 'Destroyed: Gain 2<A>.']
+['Honorable Claim' 'Play: Each friendly Knight creature captures 1<A>.']
+['The Harder They Come' 'Play: Purge a creature with power 5 or higher.']
+['Brain Eater'
+ 'After a creature is destroyed fighting Brain Eater, draw a card.']
+['Bouncing Deathquark'
+ 'Play: Destroy an enemy creature and a friendly creature. You may repeat this effect as many times as you like, as long as it is possible to repeat the entire effect.']
+['The Sting'
+ 'Skip your “forge a key” step.\x0bYou get all <A> spent by your opponent when forging keys.\x0bAction: Sacrifice The Sting.']
+['Psychic Bug' 'Play/Reap: Look at your opponent’s hand.']
+['Ancient Bear'
+ 'Assault 2.(Before this creature attacks, deal 2<D> to the attacked enemy.)']
+['Yxilx Dominator'
+ 'Taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)\x0bYxilx Dominator enters play stunned. ']
+['Knowledge is Power'
+ 'Play: Choose one: Archive a card, or, for each archived card you have, gain 1<A>.']
+['Shooler' 'Play: If your opponent has 4<A> or more, steal 1<A>.']
+['Smith'
+ 'Play: Gain 2<A> if you control more creatures than your opponent.']
+['Francus'
+ 'After an enemy creature is destroyed fighting Francus, Francus captures 1<A>.']
+['Key Hammer'
+ 'Play: If your opponent forged a key on their previous turn, unforge it. Your opponent gains 6<A>. ']
+['Nexus'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: Use an opponent’s artifact as if it were yours.']
+['Potion of Invulnerability'
+ 'Omni: Sacrifice Potion of Invulnerability. For the remainder of the turn, each friendly creature cannot be dealt damage.']
+['Quixo the “Adventurer”'
+ 'Skirmish. (When you use this creature to fight, it is dealt no damage in return.)\x0bFight: Draw a card.']
+['Protectrix'
+ 'Reap: You may fully heal a creature. If you do, that creature cannot be dealt damage for the remainder of the turn.']
+['Anger' 'Play: Ready and fight with a friendly creature.']
+['Vezyma Thinkdrone'
+ 'Reap: You may archive a friendly creature or artifact from play.']
+['Lights Out' 'Play: Return 2 enemy creatures to their owner’s hand.']
+['Mindwarper'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bAction: Choose an enemy creature. It captures 1<A> from its own side.']
+['Smaaash' 'Play: Stun a creature.']
+['Pitlord'
+ 'Taunt. (This creature’s neighbors cannot be attacked unless they have taunt.)\x0bWhile Pitlord is in play you must choose Dis as your active house.']
+['Warsong'
+ 'Play: For the remainder of the turn, gain 1<A> each time a friendly creature fights.']
+['Spectral Tunneler'
+ 'Action: Choose a creature. For the remainder of the turn, that creature is considered a flank creature and gains, “Reap: Draw a card.”']
+['Scout'
+ 'Play: For the remainder of the turn, up to 2 friendly creatures gain skirmish. Then, fight with those creatures one at a time.']
+['Combat Pheromones'
+ 'Omni: Sacrifice Combat Pheromones. You may use up to 2 other Mars cards this turn.']
+['Hypnotic Command'
+ 'Play: For each friendly Mars creature, choose an enemy creature to capture 1<A> from their own side.']
+['Numquid the Fair'
+ 'Play: Destroy an enemy creature. Repeat this card’s effect if your opponent still controls more creatures than you.']
+['Niffle Queen'
+ 'Each other friendly Beast creature gets +1 power.\x0bEach other friendly Niffle creature gets +1 power.']
+['Firespitter' 'Before Fight: Deal 1<D> to each enemy creature.']
+['Terms of Redress' 'Play: Choose a friendly creature to capture 2<A>.']
+['Sequis' 'Reap: Capture 1<A>.']
+['Krump'
+ 'After an enemy creature is destroyed fighting Krump, its controller loses 1<A>.']
+['Ozmo, Martianologist'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bFight/Reap: Heal 3 damage from a Mars creature or stun a Mars creature. ']
+['Pocket Universe'
+ 'You may spend <A> on Pocket Universe when forging keys.\x0bAction: Move 1<A> from your pool to Pocket Universe.']
+['Hysteria' 'Play: Return each creature to its owner’s hand.']
+['Round Table'
+ 'Each friendly Knight creature gets +1 power and gains taunt.']
+['King of the Crag' 'Each enemy Brobnar creature gets –2 power.']
+['Mothership Support'
+ 'Play: For each friendly ready Mars creature, deal 2<D> to a creature. (You may choose a different creature each time.)']
+['Invasion Portal'
+ 'Action: Discard cards from the top of your deck until you discard a Mars creature or run out of cards. If you discard a Mars creature this way, put it into your hand.']
 ['Noddy the Thief'
  'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bAction: Steal 1<A>.']
+['Mighty Lance'
+ 'Play: Deal 3<D> to a creature and 3<D> to a neighbor of that creature.']
+['Teliga' 'Each time your opponent plays a creature, gain 1<A>.']
+['Rocket Boots'
+ 'This creature gains, “Fight/Reap: If this is the first time this creature was used this turn, ready it.”']
+['Snudge'
+ 'Fight/Reap: Return an artifact or flank creature to its owner’s hand.']
+['Bulleteye'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bReap: Destroy a flank creature.']
+['Bear Flute'
+ 'Action: Fully heal an Ancient Bear. If there are no Ancient Bears in play, search your deck and discard pile and put each Ancient Bear from them into your hand. If you do, shuffle your discard pile into your deck.']
+['Oath of Poverty'
+ 'Play: Destroy each of your artifacts. Gain 2<A> for each artifact destroyed this way.']
+['Spangler Box'
+ 'Action: Purge a creature in play. If you do, your opponent gains control of Spangler Box. If Spangler Box leaves play, return to play all cards purged by Spangler Box.']
+['Gongoozle'
+ 'Play: Deal 3<D> to a creature. If it is not destroyed, its owner discards a random card from their hand.']
+['Library of Babble' 'Action: Draw a card.']
+['Regrowth' 'Play: Return a creature from your discard pile to your hand.']
+['Giant Sloth'
+ 'You cannot use this card unless you have discarded an Untamed card from your hand this turn.\x0bAction: Gain 3<A>.']
+['Briar Grubbling'
+ 'Hazardous 5. (Before this creature is attacked, deal 5<D> to the attacking enemy.)']
+['Cannon' 'Action: Deal 2<D> to a creature.']
+['Shield of Justice'
+ 'Play: For the remainder of the turn, each friendly creature cannot be dealt damage.']
+['Fogbank'
+ 'Play: Your opponent cannot use creatures to fight on their next turn.']
+['Scrambler Storm'
+ 'Play: Your opponent cannot play action cards on their next turn.']
+['Twin Bolt Emission'
+ 'Play: Deal 2<D> to a creature and deal 2<D> to a different creature.']
+['Overlord Greking'
+ 'After an enemy creature is destroyed fighting Overlord Greking, put that creature into play under your control.']
+['Tendrils of Pain'
+ 'Play: Deal 1<D> to each creature. Deal an additional 3<D> to each creature if your opponent forged a key on their previous turn.']
+['Lost in the Woods'
+ 'Play: Choose 2 friendly creatures and 2 enemy creatures. Shuffle each chosen creature into its owner’s deck.']
+['Crystal Hive'
+ 'Action: For the remainder of the turn, gain 1<A> each time a creature reaps.']
+['Labwork' 'Play: Archive a card.']
+['The Terror' 'Play: If your opponent has no <A>, gain 2<A>.']
+['Succubus'
+ 'During their “draw cards” step, your opponent refills their hand to 1 less card.']
+['Lomir Flamefist'
+ 'Play: If your opponent has 7<A> or more, they lose 2<A>.']
+['Zyzzix the Many'
+ 'Fight/Reap: You may reveal a creature from your hand. If you do, archive it and Zyzzix the Many gets three +1 power counters.']
+['Deipno Spymaster'
+ 'Elusive. (The first time this creature is attacked each turn, no damage is dealt.)\x0bOmni: Choose a friendly creature. You may use that creature this turn.']
+['Halacor'
+ 'Each friendly flank creature gains skirmish. (When you use a creature with skirmish to fight, it is dealt no damage in return.)']
+['Flaxia'
+ 'Play: Gain 2<A> if you control more creatures than your opponent.']
+['Duskrunner' 'This creature gains, “Reap: Steal 1<A>.” ']
+['Dominator Bauble' 'Action: Use a friendly creature.']
+['The Spirit’s Way' 'Play: Destroy each creature with power 3 or higher.']
+['Brothers in Battle'
+ 'Play: Choose a house. For the remainder of the turn, each friendly creature of that house may fight.']
+['Chota Hazri'
+ 'Play: Lose 1<A>. If you do, you may forge a key at current cost.']
+['Mating Season'
+ 'Play: Shuffle each Mars creature into its owner’s deck. Each player gains 1<A> for each creature shuffled into their deck this way.']
+['Library of the Damned' 'Action: Archive a card.']
