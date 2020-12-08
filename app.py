@@ -82,7 +82,6 @@ def magicData():
 
 
 def hearthstone():
-
     getDataFromJson("HearthstoneCards.json", "name", "text", "hearthstone")
 
 
