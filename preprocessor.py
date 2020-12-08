@@ -68,7 +68,9 @@ def tokenizer(card_name: str, card_text: str) -> str:
     if name_in_text:
         name_token_len = len(card_name.split(" "))
         # Check up to the last index possible where card name is split as well
-        for i in range(len(split_text) - name_token_len):
+        # Add 1 to outer bound because it is exclusive 
+        # (Ex. strlen 2 can fit in strlen 3 at position 1, so we need outer bound of 2.)
+        for i in range(len(split_text) - name_token_len + 1):
             potential_name = " ".join(split_text[i:i+name_token_len])
             if potential_name == card_name:
                 del split_text[i:i+name_token_len]
@@ -109,7 +111,7 @@ def tokenizer(card_name: str, card_text: str) -> str:
                     if token[loc+2:]:
                         count += 1  # Another string means another space to check
                         split_text.insert(i+1, token[loc+2:])
-                        
+
                     # Insert the string after the escape character
                     split_text.insert(i+1, "\\{}".format(token[loc+1]))
                 
