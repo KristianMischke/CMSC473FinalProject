@@ -1,0 +1,3039 @@
+['Great Father Kobold Enchant' '']
+['Large Waxy Gift'
+ "<b>Deathrattle:</b> Add a random <b>Legendary</b> minion to your opponent's hand.\n It costs (3) less."]
+['Great Father Kobold Spell' '']
+['Archmage Antonidas' '']
+["Anub'arak" '']
+['Skitter' '<b>Hero Power</b>\nSummon a 4/4 Nerubian.']
+['Assistant Bigglesworth' '']
+['Faerlina' '']
+['Jaina Proudmoore' '']
+["Archmage Kel'Thuzad" '']
+["Archmage Kel'Thuzad" '']
+["Kel'Thuzad the Necromancer" '']
+['The Lich King' '']
+['Massive Runeblade' 'Deals double damage to heroes.']
+["Anub'Rekhan" 'At the end of your turn, summon a 3/1 Nerubian.']
+['Noth the Plaguebringer'
+ 'Whenever an enemy minion dies, summon a 1/1 Skeleton and give your other minions +1/+1.']
+['Darkness Calls'
+ 'Summon two random Naxxramas bosses and trigger their <b>Battlecries</b>.']
+['Uncover Staff Piece' 'Add another piece to your Hero Power.']
+['Dark Power' 'Granted power from Noth']
+['Sapphiron'
+ 'At the start of your turn, <b>Freeze</b> a random enemy minion.']
+['Patchwerk' '<b>Battlecry:</b> Destroy a random enemy minion.']
+['Lady Blaumeux' '<b>Battlecry:</b> Summon a fellow Horseman.']
+['Sir Zeliek' 'Lady Blaumeux is <b>Immune</b>.']
+['Gluth' 'At the end of your turn, summon a random Undead.']
+['Gothik the Harvester'
+ '<b>Deathrattle:</b> Summon a Spectral Gothik for your opponent.']
+['Spectral Gothik'
+ 'At the start of your turn, deal 4 damage to your hero.']
+['Grand Widow Faerlina'
+ "Has +1 Attack for each card in your opponent's hand."]
+['Grobbulus'
+ 'Whenever this kills a minion, summon a <b>Poisonous</b> 2/2 Slime.']
+['Fallout Slime' '<b>Poisonous</b>']
+['Heigan the Unclean'
+ 'At the end of your turn, deal 4 damage to a  random enemy.']
+['Instructor Razuvious' '<b>Battlecry:</b> Equip a 5/2 Massive Runeblade.']
+["Kel'Thuzad" '']
+['Rafaam' '']
+['Necromancy'
+ '<b>Hero Power</b>\nAdd a random Naxxramas minion to your hand.']
+['Staff, First Piece'
+ 'Add a random rare card to your hand. It costs (2) less.']
+['Staff, Two Pieces'
+ 'Add a random epic card to your hand. It costs (3) less.']
+['Staff of Origination'
+ 'Add a random legendary minion to your hand. It costs (4) less.']
+['Understudy' '<b>Taunt</b>']
+['Brann Bronzebeard' "Last seen near the Un'Goro Crater."]
+['Dino Buddies' '<b>Hero Power</b>\nSummon a random dinosaur.']
+['King Krush, Untamed'
+ '<b>Boss</b>\nAt the end of each turn, attack a random enemy.']
+['Brann Bronzebeard'
+ 'Work co-operatively with Brann to defeat King Krush, Untamed!']
+['Swarm' '']
+['Recovery' '']
+['Choices, Choices' '']
+['All Bark' '']
+["Nature's Wrath" '']
+['Feral Bite' '']
+['Nurture and Grow' '']
+['Roar!' '']
+['Protectors' '']
+['Beasts and Buffs' '']
+['Elise the Enlightened' '']
+['Sir Finley' '']
+['Sandy Chest'
+ '<b>Deathrattle:</b> Give your opponent a fantastic treasure!']
+['Sir Finley Mrrgglton' 'Last seen exploring the deserts of Tanaris.']
+['Buried Finley'
+ 'Clear the Piles of Sand and damage Buried Finley to dig him up!']
+['Buried Finley' '']
+['Shifting Sands'
+ '<b>Hero Power</b>\n Deal 1 damage to all minions. Summon a Pile of Sand.']
+['Pile of Sand'
+ 'Your hero is <b>Immune</b>\n<b>Deathrattle:</b> Uncover what is beneath the sand.']
+['Move Over! (Finley Swaps in) NOT PLAYER FACING' '']
+['Reno Jackson' 'Last seen "exploring" near the Dalaran Crater.']
+['Gatling Wand'
+ '<b>Hero Power</b>\nRandomly deal 3 damage. (Increases Each Turn!)']
+['Reno Jackson'
+ "Reno's out of control! Defeat him to bring him to his senses!"]
+['Dark Pharaoh Tekahn' 'A villain revealed!']
+['EVIL Grasp'
+ '<b>Hero Power</b>\nAdd a random <b>Lackey</b> to your hand. All <b>Lackeys</b> are 4/4.']
+['Well Equipped'
+ '<b>Hero Power</b>\nEquip a random weapon, if you already have one give it +1 Attack.']
+['Terraviss' 'A shadowy figure was spotted near the gates of Uldum.']
+['Puzzle 1' 'Seems simple enough.']
+['Puzzle 2' 'Survival percentage is 32.33 repeating of course.']
+['Puzzle 5' 'Go Go Malygos!']
+['Puzzle 6' 'Heal em to death!']
+['Puzzle 7' 'An inspiration to totems everywhere!']
+['Puzzle 3' 'BY PUZZLE BE PURGED!']
+['Puzzle 9' 'What!? This again?']
+['Puzzle 4' 'Beasts, Beasts and more Beasts!']
+['Puzzle 8' 'A chilly challenge!']
+['Continue' 'Continue from where you left off.']
+['Restart' 'Start again at the beginning.']
+['Brawl Progress Saved'
+ 'Welcome back! Would you like to restart or continue?']
+['Level Up!' 'Level up all the spells in your hand and deck.']
+['Fireblast' 'Deal $6 damage.']
+['Ancient Power'
+ '<b>Hero Power</b>\nGive each player a random card. It costs (0).']
+['Lunar New Year Discover - Druid - Not Player Facing' '']
+['Lunar New Year Discover - Hunter - Not Player Facing' '']
+['Lunar New Year Discover - Mage - Not Player Facing' '']
+['Lunar New Year Discover - Paladin - Not Player Facing' '']
+['Lunar New Year Discover - Priest - Not Player Facing' '']
+['Lunar New Year Discover - Rogue - Not Player Facing' '']
+['Lunar New Year Discover - Shaman - Not Player Facing' '']
+['Lunar New Year Discover - Warlock - Not Player Facing' '']
+['Lunar New Year Discover - Warrior - Not Player Facing' '']
+['Blessing of the Dog'
+ 'Whenever you summon a minion, give it <b>Deathrattle:</b> Summon a 1/1 Mastiff.']
+['Blessing of the Dog'
+ 'Whenever you summon a minion, give it <b>Deathrattle:</b> Summon a 1/1 Mastiff.']
+['Blessing of the Dog' '<b>Deathrattle:</b> Summon a 1/1 Mastiff.']
+['Blessing of the Dragon'
+ 'Whenever you cast a spell, add a random Dragon to your hand.']
+['Blessing of the Dragon'
+ 'Whenever you cast a spell, add a random Dragon to your hand.']
+['Blessing of the Horse' 'Your spells cost (1) less.']
+['Blessing of the Horse' 'Your spells cost (1) less.']
+['Blessing of the Monkey'
+ 'At the end of your turn transform a random friendly minion into\none that costs (1) more.']
+['Blessing of the Monkey'
+ 'At the end of your turn transform a random friendly minion into\none that costs (1) more.']
+['Blessing of the Ox' 'Whenever you summon a minion give it \n+3 Health.']
+['Blessing of the Ox' 'Whenever you summon a minion give it \n+3 Health.']
+['Blessing of the Ox' '+3 Health.']
+['Blessing of the Pig'
+ 'Whenever you summon a minion, add a Coin to your hand.']
+['Blessing of the Pig'
+ 'Whenever you summon a minion, add a Coin to your hand.']
+['Blessing of the Rabbit'
+ 'Whenever you summon a minion that costs (3) or less, give it <b>Rush</b>.']
+['Blessing of the Rabbit'
+ 'Whenever you summon a minion that costs (3) or less, give it <b>Rush</b>.']
+['Blessing of the Rat'
+ 'Whenever you summon a minion that costs (3) or less, give it <b>Reborn</b>.']
+['Blessing of the Rat'
+ 'Whenever you summon a minion that costs (3) or less, give it <b>Reborn</b>.']
+['Blessing of the Rooster'
+ 'Whenever you use your Hero Power, deal 2 damage to a random enemy.']
+['Blessing of the Rooster'
+ 'Whenever you use your Hero Power, deal 2 damage to a random enemy.']
+['Blessing of the Sheep'
+ 'At the start of your turn, restore 3 Health to a damaged friendly character.']
+['Blessing of the Sheep'
+ 'At the start of your turn, restore 3 Health to a damaged friendly character.']
+['Blessing of the Snake'
+ 'Whenever you summon a minion that costs (3) or less, give it <b>Stealth</b>.']
+['Blessing of the Snake'
+ 'Whenever you summon a minion that costs (3) or less, give it <b>Stealth</b>.']
+['Blessing of the Tiger'
+ 'Whenever you summon a minion give it \n+1 Attack.']
+['Blessing of the Tiger'
+ 'Whenever you summon a minion give it \n+1 Attack.']
+['Blessing of the Tiger' '+1 Attack.']
+['Rock Candy' 'Destroy a random Party Crasher.']
+['Regenerative Cookies' 'Restore 4 Health to each hero.']
+['Divine Sweets' 'Each player draws a card.']
+['Piñata Golem'
+ "<b>Boss, Taunt</b>. Can't be targeted by spells. It's full of candy!"]
+['Decorate'
+ '<b>Hero Power</b>\nCreate *{0}* decorations for the Tavern.\nProgress: {1}/25']
+['Pelt' '<b>Hero Power</b>\nDeal 3 damage to the Piñata.']
+['Party Crasher'
+ "<b>Taunt</b>\nYou don't control how this minion attacks."]
+['Party Crasher'
+ "<b>Taunt</b>\nYou don't control how this minion attacks."]
+['Raucous' '+2/+2']
+['Something in the Punch'
+ 'Deal 2 damage to all minions other than Party Crashers.']
+['Party Supplies'
+ '<b>Choose One - </b> Destroy a random Party Crasher; or Each player draws a card.']
+['Fruit Plate' 'Each player draws a card.']
+['Like a Sore Thumb' 'Destroy a random Party Crasher.']
+['Noise Complaint'
+ 'If the board opposing the <b>Boss</b> is full, destroy all those minions.']
+['Journey to the Catacombs'
+ '[x]<b>Quest:</b> 7 minions are played\n by ANY player.\n<b>Reward:</b> Master Chests\n for all!']
+['Masquerade' 'Who could it be?!']
+['Annoy-o-Tron' '']
+['Hello! Hello! Hello!'
+ '<b>Hero Power</b>\nGive your lowest attack minion <b>Divine Shield</b> and <b>Taunt</b>.']
+['Boom Bot' '']
+['Boom Bot Jr.'
+ '<b>Hero Power</b>\nDeal 2 damage randomly split among all enemies.']
+['TBMechWarCommonCards' '']
+['Mech Fan' '<b>Taunt</b>']
+['Miniature' 'Mini-sized, set to 1/1']
+["Nadia, Mankrik's Wife"
+ '<b>Stealth</b>\n<b>Deathrattle</b>: Complete your <b>Quest</b>.']
+['Charge!' 'Has <b>Charge</b>']
+['Repurposed' '<b>Deathrattle:</b> Draw a card.']
+['Unite the Murlocs Enchant' '']
+['Blink Fox Enchant' '']
+['Noblegarden Egg'
+ '<b>Stealth</b>. At the start of your turn, hatch this into something cute.']
+['Bunny' '']
+['Noblegarden Goblin' '']
+['Shifting Dye'
+ 'Each turn this is in your hand, transform it into a random dye.']
+['Shifting' 'Transforming into random dyes.']
+['Blue Shifting Dye'
+ 'Dye an Egg. When it hatches, it grants <b>Windfury</b>.']
+['Blue Egg' 'The minion inside has <b>Windfury</b>.']
+['Blue Hatchling' '<b>Windfury</b>']
+['Purple Shifting Dye'
+ 'Dye an Egg. When it hatches, it grants <b>Lifesteal</b>.']
+['Purple Egg' 'The minion inside has <b>Lifesteal</b>.']
+['Purple Hatchling' '<b>Lifesteal</b>']
+['Green Shifting Dye'
+ 'Dye an Egg. When it hatches, it grants <b>Poisonous</b>.']
+['Green Egg' 'The minion inside has <b>Poisonous</b>.']
+['Green Hatchling' '<b>Poisonous</b>']
+['Silver Shifting Dye'
+ 'Dye an Egg. When it hatches, it grants <b>Stealth</b>.']
+['Silver Egg' 'The minion inside has <b>Stealth</b>.']
+['Silver Hatchling' '<b>Stealth</b>']
+['Orange Shifting Dye'
+ 'Dye an Egg. When it hatches, it grants <b>Rush</b>.']
+['Orange Egg' 'The minion inside has <b>Rush</b>.']
+['Orange Hatchling' '<b>Rush</b>']
+['Pink Shifting Dye'
+ 'Dye an Egg. When it hatches, it grants <b>Taunt</b>.']
+['Pink Egg' 'The minion inside has <b>Taunt</b>.']
+['Pink Hatchling' '<b>Taunt</b>']
+['Gold Shifting Dye'
+ 'Dye an Egg. When it hatches, it grants <b>Divine Shield</b>.']
+['Gold Egg' 'The minion inside has <b>Divine Shield</b>.']
+['Gold Hatchling' '<b>Divine Shield</b>']
+['Red Shifting Dye' 'Dye an Egg. When it hatches, it grants +2/+2.']
+['Red Egg' 'The minion inside has +2/+2.']
+['Red Hatchling' '+2/+2']
+['Noblegarden Spoon' 'Hatch your Noblegarden Eggs!']
+['Carrots' "Give friendly minions +1/+1 or +2/+2 if it's a <b>Bunny</b>."]
+['Delicious Carrots' 'Increased Attack and Health, moreso for Bunnies']
+['Hawkstrider Hen'
+ '<b>Battlecry and Deathrattle:</b> Summon a\nNoblegarden Egg.']
+['Evolve' 'Transform your minions into random minions that cost (1) more.']
+['Pick Your Fate Build Around' '']
+['Fate 7 Ench Get a Coin' '']
+['Dire Fate: Taunt and Charge'
+ 'All minions have <b>Taunt</b> and <b>Charge</b>.']
+['Battlecry Bonus' 'Your <b>Battlecry</b> minions have +1/+1.']
+['Fate' '']
+['Bonus' 'Your <b>Battlecry</b> minions have +1/+1.']
+['Fate 11 Ench. Murloc' '']
+['Murloc Bonus' 'Summon a 1/1 Murloc at the end of your turn.']
+['Dire Fate: Murlocs' 'Turn each minion in play into a 1/1 Murloc.']
+['Fate: Confusion'
+ "At the end of each turn, swap all minions' Attack and Health."]
+['Fate 12 Ench, Confuse' '']
+['Pick Your Fate 1 Ench' '']
+['Fate: Bananas' 'When a minion dies, its owner gets a (1) mana Banana.']
+['Pick Your Fate 2 Ench' '']
+['Fate' '<b>Deathrattle:</b> Your owner gets a banana.']
+['Pick Your Fate Randon 2nd' '']
+['Dire Fate: Windfury' 'All minions have <b>Windfury</b>.']
+['Pick Your Fate 3 Ench' '']
+['Dire Fate: Card' 'When a minion dies, its owner draws a card.']
+['Pick Your Fate 4 Ench' '']
+['Fate' '<b>Deathrattle:</b> Draw a card.']
+['Fate: Spells' 'Spells cost (1) less.']
+['Pick Your Fate 5 Ench' '']
+['Fate: Portals' "Shuffle 10 Unstable Portals into each player's deck."]
+['Dire Fate: Unstable Portals'
+ "Place 3 Unstable Portals in each player's hand."]
+['Fate: Coin' 'When a minion dies, its owner gets a Coin.']
+['Dire Fate: Manaburst'
+ "Minions gain <b>Deathrattle:</b> Random card in owner's hand costs (0)."]
+['Fate 7 Ench 2nd' '']
+['Fate' "<b>Deathrattle:</b> random card in owner's hand costs (0)."]
+['Fate' '<b>Deathrattle:</b> Your owner gets a coin.']
+['Spell Bonus' 'Whenever you cast a spell, gain 3 Armor.']
+['Fate 8 Get Armor' '']
+['Fate 8 Rand 2 armor each turn' '']
+['Fate: Armor' 'Each player gains 2 Armor on the start of their turn.']
+['Deathrattle Bonus' 'Your <b>Deathrattle</b> minions have +1/+1.']
+['Fate 9 Ench. Deathrattle bonus' '']
+['Bonus' 'Your <b>Deathrattle</b> minions have +1/+1.']
+['Fate' 'Attack and Health swap at end of each turn.']
+['Fate' 'This minion has <b>Windfury</b>']
+['Pick Your Fate Random' '']
+['Mystery Pilot' 'Who could it be?!']
+['Present!'
+ 'When you draw this, <b>Discover</b> a treasure, then draw a card.']
+['Card Present' 'Draw a card.']
+['Zombie Present' 'Summon a 3/3 Zombie.']
+['TBRandomCardCost' '']
+['TB_EnchWhosTheBossNow' '']
+['Reset Decks' 'Reset Both Player Decks']
+['Reset Your Deck' 'Reset Your Deck']
+['Random Hand Enchant - Not Player Facing' '']
+['Random Hand Spell - Not Player Facing' '']
+['Fel Whip' '<b>Hero Power</b>\nSummon a 2/1 Felhound with <b>Rush</b>.']
+['Hakkar the Houndmaster' '']
+['TB_EnchRandomManaCost' '']
+["Tak's Only Friend" '']
+['Aviator Bob'
+ "Bob can give you a second chance, even if you've had a third rate run."]
+['Bookmaster Bae Chao'
+ "There's a new librarian in town, and she won't stand for tardiness."]
+['Brann Bronzebeard'
+ "[x]Riding on a dinosaur\nand looking for a fight, \nBrann's ready to finish this."]
+['Closer Than It Looks'
+ '<b>Hero Power</b>\nDestroy the left-most enemy minion.']
+['Elise Starseeker' 'She has a bad feeling about this.']
+['Elise Starseeker' 'She has a bad feeling about this.']
+['Sir Finley' 'Has any opponent ever been THIS worthy?']
+['Power Up!'
+ '[x]<b>Hero Power</b>\nGive a minion\n<b>Divine Shield</b> & <b>Windfury</b>.']
+['Sir Finley' 'Has any opponent ever been THIS worthy?']
+['Go Home' 'End your Dungeon Run.']
+['Rummaged'
+ '<b>Passive Hero Power</b>\nWhen damaged, draw and cast a spell from your deck (<i>Random targets</i>)']
+['Murgatha'
+ 'Started off as an unofficial Hagatha impersonator, then took it too far…']
+['Mrrgl-ution'
+ '<b>Hero Power</b>\nTransform a friendly minion into a random murloc that costs (1) more. <i>Max cost: (5)</i>']
+['Discarded Armor'
+ '<b>Deathrattle:</b> Current turn player gains 8 armor.']
+['Orgrimmar Guard'
+ 'It was just another day on the job for him until these explorers showed up…']
+['Curious Bystander'
+ '<b>Hero Power</b>\nSummon a random Orgrimmar citizen']
+['Reno Jackson'
+ '[x]With a bag full of treasures \nand a well-styled moustache,\n Reno is ready to take \nTekahn down!']
+['Practice' '<b>Hero Power</b>\nCast a random portal with random targets.']
+["Reno's Junkpile"
+ 'Includes dangerous spells, unread notes to self, and somewhere, a portal spell.']
+['Tak Nozwhisker'
+ "Looks like the League of E.V.I.L.'s missing a kobold—a very angry kobold."]
+['Make Enemies'
+ '[x]Whenever Tak  shuffles a\ncard into his deck, add\na copy to his hand.']
+['Primodino'
+ "He was surprised to learn that he's only a league away from dinner!"]
+['White King'
+ 'This enchanted chess piece is used to playing with more dignified party guests.']
+['Portal Selection' '']
+['Tech Portals' 'Shuffle 20 Tech\nPortals into your deck.\nDraw 2 Cards.']
+['Swarm Portals' 'Shuffle 20 Swarm Portals into your deck.\nDraw 2 Cards.']
+['Mind Portals' 'Shuffle 20 Mind Portals into your deck.\nDraw 2 Cards.']
+['Tech Portal' 'Add a random Tech card to your hand. It costs (3) less.']
+['Swarm Portal' 'Add a random Swarm card to your hand. It costs (3) less.']
+['Mind Portal' 'Add a random Mind card to your hand. It costs (3) less.']
+['Shadow Reflection'
+ 'Each time you play a card, transform this into a copy of it until the end of your turn.']
+['Shadow Reflection' 'Always copy your last played card.']
+['Paladin Shrines' '']
+['Warlock Shrines' '']
+['Warrior Shrines' '']
+['End Speed Run Duration' 'Start the Speed Run']
+['Show Speed Run Duration' 'Start the Speed Run']
+['Start the Speed Run' 'Start the Speed Run']
+['SpellCaster' '']
+['City of Stormwind' '']
+['Barracks' '<b>Hero Power</b>\nSummon a random Stormwind Soldier.']
+['Armory' 'Attack increases over time.']
+['City of Dalaran' '']
+['Decorated Dalaran' '']
+['Holiday Dalaran' '']
+['Dalaran Defenders'
+ '<b>Hero Power</b>\nSummon a random defender of Dalaran.']
+['EVIL Gift Enchant - Not Player Facing' '']
+['Gift Delivery Spell - Not Player Facing' '']
+['Holiday Partygoer'
+ "<b>Taunt</b>\n<b>Battlecry:</b> Gain Health equal to Dalaran's Attack."]
+['Grumpy Partygoer'
+ "<b>Battlecry:</b> Gain Attack and Health equal to Dalaran's Attack."]
+['The Portal Opens' 'Through the Nether and into...']
+['Dark Wanderer' '']
+['The Cow King' '']
+['Weapon Rack'
+ '<b>Deathrattle:</b> Current turn player gains a random weapon.']
+['Discarded Armor'
+ '<b>Deathrattle:</b> Current turn player gains 5 armor.']
+['Chest of Gold!' '<b>Deathrattle:</b> Current turn player gains gold!']
+['Shield Glare' 'Attack changed to 1.']
+['Twisting Nether?' "This doesn't look like Twisting Nether..."]
+['Diabolical Powers' 'Summon a random Imp.']
+['So Many...' 'Whenever a Hell Bovine Dies, draw a card.']
+['Hell Bovine'
+ '<b>Deathrattle:</b> Place a copy of this card in your deck.']
+['Guardian'
+ 'At end of your turn, deal 2 damage to the enemies opposite this minion.']
+['Hell Bovine Champion'
+ '<b>Deathrattle:</b> Current turn player gains a random weapon.']
+['Hell Bovine'
+ '<b>Deathrattle:</b> Place a copy of this card in your deck.']
+['Enigmatic Portal'
+ 'At the start of next turn, your hero is transformed and sucked through the Twisting Nether.']
+['Visions of the Assassin'
+ '<b>Secret:</b> When your opponent plays a minion with <b>Stealth</b>, All minions equip a dagger.']
+["Assassin's Stealth" '<b>Stealth</b>.']
+['Visions of the Barbarian'
+ '<b>Secret:</b> When your opponent plays a minion with <b>Charge</b>, THUNDER FURY!']
+['Visions of Hate'
+ '<b>Secret:</b> When both heroes have 15 or less Health, BRAWL!']
+['Visions of the Crusader'
+ "<b>Secret:</b> When your opponent plays a minion with <b>Taunt</b>, change all minions'\nattacks to 1."]
+['Visions of Valor'
+ '<b>Secret:</b> When your opponent plays a Legendary minion, give all minions <b>Windfury</b>']
+['Visions of Fate'
+ '<b>Secret:</b> When your opponent takes lethal damage... save him.']
+['Visions of the Amazon'
+ '<b>Secret:</b> When your opponent plays a minion with <b>Battlecry</b>, Summon a Mirror Image for both players.']
+['Visions of the Sorcerer'
+ '<b>Secret:</b> When your opponent plays a minion with <b>Spell Damage</b>, Summon 2 Guardians.']
+['Visions of the Necromancer'
+ '<b>Secret:</b> When your opponent plays a card with <b>Deathrattle</b>, destroy it.']
+['Visions of Knowledge'
+ "<b>Secret:</b> When your opponent's hand has 9 or more cards, reduce the cost of all cards in both hands to (1)."]
+['Knowledge' 'Costs (1).']
+['Lightning' 'Deal $3 damage.']
+['Summon Guardians' 'Summon two 2/4 Guardians.']
+['Moo...' 'Summon 3 Hell Bovines. Give all Hell Bovines <b>Taunt</b>.']
+['Herding' 'Minion has <b>Taunt</b>.']
+['The Portal Opens' 'Through the Nether and into...']
+['Stampede' 'Summon 2 Hell Bovines. Give all Hell Bovines <b>Charge</b>.']
+['Large EVIL Gift'
+ "<b>Deathrattle:</b> Add a random Treasure to your opponent's hand."]
+['Shieldsman'
+ "<b>Taunt</b>\n<b>Battlecry:</b> Gain Health equal to Stormwind's Attack."]
+['Will of Stormwind' 'Stormwind is granting this card Health.']
+['Battle Standard' 'Adjacent minions have +2 Attack.']
+['Emboldened' 'Standard Bearer is granting +2 Attack to this minion.']
+['Swordsman'
+ "<b>Battlecry:</b> Gain Attack and Health equal to Stormwind's Attack"]
+['Strength of Stormwind'
+ 'Stormwind is granting this card Attack and Health.']
+['Decorated Stormwind' '']
+['City of Stormwind' '']
+['Partytown Stormwind' '']
+['Party Capital' '']
+['Party Barracks'
+ '<b>Hero Power</b>\nSummon a random Stormwind Partygoer.']
+['Party Armory' 'Attack increases over time.']
+['Happy Partygoer'
+ "<b>Taunt</b>\n<b>Battlecry:</b> Gain Health equal to Stormwind's Attack."]
+['Party Banner' 'Adjacent minions have +2 Attack.']
+['Ornery Partygoer'
+ "<b>Battlecry:</b> Gain Attack and Health equal to Stormwind's Attack."]
+['Malicious Maliceball' '']
+['Offensive Play'
+ 'The next Legendary minion you play and all your other copies cost (3) less.']
+['Facilitated' 'The next legend you cast this turn costs (3) less.']
+['Draw Offensive Play'
+ 'Draw Offensive Play on first, third, and fifth turn']
+['Swap Boss Hero Power by Class' '']
+['Swap Hero With Death Knight' '']
+['Check for Hero Death' '']
+['Your Next Victim Comes'
+ 'Destroy all minions. Drain all Mana. Gain 5 Health.']
+['Rumble in the Jungle'
+ 'Enter the jungle with giant beasts and darker things...']
+['Discover Next Class' '']
+['Unleash the Beasts'
+ 'Release a stampede of beasts while hunting for the Marsh Queen!']
+['Elemental Secrets' 'Guard your secrets and unleash elemental fury!']
+['New Hero!' 'A new Hero takes position.']
+['Dark Light'
+ 'Bend the Light to your will, while you unleash the Apocalypse!']
+['Unbreakable' '<b>Inspire</b> your minions, even in death.']
+['The Saint' 'Assassinate with blinding speed!']
+['Totems Versus Secrets'
+ "Uncover your adversary's secrets, while assembling your totem army"]
+['Death Becomes'
+ "Summon monstrous demons and burn away the enemy's weapons"]
+['The Rock' 'Enrage your allies, while wielding weapons at your foes!']
+['Ammunae' "<i>He can teach you life lessons, but they're harsh ones.</i>"]
+['Battrund'
+ "<i>Not all of Battrund's minions are mummies. Some\xa0got\xa0a\xa0bad\xa0wrap.</i>"]
+['Dr. Boom' '']
+['Brann Bronzebeard'
+ "[x]Riding on a dinosaur\nand looking for a fight, \nBrann's ready to finish this."]
+['No More, Please!' '']
+['Colossus of the Sun' '<i>Sworn foe of anything that throws shade.</i>']
+["Soulreaper's Scythe"
+ '<b>Deathrattle:</b> Summon all minions killed by this weapon this run.']
+['Ethereal Contract'
+ 'Your next card costs (0) and is removed from your Dungeon Deck.']
+['Proposed Contract'
+ 'The next card you play costs (0) and is removed from your dungeon deck.']
+['Contracted' 'The next spell you cast this turn cost (0).']
+['Ethereal Covenant'
+ 'Cards played this turn cost (0) and are removed from your Dungeon Deck.']
+['Covenanted' 'All cards played this turn cost (0).']
+['Elise Starseeker'
+ '[x]Whether she needs magic\nor a trusty machete, Elise \nis ready to save Uldum.']
+['Sir Finley'
+ '[x]Sir Finley rides into battle,\nready to dispense justice \nagainst his final foe.']
+['Hagatha' '']
+["Headless Horseman's Head"
+ 'Destroy his head to win the game, but watch out for fireballs!']
+['Headless Horseman (no head)'
+ "<i>He's seen the battle in Uldum! Now he's here in this tomb!</i>"]
+['Ichabod the Cursed' "<i>He's reckless and infectious!</i>"]
+['Isiset'
+ "<i>She'll either spell your doom, or Twinspell it to show off!</i>"]
+['Totally Normal Jar' "<i>It's almost… TOO normal.</i>"]
+['Jythiros of Questions'
+ '<i>[x]A riddle... within a\nmystery...in an enigma...\n with a funny head.</i>']
+['Kasmut' '<i>Can sniff out explorers and evildoers with ease.</i>']
+['Kham' '<i>Calm Kham down if you want to calmly down Kham.</i>']
+['Leap of Fate'
+ '<b>Hero Power</b>\nSummon a 1/1 copy of a <b>Deathrattle</b> minion from your deck.']
+['Return Fateful'
+ '<b>Hero Power</b>\nSummon a friendly <b>Deathrattle</b> minion that died this game.']
+['Madame Lazul' '']
+['Best Friend Forever'
+ '<b>Charge</b>,<b> Taunt</b>.\n<b>Battlecry:</b> Combines with other Friends.\nLasts. FOREVER.']
+["Lich Baz'hial" '<i>Which league freezes faster? She must find out!</i>']
+['Mirror, Mirror' '']
+['Octosari'
+ '<i>You can count on Octosari to keep the numbers balanced.</i>']
+['Pillager Drasar'
+ "<i>If she asks you about treasure, you don't have any!</i>"]
+['Rafaam' '']
+['Rajh'
+ '<i>The Mighty Lord of the Sun shines brightest when\xa0casting\xa0spells.</i>']
+['Reno Jackson'
+ '[x]With a bag full of treasures \nand a well-styled moustache,\n Reno is ready to take \nTekahn down!']
+['Setesh' '<i>Just your typical bad dog, destroying everything.</i>']
+['Sothis' '<i>Titan security is very serious. Stone-faced, even.</i>']
+["Fool's Gold"
+ '<b>Hero Power</b>\nReduce the cost of a random card in your hand to (0).']
+['King Togwaggle' '']
+['Fooled' 'Costs (0).']
+["Ol' Toomba"
+ "<i>Ol' Toomba the treasure hunter isn't above copying\xa0homework.</i>"]
+['Trap Room' "<i>Is it still a trap if everyone knows it's a trap?</i>"]
+['Look What I Found!' '<b>Discover</b> a Treasure.']
+['Taunt' '']
+['Dark Ritualist Zafarr'
+ "<i>Believes his rituals are better than anyone else's.</i>"]
+['Zaraam' '<i>Zaraam grows in strength the more his minions suffer.</i>']
+['Headless Horseman'
+ "<i>He's seen the battle in Uldum! Now he's here in this tomb!</i>"]
+["Friendship (Can't be Silenced)" 'Increased Stats']
+['Aranna Starseeker' 'A natural leader always comes out on top!']
+['Thunderdome Discover' '']
+['Elise of the Wasteland'
+ "Has some serious questions about her sister's recent activities."]
+['Illidan Stormrage'
+ 'The Lord of Outland is looking forward to a rematch!']
+['Karnuk'
+ "As a priest turned demon hunter, he's basically capable of anything."]
+['Kriziki'
+ 'Sought peace and quiet in Outland, but instead found demon hunters. LOTS of demon hunters.']
+['Mecha-Jaraxxus' 'With rage and rust, he has been rebuilt!']
+['Shalja'
+ "Even in the middle of a desert, she'll ensure her foes are all washed up."]
+['Sklibb' "He's proof that in Zangarmarsh, the mushrooms hunt YOU!"]
+['Board with a Nail in It' '<b>Battlecry:</b> Deal 5 damage to your hero.']
+['Whizzing Buzzer' '<b>Windfury</b>']
+['Augmented Auto-Mace'
+ '<b>Battlecry:</b> Give a random friendly minion +5 Attack.']
+['Augmented Auto-Mace' '+5 Attack.']
+['Felfire Flamberge'
+ 'After your Hero attacks, add a random Demon to your hand.']
+['Improvised Flamethrower'
+ '<b>Battlecry and Deathrattle:</b>\nDeal 2 damage to all\xa0minions.']
+['Scrapmetal Battleaxe' '<b>Battlecry:</b> Gain 5 Armor.']
+['Electrified Spear'
+ 'Also damages the minions next to whomever your hero\xa0attacks.']
+['Snake on a Stick' '[x]After your hero attacks,\nsummon a 1/1 Snake.']
+['Two Turns' '']
+['Vargoth Enchant' '']
+['Void Singularity Spell' '']
+['Void Singularity' '']
+['Yogg Servant Hero Enchant' '']
+['Deathstalker Rexxar'
+ '[x]<b>Battlecry:</b> Deal 2 damage\nto all enemy minions.']
+['Zombeast Enchant' 'Craft a Zombeast (For free!)']
+['Zombeast Brawl Spell' '']
+['Ragnaros the Firelord' '']
+['Nefarian' '']
+['Wild Magic'
+ '<b>Hero Power</b>\nAdd a random spell from any class to your hand. It costs (0).']
+['Magic!' '']
+['Molten Rage' '<b>Hero Power</b>\nSummon a 5/1 Magma Rager.']
+['OLDN3wb Tank' '<b>Taunt</b>']
+['OLDN3wb Mage'
+ 'At the end of your turn, deal 1 damage to random enemy minion.']
+['OLDN3wb Healer'
+ 'At the end of your turn, heal 2 damage from adjacent minions.']
+['OLDLegit Healer'
+ 'At the end of your turn, summon a random friendly minion that died this turn.']
+['OLDPvP Rogue'
+ '<b>Stealth</b>\nRegain <b>Stealth</b> when PvP Rogue kills a minion.']
+['OLDTBST Push Common Card' "push a common card into player's hand"]
+['TBUD Summon Early Minion'
+ 'Each turn, if you have less health then a your opponent, summon a free minion']
+['Chromie'
+ '<b>Battlecry:</b> Shuffle four Historical Epochs \ninto your deck.']
+['Opening the Dark Portal'
+ '<b>Casts When Drawn</b>\nAdd two random Legendary minions to your hand.']
+['Battle for Mount Hyjal'
+ '<b>Casts When Drawn</b>\nGive your minions +2/+2.']
+['Battle Blessing' '+2/+2.']
+['Escape from Durnholde'
+ '<b>Casts When Drawn</b>\nAdd two random spells to your hand.']
+['Culling of Stratholme'
+ '<b>Casts When Drawn</b>\nDeal $2 damage to all enemies.']
+['Wildlands Adventurer'
+ '<b>Battlecry:</b> Add a random card from the Hall of Fame to your hand.']
+['Infinite Murloc'
+ '<b>Battlecry:</b> Shuffle an Infinite Murloc into your deck.\n[x]Your future Infinite Murlocs[x]\n get +1/+1.']
+['Literally Infinite Murlocs' '']
+['Literally Infinite' 'Bonus per number played.']
+['Blessing of Aeons'
+ 'Give a minion "At the end of your turn, gain +1/+1."']
+['Wise Beyond Years' 'Gains +1/+1 at the end of your turn.']
+['Learned' '+1/+1']
+['Taverns Echo' 'Destroy card if in hand at the end of turn.']
+['Rift Warden'
+ '[x]<b>Battlecry:</b> Discard a \nrandom minion.\n <b>Deathrattle:</b> Summon it.']
+['Grasp the Future' 'Draw 2 cards.\nThey cost (2) less.']
+['Taverns Echo' 'Destroy card if in hand at the end of turn.']
+['Flash Forward'
+ 'Each player gains two Mana Crystals and draws two cards.']
+['Thief of Futures'
+ "<b>Battlecry:</b> Add a copy of the top card of your opponent's deck to your hand."]
+['Déjà Vu' '<b>Discover</b> a copy of a spell you played this game.']
+['Stasis Dragon'
+ 'Starts dormant.\nThis awakens with <b>Rush</b> after two turns.']
+['Stasis Dragon' '2']
+['Timebound Giant' "Costs (1) less for each card you've drawn."]
+['Timeline Witness'
+ 'Instead of drawing your normal card each turn, <b>Discover</b> a card from your deck.']
+['Chronomancing' '']
+['Possibility Seeker'
+ '<b>Battlecry:</b> Shuffle your hand into your deck. Draw that many cards.']
+['Cavern Growth' 'Growth happening']
+['Timeway Wanderer'
+ '<b>Battlecry:</b> <b>Discover</b> a spell. Reduce its cost by (5) then put it on top of your deck.']
+['Clocked!' '']
+['Infinite Wolf'
+ '<b>Rush</b>. After this attacks,\nshuffle it into your deck and give future Infinite Wolves +2/+2.']
+['Rewound' '+2/+2 for each time Infinite Wolf attacked.']
+['Stasis Elemental'
+ '<b>Battlecry:</b> <b>Freeze</b> a minion until this leaves the battlefield.']
+['Stasis' '<b>Frozen</b> until Stasis Elemental leaves the battlefield.']
+['Timeshift: Dreadsteed' '<b>Deathrattle:</b> Summon a Dreadsteed.']
+['Wee Whelp' '']
+['Cavern Dreamer'
+ 'At the end of your turn, add a random spell that costs (2) or less to your hand.']
+['Master of Realities'
+ '[x]After you summon a minion,\n transform it into a random\n minion that costs (2) more.']
+['Draconic Herald'
+ '<b>Battlecry:</b> <b>Discover</b> a minion.\nGive it +3/+3 then put it on top of your deck.']
+["Prophecy's Chosen" '+3/+3.']
+['Harbinger of Catastrophe'
+ "At the start of your turn, summon the highest-cost minion from each player's deck."]
+['Bronze Broodmother' 'When you draw this, summon a 1/1 Wee Whelp.']
+['Murozond'
+ '[x]<b>Battlecry:</b> From now on, your\n turns are 15 seconds and\n you draw 2 extra cards.']
+['Time Warped' 'Your turns last 20 seconds. You draw 2 cards each turn.']
+['Temporal Anomaly'
+ 'When you draw this, add a random spell to your hand <i>(from your class).</i>']
+['Chronoshot'
+ "Return an enemy minion to your opponent's hand. It costs (2) more."]
+['Consider the Past' 'Add 3 random spells from the past to your hand.']
+['Fatecleaver'
+ '[x]After this kills a minion,\ndestroy all copies of it\n<i>(wherever they are).</i>']
+['Reminisce'
+ 'Add two random cards your opponent played this game to your hand.']
+['Ripple in Time'
+ '<b>Discover</b> a minion. If you play it this turn, it has <b>Echo</b>.']
+['Time Ripple' 'Echo this turn.']
+['Time Ripple Player Enchant' '']
+['Cash In' 'Destroy your weapon, gaining a random one.']
+['Half-Time Scavenger' '<b>Stealth</b>\n<b>Overkill</b>: Gain 3 Armor.']
+['Totemic Smash' 'Deal $2 damage. <b>Overkill</b>: Summon a basic Totem.']
+['Ticket Scalper' '<b>Overkill</b>: Draw 2 cards.']
+['Sightless Ranger'
+ '<b>Rush</b>\n<b>Overkill</b>: Summon two 1/1\xa0Bats.']
+['Bat' '']
+['Serpent Ward'
+ 'At the end of your turn,\ndeal 2 damage to the enemy hero.']
+['Haunting Visions'
+ 'The next spell you cast this turn costs (3) less. <b>Discover</b> a spell.']
+['Visions' 'The next spell you cast this turn costs (3) less.']
+['Bog Slosher'
+ '<b>Battlecry:</b> Return a friendly minion to your hand and give it +2/+2.']
+['Sloshed' '+2/+2.']
+['Spirit of the Frog'
+ '[x]<b>Stealth</b> for 1 turn.\nWhenever you cast a spell,\ndraw a spell from your deck\nthat costs (1) more.']
+["Zul'jin"
+ "[x]<b>Battlecry:</b> Cast all spells\nyou've played this game\n<i>(targets chosen randomly)</i>."]
+['Berserker Throw' '<b>Hero Power</b>\nDeal $2 damage.']
+['Bloodsail Howler'
+ '[x]<b>Rush</b>\n<b>Battlecry:</b> Gain +1/+1\nfor each other Pirate\nyou control.']
+['Bloody Sails' 'Increased stats.']
+['Serrated Tooth' '<b>Deathrattle:</b> Give your minions <b>Rush</b>.']
+['Carnassial' '<b>Rush</b>.']
+['Gurubashi Hypemon'
+ '<b>Battlecry:</b> <b>Discover</b> a 1/1 copy of a <b>Battlecry</b> minion. It costs (1).']
+['Hype!' 'Gurubashi Hypemon made this 1/1.']
+['Big Bad Voodoo'
+ 'Give a friendly minion "<b>Deathrattle:</b> Summon a random minion that costs (1) more."']
+['Voodoo' '<b>Deathrattle:</b> Summon a minion that costs (1) more.']
+['Zentimo'
+ '[x]Whenever you target a\nminion with a spell, cast it\nagain on its neighbors.']
+['Zentimo Spellsurge'
+ 'Whenever you target a minion with a spell, it also targets adjacent minions.']
+['Spirit of the Shark'
+ "[x]<b>Stealth</b> for 1 turn.\nYour minions' <b>Battlecries</b>\n\xa0\xa0and <b>Combos</b> trigger twice.\xa0"]
+['Power of the Shark'
+ "Your minions' <b>Battlecries</b>\n\xa0\xa0and <b>Combos</b> trigger twice.\xa0"]
+['Griftah'
+ '[x]<b>Battlecry:</b> <b>Discover</b> two\ncards. Give one to your\nopponent at random.']
+['Guess the Card!' 'Guess the card your opponent chose to get a copy.']
+['Seance' 'Choose a minion. Add\xa0a copy of it to your hand.']
+["Headhunter's Hatchet"
+ '[x]<b>Battlecry:</b> If you\ncontrol a Beast, gain\n+1 Durability.']
+["Headhunter's Hatchet" 'Increased Durability.']
+['The Beast Within'
+ 'Give a friendly Beast +1/+1, then it attacks a random enemy minion.']
+['The Beast Within' '+1/+1.']
+['Raiding Party'
+ 'Draw 2 Pirates from\xa0your deck.\n<b>Combo:</b> And a weapon.']
+['Captain Hooktusk'
+ '<b>Battlecry:</b> Summon 3 Pirates from your deck. Give them <b>Rush</b>.']
+['Cannon Barrage'
+ '[x]Deal $3 damage to a\nrandom enemy. Repeat\nfor each of your Pirates.']
+['Regenerate' 'Restore #3 Health.']
+['Sand Drudge'
+ 'Whenever you cast a spell, summon a 1/1 Zombie with <b>Taunt</b>.']
+['Zombie' '<b>Taunt</b>']
+['Former Champ' '<b>Battlecry:</b> Summon a 5/5\xa0Hotshot.']
+['Hotshot' '']
+['Stolen Steel' '<b>Discover</b> a weapon <i>(from another class)</i>.']
+['Walk the Plank' 'Destroy an undamaged minion.']
+['Spirit of the Raptor'
+ '[x]<b>Stealth</b> for 1 turn.\nAfter your hero attacks and\n\xa0\xa0kills a minion, draw a card.\xa0\xa0']
+['Ironhide Direhorn' '<b>Overkill:</b> Summon a 5/5\xa0Ironhide Runt.']
+['Ironhide Runt' '']
+['Savage Striker'
+ "<b>Battlecry:</b> Deal damage to an enemy minion equal to your hero's Attack."]
+['Gonk, the Raptor'
+ 'After your hero attacks and\xa0kills a minion, it may\xa0attack again.']
+['Pounce' 'Give your hero +2\xa0Attack this turn.']
+['Pounce' '+2 Attack this turn.']
+['Predatory Instincts'
+ '[x]Draw a Beast from your\ndeck. Double its Health.']
+['Predatory Instincts' 'Doubled Health.']
+['Shriek' 'Discard your lowest Cost card. Deal $2 damage to all minions.']
+['Void Contract' "Destroy half of each player's deck."]
+['Soulwarden'
+ '<b>Battlecry:</b> Add 3 random cards you discarded this game to your hand.']
+['Grim Rally' 'Destroy a friendly minion. Give your minions +1/+1.']
+['Grim Rally' '+1/+1.']
+['Spirit of the Bat'
+ '<b>Stealth</b> for 1 turn.\nAfter a friendly minion dies, give a minion in your hand +1/+1.']
+["Hir'eek's Offering" 'Increased stats from Spirit of the Bat.']
+['High Priestess Jeklik'
+ '[x]<b>Taunt</b>, <b>Lifesteal</b>\nWhen you discard this,\nadd 2 copies of it to\nyour hand.']
+["Hir'eek, the Bat"
+ '<b>Battlecry:</b> Fill your board with copies of this minion.']
+['Mark of the Loa'
+ '<b>Choose One</b> -\nGive a minion +2/+4\nand <b>Taunt</b>; or Summon\ntwo 3/2 Raptors.']
+["Gonk's Resilience" 'Give a minion +2/+4 and <b>Taunt</b>.']
+['Mark of the Loa' '+2/+4 and <b>Taunt</b>.']
+['Raptor Pack' 'Summon two 3/2 Raptors.']
+['Raptor' '']
+['Stampeding Roar'
+ 'Summon a random Beast from your hand and give it <b>Rush</b>.']
+['Stampede!' 'Has <b>Rush</b>.']
+['Blood Troll Sapper'
+ 'After a friendly minion dies, deal 2 damage to the enemy hero.']
+['Mass Hysteria' 'Force each minion to\xa0attack another random minion.']
+['Princess Talanji'
+ "<b>Battlecry:</b> Summon all minions from your hand that\xa0didn't start in your\xa0deck."]
+['Bwonsamdi, the Dead'
+ '[x]<b>Battlecry:</b> Draw 1-Cost\nminions from your deck\nuntil your hand is full.']
+['Shirvallah, the Tiger'
+ "[x]<b>Divine Shield</b>, <b>Rush</b>, <b>Lifesteal</b>\n Costs (1) less for each Mana\nyou've spent on spells."]
+['Time Out!' 'Your hero is <b>Immune</b> until your next turn.']
+['Time Out!' '<b>Immune</b> until your next turn.']
+['Farraki Battleaxe' '<b>Overkill:</b> Give a minion in your hand +2/+2.']
+['Battle Ready' '+2/+2 from Farraki Battleaxe.']
+['A New Challenger...'
+ '<b>Discover</b> a 6-Cost minion. Summon it with <b>Taunt</b> and <b>Divine Shield</b>.']
+['Immortal Prelate'
+ '<b>Deathrattle:</b> Shuffle this into your deck. It keeps any enchantments.']
+['Flash of Light' 'Restore #4 Health.\nDraw a card.']
+['High Priest Thekal'
+ "<b>Battlecry:</b> Convert all but 1\xa0of your Hero's Health into Armor."]
+['Spirit of the Tiger'
+ '[x]<b>Stealth</b> for 1 turn.\nAfter you cast a spell,\nsummon a Tiger with stats\nequal to its Cost.']
+['Tiger' '']
+['Elemental Evocation'
+ 'The next Elemental you\xa0play this turn costs (2) less.']
+['Elemental Evocation'
+ 'The next Elemental you play this turn costs (2) less.']
+['Arcanosaur'
+ '<b>Battlecry:</b> If you played an\xa0Elemental last turn, deal\xa03\xa0damage\xa0to\xa0all other minions.']
+['Spellzerker' 'Has <b>Spell Damage +2</b> while damaged.']
+['Power of Gurubashi' '<b>Spell Damage +2</b>.']
+['Scorch'
+ '[x]Deal $4 damage to a\nminion. Costs (1) if you\nplayed an Elemental\nlast turn.']
+['Pyromaniac' 'Whenever your Hero Power\xa0kills a minion, draw a card.']
+["Jan'alai, the Dragonhawk"
+ '[x]<b>Battlecry:</b> If your Hero Power\ndealt 8 damage this game,\nsummon Ragnaros the\nFirelord.@ <i>({0} left!)</i>@ <i>(Ready!)</i>']
+['Ragnaros the Firelord'
+ "Can't attack. At the end of your turn, deal 8 damage to a random enemy."]
+['Blast Wave'
+ 'Deal $2 damage to\xa0all minions.\n<b>Overkill</b>: Add a random Mage spell to your hand.']
+['Hex Lord Malacrass'
+ '<b>Battlecry</b>: Add a copy of your opening hand to your hand <i>(except this card)</i>.']
+['Spirit of the Dragonhawk'
+ '[x]<b>Stealth</b> for 1 turn.\nYour Hero Power also targets\n adjacent minions.']
+['Power of the Dragonhawk' 'Your Hero Power also hits adjacent minions.']
+['Devastate' 'Deal $4 damage to a damaged minion.']
+['Emberscale Drake'
+ "<b>Battlecry:</b> If you're holding a Dragon, gain 5 Armor."]
+['Heavy Metal!'
+ '[x]Summon a random\nminion with Cost equal\nto your Armor <i>(up to 10).</i>']
+["Sul'thraze" '<b>Overkill</b>: You may attack again.']
+['Smolderthorn Lancer'
+ "<b>Battlecry:</b> If you're holding a Dragon, destroy a damaged enemy minion."]
+['Spirit of the Rhino'
+ "<b>Stealth</b> for 1 turn.\nYour <b>Rush</b> minions are <b>Immune</b> the turn they're summoned."]
+['Protected by Spirit of the Rhino' '<b>Immune</b> this turn.']
+['War Master Voone' '<b>Battlecry:</b> Copy all\nDragons in your hand.']
+['Akali, the Rhino'
+ '<b>Rush</b>\n<b>Overkill:</b> Draw a <b>Rush</b> minion from your deck. Give it +5/+5.']
+['Rhino Skin' '+5/+5.']
+["Master's Call"
+ '<b>Discover</b> a minion in your deck.\nIf all 3 are Beasts,\ndraw them all.']
+['Treespeaker'
+ '<b>Battlecry:</b> Transform your Treants into 5/5 Ancients.']
+['Ancient' '']
+['Wardruid Loti'
+ "<b>Choose One - </b>Transform into one of Loti's four dinosaur forms."]
+['Ankylodon' '<b>Taunt</b>']
+['Wardruid Loti' '<b>Taunt</b>']
+['Sabertusk' '<b>Rush</b>']
+['Wardruid Loti' '<b>Rush</b>']
+['Pterrordax' '<b>Spell Damage +1</b>']
+['Wardruid Loti' '<b>Spell Damage +1</b>']
+['Ravasaur' '<b>Poisonous</b>, <b>Stealth</b>']
+['Wardruid Loti' '<b>Poisonous</b>, <b>Stealth</b>']
+['Wardruid Loti'
+ '<b>Taunt</b>, <b>Rush</b>, <b>Poisonous</b>, <b>Stealth</b>, <b>Spell Damage +1</b>']
+["Krag'wa, the Frog"
+ '<b>Battlecry:</b> Return all spells you played last turn to\xa0your hand.']
+['Baited Arrow' 'Deal $3 damage. <b>Overkill:</b> Summon a 5/5 Devilsaur.']
+['Devilsaur' '']
+['Springpaw'
+ '[x]<b>Rush</b>\n<b>Battlecry:</b> Add a 1/1 Lynx\nwith <b>Rush</b> to your hand.']
+['Lynx' '<b>Rush</b>']
+['Bloodscalp Strategist'
+ '<b>Battlecry:</b> If you have a weapon equipped, <b>Discover</b> a spell.']
+['Rain of Toads'
+ 'Summon three 2/4 Toads with <b>Taunt</b>. <b>Overload:</b> (3)']
+['Toad' '<b>Taunt</b>']
+['Likkim' 'Has +2 Attack while you have <b>Overloaded</b> Mana Crystals.']
+["Overlord's Whip" 'After you play a minion, deal 1 damage to it.']
+['Dragon Roar' 'Add 2 random Dragons to your hand.']
+['Saronite Taskmaster'
+ '<b>Deathrattle:</b> Summon a 0/3 Free Agent with <b>Taunt</b> for\xa0your opponent.']
+['Free Agent' '<b>Taunt</b>']
+['Daring Fire-Eater'
+ '<b>Battlecry:</b> Your next Hero Power this turn deals 2\xa0more damage.']
+['Flameweaving' 'Your next Hero Power deals 2 more damage.']
+['Flameweaving' 'Your next Hero Power deals 2 more damage.']
+['Splitting Image'
+ '<b>Secret:</b> When one of your minions is attacked, summon a copy of it.']
+['Untamed Beastmaster' 'Whenever you draw a Beast, give it +2/+2.']
+['Warpaint' '+2/+2.']
+['Dozing Marksman' 'Has +4 Attack while damaged.']
+['Wrong Side of Da Bed' '+4 Attack.']
+['Waterboy' '<b>Battlecry:</b> Your next Hero Power this turn costs (0).']
+['High Quality H2O' 'Your Hero Power costs (0).']
+['Grave Horror'
+ "[x]<b>Taunt</b>\nCosts (1) less for each spell\nyou've cast this game."]
+['Gral, the Shark'
+ '[x]<b>Battlecry:</b> Eat a minion in\nyour deck and gain its stats.\n<b>Deathrattle:</b> Add it to\nyour hand.']
+['Blood in the Water' 'Destroyed {0} and gained its stats.']
+['Surrender to Madness'
+ '[x]Destroy 3 of your Mana\nCrystals. Give all minions\nin your deck +2/+2.']
+['Absolutely Mad!' '+2/+2.']
+['Auchenai Phantasm'
+ '<b>Battlecry:</b> This turn, your healing effects deal damage instead.']
+['Dark Soul' 'Your healing effects are dealing damage.']
+['Spirit of the Dead'
+ '[x]<b>Stealth</b> for 1 turn.\nAfter a friendly minion dies,\nshuffle a 1-Cost copy of it\ninto your deck.']
+['Prayer to Bwonsamdi' 'Bwonsamdi made this cost (1).']
+['Scarab Egg' '<b>Deathrattle:</b> Summon three 1/1 Scarabs.']
+['Scarab' '']
+['Booty Bay Bookie' '<b>Battlecry:</b> Give your opponent a Coin.']
+['Helpless Hatchling'
+ '<b>Deathrattle:</b> Reduce the Cost of a Beast in your hand by (1).']
+['Avenger' 'Costs (1) less.']
+['Gurubashi Chicken' '<b>Overkill:</b> Gain +5 Attack.']
+['Ready to Strike' '+5 Attack.']
+['Sharkfin Fan' 'After your hero attacks, summon a 1/1 Pirate.']
+['Swabbie' '']
+["Regeneratin' Thug"
+ 'At the start of your turn, restore #2 Health to this\xa0minion.']
+['Banana Buffoon' '<b>Battlecry:</b> Add 2 Bananas to your hand.']
+['Bananas' 'Give a minion +1/+1.']
+['Bananas' 'Has +1/+1.']
+['Cheaty Anklebiter' '<b>Lifesteal</b>\n<b>Battlecry:</b> Deal 1 damage.']
+["Mosh'Ogg Enforcer" '<b>Taunt</b>\n<b>Divine Shield</b>']
+['Belligerent Gnome'
+ '[x]<b>Taunt</b>\n<b>Battlecry:</b> If your opponent\nhas 2 or more minions,\ngain +1 Attack.']
+['Belligerent' '+1 Attack.']
+['Rabble Bouncer' '<b>Taunt</b>\nCosts (1) less for each enemy minion.']
+['Gurubashi Offering'
+ 'At the start of your turn, destroy this and gain 8\xa0Armor.']
+['Arena Fanatic' '<b>Battlecry:</b> Give all minions in your hand +1/+1.']
+['WHOOOOO!' '+1/+1.']
+['Murloc Tastyfin'
+ '[x]<b>Deathrattle:</b> Draw 2 Murlocs\nfrom your deck.']
+['Arena Patron' '<b>Overkill:</b> Summon another Arena Patron.']
+['Wartbringer'
+ '<b>Battlecry:</b> If you played 2\xa0spells this turn, deal 2\xa0damage.']
+['Firetree Witchdoctor'
+ "[x]<b>Battlecry:</b> If you're holding\na Dragon, <b>Discover</b> a spell."]
+['Shieldbreaker'
+ '<b>Battlecry:</b> <b>Silence</b> an enemy minion with <b>Taunt</b>.']
+['Arena Treasure Chest' '<b>Deathrattle:</b> Draw 2 cards.']
+['Dragonmaw Scorcher'
+ '<b>Battlecry:</b> Deal 1 damage to all other minions.']
+['Drakkari Trickster'
+ "[x]<b>Battlecry:</b> Give each player a\ncopy of a random card from\ntheir opponent's deck."]
+['Linecracker' "<b>Overkill:</b> Double this minion's Attack."]
+['Crazed' 'Doubled Attack.']
+['Masked Contender'
+ '<b>Battlecry:</b> If you control a\xa0<b>Secret</b>, cast a <b>Secret</b> from\xa0your deck.']
+['Rumbletusk Shaker'
+ '<b>Deathrattle:</b> Summon a 3/2 Rumbletusk Breaker.']
+['Rumbletusk Breaker' '']
+["Mosh'Ogg Announcer"
+ '[x]Enemies attacking this\nhave a 50% chance to\nattack someone else.']
+['Ice Cream Peddler'
+ '<b>Battlecry:</b> If you control a\xa0<b>Frozen</b> minion, gain 8\xa0Armor.']
+['Snapjaw Shellfighter'
+ '[x]Whenever an adjacent\nminion takes damage, this\n\xa0minion takes it instead.']
+['Da Undatakah'
+ '[x]<b>Battlecry:</b> Gain the\n<b>Deathrattle</b> effects of\n3 friendly minions that\ndied this game.']
+['Undatakah Deathrattles' '']
+['Hakkar, the Soulflayer'
+ "<b>Deathrattle:</b> Shuffle a Corrupted Blood into each player's deck."]
+['Corrupted Blood'
+ '<b>Casts When Drawn</b>\nTake 3 damage. After you draw, shuffle two copies of this into your deck.']
+['Oondasta' '<b>Rush</b>\n<b>Overkill:</b> Summon a Beast from your hand.']
+['Bloodclaw' '<b>Battlecry:</b> Deal 5 damage to your hero.']
+['Zandalari Templar'
+ "[x]<b>Battlecry:</b> If you've restored\n10 Health this game, gain\n+4/+4 and <b>Taunt</b>.@ <i>({0} left!)</i>@ <i>(Ready!)</i>"]
+['Rejuvenated' '+4/+4 and <b>Taunt</b>.']
+['Ornery Tortoise' '<b>Battlecry:</b> Deal 5 damage to your hero.']
+['Amani War Bear' '<b>Rush</b>\n<b>Taunt</b>']
+['Reckless Diretroll'
+ '<b>Taunt</b>\n<b>Battlecry:</b> Discard your lowest Cost card.']
+['Demonbolt'
+ 'Destroy a minion. Costs (1) less for each minion you control.']
+['Mojomaster Zihi' '<b>Battlecry:</b> Set each player to 5 Mana Crystals.']
+['Revenge of the Wild' 'Summon your Beasts that died this turn.']
+['Crowd Roaster'
+ "[x]<b>Battlecry:</b> If you're holding\na Dragon, deal 7 damage\nto an enemy minion."]
+['Soup Vendor'
+ 'Whenever you restore 3 or more Health to your hero, draw a card.']
+['Halazzi, the Lynx'
+ '<b>Battlecry:</b> Fill your hand with 1/1 Lynxes that have\xa0<b>Rush</b>.']
+['Spirit of the Lynx'
+ '[x]<b>Stealth</b> for 1 turn.\nWhenever you summon a \nBeast, give it +1/+1.']
+['Blessing of Halazzi' '+1/+1.']
+['Steady Throw' '<b>Hero Power</b>\nDeal $2 damage to the enemy hero.']
+["Akali's Champion"
+ "[x]<b>Shrine</b>\nThis minion's Attack\nis always equal to\nyour Armor."]
+["Akali's Champion" '']
+["Shirvallah's Protection"
+ '[x]<b>Shrine</b>\nAfter a friendly minion\nsurvives damage, give it\n<b>Divine Shield</b>.']
+["Shirvallah's Protection" '']
+['Bottled Terror'
+ '[x]<b>Shrine</b>\nYour other minions have <b>Stealth</b>.\n <b>Deathrattle:</b> Give your minions\n+2 Attack.']
+['Bottled Terror' '+2 Attack.']
+['Bottled Terror' '']
+['Tribal Shrine' '<b>Shrine</b>\n<b>Taunt</b>']
+['Tribal Shrine' '']
+["Jan'alai's Mantle"
+ '[x]<b>Shrine</b>\nHas <b>Spell Damage +1</b> for\neach spell in your hand.']
+["Jan'alai's Mantle" '']
+["Krag'wa's Lure"
+ '[x]<b>Shrine</b>\nAfter you <b>Overload</b>,\ngive your minions that\nmuch Attack.']
+['Overcharged' "+1 Attack for each Mana Crystal you've Overloaded."]
+["Krag'wa's Lure" '']
+["Halazzi's Trap"
+ '[x]<b>Shrine</b>\nAfter you cast a spell, put\na random Hunter Secret\ninto the battlefield.']
+["Halazzi's Trap" '']
+["Gonk's Armament"
+ '[x]<b>Shrine</b>\nWhenever you gain Armor,\nrefresh your Mana\nCrystals.']
+["Gonk's Armament" '']
+['Blood Pact'
+ '[x]<b>Shrine</b>\nYour spells cost Health\ninstead of Mana.']
+['Blood Pact Player Enchantment' 'Spells cost Health instead of Mana.']
+['Blood Pact' '']
+["Bwonsamdi's Sanctum"
+ '[x]<b>Shrine</b>\nYour <b>Deathrattles</b> trigger\ntwo additional times.']
+["Bwonsamdi's Sanctum Player Enchant" '']
+["Bwonsamdi's Sanctum" '']
+["Gonk's Mark"
+ '[x]<b>Shrine</b>\nAfter you summon a\nminion, give it +1/+1.']
+["Gonk's Mark" '+1/+1.']
+["Gonk's Mark" '']
+['Bonds of Balance'
+ "[x]<b>Shrine</b>\nAt the end of your turn,\ngain Attack equal to your\nhero's Attack."]
+["Gonk's Bond" 'Increased Attack.']
+['Bonds of Balance' '']
+['Water Spirit'
+ '<b>Start of Game:</b> Draw this.\n<b>Deathrattle:</b> Gain 2 Mana Crystals.']
+['Direhorn Stomper'
+ '<b>Rush</b>\n<b>Overkill</b>: Summon a minion from your deck with the highest Attack.']
+['Succoring Skyscreamer'
+ '[x]Whenever you gain\nArmor, draw a card.\nIt costs (2) less.']
+['Zandalari Striker'
+ 'After your hero attacks, give your minions\n+2 Attack.']
+['Empowered' 'Increased Attack.']
+['The Fan Favorite'
+ '<b>Overkill:</b> Give your hero +10 Attack this turn.']
+['The Fan Favorite' '+10 Attack this turn.']
+['Astral Raptor'
+ '<b>Rush</b>\n<b>Overkill:</b> Summon another Astral Raptor.']
+["Jan'alai's Flame"
+ '[x]<b>Shrine</b>\nYour Hero Power costs (0).\nWhenever it kills\na minion, refresh it.']
+["Jan'alai's Flame Player Enchant" 'Your Hero Power costs (0) this turn.']
+["Jan'alai's Flame" '']
+["Jan'alai's Progeny"
+ '[x]<b>Shrine</b>\nWhenever you <b>Freeze</b> a\ncharacter, put a Frostfire\ninto your hand.']
+['Frostfire' 'Deal $1 damage.']
+["Jan'alai's Progeny" '']
+['Razzle Dazzler'
+ '<b>Taunt</b>\n<b>Battlecry</b>: Fill your hand with Arcane Missiles.']
+['Glyph Guardian'
+ 'Whenever a character is <b>Frozen</b>, gain <b>Spell Damage +1</b>.']
+['Empowered Glyph' 'Increased Spell Damage.']
+['Frostweaver'
+ 'Your Hero Power also <b><b>Freeze</b>s</b> the target.\nIf the target is a <b>Frozen</b> minion, destroy it.']
+['Fireslinger'
+ 'After you cast a spell,\ncast a Fireball at a random\xa0enemy.']
+['Showstopping Conjurer'
+ '<b>Rush</b>\n<b>Overkill</b>: Draw a spell from your deck.']
+['Fan of Flames'
+ '<b>Start of Game</b>: Draw this.\n<b>Battlecry:</b> Upgrade your Hero Power.']
+["Shirvallah's Vengeance"
+ '[x]<b>Shrine</b>\nWhenever your hero takes\ndamage, deal 5 damage\nto the enemy hero.']
+["Shirvallah's Vengeance" '']
+["Shirvallah's Grace"
+ '[x]<b>Shrine</b>\nAfter you cast a spell\non a friendly minion, cast a\n  copy of it on this one.']
+["Shirvallah's Grace" '']
+['Parading Marshal'
+ '<b>Start of Game:</b> Draw this.\n<b>Battlecry:</b> Equip a Truesilver Champion.']
+['Blessed One' '<b>Battlecry:</b> Draw spells until your hand is full.']
+['Lightchucker'
+ 'After a character is healed, destroy a random\nenemy minion.']
+['The Walking Fort'
+ '<b>Taunt</b>\nThis minion can only take\n1\xa0damage\xa0at\xa0a\xa0time.']
+['Gloryseeker'
+ 'Whenever this minion takes damage, your hero takes it instead.']
+['Exactor of Justice'
+ '[x]<b>Divine Shield</b>\n<b>Overkill:</b> Gain <b>Divine Shield</b>.']
+["Bwonsamdi's Tome"
+ '[x]<b>Shrine</b>\nAfter you cast a spell,\nadd a random Priest spell\nto your hand.']
+["Bwonsamdi's Tome" '']
+["Bwonsamdi's Covenant"
+ '[x]<b>Shrine</b>\nHealing enemies\ndamages them instead.']
+["Bwonsamdi's Covenant" 'Healing enemies damages them instead.']
+["Bwonsamdi's Covenant" '']
+['Weaponized Zombie'
+ '<b>Start of Game:</b> Draw this.\n<b>Deathrattle:</b> Give a random friendly\xa0minion\xa0+1/+1.']
+['Repurposed Steel' '+1/+1.']
+['Ghastcoiler'
+ '<b>Deathrattle:</b> Summon\n2 random <b>Deathrattle</b> minions.']
+['Bloodwash Medic'
+ '<b>Rush</b>\n<b>Overkill</b>: Add 3 healing spells to your hand.']
+["Bwonsamdi's Keeper"
+ '<b>Battlecry:</b> Restore all minions to full Health.']
+['Soulsapper'
+ "<b>Deathrattle:</b> Steal 2 spells from your opponent's deck."]
+['Conjuring Attendant' 'Your spells cost (2) less.']
+['Attentive Conjuring' 'Costs (2) less.']
+['Tribute from the Tides'
+ '[x]<b>Shrine</b>\nYour <b>Battlecries</b> trigger\ntwo additional times.']
+['Tribute from the Tides' '']
+["Krag'wa's Grace" '[x]<b>Shrine</b>\nYour spells cost (2) less.']
+["Krag'wa's Grace" '']
+['Deepsea Diver'
+ '[x]<b>Start of Game:</b> Draw this.\n<b>Battlecry:</b> Unlock your\n<b>  Overloaded</b> Mana Crystals.']
+['Leap Frog'
+ '[x]<b>Battlecry:</b> Deal 3 damage\nto a random enemy minion.\nIf it dies, repeat this.']
+['Overcharged Totem'
+ 'After you <b>Overload</b>,\ndeal 2 damage to all enemy minions.']
+['Croak Jouster'
+ "[x]<b>Battlecry</b>: <b>Discover</b> a spell.\nIf you're <b>Overloaded</b>,\nkeep\xa0all\xa03."]
+['Naga Tonguelasher'
+ "<b>Battlecry:</b> <b>Overload</b> 3 of your opponent's Mana\xa0Crystals."]
+['War Heralder'
+ '<b>Rush</b>\n<b>Overkill</b>: Add 3 random Shaman spells to your hand.']
+["Halazzi's Hunt"
+ '[x]<b>Shrine</b>\nYour minions have\n"<b>Overkill</b>: Cards in your\nhand cost (1) less."']
+["Halazzi's Hunt"
+ '<b>Overkill:</b> Reduce the cost of cards in your hand by (1).']
+["Halazzi's Hunt Enchantment" '']
+["Halazzi's Hunt" '']
+["Halazzi's Guise"
+ '[x]<b>Shrine</b>\nWhenever you summon a\nBeast, it gains <b>Rush</b>,\n<b>Taunt</b>, or <b>Poisonous</b>']
+["Halazzi's Haste" '<b>Rush</b>.']
+["Halazzi's Protector" '<b>Taunt</b>.']
+["Halazzi's Wrath" '<b>Poisonous</b>.']
+["Halazzi's Guise" '']
+['Shadowmaw Panther'
+ 'Your Beasts have <b>Rush</b>.\n<b>Start of Game:</b> Draw this.']
+["Panther's Lead" 'Has <b>Rush</b>.']
+['Battlestarved Lynx'
+ '<b>Battlecry:</b> Draw Beasts until your hand is full.']
+['Troll Harbinger'
+ '<b>Taunt</b>\nAfter a minion dies, add a random Hunter spell to your hand.']
+['Rabid Saurolisk'
+ '<b>Poisonous</b>\n<b>Deathrattle:</b> Deal 1 damage to all enemies.']
+['Streetsmuggler'
+ 'After a friendly Secret is revealed, put a random Hunter Secret into the battlefield.']
+['Slamma Jamma'
+ '<b>Battlecry:</b> Double the Attack of all your other\xa0minions.']
+["Slamm'd N Jamm'd" "This minion's Attack has been doubled."]
+["Akali's War Drum"
+ '[x]<b>Shrine</b>\nAfter you summon a Dragon,\nreduce the Costs of Dragons\nin your hand by (1).']
+["Akali's War Drum" '']
+["Akali's Horn"
+ '[x]<b>Shrine</b>\nYour minions have\n"<b>Overkill</b>: This can\nattack again."']
+['Fury of the Rhino' '<b>Overkill:</b> This minion can attack again.']
+["Akali's Horn" '']
+['Rallying Quilboar'
+ '[x]Adjacent minions have <b>Taunt</b>.\n<b>Start of Game:</b> Draw this.']
+['Quilboar Rally' '<b>Taunt</b>.']
+['Redcrest Rocker'
+ '[x]<b>Rush</b>\n<b>Overkill:</b> <b>Discover</b> a Dragon.\nIf you control a Dragon,\nkeep all 3.']
+['Ironhorn Drummer'
+ "Your minions can't be reduced below 1 Health on your turn."]
+['Rocking Out' "Can't be reduced below 1 Health."]
+['Seasoned Pitbrawler' 'Whenever you gain Armor, gain twice as much.']
+['Herald of Flame'
+ 'Whenever you play a Dragon, give it <b>Rush</b> and draw a Dragon.']
+['Flamed' 'Has <b>Rush</b>.']
+['Unbound Punisher'
+ '<b>Battlecry:</b> Destroy all\nenemy minions.\nGain 2 Armor for each minion destroyed.']
+['Dark Reliquary'
+ '[x]<b>Shrine</b>\nWhenever you discard a\ncard, summon a\nrandom Demon.']
+['Dark Reliquary' '']
+["Hir'eek's Hunger"
+ '[x]<b>Shrine</b>\nWhenever your hero takes\ndamage on your turn, the enemy\nhero takes it instead.']
+["Hir'eek's Hunger" '']
+['Leering Bat'
+ '[x]Your hero is <b>Immune</b>\non your turn.\n   <b>Start of Game:</b> Draw this.']
+['Leering' 'Player Enchant']
+['Ravenous Familiar'
+ '<b>Rush</b>\n<b>Overkill</b>: Discard your\nlowest Cost card and\ndraw a card.']
+['Vile Necrodoctor'
+ '<b>Lifesteal</b>\n<b>Battlecry:</b> Deal 3 damage to all enemy minions.']
+['Warp Stalker'
+ '<b>Stealth</b>\nYou can use your Hero Power\nany\xa0number\xa0of\xa0times.']
+['Dark Diviner' '<b>Battlecry:</b> Fill your hand with random spells.']
+['Blood Portal'
+ 'Whenever your hero takes damage, add a random Warlock spell to\nyour hand.']
+['Treasure from Below'
+ "[x]<b>Shrine</b>\nAt the start of your turn, steal\na card from your opponent's\ndeck. It costs (2) less."]
+['Treasure from Below' '']
+["Pirate's Mark"
+ '[x]<b>Shrine</b>\nAfter you cast a spell,\ncast it again\n<i>(on the same target).</i>']
+["Pirate's Mark" '']
+['Pesky Rascal' '<b>Immune</b>\n<b>Start of Game:</b> Draw this.']
+['Parrot Mascot'
+ "[x]<b>Combo:</b> Add a copy of\neach card you've played\nthis turn to your hand."]
+['Salty Looter'
+ "<b>Battlecry</b> and <b>Deathrattle:</b> Steal a card from your opponent's hand."]
+['Sharktoothed Harpooner'
+ "<b>Battlecry:</b> If you're holding any cards that didn't start in your deck, reduce their Cost by (4)."]
+['Lobstrok Tastetester'
+ '[x]After you cast a spell, draw\na spell from your deck.\nIt costs (2) less.']
+['Raging Contender'
+ '<b>Rush</b>\n<b>Deathrattle:</b> Fill your board with random Pirates.']
+['War Master Voone'
+ '<i>The Warmaster is a triple threat:\xa0He\xa0rocks. He\xa0rolls.\xa0He\xa0trolls!</i>']
+['Zentimo'
+ '<i>This creepy swamp shaman is packing some\xa0bad\xa0voodoo.</i>']
+['Captain Hooktusk'
+ '<i>Those who say her cheating goes over[d]board\xa0soon\xa0follow\xa0suit.</i>']
+['High Priest Thekal'
+ '<i>Floats like a feather. Stings like a troll punching\xa0your\xa0face.</i>']
+["Zul'jin"
+ "<i>Zul'jin's not ready to bury the hatchet. Unless it's in your shrine.</i>"]
+['Wardruid Loti'
+ '<i>She and her raptors aim to prove the wild side is\xa0the\xa0winning\xa0side.</i>']
+['High Priestess Jeklik'
+ '<i>Her blood magic brings on spells,\xa0demons, and\xa0hurt\xa0feelings.</i>']
+['Hex Lord Malacrass'
+ '<i>Malacrass is on fire this year! And sometimes frost.</I>']
+['Princess Talanji'
+ "<i>Her family bargained with the loa of death. That's\xa0bad.\xa0For\xa0you.</i>"]
+['Rikkar' '']
+['Rikkar' '']
+['Rikkar' '']
+['Rikkar' '']
+['Rikkar' '']
+['Rikkar' '']
+['Rikkar' '']
+['Rikkar' '']
+['Rikkar' '']
+['Rikkar' '']
+['Sacred Ritual'
+ '<b>Passive</b>\nYour <b>Shrines</b> have "Your spells cost (1) less."']
+['Sacred' 'Your spells cost (1) less.']
+['Sacred Ritual Player Enchant' '']
+['Favor of the Gods'
+ '<b>Passive</b>\nMinions adjacent to your <b>Shrines</b> have <b>Taunt</b>.']
+['Favored' 'Adjacent minions gain <b>Taunt</b>.']
+['Favor of the Gods Player Enchant' '']
+['Fortified Spirit'
+ '<b>Passive</b>\nAt the start of each turn, restore your <b>Shrines</b> to\nfull Health.']
+['Fortified' 'Restores to full Health each turn.']
+['Fortified Spirit Player Enchant' '']
+['Everlasting Devotion'
+ '<b>Passive</b>\nStart the game with a copy of your <b>Shrine</b>.']
+['Pact with the Loa'
+ '<b>Passive</b>\nYour <b>Shrines</b> revive in\n2 turns instead of 3.']
+['Pact with the Loa Player Enchant' '']
+['Wrath of the Loas'
+ '<b>Passive</b>\nYour <b>Shrines</b> have "<b>Deathrattle</b>: Destroy\nall enemy <b>Shrines</b>."']
+['Wrath of the Loa Player Enchant' '']
+['Wrath of the Loas'
+ '<b>Deathrattle</b>: Destroy all enemy <b>Shrines</b>.']
+['Boon Reaper'
+ '<b>Passive</b>\nYour <b>Shrines</b> have "<b>Deathrattle</b>: Draw cards until your hand is full."']
+['Boon Reaper Player Enchant' '']
+['Boon Reaper' '<b>Deathrattle:</b> Draw cards until your hand is full.']
+['Roaring Edifice'
+ '[x]<b>Passive</b>\nYour <b>Shrines</b> have\n"<b>Deathrattle</b>: Cards in your\nhand cost (2) less."']
+['Roaring Edifice Player Enchant' '']
+['Roaring Edifice'
+ '<b>Deathrattle:</b> Reduce the cost of cards in your hand by (2).']
+['Windfall Blessing'
+ '<b>Passive</b>\nYour <b>Shrines</b> have "<b>Deathrattle</b>: Give minions in your deck +1/+1."']
+['Windfall Blessing Player Enchant' '']
+['Windfall Glyph'
+ '<b>Deathrattle</b>: Give all minions in your deck +1/+1."']
+['Windfall Blessing' '+1/+1.']
+['Natural Defense' '']
+['Feral' '']
+["Nature's Blessing" '']
+['Saplings' '']
+['Big Draws' '']
+['Wise Decisions' '']
+['Beasts' '']
+["Nature's Wrath" '']
+['Rumble Kings' '']
+['Going Wild' '']
+['Fresh Meat' '']
+['Big Beasts' '']
+['Trick Shots' '']
+['Beast Caller' '']
+['Secrets' '']
+['Beast Training' '']
+['Deathrattle' '']
+['Legendary' '']
+['Survival Tactics' '']
+['Scrapyard' '']
+['Heroic Power' '']
+['Elementals' '']
+['Big Spells' '']
+['Fire' '']
+['Frost' '']
+['Magical Friends' '']
+['Spell Power' '']
+['Hand Power' '']
+['Gurubashi Legends' '']
+['Chaos' '']
+['Magnetic' '']
+['Healing' '']
+['Recruits' '']
+['Self-Sacrifice' '']
+['Teambuilding' '']
+['Reinforce' '']
+['Holy Arsenal' '']
+['Secrets' '']
+['Dragons' '']
+['Divine Legends' '']
+['Dying Words' '']
+['Healing' '']
+['Inspired by the Light' '']
+['Double Down' '']
+['Elementals' '']
+['Inner Strength' '']
+['Resilient' '']
+['Army of the Dead' '']
+['Wrath' '']
+['Legends of the Light' '']
+['Burgle' '']
+['Pirates' '']
+['Battlecry' '']
+['Aggressive Tactics' '']
+['Tricks of the Trade' '']
+['Weapons' '']
+['Deathrattle' '']
+['For the Money' '']
+['Bounce' '']
+['Misfits' '']
+['Elemental Fury' '']
+['Spellchasers' '']
+['Blessings' '']
+['Mutations' '']
+['Battlecrier' '']
+['Elementals' '']
+['Murlocs' '']
+['Overload' '']
+['Totems' '']
+['Jade Lotus' '']
+['Farseer' '']
+['Mechanized' '']
+["Hir'eek's Legion" '']
+['Discard' '']
+['Life Takers' '']
+['Taunt' '']
+['Wrath' '']
+['Sacrifice' '']
+['Blood' '']
+['Dire Demons' '']
+['A Dark Hand' '']
+['Jinx' '']
+['Tank Up!' '']
+['Berserker' '']
+['Legendary' '']
+['Smash' '']
+['Metalhead' '']
+['Rush' '']
+['Fervent Fans' '']
+['Protection' '']
+['Dragon Heart' '']
+['Overkill' '']
+['Flesheating Ghoul' 'Whenever a minion dies, gain +1 Attack.']
+['Cannibalize' 'Increased Attack.']
+['Spellbender'
+ '<b>Secret:</b> When an enemy casts a spell on a minion, summon a 1/3 as the new target.']
+['Spellbender' '']
+['Hogger' '']
+['Riverpaw Gnoll' '']
+['Gnoll' '']
+['Hogger SMASH!' 'Deal 4 damage.']
+['Massive Gnoll' '']
+['Jaina Proudmoore' '']
+['Millhouse Manastorm' '']
+['King Mukla' '']
+['Barrel Toss' 'Deal 2 damage.']
+['Barrel' 'Is something in this barrel?']
+['Stomp' 'Deal 2 damage to all enemies.']
+['Hidden Gnome' 'Was hiding in a barrel!']
+['Bananas' 'Give a friendly minion +1/+1. <i>(+1 Attack/+1 Health)</i>']
+['Bananas' 'This minion has +1/+1. <i>(+1 Attack/+1 Health)</i>']
+["Mukla's Big Brother" 'So strong! And only 6 Mana?!']
+['Will of Mukla' 'Restore 8 Health.']
+['Might of Mukla' 'King Mukla has +8 Attack this turn.']
+['Hemet Nesingwary' '']
+['Crazed Hunter' '']
+['Shotgun Blast' '<b>Hero Power</b>\nDeal 1 damage.']
+['Illidan Stormrage' '']
+['Flames of Azzinoth' '<b>Hero Power</b>\nSummon two 2/1 minions.']
+['Flame of Azzinoth' '']
+['Naga Myrmidon' '<b></b>']
+['Warglaive of Azzinoth' '']
+['Flame Burst' 'Shoot 5 missiles at random enemies for $1 damage each.']
+['Dual Warglaives' '']
+['Lorewalker Cho' '']
+['Pandaren Scout' '']
+['Shado-Pan Monk' '']
+['Legacy of the Emperor'
+ 'Give your minions +2/+2. <i>(+2 Attack/+2 Health)</i>']
+['Legacy of the Emperor' 'Has +2/+2. <i>(+2 Attack/+2 Health)</i>']
+['Brewmaster' '']
+['Transcendence' "Until you kill Cho's minions, he can't be attacked."]
+['Transcendence' "Until you kill Cho's minions, he can't be attacked."]
+['Crazy Monkey' '<b>Battlecry:</b> Throw Bananas.']
+['Zephrys the Great'
+ '<b>Battlecry:</b> If your deck has no duplicates, wish for the perfect card.']
+['Untapped Potential'
+ '[x]<b>Quest:</b> End 4 turns\nwith any unspent Mana.\n<b>Reward:</b> Ossirian Tear.']
+['Ossirian Tear'
+ '<b>Passive Hero Power</b>\nYour <b>Choose One</b> cards have both effects combined.']
+['Crystal Merchant'
+ 'If you have any unspent Mana at the end of your turn, draw a card.']
+['BEEEES!!!' '[x]Choose a minion.\nSummon four 1/1 Bees\nthat attack it.']
+['Bee' '']
+['Hidden Oasis'
+ '<b>Choose One</b> - Summon a 6/6 Ancient with <b>Taunt</b>; or Restore #12 Health.']
+['Befriend the Ancient' 'Summon a 6/6 Ancient with <b>Taunt</b>.']
+["Vir'naal Ancient" '<b>Taunt</b>']
+['Drink the Water' 'Restore #12 Health.']
+['Worthy Expedition' '<b>Discover</b> a <b>Choose One</b> card.']
+['Garden Gnome'
+ "[x]<b>Battlecry:</b> If you're holding\na spell that costs (5) or more,\nsummon two 2/2 Treants."]
+['Treant' '']
+['Anubisath Defender'
+ "<b>Taunt</b>. Costs (0) if you've cast a spell that costs (5) or more this turn."]
+['Elise the Enlightened'
+ '<b>Battlecry:</b> If your deck has no duplicates, duplicate your hand.']
+['Supreme Archaeology'
+ '<b>Quest:</b> Draw 20 cards.\n<b>Reward:</b> Tome of Origination.']
+['Origination' 'Costs (0).']
+['Tome of Origination' '<b>Hero Power</b>\nDraw a card.\nIt costs (0).']
+["Pharaoh's Blessing"
+ 'Give a minion +4/+4, <b>Divine Shield</b>, and <b>Taunt</b>.']
+["Pharaoh's Blessing" '+4/+4, <b>Divine Shield</b>, and <b>Taunt</b>.']
+['Brazen Zealot' 'Whenever you summon a minion, gain +1 Attack.']
+['Zeal' 'Increased Attack.']
+['Ramkahen Wildtamer'
+ '<b>Battlecry:</b> Copy a random Beast in your hand.']
+['Pressure Plate'
+ '<b>Secret:</b> After your opponent casts a spell, destroy a random enemy\xa0minion.']
+['Hyena Alpha'
+ '[x]<b>Battlecry:</b> If you control\na <b>Secret</b>, summon two\n2/2 Hyenas.']
+['Hyena' '']
+['Unseal the Vault'
+ "<b>Quest:</b> Summon 20\xa0minions.\n<b>Reward:</b> Pharaoh's Warmask."]
+['Roar!' '+2 Attack.']
+["Pharaoh's Warmask" '<b>Hero Power</b>\nGive your minions +2\xa0Attack.']
+['Dinotamer Brann'
+ '<b>Battlecry:</b> If your deck has no duplicates, summon King Krush.']
+['Duke' '<b>Rush</b>']
+['Duchess' '<b>Rush</b>']
+['King Krush' '<b>Charge</b>']
+['Questing Explorer'
+ '<b>Battlecry:</b> If you control a <b>Quest</b>, draw a card.']
+['Sandstorm Elemental'
+ '<b>Battlecry:</b> Deal 1 damage to all enemy minions. <b>Overload:</b> (1)']
+['Sinister Deal' '<b>Discover</b> a <b>Lackey</b>.']
+['Neferset Thrasher'
+ 'Whenever this attacks, deal 3 damage to your\xa0hero.']
+['EVIL Recruiter'
+ '<b>Battlecry:</b> Destroy a friendly <b>Lackey</b> to summon a 5/5 Demon.']
+['EVIL Demon' '']
+['Expired Merchant'
+ '[x]<b>Battlecry:</b> Discard your\nhighest Cost card.\n<b>Deathrattle:</b> Add 2 copies\nof it to your hand.']
+['Expired Goods' 'Discarded {0}.']
+['Riftcleaver'
+ '<b>Battlecry:</b> Destroy a minion. Your hero takes damage equal to its Health.']
+['Diseased Vulture'
+ 'Whenever your hero takes damage on your turn, summon a random\n3-Cost minion.']
+['Dark Pharaoh Tekahn'
+ '<b>Battlecry:</b> For the rest of the game, your <b>Lackeys</b> are 4/4.']
+['Lackey Empowerment' 'Your <b>Lackeys</b> are 4/4.']
+['Lackey Empowerment' 'Your <b>Lackeys</b> are 4/4.']
+['Lackey Empowerment' '4/4.']
+['Mogu Fleshshaper'
+ '[x]<b>Rush</b>. Costs (1) less for each\nminion on the battlefield.']
+['Weaponized Wasp'
+ '<b>Battlecry:</b> If you control\na <b>Lackey</b>, deal 3\xa0damage.']
+['Totemic Surge' 'Give your Totems +2\xa0Attack.']
+['Big Surge' '+2 Attack.']
+['Plague of Murlocs' 'Transform all minions into random Murlocs.']
+['Vessina'
+ "While you're <b>Overloaded</b>, your other minions have +2 Attack."]
+["Vessina's Devotion" 'Vessina is granting this minion +2\xa0Attack.']
+['Serpent Egg' '<b>Deathrattle:</b> Summon a 3/4 Sea Serpent.']
+['Sea Serpent' '']
+['Octosari' '<b>Deathrattle:</b> Draw 8 cards.']
+['Siamat'
+ '[x]<b>Battlecry:</b> Gain 2 of <b>Rush</b>,\n<b>Taunt</b>, <b>Divine Shield</b>, or\n<b>Windfury</b> <i>(your choice).</i>']
+["Siamat's Wind" 'Give Siamat <b>Windfury</b>.']
+["Siamat's Shield" 'Give Siamat\n<b>Divine Shield</b>.']
+["Siamat's Heart" 'Give Siamat <b>Taunt</b>.']
+["Siamat's Speed" 'Give Siamat <b>Rush</b>.']
+['Phalanx Commander' 'Your <b>Taunt</b> minions\nhave +2 Attack.']
+['Commanded' 'Phalanx Commander is granting this +2 Attack.']
+['Sunstruck Henchman'
+ 'At the start of your turn, this has a 50% chance to\xa0fall asleep.']
+['Earthquake'
+ 'Deal $5 damage to all minions, then deal $2 damage to all minions.']
+['Spitting Camel'
+ '[x]At the end of your turn,\n\xa0\xa0deal 1 damage to another\xa0\xa0\nrandom friendly minion.']
+['Anubisath Warbringer'
+ '<b>Deathrattle:</b> Give all minions in your hand +3/+3.']
+['Anubisath Power' '+3/+3.']
+['Kobold Sandtrooper'
+ '<b>Deathrattle:</b> Deal 3 damage to the enemy\xa0hero.']
+['Temple Berserker' '<b>Reborn</b>\nHas +2 Attack while damaged.']
+['Enraged' '+2 Attack.']
+['Pharaoh Cat'
+ '<b>Battlecry:</b> Add a random <b>Reborn</b> minion to your\xa0hand.']
+['Golden Scarab' '<b><b>Battlecry:</b> Discover</b> a\n4-Cost card.']
+['Faceless Lurker'
+ "<b>Taunt</b>\n<b>Battlecry:</b> Double this minion's Health."]
+['Bravery' 'Doubled Health.']
+['Pit Crocolisk' '<b>Battlecry:</b> Deal 5 damage.']
+['Beaming Sidekick' '<b>Battlecry:</b> Give a friendly minion +2 Health.']
+['Assisting!' '+2 Health.']
+['Living Monument' '<b>Taunt</b>']
+['Wasteland Scorpid' '<b>Poisonous</b>']
+['Frightened Flunky'
+ '<b>Taunt</b>\n<b>Battlecry:</b> <b>Discover</b> a <b>Taunt</b>\xa0minion.']
+['Neferset Ritualist'
+ '<b>Battlecry:</b> Restore adjacent minions to full\xa0Health.']
+['Quicksand Elemental'
+ '<b>Battlecry:</b> Give all enemy minions -2 Attack this\xa0turn.']
+['Stuck!' '-2 Attack this turn.']
+['Conjured Mirage'
+ '<b>Taunt</b>\nAt the start of your turn, shuffle this minion into your deck.']
+['Candletaker' '<b>Reborn</b>']
+['Restless Mummy' '<b>Rush</b>\n<b>Reborn</b>']
+['Ancestral Guardian' '<b>Lifesteal</b>\n<b>Reborn</b>']
+['Khartut Defender'
+ '[x]<b>Taunt</b>, <b>Reborn</b>\n<b>Deathrattle:</b> Restore #3\nHealth to your hero.']
+['Vulpera Scoundrel'
+ '<b>Battlecry</b>: <b>Discover</b> a spell or pick a mystery choice.']
+['Mystery Choice!' 'Add a random spell to your hand.']
+['Wild Bloodstinger'
+ "<b>Battlecry:</b> Summon a minion from your opponent's hand. Attack it."]
+['Generous Mummy' "<b>Reborn</b>\nYour opponent's cards cost (1) less."]
+['Charity' 'Costs (1) less.']
+['Wrapped Golem'
+ '[x]<b>Reborn</b>\nAt the end of your turn,\nsummon a 1/1 Scarab\nwith <b>Taunt</b>.']
+['Scarab' '<b>Taunt</b>']
+['Puzzle Box of Yogg-Saron'
+ 'Cast 10 random spells <i>(targets chosen randomly).</i>']
+['Micro Mummy'
+ '[x]<b>Reborn</b>\nAt the end of your turn, give\nanother random friendly\nminion +1 Attack.']
+['Microwrapped' 'Attack increased.']
+['Mischief Maker'
+ "<b>Battlecry:</b> Swap the top card of your deck with your\xa0opponent's."]
+['Whirlkick Master'
+ 'Whenever you play a <b>Combo</b> card, add a random <b>Combo</b> card to your hand.']
+['Tortollan Pilgrim'
+ '[x]<b>Battlecry</b>: <b>Discover</b> a spell\nin your deck and cast it\nwith random targets.']
+['Reno the Relicologist'
+ '<b>Battlecry:</b> If your deck has no duplicates, deal 10 damage randomly split among all enemy minions.']
+['Flame Ward'
+ '<b>Secret:</b> After a minion attacks your hero, deal $3 damage to all enemy minions.']
+['Arcane Flakmage'
+ 'After you play a <b>Secret</b>, deal 2 damage to all enemy minions.']
+['Infested Goblin'
+ '<b>Taunt</b>\n<b>Deathrattle:</b> Add two 1/1 Scarabs with <b>Taunt</b> to your hand.']
+['Tomb Warden'
+ '<b>Taunt</b>\n<b>Battlecry:</b> Summon a copy of this minion.']
+['Into the Fray' 'Give all <b>Taunt</b> minions in your hand +2/+2.']
+['Frayed' '+2/+2 from Into the Fray.']
+['Armagedillo'
+ '[x]<b>Taunt</b>\nAt the end of your turn,\ngive all <b>Taunt</b> minions\nin your hand +2/+2.']
+['Tough' 'Increased stats from Armagedillo.']
+['High Priest Amet'
+ "[x]Whenever you summon a\nminion, set its Health equal\nto this minion's."]
+["Amet's Blessing" 'Health changed.']
+['Embalming Ritual' 'Give a minion <b>Reborn</b>.']
+['Grandmummy'
+ '[x]<b>Reborn</b>\n <b>Deathrattle:</b> Give a random\nfriendly minion +1/+1.']
+["Grandmummy's Blessing" '+1/+1.']
+['Psychopomp'
+ '[x]<b>Battlecry:</b> Summon a\nrandom friendly minion\nthat died this game.\nGive it <b>Reborn</b>.']
+['Wretched Reclaimer'
+ '[x]<b>Battlecry:</b> Destroy a friendly\nminion, then return it to life\nwith full Health.']
+['Sandhoof Waterbearer'
+ 'At the end of your turn, restore #5 Health to a damaged friendly character.']
+["Injured Tol'vir"
+ '<b>Taunt</b>\n<b>Battlecry:</b> Deal 3 damage to this minion.']
+['Holy Ripple'
+ 'Deal $1 damage to all enemies. Restore #1\xa0Health to all friendly characters.']
+['Overflow' 'Restore #5 Health\nto all characters.\nDraw 5 cards.']
+['Wasteland Assassin' '<b>Stealth</b>\n<b>Reborn</b>']
+['Bone Wraith' '<b>Taunt</b>\n<b>Reborn</b>']
+['EVIL Totem'
+ 'At the end of your turn,\nadd a <b>Lackey</b> to your hand.']
+['Sahket Sapper'
+ "<b>Deathrattle:</b> Return a \xa0random enemy minion to\xa0 your\xa0opponent's\xa0hand."]
+['Jar Dealer'
+ '[x]<b>Deathrattle:</b> Add a random\n1-Cost minion to your hand.']
+['Hooked Scimitar' '[x]<b>Combo:</b> Gain +2 Attack.']
+['Polished' '+2 Attack.']
+['Shadow of Death'
+ "Choose a minion. Shuffle 3 'Shadows' into your deck that summon a copy when drawn."]
+['Shadow' '<b>Casts When Drawn</b>\nSummon a {0}.']
+['Anka, the Buried'
+ '<b>Battlecry:</b> Change each <b>Deathrattle</b> minion in your hand into a 1/1 that costs (1).']
+['Buried' 'Anka, the Buried made this 1/1.']
+['Fishflinger'
+ "<b>Battlecry:</b> Add a\nrandom Murloc to each player's\xa0hand."]
+['History Buff'
+ 'Whenever you play a minion, give a random minion in your hand +1/+1.']
+['Erudite' 'Increased stats from History Buff.']
+['Corrupt the Waters'
+ "[x]<b>Quest:</b> Play 6 <b>Battlecry</b>\ncards.\n<b>Reward:</b> Heart of Vir'naal."]
+["Heart of Vir'naal"
+ '<b>Hero Power</b>\nYour <b>Battlecries</b> trigger twice this turn.']
+["Heart of Vir'naal" 'Your <b>Battlecries</b> trigger twice this turn.']
+['Oasis Surger'
+ '<b>Rush</b>\n<b>Choose One -</b> Gain +2/+2; or Summon a copy of this minion.']
+['Focused Burst' 'Gain +2/+2.']
+['Focused' '+2/+2.']
+['Divide and Conquer' 'Summon a copy of this\xa0minion.']
+['Cloud Prince'
+ '<b>Battlecry:</b> If you control a <b>Secret</b>, deal 6 damage.']
+['King Phaoris'
+ '[x]<b>Battlecry:</b> For each spell\nin your hand, summon a\nrandom minion of the\nsame Cost.']
+['Dwarven Archaeologist'
+ 'After you <b>Discover</b> a card, reduce its cost by (1).']
+['Archaelogical Study' 'Costs (1) less.']
+['Impbalming' 'Destroy a minion. Shuffle 3 Worthless Imps into your deck.']
+['Worthless Imp' '']
+['Bazaar Burglary'
+ '[x]<b>Quest:</b> Add 4 cards from\nother classes to your hand.\n<b>Reward: </b>Ancient Blades.']
+['Ancient Blades'
+ '[x]<b>Hero Power</b>\nEquip a 3/2 Blade with\n <b>Immune</b> while attacking.']
+['Mirage Blade' 'Your hero is <b>Immune</b> while attacking.']
+['Bazaar Mugger'
+ '<b>Rush</b>\n<b>Battlecry:</b> Add a random minion from another class to your hand.']
+['Clever Disguise'
+ 'Add 2 random spells from another class to\xa0your hand.']
+['Dune Sculptor'
+ '[x]After you cast a spell,\nadd a random Mage\nminion to your hand.']
+['Scarlet Webweaver'
+ '<b>Battlecry:</b> Reduce the Cost of a random Beast in your\xa0hand by (5).']
+['Weaved' 'Costs (5) less.']
+['Splitting Axe' '<b>Battlecry:</b> Summon copies of your Totems.']
+["Hunter's Pack"
+ 'Add a random Hunter Beast, <b>Secret</b>, and weapon to your\xa0hand.']
+['Desert Spear'
+ 'After your hero attacks, summon a 1/1 Locust with <b>Rush</b>.']
+['Locust' '<b>Rush</b>']
+['Making Mummies'
+ '[x]<b>Quest:</b> Play 5 <b>Reborn</b>\nminions.\n<b>Reward:</b> Emperor Wraps.']
+['Emperor Wrapped' '2/2.']
+['Emperor Wraps'
+ '[x]<b>Hero Power</b>\nSummon a 2/2 copy\nof a friendly minion.']
+['Raid the Sky Temple'
+ '<b>Quest:</b> Cast 10 spells.\n<b>Reward: </b>Ascendant Scroll.']
+['Cheat Sheet' 'Costs (2) less.']
+['Ascendant Scroll'
+ '<b>Hero Power</b>\nAdd a random Mage\nspell to your hand.\nIt costs (2) less.']
+['Naga Sand Witch'
+ '[x]<b>Battlecry:</b> Change the Cost\nof spells in your hand to (5).']
+['Sandwitched' 'Costs (5).']
+["Salhet's Pride"
+ '<b>Deathrattle:</b> Draw two\n1-Health minions from your\xa0deck.']
+['Sandwasp Queen' '<b>Battlecry:</b> Add two 2/1 Sandwasps to your hand.']
+['Sandwasp' '']
+['Vilefiend' '<b>Lifesteal</b>']
+['Sir Finley of the Sands'
+ '[x]<b>Battlecry:</b> If your deck has\nno duplicates, <b>Discover</b> an\nupgraded Hero Power.']
+['Titanic Lackey'
+ '<b>Battlecry:</b> Give a friendly minion +2 Health and\xa0<b>Taunt</b>.']
+['Hardened' '+2 Health and <b>Taunt</b>.']
+['Mortuary Machine'
+ 'After your opponent plays a minion, give it <b>Reborn</b>.']
+['Desert Obelisk'
+ '[x]If you control 3 of these\nat the end of your turn,\ndeal 5 damage to a\nrandom enemy.']
+['Mogu Cultist'
+ '<b>Battlecry:</b> If your board is full of Mogu Cultists, sacrifice them all and summon Highkeeper Ra.']
+['Highkeeper Ra'
+ 'At the end of your turn, deal 20 damage to all\xa0enemies.']
+['Blatant Decoy'
+ '[x]<b>Deathrattle:</b> Each player\nsummons the lowest Cost\nminion from their hand.']
+['Plague of Wrath' 'Destroy all damaged minions.']
+['Livewire Lance'
+ 'After your Hero attacks, add a <b>Lackey</b> to your\xa0hand.']
+['Armored Goon' 'Whenever your hero attacks, gain 5 Armor.']
+['Hack the System'
+ "[x]<b>Quest:</b> Attack 5 times\nwith your hero.\n<b>Reward:</b> Anraphet's Core."]
+["Anraphet's Core"
+ '[x]<b>Hero Power</b>\nSummon a 4/3 Golem.\nAfter your hero attacks,\nrefresh this.']
+['Stone Golem' '']
+['Bug Collector' '<b>Battlecry:</b> Summon a 1/1 Locust with <b>Rush</b>.']
+['Swarm of Locusts' 'Summon seven 1/1 Locusts with <b>Rush</b>.']
+['Penance' '<b>Lifesteal</b>\nDeal $3 damage to a\xa0minion.']
+['Plague of Madness'
+ 'Each player equips\na 2/2 Knife with <b>Poisonous</b>.']
+['Plagued Knife' '<b>Poisonous</b>']
+['Tip the Scales' 'Summon 7 Murlocs from your deck.']
+['Watched' 'Stats changed to 3/3.']
+['Plague of Flames'
+ '[x]Destroy all your minions.\nFor each one, destroy a\nrandom enemy minion.']
+['Plague of Death' '<b>Silence</b> and destroy all\xa0minions.']
+['Desert Hare' '<b>Battlecry:</b> Summon two 1/1 Desert Hares.']
+['Bloodsworn Mercenary'
+ '[x]<b>Battlecry</b>: Choose a\ndamaged friendly minion.\nSummon a copy of it.']
+['Colossus of the Moon' '<b>Divine Shield</b>\n<b>Reborn</b>']
+['Murmy' '<b>Reborn</b>']
+['Activate the Obelisk'
+ "<b>Quest:</b> Restore 15\xa0Health.\n<b>Reward:</b> Obelisk's Eye."]
+["Obelisk's Gaze" 'Increased stats.']
+["Obelisk's Eye"
+ '<b>Hero Power</b>\nRestore #3 Health.\nIf you target a minion, also give it +3/+3.']
+['Ancient Mysteries' 'Draw a <b>Secret</b> from your deck. It costs (0).']
+['Translated' 'Costs (0).']
+['Body Wrapper'
+ '<b>Battlecry:</b> <b>Discover</b> a friendly minion that died this game. Shuffle it into your deck.']
+['Subdue' "Set a minion's Attack and Health to 1."]
+['Subdued' '1/1.']
+['Amakir the Light'
+ 'After this minion attacks, add 2 random healing spells to your hand. They cost (0).']
+['Flo Slatebrand'
+ '<b>Battlecry and Deathrattle:</b> Add a random Treasure to your hand.']
+['Addarah' '<b>Battlecry:</b> Shuffle all enemy minions into your deck.']
+['Canopic Jars'
+ '[x]Give your minions\n"<b>Deathrattle:</b> Summon\na random <b>Legendary</b>\nminion."']
+['Canopic Jars'
+ '<b>Deathrattle:</b> Summon a random <b>Legendary</b> minion.']
+['Mummy Magic'
+ '<b>Passive</b>\nAfter you play a <b>Deathrattle</b> minion,\ngive it <b>Reborn</b>.']
+['Mummy Magic Player Enchantment' '']
+['Book of the Dead'
+ "Deal $7 damage to all enemies. Costs (1) less for each minion that's died this game."]
+['Crook and Flail'
+ '<b>Passive</b>\nAfter you cast a spell, put a minion from your deck into the battlefield.']
+['Crook and Flail Player Enchantment' '']
+['Staff of Scales'
+ 'Summon three 1/1 Snakes with <b>Rush</b>, <b>Poisonous</b> and <b>Reborn</b>.']
+['Ancient Snake' '<b>Rush</b>\n<b>Poisonous</b>\n<b>Reborn</b>']
+['Unlocked Potential'
+ '<b>Passive</b>\nAt the start of the game, set the Attack of each of your minions equal to its Health.']
+['Unlocked Potential' 'Has Attack equal to its Health.']
+['Scales of Justice'
+ 'Transform all minions into 1/1 Murlocs.\nFill your hand with random Murlocs that cost (0).']
+['VIP Membership' '<b>Passive</b>\nTaverns you visit are upgraded!']
+['Stone Fox Statue'
+ 'Choose a minion and add 2 copies of it to your hand that cost (0).']
+["Zephrys's Lamp"
+ '[x]<b>Start of Game</b>: Draw this.\nWish for the perfect card.']
+['Disks of Legend'
+ '<b>Passive</b>\nAfter you play a Legendary minion, summon a copy of it.']
+['Disks of Legend Dummy' 'Dummy Hook Up ULDA\xa0035e']
+['Disks of Legend Player Enchantment' '']
+['Jr. Scout'
+ '[x]<b>Charge</b>. <b>Windfury</b>.\nAt the end of your turn, deal\n4 damage to a random\nenemy minion.']
+['Jr. Tomb Diver'
+ "[x]<b>Battlecry:</b> If you played\n6 Secrets this game,\nyour Hero Power becomes\n'<b>Discover</b> a Treasure'."]
+['Jr. Navigator'
+ '[x]Whenever you target\nthis minion with a spell,\nadd 2 copies of the spell\nto your hand.']
+['Jr. Excavator'
+ '<b>Battlecry:</b> Draw 3 cards.\nAny minions you draw\ncost\xa0(2)\xa0less.']
+['Excavated' 'Costs (2) less.']
+['Pack Mule' 'Reduce the Cost of your 10 starter cards by (1).']
+['Unencumbered' 'Costs (1) less.']
+['Sr. Scout'
+ '[x]<b>Charge</b>. <b>Windfury</b>.\nAt the end of your turn, deal\n6 damage to a random\nenemy minion.']
+['Sr. Tomb Diver'
+ "[x]<b>Battlecry:</b> If you played\n3 Secrets this game,\nyour Hero Power becomes\n'<b>Discover</b> a Treasure'."]
+['Sr. Navigator'
+ '[x]Whenever you target\nthis minion with a spell,\nadd 2 copies of the spell\nto your hand.']
+['Sr. Excavator'
+ '<b>Battlecry:</b> Draw 3 cards.\nAny minions you draw\ncost\xa0(5)\xa0less.']
+['Very Excavated' 'Costs (5) less.']
+['Upgraded Pack Mule' 'Reduce the Cost of all cards in your deck by (1).']
+['Unencumbered' 'Costs (1) less.']
+['Servant of Siamat' '']
+['Sand Trap'
+ '<b>Casts When Drawn</b>\nRemove the top 2 cards of your deck.']
+['Sanctum Golem' "Can't Attack."]
+['Enflamed Golem'
+ '<b>Deathrattle:</b> Deal 3 damage to all minions and summon a Sanctum Golem.']
+['Rakanishu'
+ '<b>Battlecry:</b> For the rest of the game, your <b>Lackeys</b> are 4/4.']
+['Runaway Gyrocopter'
+ '<b>Rush</b>. <b>Deathrattle:</b> Deal 5 damage to all enemy minions, then shuffle\nthis into your deck.']
+['Mystical Mirage'
+ '<b>Twinspell</b>\nRefresh your Mana Crystals and get a new hand this turn.']
+['Mirage Dummy' 'Dummy Hook Up ULDA\xa0035e']
+['Mirage Player Enchant' '']
+['Mystical Mirage'
+ 'Refresh your Mana Crystals and get a new hand this turn.']
+['LOCUUUUSTS!!!'
+ '<b>Twinspell</b>.\nChoose an enemy.\nFill your board with 2/2 Locusts that attack it.']
+['Giant Locust' '']
+['LOCUUUUSTS!!!'
+ 'Choose an enemy.\nFill your board with 2/2 Locusts that attack it.']
+['Explorer Retraining' 'Choose a new starting Hero Power.']
+['Uldum Treasure Cache' '<b>Hero Power</b>\n<b>Discover</b> a Treasure.']
+['Sack of Lamps'
+ "<b>Start of Game:</b> Draw this.\nFill your hand with Zephrys's Lamps."]
+['Staff of Ammunae'
+ '<b>Twinspell</b>.\nYour minions have <b>Windfury</b> and <b>Immune</b> this turn.']
+['Royal Fervor' '<b>Windfury</b> and <b>Immune</b> this turn.']
+['Royal Fervor'
+ 'Your minions have <b>Windfury</b> and <b>Immune</b> this turn.']
+['Staff of Ammunae'
+ 'Your minions have <b>Windfury</b> and <b>Immune</b> this turn.']
+['Darklight Torch'
+ '<b>Passive</b>\nAfter you play an even-Cost card, refresh your hero power. It costs (0) this turn.']
+['Darklight Torch Player Enchantment' '']
+['Darklight Torch' '']
+["Phaoris' Blade"
+ '<b>Windfury</b>.\nAfter your hero attacks and kills a minion, this gains +2/+1.']
+["Phaoris' Fury" 'Increased stats.']
+['Blade of the Burning Sun'
+ '<b>Battlecry:</b> Give all minions in your deck +2 Attack.\n<b>Deathrattle:</b> Return this to your hand.']
+["Sun's Flames" 'Increased attack.']
+['Primordial Bulwark'
+ '<b>Passive</b>\nBlock lethal damage and deal $20 damage to the enemy hero\n<i>(once per game)</i>.']
+['Primordial Bulwark'
+ '[x]<b>Secret:</b> Block fatal damage\nand deal $20 damage\nto the enemy hero\n<i>(can trigger on your turn)</i>.']
+['Band of Bees'
+ '<b>Passive</b>\nYour minions that cost (2) or less have <b>Poisonous</b>.']
+['Band of Bees Player Enchantment' '']
+['Band of Bees' '<b>Poisonous</b>.']
+['Band of Scarabs' '<b>Passive</b>\nEnemy minions have\n-1 Attack.']
+['Band of Scarabs Player Enchantment' '']
+['Band of Scarabs' '-1 Attack.']
+['Disks of Swiftness'
+ '<b>Passive</b>\nYour opponent must pass their first 2 turns.']
+['Platinum Disks Player Enchantment' '']
+["Alchemist's Stone"
+ '<b>Passive</b>\nAfter you play an odd-Cost card, reduce the Cost of cards in your hand by (1).']
+["Alchemist's Stone Player Enchantment" '']
+["Alchemy's First Law" 'Costs (1) less.']
+['Crawling Claw'
+ "[x]<b>Rush</b>. <b>Reborn</b>.\n<b>Deathrattle:</b> Steal a card from\nyour opponent's hand."]
+['Hearthstone'
+ '[x]<b>Start of Game:</b> Draw this.\nEscape to the Tavern and\nremove this from your\nAdventure deck.']
+["Bob's Bouncer"
+ "[x]Choose a minion\nand then cast 'Brawl.'\nIf that minion survives, fill\nyour board with copies of it."]
+['Crusty the Crustacean'
+ '<b>Battlecry:</b> Destroy a minion.\nGain double its Attack and Health.']
+['Om Nom Nom' 'Increased stats.']
+['Aegis of Death'
+ '[x]Your hero is <b>Immune</b>.\nEach turn, lose 1 Durabilty.\n<b>Deathrattle:</b> Deal 100\ndamage to your hero.']
+['"Gnomebliterator"'
+ 'Deal $10 damage. Also deal $10 damage to the <b>Plague Lord</b> when you fight it.']
+['Ever-Changing Elixir'
+ '<b>Passive</b>\nAt the end of your turn, transform a friendly minion into one that costs (1) more.']
+['Ever-Changing Player Enchantment' '']
+['Scroll of Nonsense'
+ '<b>Passive</b>\n<b>Spell Damage +10</b>. At the end of your turn, this loses 1 <b>Spell Damage</b>.']
+['Scroll Player Enchantment' '']
+['Flex-plosion' "Blow up half your opponent's stuff."]
+["Reno's Crafty Lasso"
+ "After your hero attacks, steal a card from your opponent's hand."]
+['Kodo Hide Whip'
+ 'After your hero attacks a minion and it survives, put that minion in your hand.']
+["Reno's Lucky Hat" 'Give a minion +2/+2 and <b>Spell Damage +2</b>.']
+["Reno's Lucky Hat" '+2/+2 and <b>Spell Damage +2</b>.']
+["Reno's Magical Torch"
+ 'Deal $4 damage.\n<b>Combo:</b> Shuffle a copy of this card into your deck that deals 2 more damage.']
+['Lucky Spade'
+ '<b>Passive</b>\nAfter you <b>Discover</b> a card, add 2 copies of it to your hand. They all cost (2) less.']
+['Lucky Spade Dummy' 'Dummy Hook Up ULDA\xa0035e']
+['Lucky Spade Player Enchantment' '']
+['Lei Flamepaw'
+ 'After you cast a spell, cast it again <i>(on the same target)</i>.']
+['The Gatling Wand'
+ "[x]Deal $3 damage split\nrandomly among all enemies\n<i>(improves for each spell\nyou've cast this game)</i>."]
+['Titanic Ring'
+ '<b>Passive</b>\nYour minions have +1 Health and <b>Taunt</b>.']
+['Titanic Ring Player Enchantment' '']
+['Titanic Ring' '+1 Health and <b>Taunt</b>.']
+['Titanic Ring' '+1 Health and <b>Taunt</b>.']
+['Map of Uldum'
+ "<b>Discover</b> a card and gain a Mana Crystal for each <b>Boss</b> you've defeated this run.1<b>Discover</b> {0} card.\nGain {0} Mana |4(Crystal, Crystals)."]
+['Academic Research'
+ '[x]<b>Start of Game:</b> Draw this.\nGain 1 Mana Crystal.\n<i>(Upgrades each time\na friendly minion dies)</i>.']
+["Elise's Discovery" '+5/+5 and <b>Lifesteal</b>.']
+["Starseeker's Tools"
+ '<b>Discover</b> a minion\nand a spell.\nThey cost (2) less.']
+['Planned' 'Costs (2) less.']
+['Staff of Renewal'
+ 'Resurrect 7 friendly minions with\nthe highest Cost.\nGive them <b>Taunt</b>.']
+["Elise's Machete"
+ '[x]After your hero attacks,\nsummon two 2/2 Treants.\nGive them <b>Rush</b>.']
+['Stolen Titan Secrets'
+ "Copy the <b>Boss's</b> Hero Power for the rest of this run."]
+['Bauble of Beetles'
+ '[x]<b>Twinspell</b>. Resurrect\nthe first 4 friendly minions\nthat died this game.\nGive them <b>Reborn</b>.']
+['Bauble of Beetles'
+ '[x]Resurrect the first\n4 friendly minions\nthat died this game.\nGive them <b>Reborn</b>.']
+["Ol' Faithful" 'After your hero attacks, deal 1 damage to all enemies.']
+["Brann's Saddle"
+ 'Give a friendly Beast +3/+3 and "<b>Deathrattle:</b> Give Brann\'s Saddle to another friendly Beast."']
+["Brann's Saddle Dummy Effect" '']
+['Saddled Up!'
+ "+3/+3. <b>Deathrattle:</b> Give Brann's Saddle to another friendly Beast."]
+['Ancient Reflections'
+ 'Choose a minion.\nFill your board with 1/1 copies of it.']
+['Titan Hologram' '1/1.']
+['Titan-Forged Grapnel'
+ 'Destroy 2 random enemy minions.\nGain Armor equal to their combined attack.']
+["Brann's Epic Egg" 'After this takes damage, summon King Krush.']
+["Murky's Battle Horn"
+ 'Summon 7 Murlocs and give them <b>Rush</b>.\nAt the start of your next turn, do it again.']
+["Murky's Dummy Horn" '']
+['To Mrrgl!' '<b>Rush</b>']
+["Murky's Battle Horn Player Enchantment" '']
+['Tracking Device'
+ '[x]<b>Start of Game</b>: Draw this.\nDraw a 2, 3, 4, and 5-Cost\ncard from your deck.']
+['Maxwell, Mighty Steed'
+ '<b>Rush</b>. <b>Reborn</b>.\nHas +2 Attack for each other minion on the battlefield.']
+["Finley's Pith Helmet"
+ 'Give all friendly minions +2 Health.\nShuffle this card into your deck.']
+['Desert Explorer' '+2 Health']
+['Advanced Targeting Monocle'
+ 'Cast a copy of all spells in your deck <i>(targets chosen randomly)</i>.']
+['Tea Time'
+ 'Gain 4 Mana Crystals and draw 2 extra cards <b>for the next boss only</b>.']
+['Truesilver Lance'
+ '<b>Lifesteal</b>\nAfter you <b>Overload</b>, gain +2 Durability.']
+['Mighty!' 'Increased Durability.']
+['Karl the Lost'
+ '[x]<b>Battlecry:</b> Summon six 1/1\nSilver\xa0Hand\xa0Recruits and give\nall friendly minions <b>Taunt</b>\nand <b>Divine Shield</b>.']
+['Robes of Diminishing'
+ '<b>Passive</b>\nAfter you draw a spell, reduce its Cost to (0) this turn.']
+['Fleeting Knowledge Player Enchantment' '']
+['Fleeting Knowledge' '']
+['Hiring Replacements'
+ '[x]Choose a friendly minion.\n<b>Discover</b> a minion\nto replace it in your \nAdventure Deck.']
+['Study Break'
+ '<b>Discover</b> a spell. Add it to your Adventure deck.\nIt always starts in your hand.']
+['Friendly Smith'
+ '[x]<b>Discover</b> a weapon \nfrom any class. Add it \nto your Adventure Deck\n with +2/+2.']
+['Friendly Upgrade' '+2/+2.']
+['Party of Four'
+ '<b>Discover</b> a minion. Replace enemy minions with minions of that type.']
+['Fast Food'
+ 'Add all enemy minions to your Adventure Deck. They cost (1) less.']
+['Satiated' 'Costs (1) less.']
+['Work, Work!'
+ '[x]Remove a friendly minion\nfrom your Adventure Deck.\nGive adjacent minions \n+2/+2.']
+['Work, Work!' '+2/+2.']
+['House Special'
+ "Replace your Adventure Deck with one of Bob's Bombastic Decks."]
+['Do the Math'
+ 'Remove all cards from your Adventure deck that cost (2) or less.']
+['Hosting Murloc' 'Has <b>Deathrattle:</b> Summon a random Murloc.']
+['Anomaly - Loot-Filled'
+ 'After a minion is played, it gives the opposing player a Coin.']
+['Loot-Filled Dummy' 'Dummy Hook Up ULDA\xa0702e']
+['Anomaly - Loot-Filled Player Enchantment' '']
+['Possessive Spirit'
+ "Has '<b>Deathrattle:</b> Take control of a random enemy minion.'"]
+['Anomaly - Booms Away'
+ "Each time a minion dies, shuffle a bomb into its owner's deck. When drawn, it explodes for 5 damage."]
+['Boommaster Dummy' 'Dummy Hook Up ULDA\xa0705e']
+['Anomaly - Booms Away Player Enchantment' '']
+['Anomaly - No-Face'
+ 'Heroes are <b>Immune</b> while they control minions.']
+['Anomaly - No-Face Player Enchantment' '']
+['Anomaly - Eternal Army'
+ "After a minion dies, shuffle a copy of it into its owner's deck."]
+['Eternal Army Dummy' 'Dummy Hook Up ULDA\xa0707e']
+['Anomaly - Eternal Army Player Enchantment' '']
+['Anomaly - Dizzying Blows'
+ "After a hero is damaged, randomize the Cost of all cards in that player's hand."]
+['Dizzying Blows Dummy' 'Dummy Hook Up ULDA\xa0708e']
+['Anomaly - Dizzying Blows Player Enchantment' '']
+['Dizzying Blows Card Enchantment' 'Cost Randomized.']
+['Anomaly - Angelic Presence'
+ "Minions' Attack is <b>ALWAYS</b> equal to their Health."]
+['Anomaly - Angelic Presence Player Enchantment' '']
+['Angelic Presence' 'Attack is always equal to Health.']
+['Anomaly - CHARGE!' 'All minions have <b>Charge</b>.']
+['Anomaly - CHARGE! Player Enchantment' '']
+['Charge!!!' 'Anomaly - CHARGE! is granting your Minions <b>Charge</b>.']
+['Anomaly - Relentless' 'All minions have <b>Windfury</b>.']
+['Anomaly - Relentless Player Enchantment' '']
+['Windfurious' 'Has <b>Windfury</b>.']
+['Anomaly - Holograms'
+ 'After a minion is played, summon a 1/1 copy of it for the opposing side.']
+['Holograms Dummy' 'Dummy Hook Up ULDA\xa0712e']
+['Anomaly - Holograms Player Enchantment' '']
+['Anomaly - Whirling Winds'
+ 'At the start of every turn, deal 1 damage to all minions.']
+['Whirling Winds Dummy' 'Dummy Hook Up ULDA\xa0713e']
+['Anomaly - Whirling Winds Player Enchantment' '']
+['Anomaly - In the Face' 'Heroes take double damage.']
+['Anomaly - In the Face Player Enchantment' '']
+['Anomaly - Bountiful' 'Both players start with 9 cards in their hand.']
+["Anomaly - Marin's Return"
+ 'Both players start with a Treasure Chest.\n[x]<i>(Break it for awesome loot!)</i>']
+['Anomaly - Battle Scars'
+ "Start with 100 Health. You don't heal between fights."]
+['Anomaly - Aleatory'
+ 'At the start of the game, shuffle both decks together and give half to each player.']
+['Aleatory Dummy' 'Dummy Hook Up ULDA\xa0721e']
+['Anomaly - Spellshields'
+ 'After a player casts a spell, they gain 2 Armor.']
+['Spellshields Dummy' 'Dummy Hook Up ULDA\xa0035e']
+['Anomaly - Spellshields Player Enchantment' '']
+['Anomaly - Multiclassing' 'Loot can be from any class.']
+['Twist - Plague of Murlocs' 'Murlocs have invaded each deck!']
+['Twist - Plague of Murlocs Dummy' 'Holds and effect for ULDA\xa0801e']
+['Murloc Twist Player Enchantment' '']
+['Surprise! Murlocs!'
+ '<b>Casts When Drawn</b>\nSummon a random amount of Murlocs.']
+['Twist - Plague of Madness'
+ "[x]At the end of each player's\nturn, their right-most minion\nattacks a random enemy."]
+['Madness Twist Player Enchant' '']
+['Twist - Plague of Wrath'
+ 'After a minion takes damage, it gains +1\xa0Attack.']
+['Retaliation Dummy' 'Dummy Hook Up ULDA\xa0035e']
+['Wrath Twist Player Enchantment' '']
+['Rage' 'This minion has increased Attack.']
+['Twist - Plague of Death'
+ "Both players start the game with an\n'Eternal Tomb.'"]
+['Eternal Tomb' 'When 3 friendly minions die, summon a random minion.']
+['Elise Random Deck' 'Start the run with a deck of random cards.']
+['Reno Random Deck' 'Start the run with a deck of random cards.']
+['Finley Random Deck' 'Start the run with a deck of random cards.']
+['Brann Random Deck' 'Start the run with a deck of random cards.']
+['Kindle'
+ 'Look at four spells from your Adventure Deck. Choose one to remove.']
+['Recruit' 'Choose an enemy minion. Add it to your Adventure Deck.']
+['AI Play Control' '']
+['Power of the Boom' '+1 Attack']
+['Power of the Boom' '+2 Attack']
+['Waste Wanderer Cardish'
+ "<i>Even if he bombs,\nhe's having a blast freelancing\xa0for\xa0E.V.I.L.</i>"]
+['Boom Bullets'
+ '[x]<b>Hero Power</b>\nSummon a 0/2 Goblin Bomb.\nGive all other Goblin Bombs\n+1 Attack.']
+['Boom Bullets'
+ '[x]<b>Hero Power</b>\nSummon a 0/2 Goblin Bomb.\nGive all other Goblin Bombs\n+2 Attack.']
+['Dark Ritualist Zafarr'
+ '<i>Likes his rituals like he likes his coffee: Dark.\n[x]And twice-brewed.</i>']
+['Mummy Ritual'
+ '[x]<b>Hero Power</b>\nResurrect a <b>Reborn</b>\nminion with 1 Health.']
+['Mummy Ritual'
+ '[x]<b>Hero Power</b>\nResurrect a <b>Reborn</b>\nminion with 1 Health.']
+['E.V.I.L. Promotion' 'Increased Stats.']
+['Vera Ridley'
+ "<i>Her lackeys aren't lacking when it comes to\xa0workplace\xa0benefits.</i>"]
+['E.V.I.L. Promotion'
+ '[x]<b>Passive Hero Power</b>\nAfter you play a <b>Lackey</b>, give it\n+1/+1 <i>(upgrades each time\nyou play a <b>Lackey</b>)</i>.']
+['Nash the Greatworm'
+ '<i>Rumor has it this is merely the other end of Gnosh\xa0the\xa0Greatworm.</i>']
+['Belch' '[x]<b>Hero Power</b>\nSummon a minion\nthat died this game.']
+['Belch' '[x]<b>Hero Power</b>\nSummon a minion\nthat died this game.']
+['Venomous Stinger' 'If this minion takes damage, it will be destroyed.']
+['Glack the Scorpid'
+ '<i>Elise\'s journal entry for Glack simply says, "Don\'t\xa0get\xa0stung".</i>']
+['Venomous Stinger'
+ '[x]<b>Hero Power</b>\n Sting a minion. When it\ntakes damage, destroy it.']
+['Mister Chu'
+ '<i>Chu bravely volunteered to "guard" this [x]treasure-filled tomb.</i>']
+['"Confiscated" Goods'
+ '[x]<b>Passive Hero Power</b>\nAfter you attack and\nkill a minion, equip a\nrandom weapon.']
+['Essense of the Rat' '+1/+1.']
+['Squeamlish'
+ "<i>She's mastered more terrifying forms. Like squirrel.\xa0And\xa0mushroom.</i>"]
+['Druid of the Rat' '[x]<b>Hero Power</b>\nGive your minions\n+1/+1.']
+['Sinkhole'
+ '<i>The best way to\navoid a sinkhole is\nto - oh, too late.</i>']
+['Sand Surge'
+ "[x]<b>Hero Power</b>\nShuffle a Sand Trap into\nyour opponent's deck that\n  swallows cards when drawn."]
+['Sand Surge'
+ "[x]<b>Hero Power</b>\nShuffle a Sand Trap into\nyour opponent's deck that\n  swallows cards when drawn."]
+['Demolisher 3V-11'
+ '<i>Rafaam got a great deal on one of these at a Horde\xa0surplus\xa0auction.</i>']
+['Armor Repairs'
+ '[x]<b>Hero Power</b>\nGain 2 Armor. If you have\nless than 10 Armor,\ngain 4 Armor instead.']
+['Terraviss'
+ '<i>Slithering into the tombs to snake a few spells and weapons.</i>']
+['Well Equipped'
+ '[x]<b>Hero Power</b>\nPut a random Rogue\nSpell or Weapon\ninto your hand.']
+['R.O.B.O.L.D.'
+ '<i>They rebuilt the Kobold\xa0Barbarian.\xa0Faster. Stronger.\xa0Flamier.</i>']
+['Unstable Weaponry'
+ '[x]<b>Passive Hero Power</b>\nAfter you summon a Mech,\ndeal 2 damage to a\nrandom enemy.']
+['Bricked' 'Costs 2 less.']
+['Pyramad' '<i>Earth. Air.\nFire. Water...\n Pyramid.</i>']
+['Brick by Brick'
+ '[x]<b>Hero Power</b>\n<b>Discover</b> an Elemental.\nIt costs (2) less.']
+['Brick by Brick'
+ '[x]<b>Hero Power</b>\n<b>Discover</b> an Elemental.\nIt costs (2) less.']
+['Incredibly Deadly' 'Has <b>Poisonous</b>.']
+['Snakeflinger Scalesnout'
+ '<i>Snakes with pointed snouts are venomous.\nAnd\xa0the\xa0best\xa0ammo.</i>']
+['Snakeshot'
+ '[x]<b>Hero Power</b>\nSummon a 1/1 Snake\nand give it <b>Poisonous</b>.']
+['Weapon Shuffle Tracker' '']
+['Sword Dancer Sirinell'
+ '<i>It is said that sethrak sword dancers are the bane of kings.</i>']
+['Sword Dance'
+ '[x]<b>Passive Hero Power</b>\nAfter your weapon is destroyed,\nshuffle it back into your deck.\nIt keeps any enchantments.']
+['Puffer Rush' 'Puffertrooper is granting your Murlocs <b>Rush</b>.']
+['Lt. Herring'
+ '<i>Leads the dreaded E.V.I.L. Puffertroopers, AKA "The Flying Fish."</i>']
+['Puffertrooper' '[x]<b>Hero Power</b>\nGive your Murlocs <b>Rush</b>.']
+['Puffertrooper' '[x]<b>Hero Power</b>\nGive your Murlocs <b>Rush</b>.']
+['Wrapped Up' 'Give a minion <b>Reborn</b>.']
+['Battrund'
+ "<i>Not all of Battrund's minions are mummies. Some\xa0got\xa0a\xa0bad\xa0wrap.</i>"]
+['Under Wraps'
+ '[x]<b>Passive Hero Power</b>\nAfter you play a minion,\ngive it <b>Reborn</b>.']
+['The Cursed' 'Give a minion <b>Rush</b>']
+['Ichabod the Cursed'
+ '<i>These gnomes are cursed! And you, too, will curse them.</i>']
+['Spreading the Curse'
+ '[x]<b>Hero Power</b>\nSummon a Leper Gnome\nand give it <b>Rush</b>.']
+['Spreading the Curse'
+ '[x]<b>Hero Power</b>\nSummon a Leper Gnome\nand give it <b>Rush</b>.']
+['The Plagued' '<b>Deathrattle:</b> Deal 2 damage to the enemy hero.']
+['Twizzleflux'
+ '<i>Twizzleflux is spreading the very curse that maligned him.</i>']
+['Plagued Horde'
+ '[x]<b>Hero Power</b>\nGive a minion\n"<b>Deathrattle:</b> Deal 2 damage\nto the enemy hero."']
+['Plagued Horde'
+ '[x]<b>Hero Power</b>\nGive a minion\n"<b>Deathrattle:</b> Deal 2 damage\nto the enemy hero."']
+['Sothis' '<i>This terrible titan watcher has his own personal army.</i>']
+['Titan Ritual' '[x]<b>Hero Power</b>\nSummon two\n1/1 Mogu Cultists.']
+['Titan Ritual' '[x]<b>Hero Power</b>\nSummon two\n1/1 Mogu Cultists.']
+['Kham' "<i>Now you see him, now you don't, now you're impaled.</i>"]
+['Spectral Swordsman'
+ '[x]<b>Passive Hero Power</b>\nYour hero is <b><b>Stealth</b>ed</b>\nwhile you have a\nweapon equipped.']
+['Struck Claim' '+1/+1.']
+['Illidara Sunsdawn'
+ '<i>The Reliquary is here, and their discoveries are\xa0bad\xa0news\xa0for\xa0you.</i>']
+['Staking A Claim'
+ '[x]<b>Passive Hero Power</b>\nWhenever a <b>Discover</b> card\nis played, all minions\ngain +1/+1.']
+['Colossus of the Sun' '<i>This titan colossus abhors all weakness.</i>']
+['Power of Wrath'
+ '[x]<b>Hero Power</b>\nDeal 1 damage to\nall damaged minions.']
+['Power of Wrath'
+ '[x]<b>Hero Power</b>\nDeal 2 damage to\nall damaged minions.']
+['Hatching' 'Costs 1 less.']
+['Skarik' '<i>This king cobra is also the King of Beasts.</i>']
+['Hatching Time'
+ '[x]<b>Hero Power</b>\nReduce the Cost of Beasts\nin your hand by (1).']
+['Suspicious Palm Tree'
+ "<i>This oasis would've been\xa0welcome\xa0if\xa0Hagatha hadn't\xa0gotten\xa0here\xa0first.</i>"]
+['Corrupted Oasis'
+ '[x]<b>Hero Power</b>\nAdd two 2/2 Treants\nto your hand.']
+['Corrupted Oasis'
+ '[x]<b>Hero Power</b>\nAdd two 2/2 Treants\nto your hand.']
+['Beetle Herder Zenda'
+ "<i>Beetle stampedes are terrifying.\xa0It's\xa0the\xa0rumble[x]\nof those teeny-tiny feet.</i>"]
+['Beetle Stampede' '[x]<b>Hero Power</b>\nSummon a\nPlated Beetle.']
+['Thudd Lockspring'
+ '<i>Is it really a magical "wand" when it\'s got a trigger\xa0and\xa0full\xa0auto?</i>']
+['Gatling Wand'
+ '[x]<b>Hero Power</b>\nDeal 2 damage split\n among enemy minions.']
+['Discounted Loot' 'Costs (2) less.']
+["Ol' Toomba"
+ "<i>Ol' Toomba the treasure hunter isn't above copying\xa0homework.</i>"]
+['"Retired" Treasure Hunter'
+ "[x]<b>Hero Power</b>\nCopy a card from your\nopponent's hand and\nadd it to your hand."]
+['"Retired" Treasure Hunter'
+ "[x]<b>Hero Power</b>\nCopy a card from your\nopponent's hand and add it to\nyour hand. It costs (2) less."]
+['Sazin'
+ '<i>With sand and fury the hot winds blow. Where did\xa0your\xa0minions\xa0go?</i>']
+['Mighty Windstorm'
+ '[x]<b>Hero Power</b>\nEach player swaps a minion\nfrom their hand with one\non their battlefield.']
+['Ozara'
+ '<i>Ozara of the sands believes that the Dust Devil\xa0is\xa0in\xa0the\xa0details.</i>']
+['Mother of Sand'
+ '[x]<b>Passive Hero Power</b>\nAfter you <b>Overload</b>,\nsummon a Dust Devil.']
+['Ermavar'
+ '<i>The first of her name, Ermavar is revered as the\xa0waker\xa0of\xa0flame.</i>']
+['Fireshaper'
+ '[x]<b>Passive Hero Power</b>\nAfter you cast a spell, deal $2\ndamage randomly split\namong all enemies.']
+['Necklace of Power' 'Has +1/+1']
+['Pillager Drasar'
+ '<i>Drasar generously shares stolen treasures with her minions.</i>']
+['Pillaged Relics'
+ '[x]<b>Hero Power</b>\nChoose a minion.\nGive it +1/+1, <b>Divine Shield</b>\nor <b> Taunt</b> at random.']
+['Pillaged Relics'
+ '[x]<b>Hero Power</b>\nChoose a minion.\nGive it +1/+1, <b>Divine Shield</b>\nor <b> Taunt</b> at random.']
+['Edra'
+ '<i>The ancient lifewardens guard this sacred space with\xa0their\xa0life(steal).</i>']
+['Whispering Sentinel'
+ '[x]<b>Hero Power</b>\nSummon a 1/1 Wisp.\nGive it <b>Lifesteal</b>.']
+['Runaway Ruby'
+ '[x]<i>Gnomes put tank treads\non a submarine for desert\nuse. Because gnomes.</i>']
+['Out of Control'
+ '[x]<b>Hero Power</b>\nDeal 1 damage to the\nCenter-most minions.']
+['Dovo Fastfuse'
+ '<i>Dovo\'s excavation methods put the "boom"\xa0in\xa0"tomb".</i>']
+["Tomb Boomin'"
+ '[x]<b>Hero Power</b>\nDeal 4 damage split\nrandomly between\nall characters.']
+['Earthrager Ptah'
+ "<i>Avoid meeting Ptah's gaze. Or standing next to\xa0anyone\xa0who\xa0does.</i>"]
+['Vengeful Construct'
+ '[x]<b>Hero Power</b>\nChoose a minion with 2 or\nless Health. Destroy\nit and its neighbors.']
+['Madness' '+1 Attack this turn.']
+['Madness' '+3 Attack this turn.']
+['Kasa Softspeaker'
+ '<i>The Plague of Madness has not been kind to [x]once-gentle Kasa.</i>']
+['Madness Incarnate'
+ '[x]<b>Hero Power</b>\nGain +1 Attack this turn and\nattack 3 different random\nenemy minions.']
+['Madness Incarnate'
+ '[x]<b>Hero Power</b>\nGain +3 Attack this turn and\nattack 3 different random\nenemy minions.']
+['Xatma, Plague Lord of Death'
+ '<i>The third plague rests in [x]final breath: You face the\n ancient Lord of Death!</i>']
+['Xatma, Plague Lord of Death'
+ '<i>The third plague rests in [x]final breath: You face the\n ancient Lord of Death!</i>']
+['Xatma, Plague Lord of Death'
+ '<i>The third plague rests in [x]final breath: You face the\n ancient Lord of Death!</i>']
+['Foreboding Fate'
+ "[x]<b>Hero Power</b>\nTrigger a friendly\nminion's <b>Deathrattle</b>."]
+["Death's Embrace"
+ '[x]<b>Passive Hero Power</b>\nThe first minion for each\nplayer that dies in a\nturn has <b>Reborn</b>.']
+["Death's Gaze"
+ '[x]<b>Hero Power</b>\nDeal 1 damage to all minions.\nIf any die, add an Untimely\nDemise to your hand.']
+["Death's Gaze"
+ '[x]<b>Hero Power</b>\nDeal 1 damage to all minions.\nIf any die, add an Untimely\nDemise to your hand.']
+['Untimely Demise' 'Deal $3 damage to all\xa0enemies.']
+["K'zrath, Plague Lord of Madness"
+ '<i>The second plague is in the brain: Among these [x]dunes, Madness reigns.</i>']
+["K'zrath, Plague Lord of Madness"
+ '<i>The second plague is in the brain: Among these [x]dunes, Madness reigns.</i>']
+["K'zrath, Plague Lord of Madness"
+ '<i>The second plague is in the brain: Among these [x]dunes, Madness reigns.</i>']
+['Evoke Panic'
+ '[x]<b>Hero Power</b>\nForce the minion with\nthe lowest Health to attack\none of its neighbors.']
+['Systematic Betrayal'
+ '[x]<b>Hero Power</b>\n Rotate all minions counter-\nclockwise. Minions that\nswitch sides gain +1/+1.']
+['Chosen Betrayer' '+1/+1.']
+['Was Enemy Minion Marker' '']
+['Was Allied Minion Marker' '']
+['Murmurs of Mortality'
+ '[x]<b>Passive Hero Power</b>\nAfter a friendly minion\ndies, bring an enemy\nminion to 1 Health.']
+['Evoke Panic'
+ '[x]<b>Hero Power</b>\nForce an enemy minion with\nthe lowest Health to attack\none of its neighbors.']
+['Murmurs of Mortality'
+ '[x]<b>Passive Hero Power</b>\nAfter a friendly minion\ndies, destroy a random\nenemy minion.']
+['Vesh, Plague Lord of Murlocs'
+ "<i>[x]The first plague is a finful\n pox: Beware, beware\nthe Lord of 'Locs.</i>"]
+['Vesh, Plague Lord of Murlocs'
+ "<i>[x]The first plague is a finful\n pox: Beware, beware\nthe Lord of 'Locs.</i>"]
+['Vesh, Plague Lord of Murlocs'
+ "<i>[x]The first plague is a finful\n pox: Beware, beware\nthe Lord of 'Locs.</i>"]
+['Scaly Golem' '<b>Taunt</b>\n<b>Deathrattle:</b> Give all Murlocs +1/+1.']
+['Earthen Enchantment' '+1/+1']
+['Made of Murlocs'
+ '[x]<b>Passive Hero Power</b>\nYou are <b>Immune</b>.\nAfter a Murloc dies,\nlose 3 Health.']
+['Ashes Anew'
+ '[x]<b>Hero Power</b>\nDestroy a friendly Murloc\nto summon a Scaly Golem.']
+['Mur-nado'
+ '[x]<b>Hero Power</b>\nShuffle all minions into your\ndeck. After a Murloc dies,\nreduce this Cost by (1).']
+['Ashes Anew'
+ '[x]<b>Hero Power</b>\nDestroy a Murloc to\nsummon a Scaly Golem.']
+['Mur-nado'
+ '[x]<b>Hero Power</b>\nShuffle all minions into your\ndeck. After a Murloc dies,\nreduce this Cost by (1).']
+['Icarax, Plague Lord of Wrath'
+ '<i>The fourth plague roots within the heart: Wrath tears\xa0friend\xa0and\xa0foe\xa0apart.</i>']
+['Icarax, Plague Lord of Wrath'
+ '<i>The fourth plague roots within the heart: Wrath tears\xa0friend\xa0and\xa0foe\xa0apart.</i>']
+['Icarax, Plague Lord of Wrath'
+ '<i>The fourth plague roots within the heart: Wrath tears\xa0friend\xa0and\xa0foe\xa0apart.</i>']
+['Commanding Scream'
+ "[x]<b>Hero Power</b>\nYour minions can't be\nreduced below 1 Health\nthis turn."]
+['Commanding Scream' "Can't be reduced below 1 Health this turn."]
+['Wrath Smash'
+ '[x]<b>Hero Power</b>\nDestroy a damaged minion.\nCosts (1) more for each\ndamaged minion.']
+['Hand of Defiance'
+ '[x]<b>Hero Power</b>\nSwap the Attack and\nHealth of a minion.']
+['Hand of Defiance' 'Swapped Attack and Health.']
+['Wrath Smash'
+ '[x]<b>Hero Power</b>\nDestroy a damaged minion.\nCosts (1) more for each\ndamaged minion.']
+['Alda Petrik'
+ "<i>Alda's learned some tricks. Like sit. Stay. Loot.\xa0Summon\xa0beasts.</i>"]
+['Running Wild'
+ '[x]<b>Hero Power</b>\nDraw a minion from your deck.\nIf it’s a Beast, add another\ncopy to your hand.']
+['Running Wild'
+ '[x]<b>Hero Power</b>\nDraw a minion from your deck.\nIf it’s a Beast, add another\ncopy to your hand.']
+['Sand Shapin Dummy' 'Dummy Hook Up ULDA\xa0035e']
+['Sand Rush' 'Summon when Drawn.']
+['Sand Rush Player Enchantment' 'Summon when Drawn.']
+['Sandy Speed' 'Has <b>Rush</b>.']
+['Sandshaper Rhogi'
+ '<i>Rhogi is a sand conjurer. He copies minions. And makes\xa0a\xa0mean\xa0castle.</i>']
+["Sand Shapin'"
+ '[x]<b>Hero Power</b>\nShuffle a copy of an enemy\nminion into your deck.\n Summon it when drawn.']
+["Sand Shapin'"
+ '[x]<b>Hero Power</b>\nShuffle a copy of an enemy\nminion into your deck.\n Summon it when drawn.']
+['Spoiled' 'Costs 2 less.']
+['Jolene Knottley'
+ "<i>Jolene's writing is absolute madness. Her\xa0grammar\xa0is\xa0worse.</i>"]
+['Spoil the Ending'
+ "[x]<b>Hero Power</b>\nCopy a spell in your\nopponent's hand.\nIt costs (2) less."]
+['Spoil the Ending'
+ "[x]<b>Hero Power</b>\nCopy a spell in your\nopponent's hand.\nIt costs (2) less."]
+['Trap Room'
+ '<i>Reno is especially good at detecting traps. With his face.</i>']
+['Tricks and Traps'
+ '[x]<b>Hero Power</b>\nPlay a random <b>Secret</b> from\nyour hand or deck.']
+['Tricks and Traps'
+ '[x]<b>Hero Power</b>\nPlay a random <b>Secret</b> from\nyour hand or deck.']
+['Belloc Brightblade'
+ '<i>This smarmy leader of the Reliquary is a thief of\xa0the\xa0highest\xa0order.</i>']
+["Reliquary's Relics"
+ '[x]<b>Passive Hero Power</b>\nAfter your opponent casts\na Spell, put a copy of\nit into your hand.']
+['Wildtooth'
+ '<i>"Sand sharks aren\'t real" according to a [x]half-eaten journal.</i>']
+['Maw of the Desert'
+ '[x]<b>Hero Power</b>\nDestroy the minion with\nthe lowest Health.']
+['Minion in a Jar' 'Stats set to 1/1.']
+['Totally Normal Jar'
+ '<i>You should be wary when treasures walk right\xa0up\xa0to\xa0you.</i>']
+["What's in the Jar?"
+ '[x]<b>Hero Power</b>\nChoose a minion.\nSummon a 1/1 copy of it.']
+['Ilza Grimdrum'
+ "<i>Ilza is an arena champion known as [x]'The Cruel Dueler.'</i>"]
+['Arena Expert'
+ '[x]<b>Hero Power</b>\nSummon a minion from\neach players deck.\nThey fight.']
+['Craz'
+ '<i>This belong to Craz!\nGo away, or Craz will bring\xa0his\xa0tiny\xa0friends!</i>']
+['Demon Emissary'
+ '[x]<b>Hero Power</b>\nSummon a random Demon\nthat costs (3) or less.']
+['Demon Emissary'
+ '[x]<b>Hero Power</b>\nSummon a random Demon\nthat costs (5) or less.']
+["Ol' Barkeye"
+ "<i>Frustrated with just a rifle, Ol' Barkeye has taken\xa0up\xa0the\xa0blade.</i>"]
+['Desert Warfare'
+ '[x]<b>Passive Hero Power</b>\nAfter your hero attacks,\nadd a random Hunter\ncard to your hand.']
+['Kasmut'
+ '<i>This anubisath over-achiever prefers to [x]re-raise the extra dead.</i>']
+["Tol'vir Necromancy"
+ '[x]<b>Passive Hero Power</b>\nAfter a minion is <b>Reborn</b>,\nrestore its Health to full.']
+["Lich Baz'hial"
+ "<i>Baz'hial has cheated\ndeath. She also cheats at cards.</i>"]
+["Lich's Phylactery"
+ '[x]<b>Hero Power</b>\nRestore $20 Health to your\nHero. Reduce by 1 for every\n  friendly minion that dies.']
+['Broken Phylactery'
+ '[x]<b>Passive Hero Power</b>\nYou take double damage\nfrom fatigue.']
+['Taskmaster Maru'
+ '<i>This agent of E.V.I.L.\nis never lacking for lackeys.</i>']
+['E.V.I.L. Conscription'
+ '[x]<b>Hero Power</b>\nAdd a random <b>Lackey</b>\nto your hand.']
+['E.V.I.L. Conscription'
+ '[x]<b>Hero Power</b>\nAdd a random <b>Lackey</b>\nto your hand.']
+['E.V.I.L. Charge' 'Has <b>Charge</b>.']
+['Janak'
+ "<i>This scheming hozen heads up E.V.I.L.'s desert\xa0cavalry.</i>"]
+['Cavalry of E.V.I.L.'
+ '[x]<b>Hero Power</b>\nDeal 1 damage to a\nminion and give it <b>Charge</b>.']
+['Water-Toting Murlocs'
+ '<i>Years of experience tell you not to ignore this terrible threat.</i>']
+['Fish Food' '[x]<b>Hero Power</b>\nRestore #2 Health\nto all Murlocs.']
+['Shrouded in Sand' '<b>Stealth</b>']
+['Sand Puffer Frog' "<i>One puff's enough to bluff a minion's stuff.</i>"]
+['Sandy Surprise'
+ '[x]<b>Passive Hero Power</b>\n After you play a 1-Cost\n minion, give it <b>Stealth</b>.']
+['Titanic Fortitude' 'Stats set to 3/3.']
+['Winged Guardian'
+ "<i>This great beast's roar bolsters allies and terrifies its foes.</i>"]
+["Titan's Beast"
+ "[x]<b>Hero Power</b>\nSet a minion's Attack\nand Health to 3."]
+["Titan's Beast"
+ "[x]<b>Hero Power</b>\nSet a minion's Attack\nand Health to 3."]
+['Spell Power Remover' 'Increased Spell Damage.']
+['Jythiros of Questions'
+ '<i>[x]A riddle... within a\nmystery...in an enigma...\n with a funny head.</i>']
+['Riddle of the Sphinx'
+ '[x]<b>Passive Hero Power</b>\nGuess which card the <b>Boss</b>\nwill play to banish it.']
+['Dire Bat'
+ "<i>They wouldn't be a problem if you just stopped\xa0feeding\xa0them.</i>"]
+['Food Chain'
+ '[x]<b>Hero Power</b>\n Deal 2 damage to a minion.\nIf it dies, restore 5 Health\nto your Hero.']
+['Food Chain'
+ '[x]<b>Hero Power</b>\n Deal 2 damage to a minion.\nIf it dies, restore 5 Health\nto your Hero.']
+['Zaraam' '<i>Zaraam grows in strength the more his minions suffer.</i>']
+['Forbidden Power'
+ '[x]<b>Hero Power</b>\nDeal $1 damage to a random\nenemy <i>(upgrades whenever a\nfriendly minion dies)</i>.']
+['Forbidden Power'
+ '[x]<b>Hero Power</b>\nDeal $1 damage to a random\nenemy <i>(upgrades whenever a\nfriendly minion dies)</i>.']
+['Kyriss' "<i>Line up all your minions. It'll be hilarious.</i>"]
+['Chain Lightning'
+ '[x]<b>Hero Power</b>\nDeal $1 damage to a minion.\nJumps to an adjacent\nminion until one dies.']
+['Chain Lightning'
+ '[x]<b>Hero Power</b>\nDeal $1 damage to a minion.\nJumps to an adjacent\nminion until one dies.']
+['A Beautiful Oasis'
+ '<i>Merciful shade. Fresh cool water. A perfectly [x]balanced meta. Is it real?</i>']
+['Mirage'
+ '[x]<b>Hero Power</b>\nGive your opponent an\nillusion card. If played, they\ndiscard a random card.']
+['Vessina'
+ '<i>If impatience is an\nE.V.I.L. virtue, Vessina must be a saint.</i>']
+['Plaguebringer'
+ '[x]<b>Passive Hero Power</b>\nYour spells <b>Overload</b> (1)\nbut cost (2) less.']
+['Thrud' '<i>And some people think rogues need to be sneaky.</i>']
+['Ogre-Sized Thief'
+ "[x]<b>Hero Power</b>\nSteal a card from your\nopponent's deck and\nput it into your hand."]
+['Ogre-Sized Thief'
+ "[x]<b>Hero Power</b>\nSteal a card from your\nopponent's deck and\nput it into your hand."]
+['Siamat'
+ '[x]<i>The South Winds (usually)\nbring exactly what\nSiamat wanted.</i>']
+['Masterful Djinn'
+ '[x]<b>Hero Power</b>\nSummon a 1/4 servant with\n<b>Taunt</b>, <b>Rush</b>, <b>Windfury</b>, or\n<b>Divine Shield</b> <i>(at random)</i>.']
+['Lord of the South Wind'
+ '[x]<b>Hero Power</b>\nSummon a 1/4 servant.\nGive it <b>Taunt</b>, <b>Windfury</b>,\n <b>Rush</b> and <b>Divine Shield</b>.']
+['Tekhan Shuffle Dummy' '']
+['Tekahn Swap Hero Enchantment' '']
+['Tekahn Treasure Pity Timer' '']
+['Tekahn, Plague Lord of Flame'
+ '<i>The fifth plague, Tekhan laid claim: behold the mighty\xa0Lord\xa0of\xa0Flame!</i>']
+['Awaken the Flame'
+ '[x]<b>Hero Power</b>\nImbue a Sanctum Golem\nwith the power of fire.']
+['Curse of Flame'
+ '[x]<b>Hero Power</b>\nChoose an enemy minion. If it\nlives until your next turn, deal\n5 damage to all characters.']
+['Curse of Flame' "On Tekahn's turn, deal 5 damage to all characters."]
+['Soul Pyre'
+ '[x]<b>Passive Hero Power</b>\nAfter a player plays a\ncard, they take damage\nequal to its Cost.']
+['The Final Plague?!' '<i>Resummon that which was long dead.</i>']
+['Weaponized Wasp'
+ '<i>Unlike bees, wasps\ncan keep stinging you. With a laser.</i>']
+['"Upgraded" Fauna'
+ '[x]<b>Hero Power</b>\nDeal 1 damage to an\nenemy minion for each\nBeast you control.']
+['Isiset'
+ '<i>In the deft hands of the Mistress of Magic, any spell\xa0can\xa0be\xa0a\xa0<b>Twinspell</b>.</i>']
+['Mistress of Magic'
+ '[x]<b>Passive Hero Power</b>\nWhenever a player casts\ntheir first spell, add\na copy to their hand.']
+['Sunshine' 'You have <b>Spell Damage +3</b> this turn.']
+['Rajh'
+ '<i>The mighty Lord of the Sun shines brightest when\xa0casting\xa0spells.</i>']
+['Lord of the Sun'
+ '[x]<b>Hero Power</b>\nGain <b>Spell Damage +3</b>\nthis turn.']
+['Lord of the Sun'
+ '[x]<b>Hero Power</b>\nGain <b>Spell Damage +3</b>\nthis turn.']
+['Cost + 1 This Turn Only' 'Costs (1) more.']
+['Ammunae'
+ '<i>Every party needs a healer. And nobody partied like the titans.</i>']
+['Lord of Life'
+ "[x]<b>Hero Power</b>\nRestore a minion's\nHealth to full."]
+['Lord of Life'
+ "[x]<b>Hero Power</b>\nRestore a minion's\nHealth to full."]
+['Cursed!' 'Deal 2 damage to your hero at the end of your turn.']
+['Cursed!' 'Deal 4 damage to your hero at the end of your turn.']
+['Setesh'
+ '[x]<i>Setesh curses minions...\nWithout even getting\nto know them first.</i>']
+['Lord of Destruction'
+ '[x]<b>Hero Power</b>\nCurse a random enemy\nminion to damage its\nowner each turn.']
+['Sonic Boom' 'Has <b>Rush</b>.']
+['General Husam'
+ '<i>Those who serve under General Husam are in a rush to leave.</i>']
+['Shockwave'
+ '[x]<b>Passive Hero Power</b>\nAll your minions have\n<b>Rush</b>.']
+['High Prophet Barim'
+ '<i>Barim “prophets”\nfrom the misfortune\nof\xa0others.</i>']
+['Burst of Light'
+ '[x]<b>Hero Power</b>\n<b>Lifesteal</b>. Deal $1 damage\nto all enemy minions.']
+['Burst of Light'
+ '[x]<b>Hero Power</b>\n<b>Lifesteal</b>. Deal $1 damage\nto all enemy minions.']
+['Avozu'
+ '<i>Avozu the Hunter will stop at nothing until his prey is subdued.</i>']
+['Hunt the Weak'
+ '[x]<b>Hero Power</b>\nDeal $1 damage to a minion and\ngain 1 bonus damage. If it dies,\nlose all bonus damage.']
+['Hunt the Weak'
+ '[x]<b>Hero Power</b>\nDeal $2 damage to a minion and\ngain 2 bonus damage. If it dies,\nlose all bonus damage.']
+['Tarkus'
+ '<i>Violence begets violence. Tarkus\nbegets\xa0a\xa0whole\xa0lot.</i>']
+['Noble Champion'
+ '[x]<b>Hero Power</b>\nDeal damage to a\nrandom enemy minion\nequal to its Attack.']
+['Noble Champion'
+ '[x]<b>Hero Power</b>\nDeal damage to a\nrandom enemy minion\nequal to its Attack.']
+['Strong Jaw' 'Doubled Attack.']
+['Gorebite' '<i>If it opens its mouth, you should run. Double-time.</i>']
+['Snapping Jaw'
+ "[x]<b>Hero Power</b>\nDouble your hero's\nattack this turn."]
+['Snapping Jaw'
+ "[x]<b>Hero Power</b>\nDouble your hero's\nattack this turn."]
+['Octosari'
+ '<i>His favorite number is 7. Disrupt its perfection at your own peril!</i>']
+['Massive Tentacles'
+ '[x]<b>Hero Power</b>\nIf there are 8 or more\nminions on the battlefield,\ndestroy them all.']
+['Auto Piloted' '+2 Attack this turn.']
+['Armadillobot'
+ '<i>Is it insane to let a\ncritter pilot a mech?\nDr.\xa0Boom\xa0thinks\xa0not.</i>']
+['Mech "Pilot"'
+ '[x]<b>Hero Power</b>\nGive a Mech +2 Attack this\nturn and force it to attack a\nrandom enemy minion.']
+['Bazaar Bob'
+ '[x]<i>The friendliest face \nyou could hope to meet in \na plague-ridden desert.</i>']
+['Brann Bronzebeard'
+ "[x]Riding on a dinosaur\nand looking for a fight, \nBrann's ready to finish this."]
+['Wee Minions' '']
+['Swarming Beasts' '']
+['Big Beasties' '']
+['Legendary' '']
+['Dragons' '']
+['Protectors' '']
+['Rust Buckets' '']
+['Deathrattle' '']
+['Combat Ready' '']
+['Pain Gains' '']
+["Keep Swingin'" '']
+['Armor Up!' '']
+['Direct Hit' '']
+["Take 'Em Down" '']
+["Callin' Fer Help" '']
+['Pump It Up!' '']
+['Draw' '']
+['Bombs Away!' '']
+['Tricky Traps' '']
+['Discover' '']
+["Dino Tamin'" '']
+['Dire Rush' '']
+['Spread Shot'
+ '[x]<b>Hero Power</b>\nDeal $1 damage,\nthen deal $1 damage to\nthe enemy hero.']
+['Well Equipped'
+ '[x]<b>Hero Power</b>\nEquip a random\nweapon and set its\nDurability to 1.']
+['Dino Tracking'
+ '[x]<b>Passive Hero Power</b>\nAt the start of your turn,\n<b>Discover</b> which card\nyou draw.']
+['Brann Hero Power Watcher' '']
+['Brann Plague Damage Watcher' '']
+['Elise Starseeker'
+ '[x]Whether she needs magic\nor a trusty machete, Elise \nis ready to save Uldum.']
+['Old God' '']
+['Big Minions' '']
+['Resurrection' '']
+['Embrace the Beyond' '']
+['Dragons!' '']
+['Copy Minions' '']
+['Minature Army' '']
+["Let's Taunt" '']
+['Legends' '']
+['Silence Yourself' '']
+['Buff' '']
+['Inspiring Minions' '']
+['Spell Generation' '']
+['Card Draw' '']
+['Mana' '']
+['Discovery' '']
+['Choose the Outcome' '']
+['Big Spell Damage' '']
+["Auchenai's Touch" '']
+['Life Bringing' '']
+['Removal' '']
+['Plaguebringer' '']
+["Elise's Might"
+ '[x]<b>Hero Power</b>\n<b>Choose One -</b> +2 Attack\nthis turn; or Gain 2 Armor.']
+['Defensive Posture' '+2 Armor.']
+['Offensive Posture' '+2 Attack.']
+['Druidic Teaching'
+ '[x]<b>Hero Power</b>\nRestore #2 Health, then\ndraw a card if the target\nis at full Health.']
+['Starseeker'
+ "[x]<b>Passive Hero Power</b>\nAfter you cast 2 spells\nin a turn, add a 'Moonfire'\nto your hand."]
+['Elise Hero Power Watcher' '']
+['Elise Plague Damage Watcher' '']
+['Saviors of Uldum' '']
+['Sir Finley'
+ '[x]Sir Finley rides into battle,\nready to dispense justice \nagainst his final foe.']
+['Feeble Squires' '']
+['Family Tree' '']
+['Small Army' '']
+['Dead or Alive' '']
+['Mighty Champions' '']
+['Legends' '']
+['Protectors' '']
+['Harness the Elements' '']
+['March of the Mechs' '']
+['Divine Shield' '']
+['Healing' '']
+['Sharing Strength' '']
+['Superior Subjugation' '']
+['Noble Weaponry' '']
+['Strike at Thee' '']
+['Big Bad Spells' '']
+['Overloaded' '']
+['Mutual Destruction' '']
+['Draw' '']
+['Discovery' '']
+['Battlecry' '']
+['Transformations' '']
+['New "Recruits"' '<b>Hero Power</b>\nSummon a 2/2 Amalgam Explorer.']
+['Amalgam Explorer'
+ '[x]<i>This is an Elemental, Mech,\nDemon, Murloc, Dragon,\nBeast, Pirate and Totem.</i>']
+['Bubble Blower'
+ '[x]<b>Hero Power</b>\n<b>Discover</b> a Shaman or\n Paladin minion with\n  <b>Battlecry</b>. <b>Overload:</b> (1).']
+['Power Up!'
+ '[x]<b>Hero Power</b>\nGive a minion\n<b>Divine Shield</b> & <b>Windfury</b>.']
+['Embiggend' '+1/+1.']
+['Finley Hero Power Watcher' '']
+['Finley Plague Damage Watcher' '']
+['Reno Jackson'
+ '[x]With a bag full of treasures \nand a well-styled mustache,\n Reno is ready to take \nTekahn down!']
+['Mighty Minions' '']
+['Deathrattle' '']
+['Battlecries' '']
+['Elements' '']
+['Mechs' '']
+['Pirates' '']
+['Heroically Empowered' '']
+['Summoning Frenzy' '']
+['Old God' '']
+['Big Spells' '']
+['Kingsbane' '']
+['Multiple Enemies' '']
+['Spell Damage' '']
+['Slinging Spells' '']
+['Spell Lovers' '']
+['Shuffle and Draw' '']
+['Spell Searching' '']
+['Discover' '']
+['Honor Among Thieves' '']
+['Secrets' '']
+['Safety Measures' '']
+['Combo' '']
+['Amateur Mage'
+ '<b>Hero Power</b>\nDeal $1 damage.\n<b>Combo:</b> $2 instead.']
+['"Relicologist"'
+ '[x]<b>Hero Power</b>\n Your next spell this turn\nhas <b>Spell Damage +2</b>.']
+['Relic Power'
+ 'You have <b>Spell Damage +2</b> for your next spell this turn.']
+['Arcane Craftiness'
+ '[x]<b>Hero Power</b>\nFire two missiles that deal\n$1 damage each. If any\nminion dies, repeat this.']
+['Reno Hero Power Watcher' '']
+['Reno Plague Damage Watcher' '']
+['Pterrordax Hatchling' '<b><b>Battlecry:</b> Adapt</b>.']
+['Volcanosaur' '<b>Battlecry:</b> <b>Adapt</b>, then\xa0<b>Adapt</b>.']
+['Dinosize' "Set a minion's Attack and Health to 10."]
+['RAAAAR!' 'Stats changed to 10/10.']
+['Ravasaur Runt'
+ '<b>Battlecry:</b> If you control at\xa0least 2 other minions, <b>Adapt.</b>']
+['Sated Threshadon' '<b>Deathrattle:</b> Summon three 1/1 Murlocs.']
+['Hydrologist' '<b>Battlecry:</b> <b>Discover</b> a <b>Secret</b>.']
+['Sunkeeper Tarim'
+ "<b>Taunt</b>\n<b>Battlecry:</b> Set all other minions' Attack and Health to 3."]
+['Watched' 'Stats changed to 3/3.']
+['Flame Geyser' 'Deal $2 damage.\nAdd a 1/2 Elemental to\xa0your hand.']
+['Air Elemental' "Can't be targeted by spells or Hero Powers."]
+['Arcanologist' '<b>Battlecry:</b> Draw a <b>Secret</b> from your deck.']
+['Steam Surger'
+ "[x]<b>Battlecry:</b> If you played\nan Elemental last turn,\nadd a 'Flame Geyser'\nto your hand."]
+['Mirage Caller'
+ '<b>Battlecry:</b> Choose a friendly minion. Summon a 1/1 copy of it.']
+['Mirage' '1/1.']
+['Mana Bind'
+ '<b>Secret:</b> When your opponent casts a spell, add a copy to your hand that costs (0).']
+['Volcano'
+ 'Deal $15 damage randomly split among all\xa0minions.\n<b>Overload:</b> (2)']
+['Pyros'
+ '<b>Deathrattle:</b> Return this to\xa0your hand as a 6/6 that costs (6).']
+['Pyros'
+ '<b>Deathrattle:</b> Return this to\xa0your hand as a 10/10 that costs (10).']
+['Pyros' '']
+['Open the Waygate'
+ "[x]<b>Quest:</b> Cast 8 spells that\ndidn't start in your deck.\n<b>Reward:</b> Time Warp."]
+['Time Warp' 'Take an extra turn.']
+['Shadow Visions' '<b>Discover</b> a copy of a spell in your deck.']
+['Binding Heal' 'Restore #5 Health to a minion and your hero.']
+['Crystalline Oracle'
+ "[x]<b>Deathrattle:</b> Copy a card\nfrom your opponent's deck\n\xa0and add it to your hand."]
+['Radiant Elemental' 'Your spells cost (1) less.']
+['Radiant Elemental' 'Costs (1) less.']
+['Curious Glimmerroot'
+ "[x]<b>Battlecry:</b> Look at 3 cards.\nGuess which one started\nin your opponent's deck\nto get a copy of it."]
+['Tortollan Shellraiser'
+ '[x]<b>Taunt</b>\n<b>Deathrattle:</b> Give a random\n\xa0friendly minion +1/+1.']
+['Shellshield' '+1/+1.']
+['Ravenous Pterrordax'
+ '<b>Battlecry:</b> Destroy a friendly minion to <b>Adapt</b>\xa0twice.']
+['Tar Lurker' "<b>Taunt</b>\nHas +3 Attack during your opponent's turn."]
+['Razorpetal Volley'
+ 'Add two Razorpetals to\xa0your hand that deal\xa01 damage.']
+['Razorpetal' 'Deal $1 damage.']
+['Razorpetal Lasher'
+ '[x]<b>Battlecry:</b> Add a\nRazorpetal to your hand\nthat deals 1 damage.']
+['Mimic Pod' 'Draw a card, then add a copy of it to your hand.']
+['Obsidian Shard'
+ "[x]Costs (1) less for each\ncard you've played from\nanother class."]
+['Biteweed'
+ "<b>Combo:</b> Gain +1/+1 for each other card you've played this turn."]
+['Sprout' 'Increased stats.']
+['Vilespine Slayer' '<b>Combo:</b> Destroy a minion.']
+['Sherazin, Corpse Flower'
+ '<b>Deathrattle:</b> Go <b>Dormant</b>. Play 4 cards in a turn to revive this minion.']
+['Sherazin, Seed'
+ '[x]<b>Dormant</b>\nWhen you play 4 cards\nin a turn, revive\nthis minion.']
+['The Caverns Below'
+ '[x]<b>Quest:</b> Play five minions\nwith the same name.\n<b>Reward:</b> Crystal Core.']
+['Crystal Core' 'For the rest of the game, your minions are 4/4.']
+['Crystallized' 'Your minions are 4/4.']
+['Crystallized' '4/4.']
+['Crystallized' '4/4.']
+["Tol'vir Stoneshaper"
+ '[x]<b>Battlecry:</b> If you played an\nElemental last turn, gain\n\xa0<b>Taunt</b> and <b>Divine\xa0Shield</b>.']
+['Stonewall' '<b>Divine Shield</b> and <b>Taunt</b>.']
+['Giant Mastodon' '<b>Taunt</b>']
+['Stonehill Defender'
+ '<b>Taunt</b>\n<b>Battlecry:</b> <b>Discover</b> a <b>Taunt</b>\xa0minion.']
+['Rockpool Hunter' '<b>Battlecry:</b> Give a friendly Murloc +1/+1.']
+['Trained' '+1/+1']
+['Vicious Fledgling' 'After this minion attacks a\xa0hero, <b>Adapt</b>.']
+['Eggnapper' '<b>Deathrattle:</b> Summon two 1/1 Raptors.']
+['Raptor' '']
+['Tortollan Forager'
+ '<b>Battlecry:</b> Add a random minion with 5 or more Attack to your hand.']
+['Frozen Crusher' 'After this minion attacks, <b>Freeze</b> it.']
+['Thunder Lizard'
+ '<b>Battlecry</b>: If you played an\xa0Elemental last turn, <b>Adapt</b>.']
+['Devilsaur Egg' '<b>Deathrattle:</b> Summon a 5/5 Devilsaur.']
+['Devilsaur' '']
+['Fire Plume Phoenix' '<b>Battlecry:</b> Deal 2 damage.']
+['Emerald Hive Queen' 'Your minions cost (2) more.']
+['Emerald Hive' 'Costs (2) more.']
+['Giant Anaconda'
+ '<b>Deathrattle:</b> Summon a minion from your hand with 5 or more Attack.']
+['Bittertide Hydra'
+ 'Whenever this minion takes damage, deal 3 damage to\xa0your hero.']
+['Tortollan Primalist'
+ '<b>Battlecry:</b> <b>Discover</b> a spell\xa0and cast it with random targets.']
+['Gentle Megasaur' '<b>Battlecry:</b> <b>Adapt</b> your\xa0Murlocs.']
+['Charged Devilsaur'
+ "<b>Charge</b>\n<b>Battlecry:</b> Can't attack heroes this turn."]
+['Verdant Longneck' '<b>Battlecry:</b> <b>Adapt</b>.']
+['Shellshifter'
+ '[x]<b>Choose One - </b>Transform\ninto a 5/3 with <b>Stealth</b>;\nor a 3/5 with <b>Taunt</b>.']
+['Raptor Form' '<b>Stealth</b>']
+['Direhorn Form' '<b>Taunt</b>']
+['Shellshifter' '<b>Stealth</b>']
+['Shellshifter' '<b>Taunt</b>']
+['Shellshifter' '<b>Stealth</b>\n<b>Taunt</b>']
+['Evolving Spores' '<b>Adapt</b> your minions.']
+['Earthen Scales'
+ 'Give a friendly minion +1/+1, then gain Armor equal to its Attack.']
+["It's All Scaley..." '+1/+1.']
+['Elder Longneck'
+ "<b>Battlecry:</b> If you're holding a minion with 5 or more Attack, <b>Adapt</b>."]
+['Living Mana'
+ 'Transform your Mana Crystals into 2/2 Treants. Recover the mana when they die.']
+['Mana Treant' '<b>Deathrattle:</b> Gain an empty Mana Crystal.']
+['Bright-Eyed Scout'
+ '<b>Battlecry:</b> Draw a card. Change its Cost to (5).']
+['Scouted' 'Costs (5).']
+['Jungle Giants'
+ '[x]<b>Quest:</b> Summon\n5 minions with\n5 or more Attack.\n<b>Reward:</b> Barnabus.']
+['Barnabus the Stomper'
+ '<b>Battlecry:</b> Reduce the\nCost of minions in your deck to (0).']
+['Romper Stompers' 'Costs (0).']
+['Primalfin Totem' 'At the end of your turn, summon a 1/1 Murloc.']
+['Primalfin' '']
+['Fire Plume Harbinger'
+ '<b>Battlecry:</b> Reduce the Cost of Elementals in your hand\xa0by (1).']
+['Fiery' 'Costs (1) less.']
+['Glacial Shard' '<b>Battlecry:</b> <b>Freeze</b> an\xa0enemy.']
+['Stone Sentinel'
+ '<b>Battlecry:</b> If you played an Elemental last turn, summon two 2/3 Elementals with <b>Taunt</b>.']
+['Rock Elemental' '<b>Taunt</b>']
+['Kalimos, Primal Lord'
+ '[x]<b>Battlecry:</b> If you played an\nElemental last turn, cast an\nElemental Invocation.']
+['Invocation of Earth' 'Fill your board with 1/1 Elementals.']
+['Stone Elemental' '']
+['Invocation of Water' 'Restore 12 Health to your hero.']
+['Invocation of Fire' 'Deal 6 damage to the enemy hero.']
+['Invocation of Air' 'Deal 3 damage to all enemy minions.']
+['Terrorscale Stalker'
+ "<b>Battlecry:</b> Trigger a friendly minion's <b>Deathrattle</b>."]
+['Nesting Roc'
+ '<b>Battlecry:</b> If you control at\xa0least 2 other minions, gain <b>Taunt</b>.']
+['Emerald Reaver' '<b>Battlecry:</b> Deal 1 damage to each hero.']
+['Ultrasaur' '']
+['Golakka Crawler' '<b>Battlecry:</b> Destroy a Pirate and gain +1/+1.']
+['Overfull Belly' 'Increased stats.']
+['Stubborn Gastropod' '<b>Taunt</b>\n  <b>Poisonous</b>']
+['Fire Fly' '<b>Battlecry</b>: Add a 1/2 Elemental to your hand.']
+['Flame Elemental' '']
+['Stegodon' '<b>Taunt</b>']
+['Sabretooth Stalker' '<b>Stealth</b>']
+['Stormwatcher' '<b>Windfury</b>']
+['Giant Wasp' '<b>Stealth</b>\n <b>Poisonous</b>']
+['Servant of Kalimos'
+ '[x]<b>Battlecry:</b> If you played\nan Elemental last turn,\n\xa0<b>Discover</b> an Elemental.']
+['Tidal Surge'
+ 'Deal $4 damage to a minion. Restore #4 Health to your hero.']
+['Volatile Elemental'
+ '<b>Deathrattle:</b> Deal 3 damage to a random enemy minion.']
+['Envenom Weapon' 'Give your weapon <b>Poisonous</b>.']
+['Envenomed' '<b>Poisonous</b>']
+['Envenomed' '<b>Poisonous</b>']
+['Lakkari Sacrifice'
+ '[x]<b>Quest:</b> Discard 6 cards.\n<b>Reward:</b> Nether Portal.']
+['Nether Portal' 'Open a permanent portal that summons 3/2 Imps.']
+['Nether Portal' 'At the end of your turn, summon two 3/2 Imps.']
+['Nether Imp' '']
+['Cruel Dinomancer'
+ '[x]<b>Deathrattle:</b> Summon a\nrandom minion you\ndiscarded this game.']
+['Corrupting Mist'
+ 'Curse all minions. Destroy them at the start of your next turn.']
+['Corrupting Mist'
+ "At the start of the corrupting player's turn, destroy this minion."]
+['Bloodbloom'
+ 'The next spell you cast this turn costs Health instead of Mana.']
+['Dark Power' 'Your next spell costs Health instead of Mana.']
+['Lakkari Felhound'
+ '<b>Taunt</b>\n<b>Battlecry:</b> Discard two random cards.']
+['Feeding Time'
+ 'Deal $3 damage to a minion. Summon three 1/1 Pterrordaxes.']
+['Pterrordax' '']
+['Chittering Tunneler'
+ '<b>Battlecry:</b> <b>Discover</b> a spell. Deal damage to your hero equal to its Cost.']
+['Clutchmother Zavas'
+ 'Whenever you discard this, give it +2/+2 and return it to your hand.']
+['Remembrance' '+2/+2 each time this is discarded.']
+['Tar Lord' '<b>Taunt</b>\nHas +4 Attack during your opponent’s turn.']
+['Hemet, Jungle Hunter'
+ '<b>Battlecry:</b> Destroy all cards in your deck that cost (3)\xa0or less.']
+['The Voraxx'
+ '[x]After you cast a spell on\nthis minion, summon a\n1/1 Plant and cast\nanother copy on it.']
+['Humongous Razorleaf' "Can't attack."]
+['Igneous Elemental'
+ '<b>Deathrattle:</b> Add two 1/2 Elementals to your hand.']
+['Shimmering Tempest'
+ '<b>Deathrattle:</b> Add a random Mage spell to your hand.']
+['Blazecaller'
+ '<b>Battlecry:</b> If you played an\xa0Elemental last turn, deal 5 damage.']
+['Primordial Drake'
+ '[x]<b>Taunt</b>\n<b>Battlecry:</b> Deal 2 damage\nto all other minions.']
+['Elise the Trailblazer'
+ "<b>Battlecry:</b> Shuffle a sealed\xa0<b>Un'Goro</b> pack into\xa0your deck."]
+["Un'Goro Pack" "Add 5 <b>Journey to Un'Goro</b> cards to your hand."]
+['Tyrantus' "Can't be targeted by spells or Hero Powers."]
+['Free From Amber'
+ '<b>Discover</b> a minion that costs (8) or more. Summon it.']
+['Hallucination' "<b>Discover</b> a card from your opponent's class."]
+['Spiritsinger Umbra'
+ 'After you summon a minion, trigger its <b>Deathrattle</b> effect.']
+['Ozruk'
+ '[x]<b>Taunt</b>\n<b>Battlecry:</b> Gain +5 Health\nfor each Elemental you\nplayed last turn.']
+['Just Blaze' '+5 Health']
+['Grievous Bite'
+ 'Deal $2 damage to a minion and $1 damage to adjacent ones.']
+['Jeweled Macaw' '<b>Battlecry:</b> Add a random Beast to your hand.']
+["Tol'vir Warden"
+ '<b>Battlecry:</b> Draw two 1-Cost minions from your deck.']
+['Raptor Hatchling'
+ '<b>Deathrattle:</b> Shuffle a 4/3 Raptor into your deck.']
+['Raptor Patriarch' '']
+['Crackling Razormaw'
+ '<b>Battlecry:</b> <b>Adapt</b> a friendly\xa0Beast.']
+['Stampede'
+ 'Each time you play a Beast this turn, add\xa0a\xa0random Beast to\xa0your hand.']
+['Stampeding' '']
+['Dinomancy' "Your Hero Power becomes 'Give a Beast +2/+2.'"]
+['Well Fed' '+2/+2.']
+['Dinomancy' '<b>Hero Power</b>\nGive a Beast +2/+2.']
+['Swamp King Dred' 'After your opponent plays a minion, attack\xa0it.']
+['The Marsh Queen'
+ '[x]<b>Quest:</b> Play seven\n1-Cost minions.\n<b>Reward:</b> Queen Carnassa.']
+['Queen Carnassa' '<b>Battlecry:</b> Shuffle 15 Raptors into your deck.']
+["Carnassa's Brood" '<b>Battlecry:</b> Draw a card.']
+["Explore Un'Goro"
+ 'Replace your deck with\xa0copies of "<b>Discover</b> a card."']
+['Choose Your Path' '<b>Discover</b> a card.']
+['Iron Hide' 'Gain 5 Armor.']
+['Ornery Direhorn' '<b>Taunt</b>\n<b>Battlecry:</b> <b>Adapt</b>.']
+['Cornered Sentry'
+ '<b>Taunt</b>. <b>Battlecry:</b> Summon three 1/1 Raptors for your\xa0opponent.']
+['Sudden Genesis' 'Summon copies of your damaged minions.']
+['Tar Creeper' "<b>Taunt</b>\nHas +2 Attack during your opponent's turn."]
+['Molten Blade'
+ 'Each turn this is in your hand, transform it into a new weapon.']
+['Magmic' 'Transforming into random weapons.']
+['King Mosh' '<b>Battlecry:</b> Destroy all damaged minions.']
+["Fire Plume's Heart"
+ '[x]<b>Quest:</b> Play\n7 <b>Taunt</b> minions.\n<b>Reward:</b> Sulfuras.']
+['Sulfuras'
+ "<b>Battlecry:</b> Your Hero Power becomes 'Deal 8\xa0damage to a random enemy.'"]
+['DIE, INSECT!' '<b>Hero Power</b>\nDeal $8 damage to a random enemy.']
+['Primalfin Lookout'
+ '<b>Battlecry:</b> If you control another Murloc, <b>Discover</b> a\xa0Murloc.']
+['Hot Spring Guardian'
+ '<b>Taunt</b>\n<b>Battlecry:</b> Restore #3\xa0Health.']
+['Awaken the Makers'
+ '<b>Quest:</b> Summon\n7 <b>Deathrattle</b> minions.<b>\nReward:</b> Amara, Warden of Hope.']
+['Amara, Warden of Hope'
+ "[x]<b>Taunt</b>\n<b>Battlecry:</b> Set your\nhero's Health to 40."]
+['Primordial Glyph' '<b>Discover</b> a spell. Reduce its Cost by (2).']
+['Primal Magic' 'Cost reduced.']
+['Unite the Murlocs'
+ '[x]<b>Quest:</b> Summon\n10 Murlocs.\n<b>Reward:</b> Megafin.']
+['Megafin' '<b>Battlecry:</b> Fill your hand with random Murlocs.']
+['Gluttonous Ooze'
+ "<b>Battlecry:</b> Destroy your opponent's weapon and gain Armor equal to its Attack."]
+['Molten Reflection' 'Choose a friendly minion. Summon a copy of it.']
+['Vinecleaver'
+ '[x]After your hero attacks,\nsummon two 1/1 Silver\nHand Recruits.']
+['Spikeridged Steed'
+ 'Give a minion +2/+6 and <b>Taunt</b>. When it dies, summon a Stegodon.']
+['On a Stegodon'
+ '+2/+6 and <b>Taunt</b>.\n<b>Deathrattle:</b> Summon a Stegodon.']
+['Primalfin Champion'
+ '[x]<b>Deathrattle:</b> Return any\nspells you cast on this\nminion to your hand.']
+['Inspired' 'Storing spell.']
+['The Last Kaleidosaur'
+ '<b>Quest:</b> Cast 6 spells\non your minions.\n<b>Reward:</b> Galvadon.']
+['Galvadon' '<b>Battlecry:</b> <b>Adapt</b> 5 times.']
+['Meteor' 'Deal $15 damage to a minion and $3 damage to adjacent ones.']
+['Spirit Echo'
+ 'Give your minions "<b>Deathrattle:</b> Return \xa0this to your hand."']
+['Echoed Spirit' '<b>Deathrattle:</b> Return to your hand.']
+['Direhorn Hatchling'
+ '<b>Taunt</b>\n<b>Deathrattle:</b> Shuffle a 6/9 Direhorn with <b>Taunt</b> into your deck.']
+['Direhorn Matriarch' '<b>Taunt</b>']
+['Lost in the Jungle' 'Summon two 1/1 Silver Hand Recruits.']
+['Adaptation' '<b>Adapt</b> a friendly minion.']
+['Lightfused Stegodon'
+ '<b>Battlecry:</b> <b>Adapt</b> your Silver\xa0Hand Recruits.']
+['Lyra the Sunshard'
+ 'Whenever you cast a spell, add a random Priest spell to your hand.']
+['Shrouding Mist' '<b>Stealth</b> until your next turn.']
+['Shrouding Mist' 'Stealthed until your next turn.']
+['Poison Spit' '<b>Poisonous</b>']
+['Poison Spit' '<b>Poisonous</b>']
+['Volcanic Might' '+1/+1']
+['Volcanic Might' '+1/+1.']
+['Living Spores' '<b>Deathrattle:</b> Summon two 1/1 Plants.']
+['Living Spores' '<b>Deathrattle:</b> Summon two 1/1 Plants.']
+['Plant' '']
+['Flaming Claws' '+3 Attack']
+['Flaming Claws' '+3 Attack.']
+['Rocky Carapace' '+3 Health']
+['Rocky Carapace' '+3 Health.']
+['Liquid Membrane' "Can't be targeted by spells or Hero Powers."]
+['Liquid Membrane' "Can't be targeted by spells or Hero Powers."]
+['Massive' '<b>Taunt</b>']
+['Massive' '<b>Taunt</b>']
+['Lightning Speed' '<b>Windfury</b>']
+['Lightning Speed' '<b>Windfury</b>']
+['Crackling Shield' '<b>Divine Shield</b>']
+['Crackling Shield' '<b>Divine Shield</b>']
+['Babbling Book' '<b>Battlecry:</b> Add a random Mage spell to your hand.']
+['Thing from Below'
+ "[x]<b>Taunt</b>\nCosts (1) less for each\nTotem you've summoned\nthis game."]
+['Evolve' 'Transform your minions into random minions that cost (1) more.']
+['Imp Gang Boss' 'Whenever this minion takes damage, summon a 1/1 Imp.']
+['Astral Communion' 'Gain 10 Mana Crystals. Discard your hand.']
+['Kun the Forgotten King'
+ '<b>Choose One -</b> Gain 10 Armor; or Refresh your Mana Crystals.']
+['Flamewaker'
+ 'After you cast a spell, deal 2 damage randomly split among all enemies.']
+['Mysterious Challenger'
+ '<b>Battlecry:</b> Put one of each <b>Secret</b> from your deck into the battlefield.']
+['Avenge'
+ '<b>Secret:</b> When one of your minions dies, give a random friendly minion +3/+2.']
+['Lock and Load'
+ 'Each time you cast a spell this turn, add a random Hunter card to your hand.']
+['Call of the Wild' 'Summon all three Animal Companions.']
+['Shaku, the Collector'
+ "[x]<b>Stealth</b>. Whenever this\nattacks, add a random card\nto your hand <i>(from your\nopponent's class).</i>"]
+['Swashburglar'
+ "<b>Battlecry:</b> Add a random card to your hand <i>(from your opponent's class).</i>"]
+['Lightbomb' 'Deal damage to each minion equal to its Attack.']
+["Vol'jin" '<b>Battlecry:</b> Swap Health with another minion.']
+['Renounce Darkness'
+ "Replace your Hero Power and Warlock cards with another class's. The cards cost (1) less."]
+['Varian Wrynn'
+ '<b>Battlecry:</b> Draw 3 cards.\nPut any minions you drew directly into the battlefield.']
+['Bloodhoof Brave' '<b>Taunt</b>\nHas +3 Attack while damaged.']
+["N'Zoth, the Corruptor"
+ '<b>Battlecry:</b> Summon your <b>Deathrattle</b> minions that died this game.']
+['Sylvanas Windrunner'
+ '<b>Deathrattle:</b> Take\ncontrol of a random\nenemy minion.']
+['Ragnaros the Firelord'
+ "Can't attack. At the end of your turn, deal 8 damage to a random enemy."]
+['The Curator'
+ '<b>Taunt</b>\n<b>Battlecry:</b> Draw a Beast, Dragon, and Murloc from your deck.']
+['Emperor Thaurissan'
+ 'At the end of your turn, reduce the Cost of cards in your hand by (1).']
+['Rising Winds'
+ '<b>Twinspell</b>\n<b>Choose One -</b> Draw a card; or Summon a 3/2\xa0Eagle.']
+['Take Flight' 'Draw a card.']
+['Swoop In' 'Summon a 3/2 Eagle.']
+['Eagle' '']
+['Rising Winds'
+ '<b>Choose One -</b> Draw a card; or Summon a 3/2\xa0Eagle.']
+['Winged Guardian'
+ "<b><b>Taunt</b>,</b> <b>Reborn</b>\nCan't be targeted by spells or Hero Powers."]
+['Chopshop Copter'
+ 'After a friendly Mech dies, add a random Mech to your hand.']
+['Fresh Scent' '<b>Twinspell</b>\nGive a Beast +2/+2.']
+['Fresh Scent' '+2/+2.']
+['Fresh Scent' 'Give a Beast +2/+2.']
+['Escaped Manasaber'
+ '[x]<b>Stealth</b>\nWhenever this attacks,\ngain 1 Mana Crystal\nthis turn only.']
+['Animated Avalanche'
+ '[x]<b>Battlecry:</b> If you played\nan Elemental last turn,\nsummon a copy of this.']
+['Arcane Amplifier' 'Your Hero Power deals 2\xa0extra damage.']
+['The Amazing Reno'
+ '<b>Battlecry:</b> Make all minions disappear. <i>*Poof!*</i>']
+['What Does This Do?'
+ '[x]<b>Passive Hero Power</b>\nAt the start of your turn,\ncast a random spell.']
+['Shotbot' '<b>Reborn</b>']
+['Air Raid'
+ '<b>Twinspell</b>\nSummon two 1/1 Silver\xa0Hand Recruits with <b>Taunt</b>.']
+['Air Raid' 'Summon two 1/1 Silver Hand Recruits with <b>Taunt</b>.']
+['Cleric of Scales'
+ "<b>Battlecry:</b> If you're holding a Dragon, <b>Discover</b> a spell from your deck."]
+['Aeon Reaver'
+ '<b>Battlecry:</b> Deal damage to\xa0a minion equal to its\xa0Attack.']
+['Dark Prophecy'
+ '<b>Discover</b> a 2-Cost minion. Summon it and give it +3 Health.']
+['Prophecized' '+3 Health.']
+['Skyvateer' '<b>Stealth</b>\n<b>Deathrattle:</b> Draw a card.']
+['Shadow Sculptor'
+ "<b>Combo:</b> Draw a card for each card you've played this turn."]
+['Waxmancy'
+ '<b>Discover</b> a <b>Battlecry</b> minion. Reduce its Cost by (2).']
+['Forged in Wax' 'Costs (2) less.']
+['Explosive Evolution'
+ 'Transform a minion into a random one that costs (3) more.']
+['Risky Skipper'
+ 'After you play a minion, deal 1 damage to all\xa0minions.']
+['Boom Squad' '<b>Discover</b> a <b>Lackey</b>, Mech, or Dragon.']
+['Bomb Wrangler'
+ 'Whenever this minion takes damage, summon a\xa01/1 Boom Bot.']
+['Twisted Knowledge' '<b>Discover</b> 2 Warlock cards.']
+['Fiendish Servant'
+ "[x]<b>Deathrattle:</b> Give this\nminion's Attack to a random\nfriendly minion."]
+["Servant's Sacrifice" 'Increased Attack.']
+['Chaos Gazer'
+ "[x]<b>Battlecry:</b> Curse a\nplayable card in your\nopponent's hand. They\nhave 1 turn to play it!"]
+['Withering Away' 'Discard this at the end of your turn.']
+['Skydiving Instructor'
+ '[x]<b>Battlecry:</b> Summon a\n1-Cost minion from\nyour deck.']
+['Hailbringer'
+ '[x]<b>Battlecry:</b> Summon two 1/1\nIce Shards that <b>Freeze</b>.']
+['Ice Shard' '<b>Freeze</b> any character damaged by this minion.']
+['Licensed Adventurer'
+ '[x]<b>Battlecry:</b> If you control\na <b>Quest</b>, add a Coin\nto your hand.']
+['Frenzied Felwing'
+ 'Costs (1) less for each damage dealt to your opponent this turn.']
+['Frenzied' 'Cost reduced.']
+['Boompistol Bully'
+ '<b>Battlecry:</b> Enemy <b>Battlecry</b>\xa0cards cost (5)\xa0more next turn.']
+['Smokescreen' 'Your <b>Battlecry</b> cards cost (5) more.']
+['Grand Lackey Erkh'
+ 'After you play a <b>Lackey</b>, add a <b>Lackey</b> to your hand.']
+['Rotnest Drake'
+ "[x]<b>Battlecry:</b> If you're holding\na Dragon, destroy a random\nenemy minion."]
+["Sky Gen'ral Kragg"
+ "[x]<b>Taunt</b>\n<b>Battlecry:</b> If you've played a\n<b>Quest</b> this game, summon a\n4/2 Parrot with <b>Rush</b>."]
+['Sharkbait' '<b>Rush</b>']
+['Steel Beetle'
+ "<b>Battlecry:</b> If you're holding a spell that costs (5) or more, gain 5 Armor."]
+['Eye of the Storm'
+ 'Summon three 5/6 Elementals with <b>Taunt</b>. <b>Overload:</b> (3)']
+['Stormblocker' '<b>Taunt</b>']
+['The Fist of Ra-den'
+ '[x]After you cast a spell,\nsummon a <b>Legendary</b>\nminion of that Cost.\nLose 1 Durability.']
+['Scalelord' '<b>Battlecry:</b> Give your Murlocs <b>Divine Shield</b>.']
