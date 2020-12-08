@@ -65,7 +65,7 @@ def tokenizer(card_name: str, card_text: str) -> str:
     split_text = card_text.split(" ")
 
     # Combine any tokens that were split from multi-part names
-    if name_in_text:
+    if name_in_text and len(card_name) > 0:
         name_token_len = len(card_name.split(" "))
         # Check up to the last index possible where card name is split as well
         i = 0
