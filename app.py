@@ -124,9 +124,9 @@ def yugioh():
 
 
 def main():
-    # magicData()
-    # keyforge()
-    # hearthstone()
+    magicData()
+    keyforge()
+    hearthstone()
     yugioh()
 
 
