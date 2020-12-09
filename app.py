@@ -21,7 +21,7 @@ def tupleAndWriteToFiles(nameList, ruleList, fileName):
 
     # split list into 60-20-20
     train, dev, test = np.split(
-        tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
+        np.array(tupleList), [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
 
     writeToFile(train, "datasets/" + fileName + "/train.txt")
     writeToFile(dev, "datasets/" + fileName + "/dev.txt")
@@ -29,8 +29,7 @@ def tupleAndWriteToFiles(nameList, ruleList, fileName):
 
 
 def getDataFromJson(jsonFile, name, rules, fileName):
-    #f = open('HearthstoneCards.json', encoding='utf-8')
-    with open(jsonFile) as data_file:
+    with open(jsonFile, encoding='utf-8') as data_file:
         jsonObject = json.load(data_file)
 
     nameList = []
@@ -69,27 +68,21 @@ def magicData():
                     except KeyError:
                         ruleList.append("")
 
-    # create list of tuples in the format of <cardname, rules>
-    tupleList = list(zip(nameList, ruleList))
-
-    # split list into 60-20-20
-    train, dev, test = np.split(
-        tupleList, [int(len(tupleList)*0.6), int(len(tupleList)*0.8)])
-
-    writeToFile(train, "datasets/mtg/train.txt")
-    writeToFile(dev, "datasets/mtg/dev.txt")
-    writeToFile(test, "datasets/mtg/test.txt")
+    tupleAndWriteToFiles(nameList, ruleList, "mtg")
 
 
+# full original hearthstone json file can be obtained at https://api.hearthstonejson.com/v1/66927/enUS/cards.json
 def hearthstone():
     getDataFromJson("HearthstoneCards.json", "name", "text", "hearthstone")
 
 
+# full original keyforge json file can be obtained at https://github.com/keyforg/keyforge-cards-json/blob/master/cards.json
 def keyforge():
     getDataFromJson("KeyforgeCards.json", "card_title",
                     "card_text", "keyforge")
 
 
+# full original yugioh json file can be obtained at https://db.ygoprodeck.com/api/v7/cardinfo.php
 def yugioh():
     with open('YugiohCards.php') as data_file:
         jsonObject = json.load(data_file)
