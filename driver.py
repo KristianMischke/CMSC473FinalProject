@@ -100,6 +100,7 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
 
     for e in range(epochs):
         print("epoch", e)
+        # TODO: re-randomize sequences
         for i in range(len(token_sequences)):
             model.em_update(token_sequences[i])
         # TODO: report perplexity

@@ -142,11 +142,12 @@ class HMM:
 
         # matrix -> num_state x num_obs
         # Matrix Initialization
-        a = np.zeros((t, self.num_hidden))
+
         if log_space:
-            a[0, :] = -np.inf
+            a = np.full((t, self.num_hidden), -np.inf)
             a[0][0] = 0
         else:
+            a = np.zeros((t, self.num_hidden))
             a[0][0] = 1.0
 
         for i in range(1, t):
@@ -194,7 +195,7 @@ class HMM:
 
     def compute_perplexity(self, obs_seq):
         t = len(obs_seq)
-        log_marginal_likelihood = self.forward(obs_seq, log_space=True)[-1, -1]
+        log_marginal_likelihood = self.forward(obs_seq, log_space=True)[-1, self.end_state]
         return np.exp((-1 / t) * log_marginal_likelihood)
 
     def em_update(self, obs_seq):
@@ -207,7 +208,7 @@ class HMM:
         for i in range(self.num_hidden):
             self.transitions[i][:] = c_trans[i][:] / sum(self.transitions[i][:])
 
-        # TODO: need to account for PRLG maximization of joing probability
+        # TODO: need to account for PRLG maximization of joint probability
 
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
