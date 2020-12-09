@@ -31,7 +31,7 @@ class BaumWeltch():
 
         a = zeros((self.num_obs+2, self.num_state))
         if log_space:
-            a[0, :] = -np.inf
+            a[:, :] = -np.inf
             a[0][0] = 0
         else:
             a[0][0] = self.start_value
@@ -101,10 +101,11 @@ class BaumWeltch():
 
         return c
 
-    def compute_perplexity(self):
+    def compute_perplexity(self, obs_seq):
+        t = len(obs_seq)
         log_marginal_likelihood = self.forward(log_space=True)[-1, -1]
         print('Log marginal likelihood:', log_marginal_likelihood)
-        return np.exp((-1 / self.num_obs) * log_marginal_likelihood)
+        return np.exp((-1 / t) * log_marginal_likelihood)
 
 
 if __name__ == "__main__":
@@ -122,7 +123,7 @@ if __name__ == "__main__":
     print('marginal likelihood', marginal_likelihood)
 
     print()
-    print('perplexity', BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).compute_perplexity())
+    print('perplexity', BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).compute_perplexity(obs_sequence))
 
 
     # print()
