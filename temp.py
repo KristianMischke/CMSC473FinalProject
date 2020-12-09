@@ -115,3 +115,13 @@ print(b)
 c_obs, c_trans = test_hmm.expectation_maximization(obs_sequence)
 print(c_obs)
 print(c_trans)
+
+a = test_hmm.forward(obs_sequence, log_space=True)
+marginal_likelihood = a[-1][test_hmm.end_state]
+print('marginal log likelihood', marginal_likelihood)
+print('marginal likelihood exp(log)', np.exp2(marginal_likelihood))
+a = test_hmm.forward(obs_sequence)
+marginal_likelihood = a[-1][test_hmm.end_state]
+print('marginal likelihood', marginal_likelihood)
+
+print(test_hmm.compute_perplexity(obs_sequence))
