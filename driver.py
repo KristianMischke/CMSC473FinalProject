@@ -18,7 +18,7 @@ def init_probabilities(model, hidden_translation, observed_translation):
     # draw emission and transition probabilities from a uniform probability distribution
     for i in range(model.num_hidden):
         for j in range(model.num_observed):
-            model.emissions[i][j] = random.random()
+            model.emissions[i][j] = 10 + random.random()
             if j == eos_token and i != eos_state:   # EOS must emit EOS
                 model.emissions[i][j] = 0
             if j == bos_token and i != bos_state:   # BOS must emit BOS
@@ -28,7 +28,7 @@ def init_probabilities(model, hidden_translation, observed_translation):
 
     for i in range(model.num_hidden):
         for j in range(model.num_hidden):
-            model.transitions[i][j] = random.random()
+            model.transitions[i][j] = 10 + random.random()
             if i == b_state and j != i_state:   # B can only go to I
                 model.emissions[i][j] = 0
             if j == i_state and (i != i_state or i != b_state):  # only B and I can go to I
@@ -40,7 +40,7 @@ def init_probabilities(model, hidden_translation, observed_translation):
     for i in range(model.num_hidden):
         for j in range(model.num_hidden):
             for k in range(model.num_observed):
-                model.emissions_joint[i][j][k] = random.random()
+                model.emissions_joint[i][j][k] = 10 + random.random()
             total = sum(model.emissions_joint[i][j][:])
             model.emissions_joint[i][j][:] /= total
 
@@ -96,17 +96,20 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
 
     init_probabilities(model, hidden_translations, token_translations)
     model.test_validity()
-    cascade_parser = CascadeParse(model, token_frequencies, token_translations["B"], token_translations["I"])
+    cascade_parser = CascadeParse(model, token_frequencies, hidden_translations["B"], hidden_translations["I"])
 
     for e in range(epochs):
         print("epoch", e)
         # TODO: re-randomize sequences
         for i in range(len(token_sequences)):
+            #print(token_sequences[i])
+            print(i, tokenizer.convert_id_sequence_to_tokens(token_sequences[i], token_lookup))
             model.em_update(token_sequences[i])
         # TODO: report perplexity
 
-        rand_test_sequence = str_test_sequences[random.randint(0, len(str_test_sequences))]
-        rand_token_sequence = tokenizer.convert_token_sequence_to_ids(rand_test_sequence, token_translations, "BOS", "EOS")
+        #rand_test_sequence = str_test_sequences[random.randint(0, len(str_test_sequences))]
+        #rand_token_sequence = tokenizer.convert_token_sequence_to_ids(rand_test_sequence, token_translations, "BOS", "EOS")
+        rand_token_sequence = token_sequences[random.randint(0, len(token_sequences))]  # TODO: use test dataset
         root = cascade_parser.parse(rand_token_sequence)    # TODO: OOV
         root.print(True)
         print()
@@ -118,4 +121,4 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
     # TODO: if not replace_this, run accuracy, F1, etc on <this> chunking
 
 
-run_project_variant("mtg", 20, False, True, True, True)
+run_project_variant("keyforge", 20, False, True, True, True)

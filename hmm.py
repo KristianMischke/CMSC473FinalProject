@@ -161,37 +161,61 @@ class HMM:
 
     # Baum-Welch Backward Algorithm
     # assumes obs_seq has already been tokenized (and thus contains the start and end tokens)
-    def backward(self, obs_seq):
+    def backward(self, obs_seq, log_space=False):
         t = len(obs_seq)
 
         # matrix -> num_state x num_obs
-        b = np.zeros((t, self.num_hidden))
-        b[-1][self.end_state] = 1
+        if log_space:
+            b = np.full((t, self.num_hidden), -np.inf)
+            b[-1][self.end_state] = 0
+        else:
+            b = np.zeros((t, self.num_hidden))
+            b[-1][self.end_state] = 1
 
         for i in range(t - 2, -1, -1):
             for next in range(self.num_hidden):
                 for k in range(self.num_hidden):
-                    b[i, k] += b[i + 1, next] * self.p_joint(k, obs_seq[i+1], next)
+                    if log_space:
+                        b[i, k] = np.logaddexp2(b[i, k], b[i + 1, next] + self.p_joint(k, obs_seq[i+1], next, log_space=True))
+                    else:
+                        b[i, k] += b[i + 1, next] * self.p_joint(k, obs_seq[i + 1], next)
         return b
 
     # Baum-Welch Expectation Maximization Algorithm
-    def expectation_maximization(self, obs_seq):
+    def expectation_maximization(self, obs_seq, log_space=False):
         t = len(obs_seq)
-        a = self.forward(obs_seq)
-        b = self.backward(obs_seq)
-        c_obs = np.zeros((self.num_hidden, self.num_observed))
-        c_trans = np.zeros((self.num_hidden, self.num_hidden))
-        # TODO: need joint emission probability for PRLG to compute EM
+        a = self.forward(obs_seq, log_space)
+        b = self.backward(obs_seq, log_space)
+        if log_space:
+            c_obs = np.full((self.num_hidden, self.num_observed), -np.inf)
+            c_trans = np.full((self.num_hidden, self.num_hidden), -np.inf)
+            c_prlg = np.full((self.num_hidden, self.num_hidden, self.num_observed), -np.inf)
+
+            c_obs[0, obs_seq[-1]] = 0
+            c_trans[0, 0] = 0
+            c_prlg[0, 0, obs_seq[-1]] = 0
+        else:
+            c_obs = np.zeros((self.num_hidden, self.num_observed))
+            c_trans = np.zeros((self.num_hidden, self.num_hidden))
+            c_prlg = np.zeros((self.num_hidden, self.num_hidden, self.num_observed))
         l = a[-1][self.end_state]
 
         for i in range(t - 2, -1, -1):
             for next in range(self.num_hidden):
-                c_obs[next, obs_seq[i + 1]] += a[i + 1][next] * b[i + 1][next] / l
+                if log_space:
+                    c_obs[next, obs_seq[i + 1]] = np.logaddexp2(c_obs[next, obs_seq[i + 1]], a[i + 1][next] + b[i + 1][next] - l)
+                else:
+                    c_obs[next, obs_seq[i + 1]] += a[i + 1][next] * b[i + 1][next] / l
                 for k in range(self.num_hidden):
-                    u = self.p_joint(k, obs_seq[i + 1], next)
-                    c_trans[k, next] += a[i, k] * u * b[i + 1][next] / l
+                    u = self.p_joint(k, obs_seq[i + 1], next, log_space)
+                    if log_space:
+                        c_trans[k, next] = np.logaddexp2(c_trans[k, next], a[i, k] + u + b[i + 1][next] - l)
+                        c_prlg[k, next, obs_seq[i + 1]] = np.logaddexp2(c_prlg[k, next, obs_seq[i + 1]], a[i, k] + u + b[i + 1][next] - l)
+                    else:
+                        c_trans[k, next] += a[i, k] * u * b[i + 1][next] / l
+                        c_prlg[k, next, obs_seq[i + 1]] += a[i, k] * u * b[i + 1][next] / l
 
-        return c_obs, c_trans
+        return c_obs, c_trans, c_prlg
 
     def compute_perplexity(self, obs_seq):
         t = len(obs_seq)
@@ -199,16 +223,21 @@ class HMM:
         return np.exp((-1 / t) * log_marginal_likelihood)
 
     def em_update(self, obs_seq):
-        c_obs, c_trans = self.expectation_maximization(obs_seq)
+        c_obs, c_trans, c_prlg = self.expectation_maximization(obs_seq, log_space=True)
 
         # update emission and transition probabilities based on EM results
         for i in range(self.num_hidden):
-            self.emissions[i][:] = c_obs[i][:] / sum(c_obs[i][:])
+            self.emissions[i, :] += np.exp2(c_obs[i, :])
+            self.emissions[i, :] /= sum(self.emissions[i, :])
 
         for i in range(self.num_hidden):
-            self.transitions[i][:] = c_trans[i][:] / sum(self.transitions[i][:])
+            self.transitions[i, :] += np.exp2(c_trans[i, :])
+            self.transitions[i, :] /= sum(self.transitions[i, :])
 
-        # TODO: need to account for PRLG maximization of joint probability
+        for i in range(self.num_hidden):
+            for j in range(self.num_hidden):
+                self.emissions_joint[i, j, :] += np.exp2(c_prlg[i, j, :])
+                self.emissions_joint[i, j, :] /= sum(self.emissions_joint[i, j, :])
 
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
@@ -350,6 +379,6 @@ class PRLG(HMM):
             return obs_probability + move_probability
         return obs_probability * move_probability
 
-    # P(x_n|y_n,y_n+1) Probability of an observed state given that the hidden state transitions to the next_hidden state
+    # P(x_n+1|y_n,y_n+1) Probability of an observed state given that the hidden state transitions to the next_hidden state
     def p_emission(self, observed, next_hidden, hidden):
         return self.emissions_joint[hidden][next_hidden][observed]

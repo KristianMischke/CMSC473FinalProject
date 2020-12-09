@@ -86,10 +86,13 @@ print("\n\n\n")
 
 print(f"baum-welch.forward({novel_sentence}) =\n {hmm_model.forward(novel_sentence_ids)}")
 print(f"baum-welch.backward({novel_sentence}) =\n {hmm_model.backward(novel_sentence_ids)}")
-c_obs, c_trans = hmm_model.expectation_maximization(novel_sentence_ids)
+c_obs, c_trans, c_prlg = prlg_model.expectation_maximization(novel_sentence_ids)
 print(f"baum-welch.ME({novel_sentence}) =")
 print(c_obs)
 print(c_trans)
+print(hidden_token_lookup)
+print(observed_token_lookup)
+print(c_prlg)
 
 
 
@@ -112,9 +115,10 @@ print()
 b = test_hmm.backward(obs_sequence)
 print(b)
 
-c_obs, c_trans = test_hmm.expectation_maximization(obs_sequence)
+c_obs, c_trans, c_prlg = test_hmm.expectation_maximization(obs_sequence)
 print(c_obs)
 print(c_trans)
+print(c_prlg)
 
 a = test_hmm.forward(obs_sequence, log_space=True)
 marginal_likelihood = a[-1][test_hmm.end_state]
