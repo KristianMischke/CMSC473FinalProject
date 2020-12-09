@@ -1,6 +1,6 @@
 from baum_welch import BaumWeltch
 import numpy as np
-
+import random
 
 class HMM:
     """
@@ -171,18 +171,31 @@ class HMM:
         t = len(obs_seq)
         a = self.forward(obs_seq)
         b = self.backward(obs_seq)
-        c_obs = np.zeros((self.num_observed, self.num_hidden))
+        c_obs = np.zeros((self.num_hidden, self.num_observed))
         c_trans = np.zeros((self.num_hidden, self.num_hidden))
+        # TODO: need joint emission probability for PRLG to compute EM
         l = a[-1][self.end_state]
 
         for i in range(t - 2, -1, -1):
             for next in range(self.num_hidden):
-                c_obs[obs_seq[i + 1], next] += a[i + 1][next] * b[i + 1][next] / l
+                c_obs[next, obs_seq[i + 1]] += a[i + 1][next] * b[i + 1][next] / l
                 for k in range(self.num_hidden):
                     u = self.p_joint(k, obs_seq[i + 1], next)
                     c_trans[k, next] += a[i, k] * u * b[i + 1][next] / l
 
         return c_obs, c_trans
+
+    def em_update(self, obs_seq):
+        c_obs, c_trans = self.expectation_maximization(obs_seq)
+
+        # update emission and transition probabilities based on EM results
+        for i in range(self.num_hidden):
+            self.emissions[i][:] = c_obs[i][:] / sum(c_obs[i][:])
+
+        for i in range(self.num_hidden):
+            self.transitions[i][:] = c_trans[i][:] / sum(self.transitions[i][:])
+
+        # TODO: need to account for PRLG maximization of joing probability
 
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1

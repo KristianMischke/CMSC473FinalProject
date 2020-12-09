@@ -28,7 +28,7 @@ ESCAPE_CHARS = [
 ]
 
 
-def token_replacer(card_name: str, tokenized_card_text: list, replace_this: bool, replace_number: bool) -> str:
+def token_replacer(card_name: str, tokenized_card_text: list, replace_this: bool, replace_number: bool) -> list:
     """
     :param card_name: Name of the card being processed
     :param tokenized_card_text: Tokenized card text
@@ -53,7 +53,7 @@ def token_replacer(card_name: str, tokenized_card_text: list, replace_this: bool
     return replaced_tokens
                 
 
-def tokenizer(card_name: str, card_text: str) -> str:
+def tokenizer(card_name: str, card_text: str) -> list:
     """
     :param card_name: Name of the card being processed
     :param card_text: Description of the card being processed

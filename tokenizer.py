@@ -18,6 +18,7 @@ def convert_token_sequence_to_ids(sequence, translation_table, bos=None, eos=Non
 # convert the tokens in an array of sequences to indices
 # returns tuple with translated sequences, translation table (token -> id), and lookup table (id -> token)
 def convert_token_sequences_to_ids(sequences, bos=None, eos=None):
+    # TODO: OOV threshold
     translation_table = {}
     token_lookup = []
     out_sequences = []
