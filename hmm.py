@@ -340,8 +340,14 @@ class PRLG(HMM):
 
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
-    def p_joint(self, hidden, observed, next_hidden):
-        return self.p_emission(observed, next_hidden, hidden) * self.p_transition(next_hidden, hidden)
+    def p_joint(self, hidden, observed, next_hidden, log_space=False):
+        obs_probability = self.p_emission(observed, next_hidden, hidden)
+        move_probability = self.p_transition(next_hidden, hidden)
+        if log_space:
+            obs_probability = -np.inf if obs_probability == 0 else np.log2(obs_probability)
+            move_probability = -np.inf if move_probability == 0 else np.log2(move_probability)
+            return obs_probability + move_probability
+        return obs_probability * move_probability
 
     # P(x_n|y_n,y_n+1) Probability of an observed state given that the hidden state transitions to the next_hidden state
     def p_emission(self, observed, next_hidden, hidden):
