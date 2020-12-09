@@ -10,7 +10,7 @@ import random
 def writeToFile(list, fileName):
     with open(fileName, 'w', encoding='utf-8') as f:
         for item in list:
-            f.write("%s\n" % item)
+            f.write("%s\n" % str((item[0], item[1])))
 
 
 def tupleAndWriteToFiles(nameList, ruleList, fileName):
