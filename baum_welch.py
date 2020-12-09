@@ -25,20 +25,31 @@ class BaumWeltch():
 
 
     # Forward algorithm
-    def forward(self):
+    def forward(self, log_space=False):
         print('Computing Forward Algorithm...')
+        print('log_space:', log_space)
 
-        # matrix -> num_state+2 x num_obs
         a = zeros((self.num_obs+2, self.num_state))
-        # Initializes a[0][START] to self.start_value
-        a[0][0] = self.start_value
+        if log_space:
+            a[0, :] = -np.inf
+            a[0][0] = 0
+        else:
+            a[0][0] = self.start_value
+        print(a)
 
         for i in range(1, self.num_obs+2):
             for k in range(self.num_state):
                 obs_probability = self.O[k, self.obs_seq[i]]
+                if log_space:
+                    obs_probability = -np.inf if obs_probability == 0 else np.log2(obs_probability)
                 for old in range(self.num_state):
                     move_probability = self.S[old, k]
-                    a[i, k] += a[i-1, old] * move_probability * obs_probability
+                    if log_space:
+                        move_probability = -np.inf if move_probability == 0 else np.log2(move_probability)
+                        a[i, k] = np.logaddexp2(a[i, k], a[i - 1, old] + move_probability + obs_probability)
+                    else:
+                        a[i, k] += a[i - 1, old] * move_probability * obs_probability
+
 
         'Utilizes the power of numpy -> same result'
         'Σ 𝛼(𝑖-1,𝑠′) ∗ 𝑝(𝑠|𝑠′) ∗ 𝑝(obs[𝑖]|𝑠′)'
@@ -46,7 +57,7 @@ class BaumWeltch():
         #     for k in range(self.num_state):
         #         obs_probability = self.O[k, self.obs_seq[i]]
         #         a[i,k] += np.dot(a[i-1, :], (self.S[:, k])) * obs_probability
-
+        print(a)
         return a
 
 
@@ -90,6 +101,10 @@ class BaumWeltch():
 
         return c
 
+    def compute_perplexity(self):
+        log_marginal_likelihood = self.forward(log_space=True)[-1, -1]
+        print('Log marginal likelihood:', log_marginal_likelihood)
+        return np.exp((-1 / self.num_obs) * log_marginal_likelihood)
 
 
 if __name__ == "__main__":
@@ -103,15 +118,18 @@ if __name__ == "__main__":
     num_obs = len(obs_sequence)
 
     a = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).forward()
-    res = a[num_obs-1][3]
-    print(a)
-    print(res)
+    marginal_likelihood = a[-1][-1]
+    print('marginal likelihood', marginal_likelihood)
 
     print()
-    b = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).backward()
-    print(b)
+    print('perplexity', BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).compute_perplexity())
 
-    print()
-    c = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).expectation_maximization()
-    print(c)
+
+    # print()
+    # b = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).backward()
+    # print(b)
+    #
+    # print()
+    # c = BaumWeltch(array(transition), array(emission), 1.0, obs_sequence).expectation_maximization()
+    # print(c)
 

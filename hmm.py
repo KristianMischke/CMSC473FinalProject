@@ -137,18 +137,25 @@ class HMM:
 
     # Baum-Welch Forward Algorithm
     # assumes obs_seq has already been tokenized (and thus contains the start and end tokens)
-    def forward(self, obs_seq):
+    def forward(self, obs_seq, log_space=False):
         t = len(obs_seq)
 
         # matrix -> num_state x num_obs
+        # Matrix Initialization
         a = np.zeros((t, self.num_hidden))
-        # Initializes a[0][START] to 1
-        a[0][self.start_state] = 1.0
+        if log_space:
+            a[0, :] = -np.inf
+            a[0][0] = 0
+        else:
+            a[0][0] = 1.0
 
         for i in range(1, t):
             for k in range(self.num_hidden):
                 for old in range(self.num_hidden):
-                    a[i, k] += a[i - 1, old] * self.p_joint(old, obs_seq[i], k)
+                    if log_space:
+                        a[i, k] = np.logaddexp2(a[i, k], a[i - 1, old] + self.p_joint(old, obs_seq[i], k, log_space=True))
+                    else:
+                        a[i, k] += a[i - 1, old] * self.p_joint(old, obs_seq[i], k)
         return a
 
     # Baum-Welch Backward Algorithm
@@ -185,6 +192,11 @@ class HMM:
 
         return c_obs, c_trans
 
+    def compute_perplexity(self, obs_seq):
+        t = len(obs_seq)
+        log_marginal_likelihood = self.forward(obs_seq, log_space=True)[-1, -1]
+        return np.exp((-1 / t) * log_marginal_likelihood)
+
     def em_update(self, obs_seq):
         c_obs, c_trans = self.expectation_maximization(obs_seq)
 
@@ -199,8 +211,14 @@ class HMM:
 
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
-    def p_joint(self, from_hidden, observed, next_hidden):
-        return self.p_emission_independent(observed, next_hidden) * self.p_transition(next_hidden, from_hidden)
+    def p_joint(self, from_hidden, observed, next_hidden, log_space=False):
+        obs_probability = self.p_emission_independent(observed, next_hidden)
+        move_probability = self.p_transition(next_hidden, from_hidden)
+        if log_space:
+            obs_probability = -np.inf if obs_probability == 0 else np.log2(obs_probability)
+            move_probability = -np.inf if move_probability == 0 else np.log2(move_probability)
+            return obs_probability + move_probability
+        return obs_probability * move_probability
 
     # P(x_n|y_n) Probability that the hidden state emits the observed state
     def p_emission_independent(self, observed, hidden):
