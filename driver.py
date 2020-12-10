@@ -11,7 +11,7 @@ def init_probabilities(model, hidden_translation, observed_translation, use_stop
     i_state = hidden_translation["I"]
     bos_state = hidden_translation["BOS"]
     eos_state = hidden_translation["EOS"]
-    stop_state = hidden_translation["STOP"]
+    stop_state = hidden_translation["STOP"] if use_stop_state else None
 
     bos_token = observed_translation["BOS"]
     eos_token = observed_translation["EOS"]
@@ -153,4 +153,4 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
     # TODO: if not replace_this, run accuracy, F1, etc on <this> chunking
 
 
-run_project_variant("keyforge", 100, use_prlg=True, use_dev=True, replace_this=True, replace_num=True, use_stop_state=True)
+run_project_variant("keyforge", 100, use_prlg=True, use_dev=True, replace_this=True, replace_num=True, use_stop_state=False)
