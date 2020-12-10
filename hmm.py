@@ -217,10 +217,11 @@ class HMM:
 
         return c_obs, c_trans, c_prlg
 
+
     def compute_perplexity(self, obs_seq):
         t = len(obs_seq)
         log_marginal_likelihood = self.forward(obs_seq, log_space=True)[-1, self.end_state]
-        return np.exp((-1 / t) * log_marginal_likelihood)
+        return np.exp2((-1 / t) * log_marginal_likelihood)
 
     def em_update(self, obs_seq):
         c_obs, c_trans, c_prlg = self.expectation_maximization(obs_seq, log_space=True)
@@ -228,16 +229,22 @@ class HMM:
         # update emission and transition probabilities based on EM results
         for i in range(self.num_hidden):
             self.emissions[i, :] += np.exp2(c_obs[i, :])
-            self.emissions[i, :] /= sum(self.emissions[i, :])
+            total = sum(self.emissions[i, :])
+            if total != 0:
+                self.emissions[i, :] /= total
 
         for i in range(self.num_hidden):
             self.transitions[i, :] += np.exp2(c_trans[i, :])
-            self.transitions[i, :] /= sum(self.transitions[i, :])
+            total = sum(self.transitions[i, :])
+            if total != 0:
+                self.transitions[i, :] /= total
 
         for i in range(self.num_hidden):
             for j in range(self.num_hidden):
                 self.emissions_joint[i, j, :] += np.exp2(c_prlg[i, j, :])
-                self.emissions_joint[i, j, :] /= sum(self.emissions_joint[i, j, :])
+                total = sum(self.emissions_joint[i, j, :])
+                if total != 0:
+                    self.emissions_joint[i, j, :] /= total
 
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
