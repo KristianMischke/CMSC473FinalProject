@@ -33,7 +33,7 @@ def init_probabilities(model, hidden_translation, observed_translation, use_stop
                     invalid = True
                 if state == bos_state and token != bos_token:  # BOS must emit BOS
                     invalid = True
-                if use_stop_state and token in punct_tokens:  # only STOP state can emit punctuation
+                if use_stop_state and (token in punct_tokens):  # only STOP state can emit punctuation
                     invalid = state != stop_state
 
                 if invalid:
@@ -153,4 +153,4 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
     # TODO: if not replace_this, run accuracy, F1, etc on <this> chunking
 
 
-run_project_variant("keyforge", 100, use_prlg=True, use_dev=True, replace_this=True, replace_num=True, use_stop_state=False)
+run_project_variant("keyforge", 100, use_prlg=False, use_dev=True, replace_this=True, replace_num=True, use_stop_state=True)
