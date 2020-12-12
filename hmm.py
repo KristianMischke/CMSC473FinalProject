@@ -217,11 +217,20 @@ class HMM:
 
         return c_obs, c_trans, c_prlg
 
-
-    def compute_perplexity(self, obs_seq):
-        t = len(obs_seq)
+    # Computes the perplexity of a sentence
+    def compute_sent_perplexity(self, obs_seq):
+        N = len(obs_seq)
         log_marginal_likelihood = self.forward(obs_seq, log_space=True)[-1, self.end_state]
-        return np.exp2((-1 / t) * log_marginal_likelihood)
+        return np.exp2((-1 / N) * log_marginal_likelihood)
+
+    # Computes the perplexity of a corpus
+    def compute_corpus_perplexity(self, sentences):
+        N = len(sentences)
+        joint_prob = 1
+        for sent in sentences:
+            log_marginal_likelihood = self.forward(sent, log_space=True)[-1, self.end_state]
+            joint_prob *= log_marginal_likelihood
+        return np.exp2((-1 / N) * joint_prob)
 
     def em_update(self, obs_seq):
         c_obs, c_trans, c_prlg = self.expectation_maximization(obs_seq, log_space=True)
