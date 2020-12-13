@@ -17,13 +17,13 @@ class CascadeParse:
             if self.children is None or len(self.children) == 0:
                 print(str_token, end="")
             else:
-                print("(", end="")
+                print("{", end="")
                 if show_pseudo:
-                    print(f"{str_token}: ", end="")
+                    print(f"{str_token}| ", end="")
                 for x in self.children:
                     x.print(show_pseudo, token_lookup)
                     print(" ", end="")
-                print(")", end="")
+                print("}", end="")
 
     def __init__(self, model: HMM, token_frequencies: dict, begin_chunk_state, continue_chunk_state):
         self.model = model

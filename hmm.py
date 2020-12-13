@@ -232,8 +232,16 @@ class HMM:
             joint_log_prob += log_marginal_likelihood
         return np.exp2((-1 / N) * joint_log_prob)
 
-    def em_update(self, obs_seq):
-        c_obs, c_trans, c_prlg = self.expectation_maximization(obs_seq, log_space=True)
+    def em_update(self, obs_seq_batch):
+        c_obs = np.full((self.num_hidden, self.num_observed), -np.inf)
+        c_trans = np.full((self.num_hidden, self.num_hidden), -np.inf)
+        c_prlg = np.full((self.num_hidden, self.num_hidden, self.num_observed), -np.inf)
+
+        for obs_seq in obs_seq_batch:
+            c_obs_temp, c_trans_temp, c_prlg_temp = self.expectation_maximization(obs_seq, log_space=True)
+            c_obs = np.logaddexp2(c_obs, c_obs_temp)
+            c_trans = np.logaddexp2(c_trans, c_trans_temp)
+            c_prlg = np.logaddexp2(c_prlg, c_prlg_temp)
 
         # update emission and transition probabilities based on EM results
         for i in range(self.num_hidden):

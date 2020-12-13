@@ -128,13 +128,10 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
 
     for e in range(epochs):
         print("epoch", e)
-        # TODO: re-randomize sequences
-        for i in range(len(token_sequences)):
-            #print(token_sequences[i])
-            #print(i, tokenizer.convert_id_sequence_to_tokens(token_sequences[i], token_lookup))
-            model.em_update(token_sequences[i])
+        model.em_update(token_sequences)
 
-        # TODO: report perplexity
+        print(model.compute_corpus_perplexity(token_sequences))    # dev perplexity
+        #print(model.compute_corpus_perplexity(test_data))    # test perplexity
 
         #rand_test_sequence = str_test_sequences[random.randint(0, len(str_test_sequences))]
         #rand_token_sequence = tokenizer.convert_token_sequence_to_ids(rand_test_sequence, token_translations, "BOS", "EOS")
@@ -150,7 +147,5 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
         if most_likely_sequence:
             print(tokenizer.convert_id_sequence_to_tokens(most_likely_sequence, hidden_lookup))
 
-    # TODO: if not replace_this, run accuracy, F1, etc on <this> chunking
 
-
-run_project_variant("keyforge", 100, use_prlg=False, use_dev=True, replace_this=True, replace_num=True, use_stop_state=True)
+run_project_variant("mtg", 100, use_prlg=False, use_dev=True, replace_this=True, replace_num=True, use_stop_state=True)
