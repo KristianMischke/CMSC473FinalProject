@@ -84,11 +84,36 @@ def get_data_tuples(folder, file):
     return result
 
 
+def get_treebank_data(treebank_raw_path, file, use_lowercase: bool):
+    result = []
+
+    for subdir, dirs, files in os.walk(treebank_raw_path):
+        try:
+            if (file == "train" and int(os.path.basename(subdir)) <= 22) or \
+               (file == "test" and int(os.path.basename(subdir)) == 23) or \
+               (file == "dev" and int(os.path.basename(subdir)) == 24):
+                for file in files:
+                    with open(os.path.join(subdir, file), encoding='utf-8') as data_file:
+                        result.extend(data_file.readlines())
+        except ValueError:
+            pass
+
+    for i in range(len(result)-1, -1, -1):
+        if result[i].strip() == "" or result[i].strip() == ".START":
+            del result[i]
+
+    return result
+
+
 def process_data(data_tuples: list, replace_this: bool, replace_num: bool):
     sequences = []
     for data_tuple in data_tuples:
-        card_name = data_tuple[0] if replace_this else ""
-        card_text = data_tuple[1]
+        if isinstance(data_tuple, str):
+            card_name = ""
+            card_text = data_tuple
+        else:
+            card_name = data_tuple[0] if replace_this else ""
+            card_text = data_tuple[1]
         tokens = preprocessor.tokenizer(card_name, card_text)
         processed_tokens = preprocessor.token_replacer(card_name, tokens, replace_this, replace_num)
         sequences.append(processed_tokens)
@@ -140,7 +165,8 @@ def run_project_variant(dataset: str,
                         use_stop_state: bool,
                         save_every_x: int,
                         load_model_path: Union[str, None],
-                        save_model_dir: str):
+                        save_model_dir: str,
+                        tree_banks_raw_path="D:\\Documents\\treebank_3\\raw\\wsj"):
     if not os.path.isabs(save_model_dir):
         save_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), save_model_dir)
 
@@ -173,24 +199,27 @@ def run_project_variant(dataset: str,
         test_perplexity_table = resume_model.test_perplexity_table
 
     # select cards to load (either individual dataset or all)
-    def load_dataset_or_all(file, use_lowercase: bool):
-        if dataset == "all":
-            temp = get_data_tuples("mtg", file)
-            temp.extend(get_data_tuples("hearthstone", file))
-            temp.extend(get_data_tuples("keyforge", file))
-            temp.extend(get_data_tuples("yugioh", file))
+    def load_dataset_or_all(file):
+        if dataset == "treebank_3":
+            temp = get_treebank_data(tree_banks_raw_path, file, use_lowercase)
         else:
-            temp = get_data_tuples(dataset, file)
+            if dataset == "all":
+                temp = get_data_tuples("mtg", file)
+                temp.extend(get_data_tuples("hearthstone", file))
+                temp.extend(get_data_tuples("keyforge", file))
+                temp.extend(get_data_tuples("yugioh", file))
+            else:
+                temp = get_data_tuples(dataset, file)
 
-        if use_lowercase:
-            for i in range(len(temp)):
-                temp[i] = (temp[i][0].lower(), temp[i][1].lower())
+            if use_lowercase and dataset != "treebank_3":
+                for j in range(len(temp)):
+                    temp[j] = (temp[j][0].lower(), temp[j][1].lower())
 
         return temp
 
     dev_or_train_file = "dev" if use_dev else "train"
-    data = load_dataset_or_all(dev_or_train_file, use_lowercase)
-    test_data = load_dataset_or_all("test", use_lowercase)
+    data = load_dataset_or_all(dev_or_train_file)
+    test_data = load_dataset_or_all("test")
 
     # process the tokens and convert to sequences of ids and corresponding lookup tables
     str_token_sequences = process_data(data, replace_this, replace_num)
@@ -284,16 +313,30 @@ def run_project_variant(dataset: str,
 # maybe like: -dataset=mtg --use_prlg etc...
 # if load_model_path is assigned then you don't need to specify the other arguments, but user can override epochs=
 # otherwise set epochs to zero and it will use the one loaded from the file
-run_project_variant(dataset="keyforge",
+# run_project_variant(dataset="keyforge",
+#                     oov_thresh=1,
+#                     use_lowercase=True,
+#                     epochs=100,
+#                     use_prlg=True,
+#                     use_dev=True,
+#                     replace_this=True,
+#                     replace_num=True,
+#                     use_stop_state=True,
+#                     save_every_x=10,
+#                     load_model_path=None,  # "saved_models/keyforge_prlg_r_dev/model_090.p",
+#                     save_model_dir="saved_models/keyforge_prlg_r_dev"
+#                     )
+
+run_project_variant(dataset="treebank_3",
                     oov_thresh=1,
                     use_lowercase=True,
                     epochs=100,
                     use_prlg=True,
                     use_dev=True,
-                    replace_this=True,
-                    replace_num=True,
+                    replace_this=False,
+                    replace_num=False,
                     use_stop_state=True,
                     save_every_x=10,
-                    load_model_path=None,  # "saved_models/keyforge_prlg_r_dev/model_090.p",
-                    save_model_dir="saved_models/keyforge_prlg_r_dev"
+                    load_model_path=None,
+                    save_model_dir="saved_models/treebank_prlg_dev"
                     )
