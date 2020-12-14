@@ -248,11 +248,11 @@ def run_project_variant(dataset: str,
 
     if save_model_dir is not None:
         with open(os.path.join(save_model_dir, "dev_perplexity_history.csv"), 'w', encoding='utf-8') as f:
-            f.write(f"epoch,perplexity")
+            f.write(f"epoch,perplexity\n")
             for e, perplexity in dev_perplexity_table:
                 f.write(f"{str(e)},{str(perplexity)}\n")
         with open(os.path.join(save_model_dir, "test_perplexity_history.csv"), 'w', encoding='utf-8') as f:
-            f.write(f"epoch,perplexity")
+            f.write(f"epoch,perplexity\n")
             for e, perplexity in test_perplexity_table:
                 f.write(f"{str(e)},{str(perplexity)}\n")
 
@@ -268,6 +268,6 @@ run_project_variant("keyforge",
                     replace_num=True,
                     use_stop_state=True,
                     save_every_x=10,
-                    load_model_path=None,  # "saved_models/keyforge_prlg_r_dev/model_020.p",
+                    load_model_path=None,  # "saved_models/keyforge_prlg_r_dev/model_090.p",
                     save_model_dir="saved_models/keyforge_prlg_r_dev"
                     )
