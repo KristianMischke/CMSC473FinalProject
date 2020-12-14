@@ -225,11 +225,12 @@ class HMM:
 
     # Computes the perplexity of a corpus
     def compute_corpus_perplexity(self, sentences):
-        N = len(sentences)
+        N = 0
         joint_log_prob = 0
         for sent in sentences:
             log_marginal_likelihood = self.forward(sent, log_space=True)[-1, self.end_state]
             joint_log_prob += log_marginal_likelihood
+            N += len(sent)
         return np.exp2((-1 / N) * joint_log_prob)
 
     def em_update(self, obs_seq_batch):

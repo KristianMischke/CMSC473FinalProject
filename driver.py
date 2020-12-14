@@ -148,4 +148,4 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
             print(tokenizer.convert_id_sequence_to_tokens(most_likely_sequence, hidden_lookup))
 
 
-run_project_variant("mtg", 100, use_prlg=False, use_dev=True, replace_this=True, replace_num=True, use_stop_state=True)
+run_project_variant("hearthstone", 100, use_prlg=False, use_dev=True, replace_this=True, replace_num=True, use_stop_state=True)
