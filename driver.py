@@ -1,9 +1,13 @@
-from ast import literal_eval
-from hmm import HMM, PRLG
-from cascade_parser import CascadeParse
-import tokenizer, preprocessor
+import os
+import pickle
 import random
-import numpy as np
+from ast import literal_eval
+from typing import Union
+
+import preprocessor
+import tokenizer
+from cascade_parser import CascadeParse
+from hmm import HMM, PRLG
 
 
 def init_probabilities(model, hidden_translation, observed_translation, use_stop_state: bool):
@@ -15,7 +19,7 @@ def init_probabilities(model, hidden_translation, observed_translation, use_stop
 
     bos_token = observed_translation["BOS"]
     eos_token = observed_translation["EOS"]
-    punct_strs = [".", ",", ";", "!", "?", "`"]    # phrasal boundary tokens
+    punct_strs = [".", ",", ";", "!", "?", "`"]  # phrasal boundary tokens
     punct_tokens = [observed_translation[x] for x in punct_strs if x in observed_translation]
 
     # draw emission and transition probabilities from a uniform probability distribution
@@ -42,9 +46,9 @@ def init_probabilities(model, hidden_translation, observed_translation, use_stop
 
             # clear any values that are not allowed
             invalid = False
-            if prev == b_state and state != i_state:    # B can exclusively go to I, so clear value if not i
+            if prev == b_state and state != i_state:  # B can exclusively go to I, so clear value if not i
                 invalid = True
-            if state == i_state and prev != i_state and prev != b_state:   # only B and I can go to I
+            if state == i_state and prev != i_state and prev != b_state:  # only B and I can go to I
                 invalid = True
             if prev == bos_state and state == bos_state:  # BOS state cannot transition to itself
                 invalid = True
@@ -75,7 +79,7 @@ def get_data_tuples(folder, file):
     with open("datasets/" + folder + "/" + file + ".txt", encoding='utf-8') as data_file:
         line = data_file.readline()
         while line.strip() != "":
-            result.append(literal_eval(line))   # parse line as python tuple
+            result.append(literal_eval(line))  # parse line as python tuple
             line = data_file.readline()
     return result
 
@@ -91,7 +95,64 @@ def process_data(data_tuples: list, replace_this: bool, replace_num: bool):
     return sequences
 
 
-def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool, replace_this: bool, replace_num: bool, use_stop_state: bool):
+class ProjectSave:
+    def __init__(self,
+                 dataset: str,
+                 epochs: int,
+                 use_prlg: bool,
+                 use_dev: bool,
+                 replace_this: bool,
+                 replace_num: bool,
+                 use_stop_state: bool,
+                 save_every_x: int,
+
+                 current_epoch: int,
+                 model: HMM):
+        self.dataset = dataset
+        self.epochs = epochs
+        self.use_prlg = use_prlg
+        self.use_dev = use_dev
+        self.replace_this = replace_this
+        self.replace_num = replace_num
+        self.use_stop_state = use_stop_state
+        self.save_every_x = save_every_x
+
+        self.current_epoch = current_epoch
+        self.model = model
+
+
+def run_project_variant(dataset: str,
+                        epochs: int,
+                        use_prlg: bool,
+                        use_dev: bool,
+                        replace_this: bool,
+                        replace_num: bool,
+                        use_stop_state: bool,
+                        save_every_x: int,
+                        load_model_path: Union[str, None],
+                        save_model_dir: str):
+    if not os.path.isabs(save_model_dir):
+        save_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), save_model_dir)
+
+    start_epoch = 0
+    model = None
+    # init from saved model if path specified
+    if load_model_path is not None and len(load_model_path) > 0:
+        if not os.path.isabs(load_model_path):
+            load_model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), load_model_path)
+
+        resume_model = pickle.load(open(load_model_path, "rb"))
+        dataset = resume_model.dataset
+        use_prlg = resume_model.use_prlg
+        use_dev = resume_model.use_dev
+        replace_this = resume_model.replace_this
+        replace_num = resume_model.replace_num
+        use_stop_state = resume_model.use_stop_state
+        save_every_x = resume_model.save_every_x
+        save_model_dir = os.path.dirname(load_model_path)
+        start_epoch = resume_model.current_epoch
+        model = resume_model.model
+
     # select cards to load (either individual dataset or all)
     def load_dataset_or_all(file):
         if dataset == "all":
@@ -110,33 +171,37 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
     # process the tokens and convert to sequences of ids and corresponding lookup tables
     str_token_sequences = process_data(data, replace_this, replace_num)
     str_test_sequences = process_data(test_data, replace_this, replace_num)
-    token_sequences, token_translations, token_lookup = tokenizer.convert_token_sequences_to_ids(str_token_sequences, "BOS", "EOS")
+    token_sequences, token_translations, token_lookup = tokenizer.convert_token_sequences_to_ids(str_token_sequences,
+                                                                                                 "BOS", "EOS")
     hidden_state = ["B", "I", "O"]
     if use_stop_state:
         hidden_state.append("STOP")
-    hidden_sequences, hidden_translations, hidden_lookup = tokenizer.convert_token_sequences_to_ids([hidden_state], "BOS", "EOS")
+    hidden_sequences, hidden_translations, hidden_lookup = tokenizer.convert_token_sequences_to_ids([hidden_state],
+                                                                                                    "BOS", "EOS")
     token_frequencies = tokenizer.get_frequencies_from_sequences(token_sequences)
 
-    if use_prlg:
-        model = PRLG(len(hidden_lookup), len(token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
-    else:
-        model = HMM(len(hidden_lookup), len(token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
+    if model is None:
+        # if we didn't load a model, create a new one and init the probabilities
+        if use_prlg:
+            model = PRLG(len(hidden_lookup), len(token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
+        else:
+            model = HMM(len(hidden_lookup), len(token_lookup), hidden_translations["BOS"], hidden_translations["EOS"])
+        init_probabilities(model, hidden_translations, token_translations, use_stop_state)
 
-    init_probabilities(model, hidden_translations, token_translations, use_stop_state)
     model.test_validity()
     cascade_parser = CascadeParse(model, token_frequencies, hidden_translations["B"], hidden_translations["I"])
 
-    for e in range(epochs):
+    for e in range(start_epoch, epochs):
         print("epoch", e)
         model.em_update(token_sequences)
 
-        print(model.compute_corpus_perplexity(token_sequences))    # dev perplexity
-        #print(model.compute_corpus_perplexity(test_data))    # test perplexity
+        print(model.compute_corpus_perplexity(token_sequences))  # dev perplexity
+        # print(model.compute_corpus_perplexity(test_data))    # test perplexity
 
-        #rand_test_sequence = str_test_sequences[random.randint(0, len(str_test_sequences))]
-        #rand_token_sequence = tokenizer.convert_token_sequence_to_ids(rand_test_sequence, token_translations, "BOS", "EOS")
-        rand_token_sequence = token_sequences[random.randint(0, len(token_sequences)-1)]  # TODO: use test dataset
-        root = cascade_parser.parse(rand_token_sequence)    # TODO: OOV
+        # rand_test_sequence = str_test_sequences[random.randint(0, len(str_test_sequences))]
+        # rand_token_sequence = tokenizer.convert_token_sequence_to_ids(rand_test_sequence, token_translations, "BOS", "EOS")
+        rand_token_sequence = token_sequences[random.randint(0, len(token_sequences) - 1)]  # TODO: use test dataset
+        root = cascade_parser.parse(rand_token_sequence)  # TODO: OOV
         root.print(True)
         print()
         root.print(True, token_lookup)
@@ -147,5 +212,34 @@ def run_project_variant(dataset: str, epochs: int, use_prlg: bool, use_dev: bool
         if most_likely_sequence:
             print(tokenizer.convert_id_sequence_to_tokens(most_likely_sequence, hidden_lookup))
 
+        # save model at end of epoch
+        if save_every_x >= 1 and e % save_every_x == 0:
+            save_obj = ProjectSave(dataset,
+                                   epochs,
+                                   use_prlg,
+                                   use_dev,
+                                   replace_this,
+                                   replace_num,
+                                   use_stop_state,
+                                   save_every_x,
+                                   e+1,     # resume when loading at epoch + 1
+                                   model)
+            if not os.path.exists(save_model_dir):
+                os.mkdir(save_model_dir)
+            path = os.path.join(save_model_dir, f"model_{str(e).zfill(3)}.p")
+            pickle.dump(save_obj, open(path, "wb"))
 
-run_project_variant("hearthstone", 100, use_prlg=False, use_dev=True, replace_this=True, replace_num=True, use_stop_state=True)
+
+# TODO: @Min, command line arguments for each of the parameters of this function
+# maybe like: -dataset=mtg --use_prlg etc...
+run_project_variant("keyforge",
+                    100,
+                    use_prlg=True,
+                    use_dev=True,
+                    replace_this=True,
+                    replace_num=True,
+                    use_stop_state=True,
+                    save_every_x=10,
+                    load_model_path=None,   # "saved_models/keyforge_prlg_r_dev/model_010.p",
+                    save_model_dir="saved_models/keyforge_prlg_r_dev",
+                    )
