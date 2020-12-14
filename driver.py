@@ -107,7 +107,9 @@ class ProjectSave:
                  save_every_x: int,
 
                  current_epoch: int,
-                 model: HMM):
+                 model: HMM,
+                 dev_perplexity_table: list,
+                 test_perplexity_table: list):
         self.dataset = dataset
         self.epochs = epochs
         self.use_prlg = use_prlg
@@ -119,6 +121,8 @@ class ProjectSave:
 
         self.current_epoch = current_epoch
         self.model = model
+        self.dev_perplexity_table = dev_perplexity_table
+        self.test_perplexity_table = test_perplexity_table
 
 
 def run_project_variant(dataset: str,
@@ -136,6 +140,9 @@ def run_project_variant(dataset: str,
 
     start_epoch = 0
     model = None
+    dev_perplexity_table = []
+    test_perplexity_table = []
+
     # init from saved model if path specified
     if load_model_path is not None and len(load_model_path) > 0:
         if not os.path.isabs(load_model_path):
@@ -143,6 +150,8 @@ def run_project_variant(dataset: str,
 
         resume_model = pickle.load(open(load_model_path, "rb"))
         dataset = resume_model.dataset
+        if epochs is None or epochs <= 0:   # allow override epochs if it is a non-negative number
+            epochs = resume_model.epochs
         use_prlg = resume_model.use_prlg
         use_dev = resume_model.use_dev
         replace_this = resume_model.replace_this
@@ -152,6 +161,8 @@ def run_project_variant(dataset: str,
         save_model_dir = os.path.dirname(load_model_path)
         start_epoch = resume_model.current_epoch
         model = resume_model.model
+        dev_perplexity_table = resume_model.dev_perplexity_table
+        test_perplexity_table = resume_model.test_perplexity_table
 
     # select cards to load (either individual dataset or all)
     def load_dataset_or_all(file):
@@ -195,8 +206,12 @@ def run_project_variant(dataset: str,
         print("epoch", e)
         model.em_update(token_sequences)
 
-        print(model.compute_corpus_perplexity(token_sequences))  # dev perplexity
-        # print(model.compute_corpus_perplexity(test_data))    # test perplexity
+        dev_perplexity = model.compute_corpus_perplexity(token_sequences)
+        #test_perplexity = model.compute_corpus_perplexity(test_data)
+        dev_perplexity_table.append((e, dev_perplexity))
+        #test_perplexity_table.append((e, test_perplexity))
+        print("dev perplexity:", dev_perplexity)
+        #print("test perplexity:", test_perplexity)
 
         # rand_test_sequence = str_test_sequences[random.randint(0, len(str_test_sequences))]
         # rand_token_sequence = tokenizer.convert_token_sequence_to_ids(rand_test_sequence, token_translations, "BOS", "EOS")
@@ -213,7 +228,7 @@ def run_project_variant(dataset: str,
             print(tokenizer.convert_id_sequence_to_tokens(most_likely_sequence, hidden_lookup))
 
         # save model at end of epoch
-        if save_every_x >= 1 and e % save_every_x == 0:
+        if save_every_x >= 1 and e % save_every_x == 0 and save_model_dir is not None:
             save_obj = ProjectSave(dataset,
                                    epochs,
                                    use_prlg,
@@ -223,23 +238,36 @@ def run_project_variant(dataset: str,
                                    use_stop_state,
                                    save_every_x,
                                    e+1,     # resume when loading at epoch + 1
-                                   model)
+                                   model,
+                                   dev_perplexity_table,
+                                   test_perplexity_table)
             if not os.path.exists(save_model_dir):
                 os.mkdir(save_model_dir)
             path = os.path.join(save_model_dir, f"model_{str(e).zfill(3)}.p")
             pickle.dump(save_obj, open(path, "wb"))
 
+    if save_model_dir is not None:
+        with open(os.path.join(save_model_dir, "dev_perplexity_history.csv"), 'w', encoding='utf-8') as f:
+            f.write(f"epoch,perplexity")
+            for e, perplexity in dev_perplexity_table:
+                f.write(f"{str(e)},{str(perplexity)}\n")
+        with open(os.path.join(save_model_dir, "test_perplexity_history.csv"), 'w', encoding='utf-8') as f:
+            f.write(f"epoch,perplexity")
+            for e, perplexity in test_perplexity_table:
+                f.write(f"{str(e)},{str(perplexity)}\n")
 
 # TODO: @Min, command line arguments for each of the parameters of this function
 # maybe like: -dataset=mtg --use_prlg etc...
+# if load_model_path is assigned then you don't need to specify the other arguments, but user can override epochs=
+# otherwise set epochs to zero and it will use the one loaded from the file
 run_project_variant("keyforge",
-                    100,
+                    epochs=100,
                     use_prlg=True,
                     use_dev=True,
                     replace_this=True,
                     replace_num=True,
                     use_stop_state=True,
                     save_every_x=10,
-                    load_model_path=None,   # "saved_models/keyforge_prlg_r_dev/model_010.p",
-                    save_model_dir="saved_models/keyforge_prlg_r_dev",
+                    load_model_path=None,  # "saved_models/keyforge_prlg_r_dev/model_020.p",
+                    save_model_dir="saved_models/keyforge_prlg_r_dev"
                     )
