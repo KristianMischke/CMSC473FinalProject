@@ -98,6 +98,8 @@ def process_data(data_tuples: list, replace_this: bool, replace_num: bool):
 class ProjectSave:
     def __init__(self,
                  dataset: str,
+                 oov_thresh: int,
+                 use_lowercase: bool,
                  epochs: int,
                  use_prlg: bool,
                  use_dev: bool,
@@ -111,6 +113,8 @@ class ProjectSave:
                  dev_perplexity_table: list,
                  test_perplexity_table: list):
         self.dataset = dataset
+        self.oov_thresh = oov_thresh
+        self.use_lowercase = use_lowercase
         self.epochs = epochs
         self.use_prlg = use_prlg
         self.use_dev = use_dev
@@ -126,6 +130,8 @@ class ProjectSave:
 
 
 def run_project_variant(dataset: str,
+                        oov_thresh: int,
+                        use_lowercase: bool,
                         epochs: int,
                         use_prlg: bool,
                         use_dev: bool,
@@ -150,6 +156,8 @@ def run_project_variant(dataset: str,
 
         resume_model = pickle.load(open(load_model_path, "rb"))
         dataset = resume_model.dataset
+        oov_thresh = resume_model.oov_thresh
+        use_lowercase = resume_model.use_lowercase
         if epochs is None or epochs <= 0:   # allow override epochs if it is a non-negative number
             epochs = resume_model.epochs
         use_prlg = resume_model.use_prlg
@@ -165,7 +173,7 @@ def run_project_variant(dataset: str,
         test_perplexity_table = resume_model.test_perplexity_table
 
     # select cards to load (either individual dataset or all)
-    def load_dataset_or_all(file):
+    def load_dataset_or_all(file, use_lowercase: bool):
         if dataset == "all":
             temp = get_data_tuples("mtg", file)
             temp.extend(get_data_tuples("hearthstone", file))
@@ -173,17 +181,27 @@ def run_project_variant(dataset: str,
             temp.extend(get_data_tuples("yugioh", file))
         else:
             temp = get_data_tuples(dataset, file)
+
+        if use_lowercase:
+            for i in range(len(temp)):
+                temp[i] = (temp[i][0].lower(), temp[i][1].lower())
+
         return temp
 
     dev_or_train_file = "dev" if use_dev else "train"
-    data = load_dataset_or_all(dev_or_train_file)
-    test_data = load_dataset_or_all("test")
+    data = load_dataset_or_all(dev_or_train_file, use_lowercase)
+    test_data = load_dataset_or_all("test", use_lowercase)
 
     # process the tokens and convert to sequences of ids and corresponding lookup tables
     str_token_sequences = process_data(data, replace_this, replace_num)
     str_test_sequences = process_data(test_data, replace_this, replace_num)
     token_sequences, token_translations, token_lookup = tokenizer.convert_token_sequences_to_ids(str_token_sequences,
-                                                                                                 "BOS", "EOS")
+                                                                                                 "BOS", "EOS", oov_thresh, "OOV")
+    # convert test dataset (with oov)
+    test_sequences = []
+    for s in str_test_sequences:
+        test_sequences.append(tokenizer.convert_token_sequence_to_ids(s, token_translations, "BOS", "EOS", "OOV"))
+
     hidden_state = ["B", "I", "O"]
     if use_stop_state:
         hidden_state.append("STOP")
@@ -207,16 +225,19 @@ def run_project_variant(dataset: str,
         model.em_update(token_sequences)
 
         dev_perplexity = model.compute_corpus_perplexity(token_sequences)
-        #test_perplexity = model.compute_corpus_perplexity(test_data)
+        test_perplexity = model.compute_corpus_perplexity(test_sequences)
         dev_perplexity_table.append((e, dev_perplexity))
-        #test_perplexity_table.append((e, test_perplexity))
+        test_perplexity_table.append((e, test_perplexity))
         print("dev perplexity:", dev_perplexity)
-        #print("test perplexity:", test_perplexity)
+        print("test perplexity:", test_perplexity)
 
-        # rand_test_sequence = str_test_sequences[random.randint(0, len(str_test_sequences))]
-        # rand_token_sequence = tokenizer.convert_token_sequence_to_ids(rand_test_sequence, token_translations, "BOS", "EOS")
-        rand_token_sequence = token_sequences[random.randint(0, len(token_sequences) - 1)]  # TODO: use test dataset
-        root = cascade_parser.parse(rand_token_sequence)  # TODO: OOV
+        i = random.randint(0, len(str_test_sequences))
+        rand_test_sequence = str_test_sequences[i]
+        rand_token_sequence = test_sequences[i]
+        #rand_token_sequence = token_sequences[random.randint(0, len(token_sequences) - 1)]  # TODO: use test dataset
+        print(rand_test_sequence)
+        print(tokenizer.convert_id_sequence_to_tokens(rand_token_sequence, token_lookup))
+        root = cascade_parser.parse(rand_token_sequence)
         root.print(True)
         print()
         root.print(True, token_lookup)
@@ -230,6 +251,8 @@ def run_project_variant(dataset: str,
         # save model at end of epoch
         if save_every_x >= 1 and e % save_every_x == 0 and save_model_dir is not None:
             save_obj = ProjectSave(dataset,
+                                   oov_thresh,
+                                   use_lowercase,
                                    epochs,
                                    use_prlg,
                                    use_dev,
@@ -256,11 +279,14 @@ def run_project_variant(dataset: str,
             for e, perplexity in test_perplexity_table:
                 f.write(f"{str(e)},{str(perplexity)}\n")
 
+
 # TODO: @Min, command line arguments for each of the parameters of this function
 # maybe like: -dataset=mtg --use_prlg etc...
 # if load_model_path is assigned then you don't need to specify the other arguments, but user can override epochs=
 # otherwise set epochs to zero and it will use the one loaded from the file
-run_project_variant("keyforge",
+run_project_variant(dataset="keyforge",
+                    oov_thresh=1,
+                    use_lowercase=True,
                     epochs=100,
                     use_prlg=True,
                     use_dev=True,
