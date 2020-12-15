@@ -1,0 +1,9 @@
+dataset: keyforge
+oov_thresh: 1
+use_lowercase: True
+use_prlg: True
+use_dev: False
+replace_this: False
+replace_num: False
+use_stop_state: True
+save_every_x: 2
