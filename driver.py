@@ -1,6 +1,8 @@
 import os
+import sys
 import pickle
 import random
+import time
 from ast import literal_eval
 from typing import Union
 
@@ -84,23 +86,31 @@ def get_data_tuples(folder, file):
     return result
 
 
-def get_treebank_data(treebank_raw_path, file, use_lowercase: bool):
-    result = []
+def get_treebank_data(treebank_raw_path, data_division, use_lowercase: bool):
+    all_lines = []
 
     for subdir, dirs, files in os.walk(treebank_raw_path):
         try:
-            if (file == "train" and int(os.path.basename(subdir)) <= 22) or \
-               (file == "test" and int(os.path.basename(subdir)) == 23) or \
-               (file == "dev" and int(os.path.basename(subdir)) == 24):
+            if (data_division == "train" and int(os.path.basename(subdir)) <= 22) or \
+               (data_division == "test" and int(os.path.basename(subdir)) == 23) or \
+               (data_division == "dev" and int(os.path.basename(subdir)) == 24):
                 for file in files:
                     with open(os.path.join(subdir, file), encoding='utf-8') as data_file:
-                        result.extend(data_file.readlines())
+                        all_lines.extend(data_file.readlines())
         except ValueError:
             pass
 
-    for i in range(len(result)-1, -1, -1):
-        if result[i].strip() == "" or result[i].strip() == ".START":
-            del result[i]
+    result = []
+    current = ""
+    for i in range(len(all_lines)):
+        if (all_lines[i].strip() == "" or all_lines[i].strip() == ".START") and len(current) > 0:
+            if use_lowercase:
+                result.append(current.lower())
+            else:
+                result.append(current)
+            current = ""
+        else:
+            current += all_lines[i]
 
     return result
 
@@ -250,8 +260,10 @@ def run_project_variant(dataset: str,
     cascade_parser = CascadeParse(model, token_frequencies, hidden_translations["B"], hidden_translations["I"])
 
     for e in range(start_epoch, epochs):
+        iteration_start_time = time.time()
         print("epoch", e)
         model.em_update(token_sequences)
+        print("elapsed time:", time.time() - iteration_start_time)
 
         dev_perplexity = model.compute_corpus_perplexity(token_sequences)
         test_perplexity = model.compute_corpus_perplexity(test_sequences)
@@ -327,16 +339,62 @@ def run_project_variant(dataset: str,
 #                     save_model_dir="saved_models/keyforge_prlg_r_dev"
 #                     )
 
-run_project_variant(dataset="treebank_3",
-                    oov_thresh=1,
-                    use_lowercase=True,
-                    epochs=100,
-                    use_prlg=True,
-                    use_dev=True,
-                    replace_this=False,
-                    replace_num=False,
-                    use_stop_state=True,
-                    save_every_x=10,
-                    load_model_path=None,
-                    save_model_dir="saved_models/treebank_prlg_dev"
-                    )
+# TEMP args for training
+if "treebank" in sys.argv:
+    use_prlg = "prlg" in sys.argv
+    run_project_variant(dataset="treebank_3",
+                        oov_thresh=1,
+                        use_lowercase=True,
+                        epochs=100,
+                        use_prlg=use_prlg,
+                        use_dev=False,
+                        replace_this=False,
+                        replace_num=False,
+                        use_stop_state=False,
+                        save_every_x=2,
+                        load_model_path=None,
+                        save_model_dir=f"saved_models/treebank{'_prlg' if use_prlg else ''}"
+                        )
+    run_project_variant(dataset="treebank_3",
+                        oov_thresh=1,
+                        use_lowercase=True,
+                        epochs=100,
+                        use_prlg=use_prlg,
+                        use_dev=False,
+                        replace_this=False,
+                        replace_num=False,
+                        use_stop_state=True,
+                        save_every_x=2,
+                        load_model_path=None,
+                        save_model_dir=f"saved_models/treebank{'_prlg' if use_prlg else ''}_stop"
+                        )
+else:
+    iterations = ["all", "mtg", "hearthstone", "yugioh", "keyforge"]
+
+    for iteration in iterations:
+        run_project_variant(dataset=iteration,
+                            oov_thresh=1,
+                            use_lowercase=True,
+                            epochs=100,
+                            use_prlg=True,
+                            use_dev=False,
+                            replace_this=False,
+                            replace_num=False,
+                            use_stop_state=True,
+                            save_every_x=10,
+                            load_model_path=None,
+                            save_model_dir=f"saved_models/{iteration}_stop"
+                            )
+        run_project_variant(dataset=iteration,
+                            oov_thresh=1,
+                            use_lowercase=True,
+                            epochs=100,
+                            use_prlg=True,
+                            use_dev=False,
+                            replace_this=True,
+                            replace_num=True,
+                            use_stop_state=True,
+                            save_every_x=10,
+                            load_model_path=None,
+                            save_model_dir=f"saved_models/{iteration}_stop_replace"
+                            )
