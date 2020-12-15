@@ -369,32 +369,33 @@ if "treebank" in sys.argv:
                         save_model_dir=f"saved_models/treebank{'_prlg' if use_prlg else ''}_stop"
                         )
 else:
-    iterations = ["all", "mtg", "hearthstone", "yugioh", "keyforge"]
+    valid = ["all", "mtg", "hearthstone", "yugioh", "keyforge"]
 
-    for iteration in iterations:
-        run_project_variant(dataset=iteration,
-                            oov_thresh=1,
-                            use_lowercase=True,
-                            epochs=100,
-                            use_prlg=True,
-                            use_dev=False,
-                            replace_this=False,
-                            replace_num=False,
-                            use_stop_state=True,
-                            save_every_x=10,
-                            load_model_path=None,
-                            save_model_dir=f"saved_models/{iteration}_stop"
-                            )
-        run_project_variant(dataset=iteration,
-                            oov_thresh=1,
-                            use_lowercase=True,
-                            epochs=100,
-                            use_prlg=True,
-                            use_dev=False,
-                            replace_this=True,
-                            replace_num=True,
-                            use_stop_state=True,
-                            save_every_x=10,
-                            load_model_path=None,
-                            save_model_dir=f"saved_models/{iteration}_stop_replace"
-                            )
+    for iteration in sys.argv:
+        if iteration in valid:
+            run_project_variant(dataset=iteration,
+                                oov_thresh=1,
+                                use_lowercase=True,
+                                epochs=100,
+                                use_prlg=True,
+                                use_dev=False,
+                                replace_this=False,
+                                replace_num=False,
+                                use_stop_state=True,
+                                save_every_x=2,
+                                load_model_path=None,
+                                save_model_dir=f"saved_models/{iteration}_stop"
+                                )
+            run_project_variant(dataset=iteration,
+                                oov_thresh=1,
+                                use_lowercase=True,
+                                epochs=100,
+                                use_prlg=True,
+                                use_dev=False,
+                                replace_this=True,
+                                replace_num=True,
+                                use_stop_state=True,
+                                save_every_x=2,
+                                load_model_path=None,
+                                save_model_dir=f"saved_models/{iteration}_stop_replace"
+                                )
