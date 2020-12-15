@@ -1,4 +1,6 @@
 import os
+import sys
+import time
 import pickle
 import random
 from ast import literal_eval
@@ -223,18 +225,21 @@ def run_project_variant(dataset: str,
     for e in range(start_epoch, epochs):
         print("epoch", e)
         model.em_update(token_sequences)
+        print("em time:", time.time() - iteration_start_time)
 
+        iteration_start_time = time.time()
         dev_perplexity = model.compute_corpus_perplexity(token_sequences)
         test_perplexity = model.compute_corpus_perplexity(test_sequences)
         dev_perplexity_table.append((e, dev_perplexity))
         test_perplexity_table.append((e, test_perplexity))
         print("dev perplexity:", dev_perplexity)
         print("test perplexity:", test_perplexity)
+        print("perplexity time:", time.time() - iteration_start_time)
+        exit_loop = e > 2 and test_perplexity_table[-2] - test_perplexity_table[-1] < 0.01
 
         i = random.randint(0, len(str_test_sequences))
         rand_test_sequence = str_test_sequences[i]
         rand_token_sequence = test_sequences[i]
-        #rand_token_sequence = token_sequences[random.randint(0, len(token_sequences) - 1)]  # TODO: use test dataset
         print(rand_test_sequence)
         print(tokenizer.convert_id_sequence_to_tokens(rand_token_sequence, token_lookup))
         root = cascade_parser.parse(rand_token_sequence)
@@ -249,7 +254,7 @@ def run_project_variant(dataset: str,
             print(tokenizer.convert_id_sequence_to_tokens(most_likely_sequence, hidden_lookup))
 
         # save model at end of epoch
-        if save_every_x >= 1 and e % save_every_x == 0 and save_model_dir is not None:
+        if (exit_loop or (save_every_x >= 1 and e % save_every_x == 0)) and save_model_dir is not None:
             save_obj = ProjectSave(dataset,
                                    oov_thresh,
                                    use_lowercase,
@@ -268,6 +273,9 @@ def run_project_variant(dataset: str,
                 os.mkdir(save_model_dir)
             path = os.path.join(save_model_dir, f"model_{str(e).zfill(3)}.p")
             pickle.dump(save_obj, open(path, "wb"))
+        
+        if exit_loop:
+            break
 
     if save_model_dir is not None:
         with open(os.path.join(save_model_dir, "dev_perplexity_history.csv"), 'w', encoding='utf-8') as f:
@@ -294,6 +302,54 @@ run_project_variant(dataset="keyforge",
                     replace_num=True,
                     use_stop_state=True,
                     save_every_x=10,
-                    load_model_path=None,  # "saved_models/keyforge_prlg_r_dev/model_090.p",
-                    save_model_dir="saved_models/keyforge_prlg_r_dev"
+                    load_model_path="saved_models/keyforge_stop/model_090.p",
+                    save_model_dir="saved_models/keyforge_stop"
                     )
+
+# TEMP args for training
+if "treebank" in sys.argv:
+    use_prlg = "prlg" in sys.argv
+    run_project_variant(dataset="treebank_3",
+                        oov_thresh=1,
+                        use_lowercase=True,
+                        epochs=100,
+                        use_prlg=use_prlg,
+                        use_dev=False,
+                        replace_this=False,
+                        replace_num=False,
+                        use_stop_state=True,
+                        save_every_x=2,
+                        load_model_path=None,
+                        save_model_dir=f"saved_models/treebank{'_prlg' if use_prlg else ''}_stop"
+                        )
+else:
+    valid = ["all", "mtg", "hearthstone", "yugioh", "keyforge"]
+
+    for iteration in sys.argv:
+        if iteration in valid:
+            run_project_variant(dataset=iteration,
+                                oov_thresh=1,
+                                use_lowercase=True,
+                                epochs=100,
+                                use_prlg=True,
+                                use_dev=False,
+                                replace_this=False,
+                                replace_num=False,
+                                use_stop_state=True,
+                                save_every_x=2,
+                                load_model_path=None,
+                                save_model_dir=f"saved_models/{iteration}_stop"
+                                )
+            run_project_variant(dataset=iteration,
+                                oov_thresh=1,
+                                use_lowercase=True,
+                                epochs=100,
+                                use_prlg=True,
+                                use_dev=False,
+                                replace_this=True,
+                                replace_num=True,
+                                use_stop_state=True,
+                                save_every_x=2,
+                                load_model_path=None,
+                                save_model_dir=f"saved_models/{iteration}_stop_replace"
+                                )
