@@ -144,7 +144,6 @@ class ProjectSave:
                  replace_num: bool,
                  use_stop_state: bool,
                  save_every_x: int,
-                 _lambda: float,
 
                  current_epoch: int,
                  model: HMM,
@@ -160,7 +159,6 @@ class ProjectSave:
         self.replace_num = replace_num
         self.use_stop_state = use_stop_state
         self.save_every_x = save_every_x
-        self._lambda = _lambda
 
         self.current_epoch = current_epoch
         self.model = model
@@ -180,7 +178,6 @@ def run_project_variant(dataset: str,
                         save_every_x: int,
                         load_model_path: Union[str, None],
                         save_model_dir: str,
-                        _lambda: float,
                         tree_banks_raw_path="D:\\Documents\\treebank_3\\raw\\wsj"):
     if not os.path.isabs(save_model_dir):
         save_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), save_model_dir)
@@ -207,7 +204,6 @@ def run_project_variant(dataset: str,
         replace_num = resume_model.replace_num
         use_stop_state = resume_model.use_stop_state
         save_every_x = resume_model.save_every_x
-        _lambda = resume_model._lambda
         save_model_dir = os.path.dirname(load_model_path)
         start_epoch = resume_model.current_epoch
         model = resume_model.model
@@ -268,7 +264,7 @@ def run_project_variant(dataset: str,
     for e in range(start_epoch, epochs):
         iteration_start_time = time.time()
         print("epoch", e)
-        model.em_update(token_sequences, _lambda=_lambda)
+        model.em_update(token_sequences)
         print("em time:", time.time() - iteration_start_time)
 
         iteration_start_time = time.time()
@@ -279,7 +275,6 @@ def run_project_variant(dataset: str,
         print("dev perplexity:", dev_perplexity)
         print("test perplexity:", test_perplexity)
         print("perplexity time:", time.time() - iteration_start_time)
-        exit_loop = e > 2 and test_perplexity_table[-2] - test_perplexity_table[-1] < 0.01
 
         i = random.randint(0, len(str_test_sequences))
         rand_test_sequence = str_test_sequences[i]
@@ -298,7 +293,7 @@ def run_project_variant(dataset: str,
             print(tokenizer.convert_id_sequence_to_tokens(most_likely_sequence, hidden_lookup))
 
         # save model at end of epoch
-        if (exit_loop or (save_every_x >= 1 and e % save_every_x == 0)) and save_model_dir is not None:
+        if (save_every_x >= 1 and e % save_every_x == 0) and save_model_dir is not None:
             save_obj = ProjectSave(dataset,
                                    oov_thresh,
                                    use_lowercase,
@@ -318,9 +313,6 @@ def run_project_variant(dataset: str,
             path = os.path.join(save_model_dir, f"model_{str(e).zfill(3)}.p")
             pickle.dump(save_obj, open(path, "wb"))
         
-        if exit_loop:
-            break
-
     if save_model_dir is not None:
         with open(os.path.join(save_model_dir, "dev_perplexity_history.csv"), 'w', encoding='utf-8') as f:
             f.write(f"epoch,perplexity\n")
