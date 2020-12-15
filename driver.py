@@ -1,8 +1,8 @@
 import os
 import sys
-import time
 import pickle
 import random
+import time
 from ast import literal_eval
 from typing import Union
 
@@ -10,6 +10,8 @@ import preprocessor
 import tokenizer
 from cascade_parser import CascadeParse
 from hmm import HMM, PRLG
+
+import argparse
 
 
 def init_probabilities(model, hidden_translation, observed_translation, use_stop_state: bool):
@@ -86,11 +88,44 @@ def get_data_tuples(folder, file):
     return result
 
 
+def get_treebank_data(treebank_raw_path, data_division, use_lowercase: bool):
+    all_lines = []
+
+    for subdir, dirs, files in os.walk(treebank_raw_path):
+        try:
+            if (data_division == "train" and int(os.path.basename(subdir)) <= 22) or \
+               (data_division == "test" and int(os.path.basename(subdir)) == 23) or \
+               (data_division == "dev" and int(os.path.basename(subdir)) == 24):
+                for file in files:
+                    with open(os.path.join(subdir, file), encoding='utf-8') as data_file:
+                        all_lines.extend(data_file.readlines())
+        except ValueError:
+            pass
+
+    result = []
+    current = ""
+    for i in range(len(all_lines)):
+        if (all_lines[i].strip() == "" or all_lines[i].strip() == ".START") and len(current) > 0:
+            if use_lowercase:
+                result.append(current.lower())
+            else:
+                result.append(current)
+            current = ""
+        else:
+            current += all_lines[i]
+
+    return result
+
+
 def process_data(data_tuples: list, replace_this: bool, replace_num: bool):
     sequences = []
     for data_tuple in data_tuples:
-        card_name = data_tuple[0] if replace_this else ""
-        card_text = data_tuple[1]
+        if isinstance(data_tuple, str):
+            card_name = ""
+            card_text = data_tuple
+        else:
+            card_name = data_tuple[0] if replace_this else ""
+            card_text = data_tuple[1]
         tokens = preprocessor.tokenizer(card_name, card_text)
         processed_tokens = preprocessor.token_replacer(card_name, tokens, replace_this, replace_num)
         sequences.append(processed_tokens)
@@ -145,7 +180,8 @@ def run_project_variant(dataset: str,
                         save_every_x: int,
                         load_model_path: Union[str, None],
                         save_model_dir: str,
-                        _lambda: float):
+                        _lambda: float,
+                        tree_banks_raw_path="D:\\Documents\\treebank_3\\raw\\wsj"):
     if not os.path.isabs(save_model_dir):
         save_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), save_model_dir)
 
@@ -179,24 +215,27 @@ def run_project_variant(dataset: str,
         test_perplexity_table = resume_model.test_perplexity_table
 
     # select cards to load (either individual dataset or all)
-    def load_dataset_or_all(file, use_lowercase: bool):
-        if dataset == "all":
-            temp = get_data_tuples("mtg", file)
-            temp.extend(get_data_tuples("hearthstone", file))
-            temp.extend(get_data_tuples("keyforge", file))
-            temp.extend(get_data_tuples("yugioh", file))
+    def load_dataset_or_all(file):
+        if dataset == "treebank_3":
+            temp = get_treebank_data(tree_banks_raw_path, file, use_lowercase)
         else:
-            temp = get_data_tuples(dataset, file)
+            if dataset == "all":
+                temp = get_data_tuples("mtg", file)
+                temp.extend(get_data_tuples("hearthstone", file))
+                temp.extend(get_data_tuples("keyforge", file))
+                temp.extend(get_data_tuples("yugioh", file))
+            else:
+                temp = get_data_tuples(dataset, file)
 
-        if use_lowercase:
-            for i in range(len(temp)):
-                temp[i] = (temp[i][0].lower(), temp[i][1].lower())
+            if use_lowercase and dataset != "treebank_3":
+                for j in range(len(temp)):
+                    temp[j] = (temp[j][0].lower(), temp[j][1].lower())
 
         return temp
 
     dev_or_train_file = "dev" if use_dev else "train"
-    data = load_dataset_or_all(dev_or_train_file, use_lowercase)
-    test_data = load_dataset_or_all("test", use_lowercase)
+    data = load_dataset_or_all(dev_or_train_file)
+    test_data = load_dataset_or_all("test")
 
     # process the tokens and convert to sequences of ids and corresponding lookup tables
     str_token_sequences = process_data(data, replace_this, replace_num)
@@ -227,8 +266,8 @@ def run_project_variant(dataset: str,
     cascade_parser = CascadeParse(model, token_frequencies, hidden_translations["B"], hidden_translations["I"])
 
     for e in range(start_epoch, epochs):
-        print("epoch", e)
         iteration_start_time = time.time()
+        print("epoch", e)
         model.em_update(token_sequences, _lambda=_lambda)
         print("em time:", time.time() - iteration_start_time)
 
@@ -293,68 +332,188 @@ def run_project_variant(dataset: str,
                 f.write(f"{str(e)},{str(perplexity)}\n")
 
 
-# TODO: @Min, command line arguments for each of the parameters of this function
-# maybe like: -dataset=mtg --use_prlg etc...
-# if load_model_path is assigned then you don't need to specify the other arguments, but user can override epochs=
-# otherwise set epochs to zero and it will use the one loaded from the file
-run_project_variant(dataset="keyforge",
-                    oov_thresh=1,
-                    use_lowercase=True,
-                    epochs=100,
-                    use_prlg=True,
-                    use_dev=True,
-                    replace_this=True,
-                    replace_num=True,
-                    use_stop_state=True,
-                    save_every_x=10,
-                    load_model_path="saved_models/keyforge_stop/model_090.p",
-                    save_model_dir="saved_models/keyforge_stop"
-                    )
+def test_different_variants():
+    # TEMP args for training
+    if "treebank" in sys.argv:
+        use_prlg = "prlg" in sys.argv
+        run_project_variant(dataset="treebank_3",
+                            oov_thresh=1,
+                            use_lowercase=True,
+                            epochs=100,
+                            use_prlg=use_prlg,
+                            use_dev=False,
+                            replace_this=False,
+                            replace_num=False,
+                            use_stop_state=False,
+                            save_every_x=2,
+                            load_model_path=None,
+                            save_model_dir=f"saved_models/treebank{'_prlg' if use_prlg else ''}"
+                            )
+        run_project_variant(dataset="treebank_3",
+                            oov_thresh=1,
+                            use_lowercase=True,
+                            epochs=100,
+                            use_prlg=use_prlg,
+                            use_dev=False,
+                            replace_this=False,
+                            replace_num=False,
+                            use_stop_state=True,
+                            save_every_x=2,
+                            load_model_path=None,
+                            save_model_dir=f"saved_models/treebank{'_prlg' if use_prlg else ''}_stop"
+                            )
+    else:
+        valid = ["all", "mtg", "hearthstone", "yugioh", "keyforge"]
 
-# TEMP args for training
-if "treebank" in sys.argv:
-    use_prlg = "prlg" in sys.argv
-    run_project_variant(dataset="treebank_3",
-                        oov_thresh=1,
-                        use_lowercase=True,
-                        epochs=100,
-                        use_prlg=use_prlg,
-                        use_dev=False,
-                        replace_this=False,
-                        replace_num=False,
-                        use_stop_state=True,
-                        save_every_x=2,
-                        load_model_path=None,
-                        save_model_dir=f"saved_models/treebank{'_prlg' if use_prlg else ''}_stop"
-                        )
-else:
-    valid = ["all", "mtg", "hearthstone", "yugioh", "keyforge"]
+        for iteration in sys.argv:
+            if iteration in valid:
+                run_project_variant(dataset=iteration,
+                                    oov_thresh=1,
+                                    use_lowercase=True,
+                                    epochs=100,
+                                    use_prlg=True,
+                                    use_dev=False,
+                                    replace_this=False,
+                                    replace_num=False,
+                                    use_stop_state=True,
+                                    save_every_x=2,
+                                    load_model_path=None,
+                                    save_model_dir=f"saved_models/{iteration}_stop"
+                                    )
+                run_project_variant(dataset=iteration,
+                                    oov_thresh=1,
+                                    use_lowercase=True,
+                                    epochs=100,
+                                    use_prlg=True,
+                                    use_dev=False,
+                                    replace_this=True,
+                                    replace_num=True,
+                                    use_stop_state=True,
+                                    save_every_x=2,
+                                    load_model_path=None,
+                                    save_model_dir=f"saved_models/{iteration}_stop_replace"
+                                    )
 
-    for iteration in sys.argv:
-        if iteration in valid:
-            # run_project_variant(dataset=iteration,
-            #                     oov_thresh=1,
-            #                     use_lowercase=True,
-            #                     epochs=100,
-            #                     use_prlg=True,
-            #                     use_dev=False,
-            #                     replace_this=False,
-            #                     replace_num=False,
-            #                     use_stop_state=True,
-            #                     save_every_x=2,
-            #                     load_model_path=None,
-            #                     save_model_dir=f"saved_models/{iteration}_stop"
-            #                     )
-            run_project_variant(dataset=iteration,
-                                oov_thresh=1,
-                                use_lowercase=True,
-                                epochs=100,
-                                use_prlg=True,
-                                use_dev=False,
-                                replace_this=True,
-                                replace_num=True,
-                                use_stop_state=True,
-                                save_every_x=2,
-                                load_model_path=None,
-                                save_model_dir=f"saved_models/{iteration}_stop_replace"
-                                )
+
+def get_arguments():
+    parser = argparse.ArgumentParser(description="")
+    parser.add_argument('-d', '--dataset',
+                        default='keyforge',
+                        type=str,
+                        help='Select a dataset. (default: %(default)s)',
+                        metavar='dataset_name',
+                        dest='dataset')
+
+    parser.add_argument('--oov_thresh',
+                        default=1,
+                        type=int,
+                        help=' (default: %(default)s)',
+                        metavar='oov_thresh',
+                        dest='oov_thresh')
+
+    parser.add_argument('--use_lowercase',
+                        action='store_true',
+                        help='Use lowercase',
+                        dest='use_lowercase')
+
+    parser.add_argument('-e', '--epochs',
+                        default=100,
+                        type=int,
+                        help=' (default: %(default)s)',
+                        metavar='epochs',
+                        dest='epochs')
+
+    parser.add_argument('--prlg',
+                        action='store_true',
+                        help='Use PRLG',
+                        dest='use_prlg')
+
+    parser.add_argument('--dev',
+                        action='store_true',
+                        help='Determine whether to use dev file. Train file otherwise.',
+                        dest='use_dev')
+
+    parser.add_argument('--replace_this',
+                        action='store_true',
+                        help='Replace card names with <this> in pre-processing.',
+                        dest='replace_this')
+
+    parser.add_argument('--replace_num',
+                        action='store_true',
+                        help='Replace any numerical tokens with <number> in pre-processing.',
+                        dest='replace_num')
+
+    parser.add_argument('--use_stop_state',
+                        action='store_true',
+                        help='Use the STOP state.',
+                        dest='use_stop_state')
+
+    parser.add_argument('-i', '--interval',
+                        default=10,
+                        type=int,
+                        help='Save model at every i epochs. (default: i=%(default)s)',
+                        metavar='save_interval',
+                        dest='save_every_x')
+
+    parser.add_argument('--load_model_path',
+                        default=None,
+                        type=str,
+                        help='Load a model from a pre-existing saved model. (default: %(default)s)',
+                        metavar='model_path',
+                        dest='load_model_path')
+
+    parser.add_argument('-s', '--save_model_dir',
+                        default="saved_models/keyforge_prlg_r_dev",
+                        type=str,
+                        help='Save a model to a defined location. (default: %(default)s)',
+                        metavar='model_dir',
+                        dest='save_model_dir')
+
+    parser.add_argument('--all_true',
+                        action='store_true',
+                        help='Set every boolean option to true. ',
+                        dest='all_true')
+    
+    return parser.parse_args()
+
+
+if __name__ == "__main__":
+    # TODO: @Min, command line arguments for each of the parameters of this function
+    # maybe like: -dataset=mtg --use_prlg etc...
+    # if load_model_path is assigned then you don't need to specify the other arguments, but user can override epochs=
+    # otherwise set epochs to zero and it will use the one loaded from the file
+
+    # Relocated Kristian's variant testing
+    if "testing" in sys.argv:
+        test_different_variants()
+        quit()
+
+    # Full Defaults:
+    defaults = {
+        'dataset': "keyforge",
+        'oov_thresh': 1,
+        'use_lowercase': True,
+        'epochs': 100,
+        'use_prlg': True,
+        'use_dev': True,
+        'replace_this': True,
+        'replace_num': True,
+        'use_stop_state': True,
+        'save_every_x': 10,
+        'load_model_path': None,  # "saved_models/keyforge_prlg_r_dev/model_090.p",
+        'save_model_dir': "saved_models/keyforge_prlg_r_dev"
+    }
+
+    args = vars(get_arguments())
+
+    # If a shorthand option was set to make all options True, set all to True
+    if args['all_true']:
+        for k, v in defaults.items():
+            if type(v) == type(bool()):
+                args[k] = v
+
+    # Remove the key "all_true" as it is irrelevant to running the project
+    del args['all_true']
+
+    # Feed the arguments as keywords (Contains a default for all options)
+    run_project_variant(**args)
