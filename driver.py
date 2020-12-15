@@ -109,6 +109,7 @@ class ProjectSave:
                  replace_num: bool,
                  use_stop_state: bool,
                  save_every_x: int,
+                 _lambda: float,
 
                  current_epoch: int,
                  model: HMM,
@@ -124,6 +125,7 @@ class ProjectSave:
         self.replace_num = replace_num
         self.use_stop_state = use_stop_state
         self.save_every_x = save_every_x
+        self._lambda = _lambda
 
         self.current_epoch = current_epoch
         self.model = model
@@ -142,7 +144,8 @@ def run_project_variant(dataset: str,
                         use_stop_state: bool,
                         save_every_x: int,
                         load_model_path: Union[str, None],
-                        save_model_dir: str):
+                        save_model_dir: str,
+                        _lambda: float):
     if not os.path.isabs(save_model_dir):
         save_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), save_model_dir)
 
@@ -168,6 +171,7 @@ def run_project_variant(dataset: str,
         replace_num = resume_model.replace_num
         use_stop_state = resume_model.use_stop_state
         save_every_x = resume_model.save_every_x
+        _lambda = resume_model._lambda
         save_model_dir = os.path.dirname(load_model_path)
         start_epoch = resume_model.current_epoch
         model = resume_model.model
@@ -224,7 +228,8 @@ def run_project_variant(dataset: str,
 
     for e in range(start_epoch, epochs):
         print("epoch", e)
-        model.em_update(token_sequences)
+        iteration_start_time = time.time()
+        model.em_update(token_sequences, _lambda=_lambda)
         print("em time:", time.time() - iteration_start_time)
 
         iteration_start_time = time.time()
@@ -327,19 +332,19 @@ else:
 
     for iteration in sys.argv:
         if iteration in valid:
-            run_project_variant(dataset=iteration,
-                                oov_thresh=1,
-                                use_lowercase=True,
-                                epochs=100,
-                                use_prlg=True,
-                                use_dev=False,
-                                replace_this=False,
-                                replace_num=False,
-                                use_stop_state=True,
-                                save_every_x=2,
-                                load_model_path=None,
-                                save_model_dir=f"saved_models/{iteration}_stop"
-                                )
+            # run_project_variant(dataset=iteration,
+            #                     oov_thresh=1,
+            #                     use_lowercase=True,
+            #                     epochs=100,
+            #                     use_prlg=True,
+            #                     use_dev=False,
+            #                     replace_this=False,
+            #                     replace_num=False,
+            #                     use_stop_state=True,
+            #                     save_every_x=2,
+            #                     load_model_path=None,
+            #                     save_model_dir=f"saved_models/{iteration}_stop"
+            #                     )
             run_project_variant(dataset=iteration,
                                 oov_thresh=1,
                                 use_lowercase=True,

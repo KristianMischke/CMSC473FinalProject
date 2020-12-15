@@ -137,7 +137,7 @@ class HMM:
 
     # Baum-Welch Forward Algorithm
     # assumes obs_seq has already been tokenized (and thus contains the start and end tokens)
-    def forward(self, obs_seq, log_space=False):
+    def forward(self, obs_seq, log_space=False, _lambda=0):
         t = len(obs_seq)
 
         # matrix -> num_state x num_obs
@@ -154,14 +154,14 @@ class HMM:
             for k in range(self.num_hidden):
                 for old in range(self.num_hidden):
                     if log_space:
-                        a[i, k] = np.logaddexp2(a[i, k], a[i - 1, old] + self.p_joint(old, obs_seq[i], k, log_space=True))
+                        a[i, k] = np.logaddexp2(a[i, k], a[i - 1, old] + self.p_joint(old, obs_seq[i], k, log_space=True, _lambda=_lambda))
                     else:
-                        a[i, k] += a[i - 1, old] * self.p_joint(old, obs_seq[i], k)
+                        a[i, k] += a[i - 1, old] * self.p_joint(old, obs_seq[i], k, _lambda=_lambda)
         return a
 
     # Baum-Welch Backward Algorithm
     # assumes obs_seq has already been tokenized (and thus contains the start and end tokens)
-    def backward(self, obs_seq, log_space=False):
+    def backward(self, obs_seq, log_space=False, _lambda=0):
         t = len(obs_seq)
 
         # matrix -> num_state x num_obs
@@ -176,16 +176,16 @@ class HMM:
             for next in range(self.num_hidden):
                 for k in range(self.num_hidden):
                     if log_space:
-                        b[i, k] = np.logaddexp2(b[i, k], b[i + 1, next] + self.p_joint(k, obs_seq[i+1], next, log_space=True))
+                        b[i, k] = np.logaddexp2(b[i, k], b[i + 1, next] + self.p_joint(k, obs_seq[i+1], next, log_space=True, _lambda=_lambda))
                     else:
-                        b[i, k] += b[i + 1, next] * self.p_joint(k, obs_seq[i + 1], next)
+                        b[i, k] += b[i + 1, next] * self.p_joint(k, obs_seq[i + 1], next, _lambda=_lambda)
         return b
 
     # Baum-Welch Expectation Maximization Algorithm
-    def expectation_maximization(self, obs_seq, log_space=False):
+    def expectation_maximization(self, obs_seq, log_space=False, _lambda=0):
         t = len(obs_seq)
-        a = self.forward(obs_seq, log_space)
-        b = self.backward(obs_seq, log_space)
+        a = self.forward(obs_seq, log_space, _lambda)
+        b = self.backward(obs_seq, log_space, _lambda)
         if log_space:
             c_obs = np.full((self.num_hidden, self.num_observed), -np.inf)
             c_trans = np.full((self.num_hidden, self.num_hidden), -np.inf)
@@ -233,13 +233,13 @@ class HMM:
             N += len(sent)
         return np.exp2((-1 / N) * joint_log_prob)
 
-    def em_update(self, obs_seq_batch):
+    def em_update(self, obs_seq_batch, _lambda=0):
         c_obs = np.full((self.num_hidden, self.num_observed), -np.inf)
         c_trans = np.full((self.num_hidden, self.num_hidden), -np.inf)
         c_prlg = np.full((self.num_hidden, self.num_hidden, self.num_observed), -np.inf)
 
         for obs_seq in obs_seq_batch:
-            c_obs_temp, c_trans_temp, c_prlg_temp = self.expectation_maximization(obs_seq, log_space=True)
+            c_obs_temp, c_trans_temp, c_prlg_temp = self.expectation_maximization(obs_seq, log_space=True, _lambda=_lambda)
             c_obs = np.logaddexp2(c_obs, c_obs_temp)
             c_trans = np.logaddexp2(c_trans, c_trans_temp)
             c_prlg = np.logaddexp2(c_prlg, c_prlg_temp)
@@ -266,8 +266,8 @@ class HMM:
 
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
-    def p_joint(self, from_hidden, observed, next_hidden, log_space=False):
-        obs_probability = self.p_emission_independent(observed, next_hidden)
+    def p_joint(self, from_hidden, observed, next_hidden, log_space=False, _lambda=0):
+        obs_probability = self.p_emission_independent(observed, next_hidden, _lambda)
         move_probability = self.p_transition(next_hidden, from_hidden)
         if log_space:
             obs_probability = -np.inf if obs_probability == 0 else np.log2(obs_probability)
@@ -276,8 +276,8 @@ class HMM:
         return obs_probability * move_probability
 
     # P(x_n|y_n) Probability that the hidden state emits the observed state
-    def p_emission_independent(self, observed, hidden):
-        return self.emissions[hidden][observed]
+    def p_emission_independent(self, observed, hidden, _lambda=0):
+        return (self.emissions[hidden][observed] + _lambda) / ((self.num_observed - 1) * _lambda)  # -1 to ignore BOS
 
     # P(y_n+1|y_n) Probability that the hidden state transitions to the next_hidden state
     def p_transition(self, next_hidden, hidden):
@@ -395,8 +395,8 @@ class PRLG(HMM):
 
     # P(y_n -> x_n y_n+1) Probability that the current state y_n emits observed state x_n
     # AND produced the next hidden state y_n+1
-    def p_joint(self, hidden, observed, next_hidden, log_space=False):
-        obs_probability = self.p_emission(observed, next_hidden, hidden)
+    def p_joint(self, hidden, observed, next_hidden, log_space=False, _lambda=0):
+        obs_probability = self.p_emission(observed, next_hidden, hidden, _lambda)
         move_probability = self.p_transition(next_hidden, hidden)
         if log_space:
             obs_probability = -np.inf if obs_probability == 0 else np.log2(obs_probability)
@@ -405,5 +405,5 @@ class PRLG(HMM):
         return obs_probability * move_probability
 
     # P(x_n+1|y_n,y_n+1) Probability of an observed state given that the hidden state transitions to the next_hidden state
-    def p_emission(self, observed, next_hidden, hidden):
-        return self.emissions_joint[hidden][next_hidden][observed]
+    def p_emission(self, observed, next_hidden, hidden, _lambda=0):
+        return (self.emissions_joint[hidden][next_hidden][observed] + _lambda) / ((self.num_observed-1) * _lambda) # -1 to ignore BOS
