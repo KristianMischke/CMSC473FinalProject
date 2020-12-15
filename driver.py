@@ -178,7 +178,8 @@ def run_project_variant(dataset: str,
                         save_every_x: int,
                         load_model_path: Union[str, None],
                         save_model_dir: str,
-                        tree_banks_raw_path="D:\\Documents\\treebank_3\\raw\\wsj"):
+                        tree_banks_raw_path: str
+                        ):
     if not os.path.isabs(save_model_dir):
         save_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), save_model_dir)
 
@@ -322,69 +323,16 @@ def run_project_variant(dataset: str,
             f.write(f"epoch,perplexity\n")
             for e, perplexity in test_perplexity_table:
                 f.write(f"{str(e)},{str(perplexity)}\n")
-
-
-def test_different_variants():
-    # TEMP args for training
-    if "treebank" in sys.argv:
-        use_prlg = "prlg" in sys.argv
-        run_project_variant(dataset="treebank_3",
-                            oov_thresh=1,
-                            use_lowercase=True,
-                            epochs=100,
-                            use_prlg=use_prlg,
-                            use_dev=False,
-                            replace_this=False,
-                            replace_num=False,
-                            use_stop_state=False,
-                            save_every_x=2,
-                            load_model_path=None,
-                            save_model_dir=f"saved_models/treebank{'_prlg' if use_prlg else ''}"
-                            )
-        run_project_variant(dataset="treebank_3",
-                            oov_thresh=1,
-                            use_lowercase=True,
-                            epochs=100,
-                            use_prlg=use_prlg,
-                            use_dev=False,
-                            replace_this=False,
-                            replace_num=False,
-                            use_stop_state=True,
-                            save_every_x=2,
-                            load_model_path=None,
-                            save_model_dir=f"saved_models/treebank{'_prlg' if use_prlg else ''}_stop"
-                            )
-    else:
-        valid = ["all", "mtg", "hearthstone", "yugioh", "keyforge"]
-
-        for iteration in sys.argv:
-            if iteration in valid:
-                run_project_variant(dataset=iteration,
-                                    oov_thresh=1,
-                                    use_lowercase=True,
-                                    epochs=100,
-                                    use_prlg=True,
-                                    use_dev=False,
-                                    replace_this=False,
-                                    replace_num=False,
-                                    use_stop_state=True,
-                                    save_every_x=2,
-                                    load_model_path=None,
-                                    save_model_dir=f"saved_models/{iteration}_stop"
-                                    )
-                run_project_variant(dataset=iteration,
-                                    oov_thresh=1,
-                                    use_lowercase=True,
-                                    epochs=100,
-                                    use_prlg=True,
-                                    use_dev=False,
-                                    replace_this=True,
-                                    replace_num=True,
-                                    use_stop_state=True,
-                                    save_every_x=2,
-                                    load_model_path=None,
-                                    save_model_dir=f"saved_models/{iteration}_stop_replace"
-                                    )
+        with open(os.path.join(save_model_dir, "params.txt"), 'w', encoding='utf-8') as f:
+            f.write(f"dataset: {dataset}\n")
+            f.write(f"oov_thresh: {oov_thresh}\n")
+            f.write(f"use_lowercase: {use_lowercase}\n")
+            f.write(f"use_prlg: {use_prlg}\n")
+            f.write(f"use_dev: {use_dev}\n")
+            f.write(f"replace_this: {replace_this}\n")
+            f.write(f"replace_num: {replace_num}\n")
+            f.write(f"use_stop_state: {use_stop_state}\n")
+            f.write(f"save_every_x: {save_every_x}\n")
 
 
 def get_arguments():
@@ -465,21 +413,18 @@ def get_arguments():
                         action='store_true',
                         help='Set every boolean option to true. ',
                         dest='all_true')
+
+    parser.add_argument('--treebank_path',
+                        default="D:\\Documents\\treebank_3\\raw\\wsj",
+                        type=str,
+                        help="Path to: treebank_3\\raw\\wsj",
+                        metavar='treebank_path',
+                        dest='tree_banks_raw_path')
     
     return parser.parse_args()
 
 
 if __name__ == "__main__":
-    # TODO: @Min, command line arguments for each of the parameters of this function
-    # maybe like: -dataset=mtg --use_prlg etc...
-    # if load_model_path is assigned then you don't need to specify the other arguments, but user can override epochs=
-    # otherwise set epochs to zero and it will use the one loaded from the file
-
-    # Relocated Kristian's variant testing
-    if "testing" in sys.argv:
-        test_different_variants()
-        quit()
-
     # Full Defaults:
     defaults = {
         'dataset': "keyforge",
@@ -501,7 +446,7 @@ if __name__ == "__main__":
     # If a shorthand option was set to make all options True, set all to True
     if args['all_true']:
         for k, v in defaults.items():
-            if type(v) == type(bool()):
+            if isinstance(v, bool):
                 args[k] = v
 
     # Remove the key "all_true" as it is irrelevant to running the project
