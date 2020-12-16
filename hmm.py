@@ -105,7 +105,6 @@ class HMM:
                     self.set_emission_joint(from_state, to_state, observed, prob)
 
     # runs tests to ensure all the probability distributions are proper
-    # TODO: verify states in the transition & emission dicts are in the hidden and observed sets
     def test_validity(self):
         valid = True
 
@@ -373,7 +372,6 @@ class HMM:
                 best_path.insert(0, v_table[t + 1][prev]["prev"])
                 prev = v_table[t + 1][prev]["prev"]
 
-            # TODO: move print to calling function??
             if debug:
                 print('The steps of states are ' + ' '.join([str(x) for x in best_path]) + ' with highest probability of {}'.format(str(max_prob)))
             return best_path
