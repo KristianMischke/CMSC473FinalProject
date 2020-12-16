@@ -9,21 +9,25 @@ class CascadeParse:
             self.token = token
             self.children = children
 
-        def print(self, show_pseudo: bool, token_lookup: Union[dict, type(None)] = None):
+        def str(self, show_pseudo: bool, token_lookup: Union[dict, type(None)] = None):
+            result = ""
             str_token = str(self.token)
             if token_lookup is not None:
                 str_token = token_lookup[self.token]
 
             if self.children is None or len(self.children) == 0:
-                print(str_token, end="")
+                result += str_token
             else:
-                print("{", end="")
+                result += "{"
                 if show_pseudo:
-                    print(f"{str_token}| ", end="")
+                    result += str_token + "| "
                 for x in self.children:
-                    x.print(show_pseudo, token_lookup)
-                    print(" ", end="")
-                print("}", end="")
+                    result += x.str(show_pseudo, token_lookup) + " "
+                result += "}"
+            return result
+
+        def print(self, show_pseudo: bool, token_lookup: Union[dict, type(None)] = None):
+            print(self.str(show_pseudo, token_lookup))
 
     def __init__(self, model: HMM, token_frequencies: dict, begin_chunk_state, continue_chunk_state):
         self.model = model

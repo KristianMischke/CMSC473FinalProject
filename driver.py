@@ -178,7 +178,9 @@ def run_project_variant(dataset: str,
                         save_every_x: int,
                         load_model_path: Union[str, None],
                         save_model_dir: str,
-                        tree_banks_raw_path: str
+                        tree_banks_raw_path: str,
+                        perplexity_test: bool,
+                        parse_test_set: bool
                         ):
     if not os.path.isabs(save_model_dir):
         save_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), save_model_dir)
@@ -334,6 +336,54 @@ def run_project_variant(dataset: str,
             f.write(f"use_stop_state: {use_stop_state}\n")
             f.write(f"save_every_x: {save_every_x}\n")
 
+        # generate file with parses from the test set
+        if parse_test_set:
+            with open(os.path.join(save_model_dir, "test_parses.txt"), 'w', encoding='utf-8') as f:
+                for i in range(len(test_sequences)):
+                    root = cascade_parser.parse(test_sequences[i])
+                    f.write("----------\n")
+                    f.write("Input:\n")
+                    f.write(str(test_data[i]))
+                    f.write("\n")
+                    f.write("Tree w/ Token IDs:\n")
+                    f.write(root.str(False))
+                    f.write("\n")
+                    f.write("Tree Tokens (w/ pseudo):\n")
+                    f.write(root.str(True, token_lookup))
+                    f.write("\n")
+                    f.write("Tree Tokens (w/o pseudo):\n")
+                    f.write(root.str(token_lookup))
+                    f.write("\n")
+                    f.write(f"marginal probability: {model.p(test_sequences[i])}\n")
+                    f.write(f"sentence perplexity: {model.compute_sent_perplexity(test_sequences[i])}\n")
+                    f.write("\n\n")
+
+    if perplexity_test:
+        print(f"---{dev_or_train_file.upper()} SET---")
+        total = 0
+        for i in range(len(token_sequences)):
+            perplexity = model.compute_sent_perplexity(token_sequences[i])
+            total += perplexity
+            #print(perplexity, str_token_sequences[i])
+            # prob = model.p(s)
+            # if prob == 0:
+            #     print("---")
+            #     print(s)
+            #     print(tokenizer.convert_id_sequence_to_tokens(s, token_lookup))
+        print("---TEST SET---")
+        test_total = 0
+        for i in range(len(test_sequences)):
+            perplexity = model.compute_sent_perplexity(test_sequences[i])
+            test_total += perplexity
+            #print(perplexity, str_test_sequences[i])
+            # prob = model.p(s)
+            # if prob == 0:
+            #     print("---")
+            #     print(s)
+            #     print(tokenizer.convert_id_sequence_to_tokens(s, token_lookup))
+        print(f"avg perplexity ({dev_or_train_file})", total / len(token_sequences))
+        print(f"avg perplexity (test)", test_total / len(test_sequences))
+
 
 def get_arguments():
     parser = argparse.ArgumentParser(description="")
@@ -420,7 +470,17 @@ def get_arguments():
                         help="Path to: treebank_3\\raw\\wsj",
                         metavar='treebank_path',
                         dest='tree_banks_raw_path')
-    
+
+    parser.add_argument('--perplexity_test',
+                        action='store_true',
+                        help='Run a perplexity test',
+                        dest='perplexity_test')
+
+    parser.add_argument('--parse_test_set',
+                        action='store_true',
+                        help='Generate file with parse trees of the test set',
+                        dest='parse_test_set')
+
     return parser.parse_args()
 
 
