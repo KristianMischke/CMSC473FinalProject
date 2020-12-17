@@ -6,7 +6,7 @@ Ensure you have Python 3 installed: https://www.python.org/downloads/
 
 1. (Optional) Create a Python virtual environment: https://docs.python.org/3/tutorial/venv.html
 
-2. `python3 -m pip install -r requirements.txt` Install Python packages
+2. `pip3 install -r requirements.txt` Install Python packages
 
 3. `python3 driver.py [flags]` Run the model from `driver.py`.
 
@@ -32,4 +32,6 @@ Boolean flags
 - `--parse_test_set` - Generate file with parse trees of the test set.
 - `--all_true` - Mark all boolean flags as True (shortcut)
 
-**Example run:** `python3 driver.py -d mtg -e 50 -i 2 --all_true`
+**Example runs:** 
+- `python3 driver.py -d mtg -e 50 -i 2 --all_true` - Run the model on Magic: The Gathering data on 50 iterations, saving model states on every 2 epochs, and using all lowercase tokens, on PRLG, using the dev data, etc.
+- `python3 driver.py --load_model_path ./saved_models/all_stop_replace/model_030.p -e 1 --parse_test_set` - Load the model, will not run additional epochs (loaded model is first epoch), then generate a text file containing the parses of the test dataset as well as sentence perplexity.
