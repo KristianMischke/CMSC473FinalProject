@@ -368,6 +368,7 @@ def run_project_variant(dataset: str,
                     f.write(f"marginal probability: {model.p(test_sequences[i])}\n")
                     f.write(f"sentence perplexity: {model.compute_sent_perplexity(test_sequences[i])}\n")
                     f.write("\n\n")
+            print(os.path.join(save_model_dir, "test_parses.txt"), "generated!")
 
     if perplexity_test:
         print(f"---{dev_or_train_file.upper()} SET---")
