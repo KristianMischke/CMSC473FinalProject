@@ -6,9 +6,9 @@ Ensure you have Python 3 installed: https://www.python.org/downloads/
 
 1. (Optional) Create a Python virtual environment: https://docs.python.org/3/tutorial/venv.html
 
-2. `py -m pip install -r requirements.txt` Install Python packages
+2. `python3 -m pip install -r requirements.txt` Install Python packages
 
-3. `py driver.py [flags]` Run the model from `driver.py`.
+3. `python3 driver.py [flags]` Run the model from `driver.py`.
 
 
 ## Usage
@@ -32,4 +32,4 @@ Boolean flags
 - `--parse_test_set` - Generate file with parse trees of the test set.
 - `--all_true` - Mark all boolean flags as True (shortcut)
 
-**Example run:** `py driver.py -d mtg -e 50 -i 2 --all_true`
+**Example run:** `python3 driver.py -d mtg -e 50 -i 2 --all_true`
