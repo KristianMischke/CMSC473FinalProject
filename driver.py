@@ -182,7 +182,9 @@ def run_project_variant(dataset: str,
                         perplexity_test: bool,
                         parse_test_set: bool
                         ):
-    if not os.path.isabs(save_model_dir):
+    if save_model_dir is None:
+        save_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "saved_models")
+    elif not os.path.isabs(save_model_dir):
         save_model_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), save_model_dir)
 
     start_epoch = 0
@@ -216,6 +218,9 @@ def run_project_variant(dataset: str,
     # select cards to load (either individual dataset or all)
     def load_dataset_or_all(file):
         if dataset == "treebank_3":
+            if (tree_banks_raw_path is None) or (not os.path.exists(tree_banks_raw_path)):
+                print(f"Error: could not find treebanks_3 dataset at path: {tree_banks_raw_path}")
+                return None
             temp = get_treebank_data(tree_banks_raw_path, file, use_lowercase)
         else:
             if dataset == "all":
@@ -235,6 +240,10 @@ def run_project_variant(dataset: str,
     dev_or_train_file = "dev" if use_dev else "train"
     data = load_dataset_or_all(dev_or_train_file)
     test_data = load_dataset_or_all("test")
+
+    if data is None:
+        print("Encountered an error when loading data")
+        return
 
     # process the tokens and convert to sequences of ids and corresponding lookup tables
     str_token_sequences = process_data(data, replace_this, replace_num)
@@ -295,7 +304,7 @@ def run_project_variant(dataset: str,
         if most_likely_sequence:
             print(tokenizer.convert_id_sequence_to_tokens(most_likely_sequence, hidden_lookup))
 
-        # save model at end of epoch
+        # save model at end of epoch as well as the last epoch
         if (e == epochs - 1 or (save_every_x >= 1 and e % save_every_x == 0)) and save_model_dir is not None:
             save_obj = ProjectSave(dataset,
                                    oov_thresh,
@@ -392,6 +401,7 @@ def get_arguments():
     parser.add_argument('-d', '--dataset',
                         default='keyforge',
                         type=str,
+                        choices=["all", "mtg", "yugioh", "hearthstone", "keyforge", "treebank_3"],
                         help='Select a dataset. (default: %(default)s)',
                         metavar='dataset_name',
                         dest='dataset')
@@ -399,25 +409,25 @@ def get_arguments():
     parser.add_argument('--oov_thresh',
                         default=1,
                         type=int,
-                        help=' (default: %(default)s)',
+                        help='Out Of Vocabulary threshold. Is inclusive, so oov_thresh=1 means tokens with 1 or fewer appearances will be converted to OOV (default: %(default)s)',
                         metavar='oov_thresh',
                         dest='oov_thresh')
 
     parser.add_argument('--use_lowercase',
                         action='store_true',
-                        help='Use lowercase',
+                        help='Convert all tokens to lowercase before training',
                         dest='use_lowercase')
 
     parser.add_argument('-e', '--epochs',
                         default=100,
                         type=int,
-                        help=' (default: %(default)s)',
+                        help='number of epochs/iterations to run the EM. index is zero-based, so 100 will yield epochs 0-99 (default: %(default)s)',
                         metavar='epochs',
                         dest='epochs')
 
     parser.add_argument('--prlg',
                         action='store_true',
-                        help='Use PRLG',
+                        help='Use PRLG instead of HMM',
                         dest='use_prlg')
 
     parser.add_argument('--dev',
@@ -455,7 +465,7 @@ def get_arguments():
                         dest='load_model_path')
 
     parser.add_argument('-s', '--save_model_dir',
-                        default="saved_models/keyforge_prlg_r_dev",
+                        default=None,
                         type=str,
                         help='Save a model to a defined location. (default: %(default)s)',
                         metavar='model_dir',
