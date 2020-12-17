@@ -1,6 +1,5 @@
-/datasets
-
-
+/AllPrintings.json
+backup_saved_models
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
@@ -36,3 +35,21 @@
 *.dvi
 *.xdv
 *-converted-to.*
+
+# temp files
+.DS_Store
+/.idea
+__pycache__
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+AllPrintings.json
+HearthstoneCards.json
+KeyforgeCards.json
+YugiohCards.php
